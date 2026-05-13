@@ -10,7 +10,7 @@ HF_TOKENS = [t.strip() for t in HF_TOKENS_STR.split(',') if t.strip()]
 MODEL_ID = "meta-llama/Llama-3.1-8B-Instruct"
 
 K_ROLLOUTS = 4
-MAX_RETRIES = 3
+MAX_RETRIES = 8
 
 DRIVE_OUTPUT_FILE = "/content/drive/MyDrive/Data_Phase1/phase1_generated_rollouts.jsonl"
 DRIVE_PROCESSED_IDS = "/content/drive/MyDrive/Data_Phase1/processed_ids.txt"
