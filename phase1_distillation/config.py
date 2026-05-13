@@ -15,3 +15,4 @@ MAX_RETRIES = 3
 
 DRIVE_OUTPUT_FILE = "/content/drive/MyDrive/Data_Phase1/phase1_generated_rollouts.jsonl"
 DRIVE_PROCESSED_IDS = "/content/drive/MyDrive/Data_Phase1/processed_ids.txt"
+DRIVE_CACHE_DIR = "/content/drive/MyDrive/Data_Phase1/rollouts_cache"
