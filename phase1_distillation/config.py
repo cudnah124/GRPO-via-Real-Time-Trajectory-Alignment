@@ -1,15 +1,17 @@
 import os
 
-# Bạn có thể dùng URL của OpenRouter hoặc Hugging Face tuỳ ý
-API_URL = os.getenv("API_URL", "https://openrouter.ai/api/v1/chat/completions")
-API_KEY = os.getenv("API_KEY", "your_api_key_here")
+# Sử dụng Hugging Face Router như user cung cấp
+API_URL = "https://router.huggingface.co/v1/chat/completions"
+
+# Dùng fallback token từ file generate_ner_hf.py
+HF_TOKEN = os.getenv('HF_TOKEN', '')
 
 HEADERS = {
-    "Authorization": f"Bearer {API_KEY}",
+    "Authorization": f"Bearer {HF_TOKEN}",
     "Content-Type": "application/json"
 }
 
-MODEL_ID = "meta-llama/Llama-3.1-8B-Instruct" # Dùng chung cho cả Generator và Judge
+MODEL_ID = "meta-llama/Llama-3.1-8B-Instruct"
 
 K_ROLLOUTS = 4
 MAX_RETRIES = 3
