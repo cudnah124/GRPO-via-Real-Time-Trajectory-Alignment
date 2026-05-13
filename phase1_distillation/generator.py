@@ -13,10 +13,13 @@ class MathRolloutGenerator:
         return rotator.get_client()
 
     def generate(self, problem, num_rollouts=config.K_ROLLOUTS, max_tokens=1024):
-        client = self._get_client()
         rollouts = []
+        max_attempts = num_rollouts * 2 # Thử tối đa gấp đôi số lượng cần thiết
+        attempts = 0
         
-        for i in range(num_rollouts):
+        while len(rollouts) < num_rollouts and attempts < max_attempts:
+            attempts += 1
+            client = self._get_client()
             try:
                 response = client.chat.completions.create(
                     model=self.model_id,
@@ -29,9 +32,16 @@ class MathRolloutGenerator:
                 )
                 gen_text = response.choices[0].message.content
                 rollouts.append(gen_text)
+                print(f"    [+] Generated rollout {len(rollouts)}/{num_rollouts}")
             except Exception as e:
-                print(f"    [!] OpenAI Generation Error: {e}")
+                print(f"    [!] Generation Attempt {attempts} failed: {e}")
+                time.sleep(2)
                 
-            time.sleep(2) # Tăng sleep lên 2s để tránh bị block nhanh
+            time.sleep(1)
+            
+        # Nếu không đủ K câu trả lời, trả về list rỗng để main loop skip (và retry sau này)
+        if len(rollouts) < num_rollouts:
+            print(f"    [!] Failed to generate enough rollouts ({len(rollouts)}/{num_rollouts})")
+            return []
             
         return rollouts

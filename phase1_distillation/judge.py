@@ -62,6 +62,9 @@ class AlignmentJudge:
         for i, j in pairs:
             print(f"    [*] Evaluating pair ({i},{j})...")
             matrix = self.evaluate_single_pair(problem, rollouts[i], rollouts[j])
+            if matrix is None:
+                print(f"    [!] Critical: Pair ({i},{j}) failed. Skipping problem for later retry.")
+                return None # Trả về None để skip toàn bộ bài toán này
             results[f"({i},{j})"] = matrix
             
         return results
