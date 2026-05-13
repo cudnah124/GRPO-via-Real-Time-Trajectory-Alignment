@@ -1,5 +1,7 @@
 import os
 import time
+import json
+import os
 import itertools
 from openai import OpenAI
 from phase1_distillation.prompts import JUDGE_PROMPT, RETRY_PROMPT
@@ -50,21 +52,46 @@ class AlignmentJudge:
                     
         return None
 
-    def evaluate_pairs(self, problem, rollouts):
-        """Evaluate all combinations C(K,2) of rollouts"""
+    def evaluate_pairs(self, problem, problem_id, rollouts, cache_dir=None):
+        """Evaluate all combinations C(K,2) with incremental caching"""
         results = {}
         if len(rollouts) < 2:
             return results
             
+        cache_file = None
+        if cache_dir:
+            os.makedirs(cache_dir, exist_ok=True)
+            cache_file = os.path.join(cache_dir, f"judge_{problem_id}.json")
+            if os.path.exists(cache_file):
+                try:
+                    with open(cache_file, "r", encoding="utf-8") as f:
+                        results = json.load(f)
+                    print(f"    [+] Loaded {len(results)} pairs from judge cache.")
+                except:
+                    results = {}
+
         indices = list(range(len(rollouts)))
         pairs = list(itertools.combinations(indices, 2))
         
         for i, j in pairs:
-            print(f"    [*] Evaluating pair ({i},{j})...")
+            pair_key = f"({i},{j})"
+            if pair_key in results and results[pair_key] is not None:
+                continue
+                
+            print(f"    [*] Evaluating pair {pair_key}...")
             matrix = self.evaluate_single_pair(problem, rollouts[i], rollouts[j])
+            
             if matrix is None:
-                print(f"    [!] Critical: Pair ({i},{j}) failed. Skipping problem for later retry.")
-                return None # Trả về None để skip toàn bộ bài toán này
-            results[f"({i},{j})"] = matrix
+                print(f"    [!] Critical: Pair {pair_key} failed. Saving partial progress.")
+                if cache_file:
+                    with open(cache_file, "w", encoding="utf-8") as f:
+                        json.dump(results, f, ensure_ascii=False, indent=2)
+                return None
+                
+            results[pair_key] = matrix
+            
+            if cache_file:
+                with open(cache_file, "w", encoding="utf-8") as f:
+                    json.dump(results, f, ensure_ascii=False, indent=2)
             
         return results
