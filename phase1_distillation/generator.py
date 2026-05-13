@@ -2,6 +2,7 @@ import os
 import time
 from openai import OpenAI
 import phase1_distillation.config as config
+from phase1_distillation.client_manager import rotator
 from phase1_distillation.prompts import GENERATION_PROMPT
 
 class MathRolloutGenerator:
@@ -9,10 +10,7 @@ class MathRolloutGenerator:
         self.model_id = model_id
 
     def _get_client(self):
-        return OpenAI(
-            base_url=config.API_BASE_URL,
-            api_key=os.getenv("HF_TOKEN", config.HF_TOKEN)
-        )
+        return rotator.get_client()
 
     def generate(self, problem, num_rollouts=config.K_ROLLOUTS, max_tokens=1024):
         client = self._get_client()
@@ -34,6 +32,6 @@ class MathRolloutGenerator:
             except Exception as e:
                 print(f"    [!] OpenAI Generation Error: {e}")
                 
-            time.sleep(1) # Tránh Rate Limit
+            time.sleep(2) # Tăng sleep lên 2s để tránh bị block nhanh
             
         return rollouts

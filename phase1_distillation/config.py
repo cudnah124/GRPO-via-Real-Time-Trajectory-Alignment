@@ -3,10 +3,11 @@ import os
 # Cấu hình cho OpenAI Client gọi tới Hugging Face Router
 API_BASE_URL = "https://router.huggingface.co/v1"
 
-# Bảo mật: Lấy từ biến môi trường HF_TOKEN
-HF_TOKEN = os.getenv('HF_TOKEN', '')
+# Danh sách Token để xoay vòng (Lấy từ biến môi trường để bảo mật)
+# Trong Notebook hãy set: os.environ['HF_TOKENS'] = 'token1,token2,token3'
+HF_TOKENS_STR = os.getenv('HF_TOKENS', '')
+HF_TOKENS = [t.strip() for t in HF_TOKENS_STR.split(',') if t.strip()]
 
-# Model name (User gợi ý dùng thêm hậu tố :novita nếu cần)
 MODEL_ID = "meta-llama/Llama-3.1-8B-Instruct"
 
 K_ROLLOUTS = 4

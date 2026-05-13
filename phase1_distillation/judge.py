@@ -5,16 +5,14 @@ from openai import OpenAI
 from phase1_distillation.prompts import JUDGE_PROMPT, RETRY_PROMPT
 from phase1_distillation.parser import parse_distance_matrix
 import phase1_distillation.config as config
+from phase1_distillation.client_manager import rotator
 
 class AlignmentJudge:
     def __init__(self, model_id=config.MODEL_ID):
         self.model_id = model_id
 
     def _get_client(self):
-        return OpenAI(
-            base_url=config.API_BASE_URL,
-            api_key=os.getenv("HF_TOKEN", config.HF_TOKEN)
-        )
+        return rotator.get_client()
 
     def evaluate_single_pair(self, problem, rollout_a, rollout_b):
         """Evaluate a single pair using OpenAI client with retry logic"""
@@ -48,7 +46,7 @@ class AlignmentJudge:
                 print(f"    [!] OpenAI Judge Exception: {e}")
                 time.sleep(2)
                 
-            time.sleep(1)
+            time.sleep(2)
                     
         return None
 
