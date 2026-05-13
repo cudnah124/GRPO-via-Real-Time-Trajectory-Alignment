@@ -5,13 +5,13 @@ from openai import OpenAI
 from phase1_distillation.prompts import JUDGE_PROMPT, RETRY_PROMPT
 from phase1_distillation.parser import parse_distance_matrix
 import phase1_distillation.config as config
-from phase1_distillation.client_manager import rotator
 
 class AlignmentJudge:
     def __init__(self, model_id=config.MODEL_ID):
         self.model_id = model_id
 
     def _get_client(self):
+        from phase1_distillation.client_manager import rotator
         return rotator.get_client()
 
     def evaluate_single_pair(self, problem, rollout_a, rollout_b):

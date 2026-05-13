@@ -2,7 +2,6 @@ import os
 import time
 from openai import OpenAI
 import phase1_distillation.config as config
-from phase1_distillation.client_manager import rotator
 from phase1_distillation.prompts import GENERATION_PROMPT
 
 class MathRolloutGenerator:
@@ -10,6 +9,7 @@ class MathRolloutGenerator:
         self.model_id = model_id
 
     def _get_client(self):
+        from phase1_distillation.client_manager import rotator
         return rotator.get_client()
 
     def generate(self, problem, num_rollouts=config.K_ROLLOUTS, max_tokens=1024):
