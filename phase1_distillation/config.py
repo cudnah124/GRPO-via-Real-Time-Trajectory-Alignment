@@ -1,16 +1,12 @@
 import os
 
-# Sử dụng Hugging Face Router như user cung cấp
-API_URL = "https://router.huggingface.co/v1/chat/completions"
+# Cấu hình cho OpenAI Client gọi tới Hugging Face Router
+API_BASE_URL = "https://router.huggingface.co/v1"
 
-# Dùng fallback token từ file generate_ner_hf.py
+# Bảo mật: Lấy từ biến môi trường HF_TOKEN
 HF_TOKEN = os.getenv('HF_TOKEN', '')
 
-HEADERS = {
-    "Authorization": f"Bearer {HF_TOKEN}",
-    "Content-Type": "application/json"
-}
-
+# Model name (User gợi ý dùng thêm hậu tố :novita nếu cần)
 MODEL_ID = "meta-llama/Llama-3.1-8B-Instruct"
 
 K_ROLLOUTS = 4
