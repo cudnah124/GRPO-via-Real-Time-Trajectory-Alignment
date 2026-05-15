@@ -5,15 +5,12 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import phase1_distillation.config as config
 from phase1_distillation.prompts import GENERATION_PROMPT
 
-# Tune batch size theo VRAM của máy
-ROLLOUT_BATCH_SIZE = 4   # 8GB VRAM → 2-4 | 24GB → 8+
-
 class MathRolloutGenerator:
     def __init__(self, model_id=config.GENERATOR_MODEL_ID):
         print(f"[*] Loading local model: {model_id}...")
         self.model_id = model_id
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
-
+        self.rollout_batch_size = 4
         # ✅ Fix 1: Ép dtype về bfloat16, không dùng "auto"
         # ✅ Fix 2: Chỉ load lên GPU (cuda:0), tránh CPU offload
         # ✅ Fix 3: flash_attention_2 nhanh hơn sdpa ~20-40%
@@ -71,11 +68,11 @@ class MathRolloutGenerator:
 
         # ✅ Fix 6: Sinh theo batch nhỏ thay vì tất cả cùng lúc
         # → tránh OOM, throughput thực tế cao hơn
-        print(f"    [*] Generating {needed} rollouts (batch_size={ROLLOUT_BATCH_SIZE})...")
+        print(f"    [*] Generating {needed} rollouts (batch_size={self.rollout_batch_size})...")
         
         remaining = needed
         while remaining > 0:
-            batch_size = min(remaining, ROLLOUT_BATCH_SIZE)
+            batch_size = min(remaining, self.rollout_batch_size)
 
             # ✅ Fix 7: Repeat input cho đúng batch_size, padding left
             batch_input_ids = single_input.repeat(batch_size, 1).to(self.model.device)
@@ -105,8 +102,7 @@ class MathRolloutGenerator:
             except torch.cuda.OutOfMemoryError:
                 # ✅ Fix 9: Tự động giảm batch khi OOM thay vì crash
                 print(f"    [!] OOM at batch_size={batch_size}, reducing to {batch_size // 2}...")
-                global ROLLOUT_BATCH_SIZE
-                ROLLOUT_BATCH_SIZE = max(1, batch_size // 2)
+                self.rollout_batch_size = max(1, batch_size // 2)  # ✅
                 torch.cuda.empty_cache()
                 continue
 
