@@ -14,10 +14,14 @@ def dummy_suppress_stdout():
 try:
     # Cố gắng can thiệp vào utils của vLLM trước khi nó được sử dụng
     import vllm.utils.system_utils
+    def dummy_suppress_stdout():
+        class DummyContext:
+            def __enter__(self): return self
+            def __exit__(self, exc_type, exc_val, exc_tb): pass
+        return DummyContext()
     vllm.utils.system_utils.suppress_stdout = dummy_suppress_stdout
-    print("[*] Monkey patched vLLM suppress_stdout successfully.")
-except Exception as e:
-    print(f"[*] Note: Could not monkey patch vLLM yet (normal if not installed): {e}")
+except ImportError:
+    pass
 
 # Vá lỗi fileno cho môi trường hiện tại
 if not hasattr(sys.stdout, 'fileno'):
@@ -26,13 +30,20 @@ if not hasattr(sys.stderr, 'fileno'):
     sys.stderr.fileno = lambda: 2
 
 import json
-from vllm import LLM, SamplingParams
 from transformers import AutoTokenizer
 import phase1_distillation.config as config
 from phase1_distillation.prompts import GENERATION_PROMPT
 
 class MathRolloutGenerator:
     def __init__(self, model_id=config.GENERATOR_MODEL_ID):
+        try:
+            from vllm import LLM
+            from transformers import AutoTokenizer
+        except ImportError:
+            print("[!] vLLM not found. MathRolloutGenerator will be unavailable.")
+            self.llm = None
+            return
+
         print(f"[*] Initializing vLLM engine (Hybrid Fix) with: {model_id}...")
         self.model_id = model_id
         
@@ -50,6 +61,10 @@ class MathRolloutGenerator:
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
 
     def generate_batch(self, problems, problem_ids, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=2048):
+        if self.llm is None:
+            raise ImportError("vLLM is not installed. Cannot generate rollouts.")
+        
+        from vllm import SamplingParams
         results = {}
         pending_problems = []
         pending_ids = []
