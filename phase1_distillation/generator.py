@@ -49,7 +49,7 @@ class MathRolloutGenerator:
         
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
 
-    def generate_batch(self, problems, problem_ids, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=1024):
+    def generate_batch(self, problems, problem_ids, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=2048):
         results = {}
         pending_problems = []
         pending_ids = []
@@ -113,6 +113,6 @@ class MathRolloutGenerator:
             
         return results
 
-    def generate(self, problem, problem_id, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=1024):
+    def generate(self, problem, problem_id, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=2048):
         res = self.generate_batch([problem], [problem_id], cache_dir, num_rollouts, max_tokens)
         return res.get(problem_id, [])
