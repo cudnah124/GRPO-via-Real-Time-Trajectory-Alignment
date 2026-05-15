@@ -7,7 +7,8 @@ API_BASE_URL = "https://router.huggingface.co/v1"
 HF_TOKENS_STR = os.getenv('HF_TOKENS', '')
 HF_TOKENS = [t.strip() for t in HF_TOKENS_STR.split(',') if t.strip()]
 
-MODEL_ID = "meta-llama/Llama-3.1-8B-Instruct"
+GENERATOR_MODEL_ID = "Qwen/Qwen2.5-Math-1.5B-Instruct"
+JUDGE_MODEL_ID = "meta-llama/Llama-3.1-8B-Instruct"
 
 K_ROLLOUTS = 4
 MAX_RETRIES = 8

@@ -9,7 +9,7 @@ from phase1_distillation.parser import parse_distance_matrix
 import phase1_distillation.config as config
 
 class AlignmentJudge:
-    def __init__(self, model_id=config.MODEL_ID):
+    def __init__(self, model_id=config.JUDGE_MODEL_ID):
         self.model_id = model_id
 
     def _get_client(self):
