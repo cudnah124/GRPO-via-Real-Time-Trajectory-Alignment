@@ -24,7 +24,7 @@ class MathDataset:
         
         # Load processed IDs
         processed_ids = set()
-        if os.path.exists(processed_ids_file):
+        if os.path.isfile(processed_ids_file): # Kiểm tra chính xác là FILE
             with open(processed_ids_file, "r") as f:
                 for line in f:
                     processed_ids.add(line.strip())
