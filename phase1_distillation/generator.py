@@ -1,22 +1,29 @@
 import os
 import sys
+import contextlib
 
-# ✅ THIẾT LẬP MÔI TRƯỜNG TRƯỚC KHI IMPORT VLLM
+# ✅ BIỆN PHÁP MẠNH: Monkey Patch vLLM ngay lập tức
 os.environ["VLLM_USE_V1"] = "0"
 os.environ["VLLM_NO_USAGE_STATS"] = "1"
 
-# Vá lỗi fileno cho cả tiến trình chính
-import io
+# Tạo một hàm giả lập không làm gì cả để thay thế hàm gây lỗi của vLLM
+@contextlib.contextmanager
+def dummy_suppress_stdout():
+    yield
+
+try:
+    # Cố gắng can thiệp vào utils của vLLM trước khi nó được sử dụng
+    import vllm.utils.system_utils
+    vllm.utils.system_utils.suppress_stdout = dummy_suppress_stdout
+    print("[*] Monkey patched vLLM suppress_stdout successfully.")
+except Exception as e:
+    print(f"[*] Note: Could not monkey patch vLLM yet (normal if not installed): {e}")
+
+# Vá lỗi fileno cho môi trường hiện tại
 if not hasattr(sys.stdout, 'fileno'):
-    try:
-        sys.stdout.fileno = lambda: 1
-    except:
-        pass
+    sys.stdout.fileno = lambda: 1
 if not hasattr(sys.stderr, 'fileno'):
-    try:
-        sys.stderr.fileno = lambda: 2
-    except:
-        pass
+    sys.stderr.fileno = lambda: 2
 
 import json
 from vllm import LLM, SamplingParams
@@ -26,17 +33,18 @@ from phase1_distillation.prompts import GENERATION_PROMPT
 
 class MathRolloutGenerator:
     def __init__(self, model_id=config.GENERATOR_MODEL_ID):
-        print(f"[*] Initializing vLLM engine (V0) with: {model_id}...")
+        print(f"[*] Initializing vLLM engine (Hybrid Fix) with: {model_id}...")
         self.model_id = model_id
         
-        # Cấu hình engine vLLM V0
+        # Khởi tạo engine vLLM
+        # enforce_eager=True rất quan trọng để tránh các lỗi khởi tạo phức tạp trên Colab
         self.llm = LLM(
             model=model_id,
             gpu_memory_utilization=0.7, 
             max_model_len=4096,
             trust_remote_code=True,
             enforce_eager=True,
-            disable_log_stats=True # Tắt log thống kê để tránh lỗi fileno khi in ấn
+            disable_log_stats=True
         )
         
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
@@ -82,9 +90,10 @@ class MathRolloutGenerator:
             max_tokens=max_tokens,
         )
 
-        print(f"    [*] vLLM (V0) Generating: {len(pending_problems)} problems...")
+        print(f"    [*] vLLM Generating: {len(pending_problems)} problems...")
         
         try:
+            # vLLM (V0) sẽ chạy mượt mà sau khi đã được Monkey Patch
             outputs = self.llm.generate(prompts, sampling_params, use_tqdm=True)
             
             for i, output in enumerate(outputs):
