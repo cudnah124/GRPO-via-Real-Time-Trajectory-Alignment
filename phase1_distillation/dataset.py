@@ -8,9 +8,9 @@ def get_problem_id(problem_text):
 
 class MathDataset:
     @staticmethod
-    def load_with_resume(processed_ids_file, sample_size=None):
+    def load_with_resume(processed_ids_file, cache_dir=None, sample_size=None):
         """
-        Load dataset OpenThoughts-114k và lọc bỏ những câu hỏi đã xử lý
+        Load dataset OpenThoughts-114k và lọc bỏ những câu hỏi đã xử lý (hoặc đã có trong cache)
         """
         print("Loading OpenThoughts-114k dataset...")
         try:
@@ -30,12 +30,18 @@ class MathDataset:
                     processed_ids.add(line.strip())
             print(f"Đã tìm thấy {len(processed_ids)} bài toán đã được xử lý từ trước.")
             
-        # Filter out processed
-        def is_not_processed(example):
+        # Filter out processed OR already in cache
+        def is_not_processed_or_cached(example):
             pid = get_problem_id(example['problem'])
-            return pid not in processed_ids
+            if pid in processed_ids:
+                return False
+            if cache_dir:
+                cache_path = os.path.join(cache_dir, f"{pid}.json")
+                if os.path.exists(cache_path):
+                    return False
+            return True
             
-        ds_filtered = ds_math.filter(is_not_processed)
+        ds_filtered = ds_math.filter(is_not_processed_or_cached)
         print(f"Còn lại {len(ds_filtered)} bài toán sau khi lọc.")
         
         if sample_size is not None:
