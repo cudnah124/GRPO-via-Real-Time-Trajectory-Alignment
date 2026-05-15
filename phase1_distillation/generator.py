@@ -10,9 +10,8 @@ class MathRolloutGenerator:
         print(f"[*] Loading local model: {model_id}...")
         self.model_id = model_id
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
-        self.rollout_batch_size = 4
         
-        # Sử dụng bfloat16 và ép lên GPU cuda:0 để tối ưu tốc độ
+        # Tối ưu cho GPU T4
         self.model = AutoModelForCausalLM.from_pretrained(
             model_id,
             torch_dtype=torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16,
@@ -24,42 +23,55 @@ class MathRolloutGenerator:
         if self.tokenizer.pad_token is None:
             self.tokenizer.pad_token = self.tokenizer.eos_token
         
-        # Bắt buộc padding_side="left" cho batch generation
+        # QUAN TRỌNG: padding_side phải là "left" cho batch generation
         self.tokenizer.padding_side = "left"
 
-        print(f"[*] Model loaded on: {next(self.model.parameters()).device}")
-
     @torch.inference_mode()
-    def generate(self, problem, problem_id, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=1024):
-        rollouts = []
-        cache_file = None
+    def generate_batch(self, problems, problem_ids, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=1024):
+        """
+        Xử lý nhiều bài toán cùng lúc để tối ưu GPU throughput.
+        problems: list of strings
+        problem_ids: list of strings
+        """
+        results = {}
+        pending_problems = []
+        pending_ids = []
         
-        # 1. Load cache
-        if cache_dir:
-            os.makedirs(cache_dir, exist_ok=True)
-            cache_file = os.path.join(cache_dir, f"{problem_id}.json")
-            if os.path.exists(cache_file):
+        # 1. Kiểm tra cache và lọc ra những bài cần sinh mới
+        for prob, p_id in zip(problems, problem_ids):
+            cache_file = os.path.join(cache_dir, f"{p_id}.json") if cache_dir else None
+            if cache_file and os.path.exists(cache_file):
                 try:
                     with open(cache_file, "r", encoding="utf-8") as f:
-                        rollouts = json.load(f)
-                    print(f"    [+] Loaded {len(rollouts)} rollouts from cache.")
-                except Exception:
-                    rollouts = []
+                        cached_data = json.load(f)
+                        if len(cached_data) >= num_rollouts:
+                            results[p_id] = cached_data[:num_rollouts]
+                            continue
+                except:
+                    pass
+            
+            pending_problems.append(prob)
+            pending_ids.append(p_id)
+            results[p_id] = [] # Khởi tạo danh sách rỗng
 
-        if len(rollouts) >= num_rollouts:
-            return rollouts[:num_rollouts]
+        if not pending_problems:
+            return results
 
-        needed = num_rollouts - len(rollouts)
-        messages = [
-            {"role": "system", "content": GENERATION_PROMPT},
-            {"role": "user", "content": problem}
-        ]
+        # 2. Chuẩn bị Batch Prompts
+        batch_prompts = []
+        for prob in pending_problems:
+            messages = [
+                {"role": "system", "content": GENERATION_PROMPT},
+                {"role": "user", "content": prob}
+            ]
+            # Dùng apply_chat_template nhưng không tokenize ngay để dễ pad
+            prompt_text = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
+            batch_prompts.append(prompt_text)
 
-        # 2. Chuẩn bị input (trả về BatchEncoding)
-        inputs = self.tokenizer.apply_chat_template(
-            messages,
-            add_generation_prompt=True,
-            return_dict=True,
+        # Tokenize cả batch với padding
+        inputs = self.tokenizer(
+            batch_prompts,
+            padding=True,
             return_tensors="pt"
         ).to(self.model.device)
         
@@ -67,49 +79,48 @@ class MathRolloutGenerator:
         attention_mask = inputs["attention_mask"]
         prompt_len = input_ids.shape[-1]
 
-        # 3. Sinh theo batch
-        remaining = needed
-        print(f"    [*] Generating {needed} rollouts (batch_size={self.rollout_batch_size})...")
+        # 3. Sinh rollouts song song
+        # Tổng batch thực tế = số bài toán * num_rollouts
+        print(f"    [*] Batch Generating: {len(pending_problems)} problems x {num_rollouts} rollouts...")
         
-        while remaining > 0:
-            batch_size = min(remaining, self.rollout_batch_size)
+        try:
+            outputs = self.model.generate(
+                input_ids,
+                attention_mask=attention_mask,
+                max_new_tokens=max_tokens,
+                do_sample=True,
+                temperature=0.7,
+                num_return_sequences=num_rollouts, # Sinh K rollouts cho MỖI câu hỏi
+                pad_token_id=self.tokenizer.pad_token_id
+            )
             
-            # Repeat input cho batch
-            batch_input_ids = input_ids.repeat(batch_size, 1)
-            batch_attention_mask = attention_mask.repeat(batch_size, 1)
-
-            try:
-                outputs = self.model.generate(
-                    batch_input_ids,
-                    attention_mask=batch_attention_mask,
-                    max_new_tokens=max_tokens,
-                    do_sample=True,
-                    temperature=0.7,
-                    pad_token_id=self.tokenizer.pad_token_id
-                )
+            # 4. Tách kết quả trả về đúng cho từng bài toán
+            # Output shape: (len(pending_problems) * num_rollouts, seq_len)
+            for i, p_id in enumerate(pending_ids):
+                start_idx = i * num_rollouts
+                end_idx = start_idx + num_rollouts
                 
-                # Giải mã
-                for output in outputs:
-                    gen_text = self.tokenizer.decode(output[prompt_len:], skip_special_tokens=True)
-                    rollouts.append(gen_text)
-                    print(f"    [+] Decoded rollout {len(rollouts)}/{num_rollouts}")
+                problem_rollouts = []
+                for j in range(start_idx, end_idx):
+                    gen_text = self.tokenizer.decode(outputs[j][prompt_len:], skip_special_tokens=True)
+                    problem_rollouts.append(gen_text)
                 
-                remaining -= batch_size
+                results[p_id] = problem_rollouts
                 
-                # Lưu cache ngay lập tức
-                if cache_file:
+                # Lưu vào cache
+                if cache_dir:
+                    cache_file = os.path.join(cache_dir, f"{p_id}.json")
                     with open(cache_file, "w", encoding="utf-8") as f:
-                        json.dump(rollouts, f, ensure_ascii=False, indent=2)
+                        json.dump(problem_rollouts, f, ensure_ascii=False, indent=2)
                         
-            except torch.cuda.OutOfMemoryError:
-                # ✅ Thêm block này
-                torch.cuda.empty_cache()
-                self.rollout_batch_size = max(1, batch_size // 2)
-                print(f"    [!] OOM — giảm batch_size xuống {self.rollout_batch_size}")
-                continue  # Thử lại với batch nhỏ hơn
-
-            except Exception as e:
-                print(f"    [!] Generation Error: {e}")
-                break
+            print(f"    [+] Batch completed for {len(pending_problems)} problems.")
             
-        return rollouts
+        except Exception as e:
+            print(f"    [!] Batch Generation Error: {e}")
+            
+        return results
+
+    # Giữ lại hàm generate cũ để tương thích (gọi qua generate_batch)
+    def generate(self, problem, problem_id, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=1024):
+        res = self.generate_batch([problem], [problem_id], cache_dir, num_rollouts, max_tokens)
+        return res.get(problem_id, [])
