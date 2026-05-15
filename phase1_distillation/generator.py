@@ -18,7 +18,7 @@ class MathRolloutGenerator:
             model_id,
             torch_dtype=torch.bfloat16,          # hoặc float16 nếu GPU cũ không hỗ trợ bf16
             device_map="cuda:0",                  # Explicit GPU, không để "auto" tự split
-            attn_implementation="flash_attention_2"  # pip install flash-attn --no-build-isolation
+            attn_implementation="sdpa"  # pip install flash-attn --no-build-isolation
         )
         self.model.eval()  # ✅ Fix 4: Tắt dropout layers
 
