@@ -18,7 +18,6 @@ class AlignmentJudge:
 
     def evaluate_single_pair(self, problem, rollout_a, rollout_b):
         """Evaluate a single pair using OpenAI client with retry logic"""
-        client = self._get_client()
         content = f"Problem: {problem}\n\nRollout A:\n{rollout_a}\n\nRollout B:\n{rollout_b}"
         messages = [
             {"role": "system", "content": JUDGE_PROMPT},
@@ -26,6 +25,7 @@ class AlignmentJudge:
         ]
         
         for attempt in range(config.MAX_RETRIES):
+            client = self._get_client() # Di chuyển vào trong loop để đổi Token nếu lỗi
             try:
                 response = client.chat.completions.create(
                     model=self.model_id,
