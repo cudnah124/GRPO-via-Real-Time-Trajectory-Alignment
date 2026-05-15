@@ -13,12 +13,14 @@ class MathRolloutGenerator:
         self.model = AutoModelForCausalLM.from_pretrained(
             model_id,
             torch_dtype="auto",
-            device_map="auto"
+            device_map="auto",
+            attn_implementation="sdpa" # Kích hoạt bộ tăng tốc Attention của PyTorch
         )
         # Đảm bảo tokenizer có pad_token
         if self.tokenizer.pad_token is None:
             self.tokenizer.pad_token = self.tokenizer.eos_token
 
+    @torch.inference_mode()
     def generate(self, problem, problem_id, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=1024):
         rollouts = []
         cache_file = None
@@ -69,9 +71,10 @@ class MathRolloutGenerator:
                 
                 # Giải mã kết quả (chỉ lấy phần text sinh mới)
                 prompt_len = input_ids.shape[-1]
-                for output in outputs:
+                for i, output in enumerate(outputs):
                     gen_text = self.tokenizer.decode(output[prompt_len:], skip_special_tokens=True)
                     rollouts.append(gen_text)
+                    print(f"    [+] Decoded rollout {len(rollouts)}/{num_rollouts}")
                 
                 # Lưu vào cache sau khi sinh xong
                 if cache_file:
