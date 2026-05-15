@@ -1,18 +1,24 @@
 import os
 import sys
-import json
-import io
 
-# ✅ VÁ LỖI Colab: Giả lập fileno cho sys.stdout/stderr
-# vLLM cần cái này để khởi tạo engine trong môi trường Notebook
-if not hasattr(sys.stdout, 'fileno'):
-    sys.stdout.fileno = lambda: 1
-if not hasattr(sys.stderr, 'fileno'):
-    sys.stderr.fileno = lambda: 2
-
-# Tắt vLLM V1 (đang thử nghiệm) để dùng bản V0 ổn định hơn trên Colab
+# ✅ THIẾT LẬP MÔI TRƯỜNG TRƯỚC KHI IMPORT VLLM
 os.environ["VLLM_USE_V1"] = "0"
+os.environ["VLLM_NO_USAGE_STATS"] = "1"
 
+# Vá lỗi fileno cho cả tiến trình chính
+import io
+if not hasattr(sys.stdout, 'fileno'):
+    try:
+        sys.stdout.fileno = lambda: 1
+    except:
+        pass
+if not hasattr(sys.stderr, 'fileno'):
+    try:
+        sys.stderr.fileno = lambda: 2
+    except:
+        pass
+
+import json
 from vllm import LLM, SamplingParams
 from transformers import AutoTokenizer
 import phase1_distillation.config as config
@@ -23,14 +29,14 @@ class MathRolloutGenerator:
         print(f"[*] Initializing vLLM engine (V0) with: {model_id}...")
         self.model_id = model_id
         
-        # Khởi tạo engine vLLM
-        # Giảm gpu_memory_utilization xuống 0.7 để an toàn tuyệt đối trên T4
+        # Cấu hình engine vLLM V0
         self.llm = LLM(
             model=model_id,
             gpu_memory_utilization=0.7, 
             max_model_len=4096,
             trust_remote_code=True,
-            enforce_eager=True # Giúp tránh lỗi khởi tạo CUDA phức tạp
+            enforce_eager=True,
+            disable_log_stats=True # Tắt log thống kê để tránh lỗi fileno khi in ấn
         )
         
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
@@ -61,7 +67,6 @@ class MathRolloutGenerator:
         if not pending_problems:
             return results
 
-        # Chuẩn bị Prompts
         prompts = []
         for prob in pending_problems:
             messages = [
@@ -71,17 +76,16 @@ class MathRolloutGenerator:
             prompt_text = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
             prompts.append(prompt_text)
 
-        # Cấu hình Sampling
         sampling_params = SamplingParams(
             n=num_rollouts, 
             temperature=0.7,
             max_tokens=max_tokens,
         )
 
-        print(f"    [*] vLLM Generating: {len(pending_problems)} problems...")
+        print(f"    [*] vLLM (V0) Generating: {len(pending_problems)} problems...")
         
         try:
-            outputs = self.llm.generate(prompts, sampling_params)
+            outputs = self.llm.generate(prompts, sampling_params, use_tqdm=True)
             
             for i, output in enumerate(outputs):
                 p_id = pending_ids[i]
