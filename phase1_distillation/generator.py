@@ -44,14 +44,15 @@ class MathRolloutGenerator:
             ]
             
             # Chuẩn bị input cho model
-            input_ids = self.tokenizer.apply_chat_template(
+            inputs = self.tokenizer.apply_chat_template(
                 messages,
                 add_generation_prompt=True,
+                return_dict=True,
                 return_tensors="pt"
             ).to(self.model.device)
             
-            # Tạo attention mask
-            attention_mask = torch.ones_like(input_ids).to(self.model.device)
+            input_ids = inputs["input_ids"]
+            attention_mask = inputs["attention_mask"]
 
             print(f"    [*] Generating {needed} new rollouts locally...")
             try:
