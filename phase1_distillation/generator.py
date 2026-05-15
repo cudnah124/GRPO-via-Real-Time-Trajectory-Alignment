@@ -11,33 +11,30 @@ class MathRolloutGenerator:
         self.model_id = model_id
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
         self.rollout_batch_size = 4
-        # ✅ Fix 1: Ép dtype về bfloat16, không dùng "auto"
-        # ✅ Fix 2: Chỉ load lên GPU (cuda:0), tránh CPU offload
-        # ✅ Fix 3: flash_attention_2 nhanh hơn sdpa ~20-40%
+        
+        # Sử dụng bfloat16 và ép lên GPU cuda:0 để tối ưu tốc độ
         self.model = AutoModelForCausalLM.from_pretrained(
             model_id,
-            torch_dtype=torch.bfloat16,          # hoặc float16 nếu GPU cũ không hỗ trợ bf16
-            device_map="cuda:0",                  # Explicit GPU, không để "auto" tự split
-            attn_implementation="sdpa"  # pip install flash-attn --no-build-isolation
+            torch_dtype=torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16,
+            device_map="cuda:0",
+            attn_implementation="sdpa"
         )
-        self.model.eval()  # ✅ Fix 4: Tắt dropout layers
+        self.model.eval()
 
         if self.tokenizer.pad_token is None:
             self.tokenizer.pad_token = self.tokenizer.eos_token
         
-        # ✅ Fix 5: padding_side="left" bắt buộc khi batch generate
+        # Bắt buộc padding_side="left" cho batch generation
         self.tokenizer.padding_side = "left"
 
         print(f"[*] Model loaded on: {next(self.model.parameters()).device}")
-        print(f"[*] Model dtype: {next(self.model.parameters()).dtype}")
 
     @torch.inference_mode()
-    def generate(self, problem, problem_id, cache_dir=None,
-                 num_rollouts=config.K_ROLLOUTS, max_tokens=1024):
+    def generate(self, problem, problem_id, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=1024):
         rollouts = []
         cache_file = None
-
-        # Load cache
+        
+        # 1. Load cache
         if cache_dir:
             os.makedirs(cache_dir, exist_ok=True)
             cache_file = os.path.join(cache_dir, f"{problem_id}.json")
@@ -58,65 +55,61 @@ class MathRolloutGenerator:
             {"role": "user", "content": problem}
         ]
 
-        # Chuẩn bị 1 lần, dùng lại cho tất cả batches
-        single_input = self.tokenizer.apply_chat_template(
+        # 2. Chuẩn bị input (trả về BatchEncoding)
+        inputs = self.tokenizer.apply_chat_template(
             messages,
             add_generation_prompt=True,
+            return_dict=True,
             return_tensors="pt"
-        )
-        prompt_len = single_input.shape[-1]
+        ).to(self.model.device)
+        
+        input_ids = inputs["input_ids"]
+        attention_mask = inputs["attention_mask"]
+        prompt_len = input_ids.shape[-1]
 
-        # ✅ Fix 6: Sinh theo batch nhỏ thay vì tất cả cùng lúc
-        # → tránh OOM, throughput thực tế cao hơn
+        # 3. Sinh theo batch
+        remaining = needed
         print(f"    [*] Generating {needed} rollouts (batch_size={self.rollout_batch_size})...")
         
-        remaining = needed
         while remaining > 0:
             batch_size = min(remaining, self.rollout_batch_size)
-
-            # ✅ Fix 7: Repeat input cho đúng batch_size, padding left
-            batch_input_ids = single_input.repeat(batch_size, 1).to(self.model.device)
-            attention_mask = torch.ones_like(batch_input_ids)
+            
+            # Repeat input cho batch
+            batch_input_ids = input_ids.repeat(batch_size, 1)
+            batch_attention_mask = attention_mask.repeat(batch_size, 1)
 
             try:
                 outputs = self.model.generate(
                     batch_input_ids,
-                    attention_mask=attention_mask,
+                    attention_mask=batch_attention_mask,
                     max_new_tokens=max_tokens,
                     do_sample=True,
                     temperature=0.7,
-                    num_return_sequences=1,   # ✅ Fix 8: =1 vì đã repeat input thủ công
-                    pad_token_id=self.tokenizer.pad_token_id,
-                    use_cache=True,           # ✅ KV-cache (default=True, để tường minh)
+                    pad_token_id=self.tokenizer.pad_token_id
                 )
-
+                
+                # Giải mã
                 for output in outputs:
-                    gen_text = self.tokenizer.decode(
-                        output[prompt_len:], skip_special_tokens=True
-                    )
+                    gen_text = self.tokenizer.decode(output[prompt_len:], skip_special_tokens=True)
                     rollouts.append(gen_text)
-                    print(f"    [+] Rollout {len(rollouts)}/{num_rollouts} done")
-
+                    print(f"    [+] Decoded rollout {len(rollouts)}/{num_rollouts}")
+                
                 remaining -= batch_size
-
+                
+                # Lưu cache ngay lập tức
+                if cache_file:
+                    with open(cache_file, "w", encoding="utf-8") as f:
+                        json.dump(rollouts, f, ensure_ascii=False, indent=2)
+                        
             except torch.cuda.OutOfMemoryError:
-                # ✅ Fix 9: Tự động giảm batch khi OOM thay vì crash
-                print(f"    [!] OOM at batch_size={batch_size}, reducing to {batch_size // 2}...")
-                self.rollout_batch_size = max(1, batch_size // 2)  # ✅
+                # ✅ Thêm block này
                 torch.cuda.empty_cache()
-                continue
+                self.rollout_batch_size = max(1, batch_size // 2)
+                print(f"    [!] OOM — giảm batch_size xuống {self.rollout_batch_size}")
+                continue  # Thử lại với batch nhỏ hơn
 
             except Exception as e:
                 print(f"    [!] Generation Error: {e}")
                 break
-
-        # Lưu cache
-        if cache_file and rollouts:
-            with open(cache_file, "w", encoding="utf-8") as f:
-                json.dump(rollouts, f, ensure_ascii=False, indent=2)
-
-        if len(rollouts) < num_rollouts:
-            print(f"    [!] Not enough rollouts ({len(rollouts)}/{num_rollouts}).")
-            return []
-
-        return rollouts[:num_rollouts]
+            
+        return rollouts
