@@ -8,7 +8,7 @@ HF_TOKENS_STR = os.getenv('HF_TOKENS', '')
 HF_TOKENS = [t.strip() for t in HF_TOKENS_STR.split(',') if t.strip()]
 
 GENERATOR_MODEL_ID = "Qwen/Qwen2.5-Math-1.5B-Instruct"
-JUDGE_MODEL_ID = "drawais/Qwen2.5-Math-7B-Instruct-AWQ-INT4"
+JUDGE_MODEL_ID = "Qwen/Qwen2.5-7B-Instruct-AWQ"
 
 K_ROLLOUTS = 4
 MAX_RETRIES = 8
