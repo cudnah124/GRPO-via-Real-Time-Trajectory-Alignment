@@ -19,7 +19,7 @@ class AlignmentJudge:
         # Khởi tạo engine vLLM cho Judge
         self.llm = LLM(
             model=model_id,
-            quantization="awq", # Ép kiểu AWQ để tránh lỗi KeyError
+            quantization="compressed-tensors", # Khớp với config.json của model
             gpu_memory_utilization=0.9, 
             max_model_len=4096,
             trust_remote_code=True,
