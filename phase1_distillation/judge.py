@@ -58,8 +58,18 @@ class AlignmentJudge:
             for i, j in itertools.combinations(indices, 2):
                 pair_key = f"({i},{j})"
                 if pair_key not in results_by_prob[p_id] or results_by_prob[p_id][pair_key] is None:
+                    # TẠO PROMPT VÀ KIỂM TRA ĐỘ DÀI
                     content = f"Problem: {prob}\n\nRollout A:\n{rollouts[i]}\n\nRollout B:\n{rollouts[j]}"
                     prompt = f"<|im_start|>system\n{JUDGE_PROMPT}<|im_end|>\n<|im_start|>user\n{content}<|im_end|>\n<|im_start|>assistant\n"
+                    
+                    # Kiểm tra và cắt tỉa nếu quá dài (Safety Check)
+                    tokens = self.llm.get_tokenizer().encode(prompt)
+                    if len(tokens) > 4090: # Dự phòng 6 token cho assistant
+                        print(f"    [!] Warning: Pair {pair_key} in {p_id[:8]} too long ({len(tokens)} tokens). Truncating...")
+                        # Cắt bớt content (giữ lại system prompt)
+                        truncated_content = content[:len(content)//2] # Cắt thô để test, có thể cải tiến
+                        prompt = f"<|im_start|>system\n{JUDGE_PROMPT}<|im_end|>\n<|im_start|>user\n{truncated_content}<|im_end|>\n<|im_start|>assistant\n"
+                    
                     all_prompts.append(prompt)
                     mapping.append((p_id, pair_key))
 
