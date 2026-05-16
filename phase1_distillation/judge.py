@@ -19,8 +19,9 @@ class AlignmentJudge:
         # Khởi tạo engine vLLM cho Judge
         self.llm = LLM(
             model=model_id,
+            quantization="awq", # Ép kiểu AWQ để tránh lỗi KeyError
             gpu_memory_utilization=0.9, 
-            max_model_len=4096, # Khớp với giới hạn của model AWQ
+            max_model_len=4096,
             trust_remote_code=True,
             enforce_eager=True,
             disable_log_stats=True
