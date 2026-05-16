@@ -20,7 +20,7 @@ class AlignmentJudge:
         self.llm = LLM(
             model=model_id,
             gpu_memory_utilization=0.9, 
-            max_model_len=8192,
+            max_model_len=4096, # Khớp với giới hạn của model AWQ
             trust_remote_code=True,
             enforce_eager=True,
             disable_log_stats=True
