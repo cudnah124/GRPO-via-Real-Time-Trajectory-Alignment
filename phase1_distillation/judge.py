@@ -32,52 +32,62 @@ class AlignmentJudge:
             max_tokens=2048
         )
 
-    def evaluate_pairs(self, problem, problem_id, rollouts, cache_dir=None):
-        """Evaluate all combinations C(K,2) using LOCAL vLLM with batching"""
-        if len(rollouts) < 2:
-            return {}
+    def evaluate_batch(self, problems_data, cache_dir=None):
+        """
+        Evaluate multiple problems in parallel.
+        problems_data: list of dicts {"id": ..., "problem": ..., "rollouts": ...}
+        """
+        all_prompts = []
+        mapping = [] # Để biết prompt nào thuộc về bài nào, cặp nào
+        results_by_prob = {d['id']: {} for d in problems_data}
+        
+        # 1. Thu thập toàn bộ các cặp từ tất cả các bài toán
+        for data in problems_data:
+            p_id, prob, rollouts = data['id'], data['problem'], data['rollouts']
+            if len(rollouts) < 2: continue
             
-        results = {}
-        cache_file = None
-        if cache_dir:
-            os.makedirs(cache_dir, exist_ok=True)
-            cache_file = os.path.join(cache_dir, f"judge_{problem_id}.json")
-            if os.path.exists(cache_file):
+            # Kiểm tra cache trước
+            cache_file = os.path.join(cache_dir, f"judge_{p_id}.json") if cache_dir else None
+            if cache_file and os.path.exists(cache_file):
                 try:
                     with open(cache_file, "r", encoding="utf-8") as f:
-                        results = json.load(f)
-                    print(f"    [+] Loaded {len(results)} pairs from judge cache.")
-                except:
-                    results = {}
+                        results_by_prob[p_id] = json.load(f)
+                except: pass
 
-        indices = list(range(len(rollouts)))
-        all_pairs = list(itertools.combinations(indices, 2))
-        
-        pending_pairs = []
-        prompts = []
-        for i, j in all_pairs:
-            pair_key = f"({i},{j})"
-            if pair_key not in results or results[pair_key] is None:
-                pending_pairs.append(pair_key)
-                content = f"Problem: {problem}\n\nRollout A:\n{rollouts[i]}\n\nRollout B:\n{rollouts[j]}"
-                prompt = f"<|im_start|>system\n{JUDGE_PROMPT}<|im_end|>\n<|im_start|>user\n{content}<|im_end|>\n<|im_start|>assistant\n"
-                prompts.append(prompt)
+            indices = list(range(len(rollouts)))
+            for i, j in itertools.combinations(indices, 2):
+                pair_key = f"({i},{j})"
+                if pair_key not in results_by_prob[p_id] or results_by_prob[p_id][pair_key] is None:
+                    content = f"Problem: {prob}\n\nRollout A:\n{rollouts[i]}\n\nRollout B:\n{rollouts[j]}"
+                    prompt = f"<|im_start|>system\n{JUDGE_PROMPT}<|im_end|>\n<|im_start|>user\n{content}<|im_end|>\n<|im_start|>assistant\n"
+                    all_prompts.append(prompt)
+                    mapping.append((p_id, pair_key))
 
-        if prompts:
-            print(f"    [*] Batch Judging {len(prompts)} pairs locally...")
-            outputs = self.llm.generate(prompts, self.sampling_params)
+        # 2. Chạy vLLM một lần cho TẤT CẢ các cặp
+        if all_prompts:
+            print(f"    [*] vLLM Parallel Judging {len(all_prompts)} pairs across {len(problems_data)} problems...")
+            outputs = self.llm.generate(all_prompts, self.sampling_params)
             
-            for pair_key, output in zip(pending_pairs, outputs):
+            for (p_id, pair_key), output in zip(mapping, outputs):
                 raw_text = output.outputs[0].text
                 try:
                     matrix = parse_distance_matrix(raw_text)
-                    results[pair_key] = matrix
+                    results_by_prob[p_id][pair_key] = matrix
                 except Exception as e:
-                    print(f"    [!] Failed to parse matrix for {pair_key}: {e}")
-                    results[pair_key] = None
+                    results_by_prob[p_id][pair_key] = None
 
-            if cache_file:
-                with open(cache_file, "w", encoding="utf-8") as f:
-                    json.dump(results, f, ensure_ascii=False, indent=2)
-            
-        return results
+            # 3. Lưu cache cho từng bài
+            if cache_dir:
+                for p_id in results_by_prob:
+                    if results_by_prob[p_id]:
+                        c_file = os.path.join(cache_dir, f"judge_{p_id}.json")
+                        with open(c_file, "w", encoding="utf-8") as f:
+                            json.dump(results_by_prob[p_id], f, ensure_ascii=False, indent=2)
+
+        return results_by_prob
+
+    def evaluate_pairs(self, problem, problem_id, rollouts, cache_dir=None):
+        """Giữ lại hàm cũ để tương thích ngược, nhưng gọi sang evaluate_batch"""
+        data = {"id": problem_id, "problem": problem, "rollouts": rollouts}
+        batch_results = self.evaluate_batch([data], cache_dir=cache_dir)
+        return batch_results.get(problem_id, {})
