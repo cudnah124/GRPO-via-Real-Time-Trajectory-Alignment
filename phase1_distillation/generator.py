@@ -1,23 +1,9 @@
-import os
-import sys
-import contextlib
-
-# ✅ BIỆN PHÁP MẠNH: Monkey Patch vLLM ngay lập tức
-os.environ["VLLM_USE_V1"] = "0"
-os.environ["VLLM_NO_USAGE_STATS"] = "1"
-
-# Tạo một hàm giả lập không làm gì cả để thay thế hàm gây lỗi của vLLM
-@contextlib.contextmanager
-def dummy_suppress_stdout():
-    yield
-
-# No early monkey patch of vllm to prevent import failures
-
-# Vá lỗi fileno cho môi trường hiện tại
-if not hasattr(sys.stdout, 'fileno'):
-    sys.stdout.fileno = lambda: 1
-if not hasattr(sys.stderr, 'fileno'):
-    sys.stderr.fileno = lambda: 2
+# ✅ BIỆN PHÁP MẠNH: Monkey Patch ipykernel OutStream class-level fileno
+try:
+    import ipykernel.iostream
+    ipykernel.iostream.OutStream.fileno = lambda self: 1
+except:
+    pass
 
 import json
 from transformers import AutoTokenizer
@@ -36,16 +22,10 @@ class MathRolloutGenerator:
             self.llm = None
             return
 
-        print(f"[*] Initializing vLLM engine (Classic V0) with: {model_id}...")
+        print(f"[*] Initializing vLLM engine with: {model_id}...")
         self.model_id = model_id
         
-        # Thiết lập toàn bộ các biến môi trường để ép vLLM chạy bản V0 cổ điển
-        os.environ["VLLM_USE_V1"] = "0"
-        os.environ["VLLM_USE_V2"] = "0"
-        os.environ["VLLM_USE_V1_ENGINE"] = "0"
-        os.environ["VLLM_USE_V2_ENGINE"] = "0"
-        
-        # Khởi tạo engine vLLM sử dụng V0
+        # Khởi tạo engine vLLM
         self.llm = LLM(
             model=model_id,
             gpu_memory_utilization=0.7, 
