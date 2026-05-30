@@ -39,8 +39,10 @@ class MathRolloutGenerator:
         try:
             from vllm import LLM
             from transformers import AutoTokenizer
-        except ImportError:
-            print("[!] vLLM not found. MathRolloutGenerator will be unavailable.")
+        except ImportError as e:
+            import traceback
+            print(f"[!] vLLM import failed with error: {e}")
+            traceback.print_exc()
             self.llm = None
             return
 
