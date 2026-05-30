@@ -40,7 +40,8 @@ class MathRolloutGenerator:
         self.model_id = model_id
         
         # Thiết lập biến môi trường hệ thống để tắt V1 engine trước khi vLLM chạy
-        os.environ["VLLM_USE_V1"] = "0"
+        os.environ["VLLM_USE_V1"] = "false"
+        os.environ["VLLM_USE_V1_ENGINE"] = "false"
         
         # Khởi tạo engine vLLM sử dụng V0
         self.llm = LLM(
