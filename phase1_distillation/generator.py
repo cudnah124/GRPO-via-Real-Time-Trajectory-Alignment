@@ -36,18 +36,21 @@ class MathRolloutGenerator:
             self.llm = None
             return
 
-        print(f"[*] Initializing vLLM engine (Hybrid Fix) with: {model_id}...")
+        print(f"[*] Initializing vLLM engine (Classic V0) with: {model_id}...")
         self.model_id = model_id
         
-        # Khởi tạo engine vLLM
-        # enforce_eager=True rất quan trọng để tránh các lỗi khởi tạo phức tạp trên Colab
+        # Thiết lập biến môi trường ép buộc tắt V1 của vLLM
+        os.environ["VLLM_USE_V1"] = "0"
+        
+        # Khởi tạo engine vLLM sử dụng V0
         self.llm = LLM(
             model=model_id,
             gpu_memory_utilization=0.7, 
             max_model_len=4096,
             trust_remote_code=True,
             enforce_eager=True,
-            disable_log_stats=True
+            disable_log_stats=True,
+            v1=False # Chỉ định tường minh tắt V1 engine
         )
         
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
