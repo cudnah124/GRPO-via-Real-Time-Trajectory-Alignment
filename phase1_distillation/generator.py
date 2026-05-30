@@ -11,17 +11,7 @@ os.environ["VLLM_NO_USAGE_STATS"] = "1"
 def dummy_suppress_stdout():
     yield
 
-try:
-    # Cố gắng can thiệp vào utils của vLLM trước khi nó được sử dụng
-    import vllm.utils.system_utils
-    def dummy_suppress_stdout():
-        class DummyContext:
-            def __enter__(self): return self
-            def __exit__(self, exc_type, exc_val, exc_tb): pass
-        return DummyContext()
-    vllm.utils.system_utils.suppress_stdout = dummy_suppress_stdout
-except ImportError:
-    pass
+# No early monkey patch of vllm to prevent import failures
 
 # Vá lỗi fileno cho môi trường hiện tại
 if not hasattr(sys.stdout, 'fileno'):
