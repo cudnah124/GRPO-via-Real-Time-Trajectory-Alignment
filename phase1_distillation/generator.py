@@ -1,9 +1,6 @@
-# ✅ BIỆN PHÁP MẠNH: Monkey Patch ipykernel OutStream class-level fileno
-try:
-    import ipykernel.iostream
-    ipykernel.iostream.OutStream.fileno = lambda self: 1
-except:
-    pass
+import sys
+sys.stdout = sys.__stdout__
+sys.stderr = sys.__stderr__
 
 import os
 import json
