@@ -47,11 +47,13 @@ class MathRolloutGenerator:
 
         print(f"    [*] Generating {len(pending_problems)} problems locally using transformers...")
         
+        from tqdm import tqdm
+        
         # Generate step-by-step
-        for prob, p_id in zip(pending_problems, pending_ids):
+        for prob, p_id in tqdm(zip(pending_problems, pending_ids), total=len(pending_problems), desc="Generating rollouts"):
+            user_content = f"{GENERATION_PROMPT}\n\nProblem:\n{prob}"
             messages = [
-                {"role": "system", "content": GENERATION_PROMPT},
-                {"role": "user", "content": prob}
+                {"role": "user", "content": user_content}
             ]
             prompt_text = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
             
