@@ -39,7 +39,7 @@ class MathRolloutGenerator:
         print(f"[*] Initializing vLLM engine (Classic V0) with: {model_id}...")
         self.model_id = model_id
         
-        # Thiết lập biến môi trường ép buộc tắt V1 của vLLM
+        # Thiết lập biến môi trường hệ thống để tắt V1 engine trước khi vLLM chạy
         os.environ["VLLM_USE_V1"] = "0"
         
         # Khởi tạo engine vLLM sử dụng V0
@@ -49,8 +49,7 @@ class MathRolloutGenerator:
             max_model_len=4096,
             trust_remote_code=True,
             enforce_eager=True,
-            disable_log_stats=True,
-            v1=False # Chỉ định tường minh tắt V1 engine
+            disable_log_stats=True
         )
         
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
