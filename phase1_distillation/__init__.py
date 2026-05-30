@@ -1,6 +1,4 @@
-import sys
-sys.stdout = sys.__stdout__
-sys.stderr = sys.__stderr__
+# Package initializations
 
 from phase1_distillation.dataset import MathDataset, get_problem_id
 from phase1_distillation.generator import MathRolloutGenerator

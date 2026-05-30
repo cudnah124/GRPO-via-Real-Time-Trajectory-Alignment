@@ -1,45 +1,25 @@
-import sys
-sys.stdout = sys.__stdout__
-sys.stderr = sys.__stderr__
-
 import os
 import json
-from transformers import AutoTokenizer
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
 import phase1_distillation.config as config
 from phase1_distillation.prompts import GENERATION_PROMPT
 
 class MathRolloutGenerator:
     def __init__(self, model_id=config.GENERATOR_MODEL_ID):
-        try:
-            from vllm import LLM
-            from transformers import AutoTokenizer
-        except ImportError as e:
-            import traceback
-            print(f"[!] vLLM import failed with error: {e}")
-            traceback.print_exc()
-            self.llm = None
-            return
-
-        print(f"[*] Initializing vLLM engine with: {model_id}...")
+        print(f"[*] Initializing native Hugging Face model: {model_id}...")
         self.model_id = model_id
-        
-        # Khởi tạo engine vLLM
-        self.llm = LLM(
-            model=model_id,
-            gpu_memory_utilization=0.7, 
-            max_model_len=4096,
-            trust_remote_code=True,
-            enforce_eager=True,
-            disable_log_stats=True
-        )
-        
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
+        
+        # Load model in Float16 to save memory and run on T4
+        self.model = AutoModelForCausalLM.from_pretrained(
+            model_id,
+            torch_dtype=torch.float16,
+            device_map="auto",
+            trust_remote_code=True
+        )
 
     def generate_batch(self, problems, problem_ids, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=2048):
-        if self.llm is None:
-            raise ImportError("vLLM is not installed. Cannot generate rollouts.")
-        
-        from vllm import SamplingParams
         results = {}
         pending_problems = []
         pending_ids = []
@@ -65,42 +45,46 @@ class MathRolloutGenerator:
         if not pending_problems:
             return results
 
-        prompts = []
-        for prob in pending_problems:
+        print(f"    [*] Generating {len(pending_problems)} problems locally using transformers...")
+        
+        # Generate step-by-step
+        for prob, p_id in zip(pending_problems, pending_ids):
             messages = [
                 {"role": "system", "content": GENERATION_PROMPT},
                 {"role": "user", "content": prob}
             ]
             prompt_text = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-            prompts.append(prompt_text)
-
-        sampling_params = SamplingParams(
-            n=num_rollouts, 
-            temperature=0.7,
-            max_tokens=max_tokens,
-        )
-
-        print(f"    [*] vLLM Generating: {len(pending_problems)} problems...")
-        
-        try:
-            # vLLM (V0) sẽ chạy mượt mà sau khi đã được Monkey Patch
-            outputs = self.llm.generate(prompts, sampling_params, use_tqdm=True)
             
-            for i, output in enumerate(outputs):
-                p_id = pending_ids[i]
-                problem_rollouts = [out.text for out in output.outputs]
+            inputs = self.tokenizer(prompt_text, return_tensors="pt").to("cuda")
+            input_len = inputs.input_ids.shape[1]
+            
+            try:
+                # Generate K rollouts
+                outputs = self.model.generate(
+                    **inputs,
+                    max_new_tokens=max_tokens,
+                    temperature=0.7,
+                    do_sample=True,
+                    num_return_sequences=num_rollouts,
+                    pad_token_id=self.tokenizer.eos_token_id or self.tokenizer.pad_token_id
+                )
+                
+                problem_rollouts = []
+                for out in outputs:
+                    gen_text = self.tokenizer.decode(out[input_len:], skip_special_tokens=True)
+                    problem_rollouts.append(gen_text)
+                
                 results[p_id] = problem_rollouts
                 
                 if cache_dir:
                     cache_file = os.path.join(cache_dir, f"{p_id}.json")
                     with open(cache_file, "w", encoding="utf-8") as f:
                         json.dump(problem_rollouts, f, ensure_ascii=False, indent=2)
-                        
-            print(f"    [+] vLLM Batch completed.")
-            
-        except Exception as e:
-            print(f"    [!] vLLM Error: {e}")
-            
+            except Exception as e:
+                print(f"    [!] Error generating for {p_id}: {e}")
+                results[p_id] = [""] * num_rollouts
+                
+        print(f"    [+] Batch generation completed.")
         return results
 
     def generate(self, problem, problem_id, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=2048):
