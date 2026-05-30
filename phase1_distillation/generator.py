@@ -5,6 +5,7 @@ try:
 except:
     pass
 
+import os
 import json
 from transformers import AutoTokenizer
 import phase1_distillation.config as config
