@@ -1,0 +1,64 @@
+{
+  "problem_id": "cecf80cd0083fbf4dda6ec56fb445087",
+  "generated_rollouts": [
+    "Step 1: Determine the total number of socks and the initial count of white and black socks.\n- Total socks: 23\n- White socks: 8\n- Black socks: 15\n\nStep 2: Identify the condition under which Marina exclaims \"Finally!\".\n- Marina exclaims \"Finally!\" when she has pulled out more black socks than white socks.\n\nStep 3: Calculate the maximum number of white socks Marina can pull out before the condition changes.\n- Marina can pull out up to 7 white socks before the condition changes (since she has 8 white socks in total).\n\nStep 4: Calculate the number of black socks she can pull out before the condition changes.\n- If Marina has pulled out 7 white socks, she can pull out up to 7 black socks before the condition changes.\n\nStep 5: Determine the total number of socks pulled out before the condition changes.\n- Total socks before the condition changes: 7 white + 7 black = 14 socks\n\nStep 6: Determine the next sock pulled out, which will be the 15th sock.\n- The 15th sock will be the 8th white sock, as she has already pulled out 7 white socks.\n\nStep 7: Verify the condition after pulling out the 15th sock.\n- After pulling out 7 white and 7 black socks, the next sock (the 15th) will be the 8th white sock.\n- At this point, she has pulled out 7 white and 8 black socks, which satisfies the condition of having more black socks than white socks.\n\nStep 8: Conclude the maximum number of socks Marina can pull out before she exclaims \"Finally!\".\n- The maximum number of socks she can pull out is 15.\n\nTherefore, the final answer is \\(\\boxed{15}\\).",
+    "Step 1: Determine the total number of socks and their colors.\nMarina has 23 socks in total: 8 white and 15 black.\n\nStep 2: Establish the stopping condition.\nMarina stops pulling socks when she has pulled out more black socks than white socks.\n\nStep 3: Analyze the maximum number of socks she can pull out before reaching the stopping condition.\n- If Marina pulls out 8 white socks, she has not yet pulled out any black socks. She can pull out a maximum of 8 socks without having more black socks than white socks.\n- After pulling out 8 white socks, if she pulls out any black socks, the condition \"more black than white\" will be met immediately.\n\nStep 4: Calculate the maximum number of socks she can pull out before the condition is met.\n- If Marina pulls out 8 white socks and 1 black sock, she will have pulled out a total of 9 socks, and the condition \"more black than white\" is met.\n- If she pulls out any more black socks, the condition is already met.\n\nTherefore, the maximum number of socks Marina can pull out before she exclaims \"Finally!\" is \\(\\boxed{9}\\).",
+    "Step 1: **\nConsider the scenario where Marina has pulled out a maximum number of socks before ex claimming \"Finally!\" This implies that at no point before the final sock, she has pulled out more black socks than white ones.\n\n**Step 2:**\nSuppose Marina has pulled out \\( m \\) white socks and \\( n \\) black socks before ex claiming \"Finally!\" at the \\( (m+n) \\)-th minute. Since she ex claimed \"Finally!\" at the \\( (m+n) \\)-th minute, the \\( m \\)-th white sock and the \\( m \\)-th black sock (starting from 0) must have been the socks she pulled out at the \\( m \\)-th and \\( (m+1) \\)-th minutes respectively.\n\n**Step 3:**\n marbleina has thus pulled out \\( m \\) white socks and \\( m-1 \\) black socks in the first \\( (m+m-1) \\)-th minutes. This implies she has pulled out \\( m \\) white socks and \\( m-1 \\) black socks at the \\( (2m-1) \\)-th minute.\n\n**Step 4:**\n marbleina must have had at least \\( m \\) white socks and \\( m-1 \\) black socks in the drawer at the \\( (2m-1) \\)-th minute to have pulled out \\( m \\) white and \\( m-1 \\) black socks in that minute.\n\n**Step 5:**\n marbleina had 8 white socks initially. So, the number of white socks left after \\( m \\) white socks had been pulled out is \\( 8 - m \\).\n\n**Step 6:**\n marbleina had 15 black socks initially. So, the number of black socks left after \\( m-1 \\) black socks had been pulled out is \\( 15 - (m-1) = 16 - m \\).\n\n**Step 7:**\n For the last sock she pulls out, it must be a black sock because if it were a white sock, she would have pulled out more black socks than white ones before that minute. Therefore, the maximum \\( m \\) must satisfy \\( 16 - m \\geq 1 \\), meaning the maximum \\( m \\) is 15.\n\n**Step 8:**\n When \\( m = 15 \\), the total number of socks pulled out is \\( 2m - 1 = 2(15) - 1 = 29 \\).\n\n**Conclusion:**\n The maximum number of socks Marina can pull out before she exclaims \"Finally!\" is \\(\\boxed{29}\\).",
+    "Step 1: Initially, there are 8 white socks and 15 black socks in the drawer.\n\nStep 2: Marina will stop when the number of black socks pulled out exceeds the number of white socks pulled out. We need to determine the maximum number of socks she can pull out before this happens.\n\nStep 3: Let \\( w \\) be the number of white socks pulled out and \\( b \\) be the number of black socks pulled out. Marina will stop if \\( b > w \\).\n\nStep 4: We need to find the maximum value of \\( w + b \\) under the condition \\( b > w \\).\n\nStep 5: To maximize \\( w + b \\), we need to consider the scenario where \\( b \\) is just greater than \\( w \\). The maximum \\( w \\) can be is 14 because after pulling out 14 white socks, there are only 8 white socks left, so \\( w \\) cannot be more than 8.\n\nStep 6: If \\( w = 8 \\), then \\( b \\) must be at least 9 to satisfy \\( b > w \\).\n\nStep 7: Therefore, the total number of socks pulled out is \\( w + b = 8 + 9 = 17 \\).\n\nStep 8: Verify that this is the maximum possible number of socks pulled out. If \\( w = 9 \\), then \\( b \\) must be at least 10, making the total \\( w + b = 9 + 10 = 19 \\), which exceeds the total number of socks (23).\n\nThus, the maximum number of socks Marina can pull out before she exclaims, \"Finally!\" is \\(\\boxed{17}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.4, 0.8],
+      [0.8, 0.8, 0.4, 0.8],
+      [0.8, 0.8, 0.6, 0.8],
+      [0.8, 0.8, 0.6, 0.8],
+      [0.8, 0.8, 0.6, 0.8],
+      [0.8, 0.8, 0.8, 0.4]
+    ],
+    "(0,2)": [
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(0,3)": [
+      [0.0, 0.2, 0.2, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.0, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.4, 0.6, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.4, 0.6, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.4, 0.6, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.6, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.6, 0.4, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,2)": [
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2, 0.2, 0.8],
+      [0.2, 0.4, 0.4, 0.4, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.6, 0.6, 0.6, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(1,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.6, 0.8, 0.8, 0.4, 0.6, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 0.8, 0.6, 0.4, 0.2, 0.8]
+    ],
+    "(2,3)": [
+      [0.8, 0.2, 0.4, 0.4, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.4, 0.0, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.4, 0.0, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ]
+  }
+}

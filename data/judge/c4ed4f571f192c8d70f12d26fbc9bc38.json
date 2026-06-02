@@ -1,0 +1,54 @@
+{
+  "problem_id": "c4ed4f571f192c8d70f12d26fbc9bc38",
+  "generated_rollouts": [
+    "Step 1: Calculate the discount on the jacket.\nThe original price of the jacket is $80$ dollars, and it is sold at a $40\\%$ discount.\nThe discount amount on the jacket is:\n\\[ 80 \\times \\frac{40}{100} = 80 \\times 0.40 = 32 \\text{ dollars} \\]\n\nStep 2: Calculate the discount on the shirt.\nThe original price of the shirt is $40$ dollars, and it is sold at a $55\\%$ discount.\nThe discount amount on the shirt is:\n\\[ 40 \\times \\frac{55}{100} = 40 \\times 0.55 = 22 \\text{ dollars} \\]\n\nStep 3: Calculate the total amount saved.\nThe total amount saved is the sum of the discounts on the jacket and the shirt:\n\\[ 32 + 22 = 54 \\text{ dollars} \\]\n\nStep 4: Calculate the total original price.\nThe total original price of the jacket and the shirt is:\n\\[ 80 + 40 = 120 \\text{ dollars} \\]\n\nStep 5: Calculate the percentage of the total amount saved relative to the total original price.\nThe percentage of the total amount saved is:\n\\[ \\frac{54}{120} \\times 100 = 0.45 \\times 100 = 45\\% \\]\n\nTherefore, the total amount saved was $45\\%$ of the total of the original prices.\n\nThe correct option is \\(\\boxed{\\text{A}}\\).",
+    "Step 1: Calculate the discount on the jacket.\nThe original price of the jacket is $80$ dollars, and it is sold at a $40\\%$ discount.\n\\[ \\text{Discount on the jacket} = 80 \\times \\frac{40}{100} = 80 \\times 0.4 = 32 \\text{ dollars} \\]\n\nStep 2: Calculate the discount on the shirt.\nThe original price of the shirt is $40$ dollars, and it is sold at a $55\\%$ discount.\n\\[ \\text{Discount on the shirt} = 40 \\times \\frac{55}{100} = 40 \\times 0.55 = 22 \\text{ dollars} \\]\n\nStep 3: Calculate the total amount saved.\nThe total amount saved is the sum of the discounts on the jacket and the shirt.\n\\[ \\text{Total amount saved} = 32 + 22 = 54 \\text{ dollars} \\]\n\nStep 4: Calculate the total of the original prices.\nThe total of the original prices of the jacket and the shirt is:\n\\[ \\text{Total of original prices} = 80 + 40 = 120 \\text{ dollars} \\]\n\nStep 5: Calculate the percentage of the total amount saved relative to the total of the original prices.\n\\[ \\text{Percentage saved} = \\left( \\frac{54}{120} \\right) \\times 100 = 0.45 \\times 100 = 45\\% \\]\n\nTherefore, the total amount saved was \\(45\\%\\) of the total of the original prices.\n\nThe correct option is \\(\\boxed{\\text{A}}\\).",
+    "Step 1: Determine the discount on the jacket.\nThe original price of the jacket is $80$ dollars, and the discount is $40\\%$. To find the amount saved on the jacket, we calculate:\n\\[ 80 \\times \\frac{40}{100} = 80 \\times 0.40 = 32 \\text{ dollars} \\]\n\nStep 2: Determine the discount on the shirt.\nThe original price of the shirt is $40$ dollars, and the discount is $55\\%$. To find the amount saved on the shirt, we calculate:\n\\[ 40 \\times \\frac{55}{100} = 40 \\times 0.55 = 22 \\text{ dollars} \\]\n\nStep 3: Calculate the total amount saved.\nThe total amount saved is the sum of the savings on the jacket and the savings on the shirt:\n\\[ 32 + 22 = 54 \\text{ dollars} \\]\n\nStep 4: Calculate the total original price.\nThe total original price of the jacket and the shirt is:\n\\[ 80 + 40 = 120 \\text{ dollars} \\]\n\nStep 5: Determine the percentage of the total amount saved relative to the total original price.\nTo find the percentage, we use the formula:\n\\[ \\left( \\frac{\\text{total amount saved}}{\\text{total original price}} \\right) \\times 100 = \\left( \\frac{54}{120} \\right) \\times 100 \\]\n\nSimplify the fraction:\n\\[ \\frac{54}{120} = \\frac{9}{20} \\]\n\nNow, calculate the percentage:\n\\[ \\left( \\frac{9}{20} \\right) \\times 100 = 9 \\times 5 = 45\\% \\]\n\nTherefore, the total amount saved was \\(45\\%\\) of the total of the original prices.\n\nThe correct option is \\(\\boxed{\\text{A}}\\).",
+    "Step 1: Calculate the discount on the jacket.\nThe original price of the jacket is $80$ dollars, and it is sold at a $40\\%$ discount.\nThe discount amount on the jacket is:\n\\[ 80 \\times \\frac{40}{100} = 80 \\times 0.40 = 32 \\text{ dollars} \\]\n\nStep 2: Calculate the discount on the shirt.\nThe original price of the shirt is $40$ dollars, and it is sold at a $55\\%$ discount.\nThe discount amount on the shirt is:\n\\[ 40 \\times \\frac{55}{100} = 40 \\times 0.55 = 22 \\text{ dollars} \\]\n\nStep 3: Calculate the total amount saved.\nThe total amount saved is the sum of the discounts on the jacket and the shirt:\n\\[ 32 + 22 = 54 \\text{ dollars} \\]\n\nStep 4: Calculate the total of the original prices.\nThe total of the original prices of the jacket and the shirt is:\n\\[ 80 + 40 = 120 \\text{ dollars} \\]\n\nStep 5: Calculate the total amount saved as a percentage of the total of the original prices.\nThe percentage saved is:\n\\[ \\left( \\frac{54}{120} \\right) \\times 100 = \\frac{54 \\times 100}{120} = \\frac{5400}{120} = 45\\% \\]\n\nTherefore, the total amount saved was \\(\\boxed{\\text{A}}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2]
+    ],
+    "(1,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0]
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "problem_id": "30129828386219da25f79ff98162a7c3",
+  "generated_rollouts": [
+    "Step 1: Define the sums of the arithmetic sequences.\nGiven:\n\\[\n\\frac{S_n}{T_n} = \\frac{2n + 1}{4n - 2} \\quad (n = 1, 2, \\ldots)\n\\]\n\nStep 2: Use the properties of arithmetic sequences to express \\(S_n\\) and \\(T_n\\).\nFor an arithmetic sequence, the sum of the first \\(n\\) terms \\(S_n\\) is given by:\n\\[\nS_n = \\frac{n}{2} \\left(2a_1 + (n-1)d_a\\right)\n\\]\nSimilarly, for the sequence \\(\\{b_n\\}\\):\n\\[\nT_n = \\frac{n}{2} \\left(2b_1 + (n-1)d_b\\right)\n\\]\n\nStep 3: Substitute \\(S_n\\) and \\(T_n\\) into the given ratio.\n\\[\n\\frac{\\frac{n}{2} \\left(2a_1 + (n-1)d_a\\right)}{\\frac{n}{2} \\left(2b_1 + (n-1)d_b\\right)} = \\frac{2n + 1}{4n - 2}\n\\]\nSimplify the equation:\n\\[\n\\frac{2a_1 + (n-1)d_a}{2b_1 + (n-1)d_b} = \\frac{2n + 1}{4n - 2}\n\\]\n\nStep 4: Equate the coefficients of \\(n\\) and the constant terms.\nLet:\n\\[\n2a_1 + (n-1)d_a = k(2n + 1)\n\\]\n\\[\n2b_1 + (n-1)d_b = k(4n - 2)\n\\]\n\nStep 5: Compare coefficients for \\(n\\) and the constant terms.\nFor the first equation:\n\\[\n2a_1 + (n-1)d_a = 2kn + k\n\\]\n\\[\n2a_1 + nd_a - d_a = 2kn + k\n\\]\nThus:\n\\[\nd_a = 2k \\quad \\text{and} \\quad 2a_1 - d_a = k\n\\]\n\nFor the second equation:\n\\[\n2b_1 + (n-1)d_b = 4kn - 2k\n\\]\n\\[\n2b_1 + nd_b - d_b = 4kn - 2k\n\\]\nThus:\n\\[\nd_b = 4k \\quad \\text{and} \\quad 2b_1 - d_b = -2k\n\\]\n\nStep 6: Solve for \\(a_1\\) and \\(b_1\\).\nFrom \\(d_a = 2k\\):\n\\[\n2a_1 - 2k = k \\implies 2a_1 = 3k \\implies a_1 = \\frac{3k}{2}\n\\]\n\nFrom \\(d_b = 4k\\):\n\\[\n2b_1 - 4k = -2k \\implies 2b_1 = 2k \\implies b_1 = k\n\\]\n\nStep 7: Find the terms \\(a_{10}\\) and \\(b_{18}\\), and \\(b_3 + b_{18}\\), and \\(b_6 + b_{15}\\).\n\\[\na_{10} = a_1 + 9d_a = \\frac{3k}{2} + 9(2k) = \\frac{3k}{2} + 18k = \\frac{39k}{2}\n\\]\n\n\\[\nb_{18} = b_1 + 17d_b = k + 17(4k) = k + 68k = 69k\n\\]\n\n\\[\nb_3 + b_{18} = (b_1 + 2d_b) + (b_1 + 17d_b) = 2b_1 + 19d_b = 2k + 19(4k) = 2k + 76k = 78k\n\\]\n\n\\[\nb_6 + b_{15} = (b_1 + 5d_b) + (b_1 + 14d_b) = 2b_1 + 19d_b = 2k + 19(4k) = 2k + 76k = 78k\n\\]\n\nStep 8: Calculate the desired expression.\n\\[\n\\frac{a_{10}}{b_3 + b_{18}} + \\frac{a_{11}}{b_6 + b_{15}}\n\\]\n\\[\na_{11} = a_1 + 10d_a = \\frac{3k}{2} + 10(2k) = \\frac{3k}{2} + 20k = \\frac{43k}{2}\n\\]\n\n\\[\n\\frac{\\frac{39k}{2}}{78k} + \\frac{\\frac{43k}{2}}{78k} = \\frac{39k}{156k} + \\frac{43k}{156k} = \\frac{39 + 43}{156} = \\frac{82}{156} = \\frac{41}{78}\n\\]\n\nFinal Answer:\n\\[\n\\boxed{\\frac{41}{78}}\n\\]",
+    "Step 1: Identify the given information and the required expression.\nWe are given that \\( \\frac{S_n}{T_n} = \\frac{2n + 1}{4n - 2} \\). We need to find the value of \\( \\frac{a_{10}}{b_3 + b_{18}} + \\frac{a_{11}}{b_6 + b_{15}} \\).\n\nStep 2: Use the formula for the sum of the first \\( n \\) terms of an arithmetic sequence.\nThe sum of the first \\( n \\) terms of an arithmetic sequence is given by:\n\\[ S_n = \\frac{n}{2} (2a_1 + (n-1)d_1) \\]\n\\[ T_n = \\frac{n}{2} (2b_1 + (n-1)d_2) \\]\nwhere \\( a_1 \\) and \\( b_1 \\) are the first terms, and \\( d_1 \\) and \\( d_2 \\) are the common differences of the sequences \\( \\{a_n\\} \\) and \\( \\{b_n\\} \\), respectively.\n\nStep 3: Substitute the sums into the given ratio.\n\\[ \\frac{S_n}{T_n} = \\frac{\\frac{n}{2} (2a_1 + (n-1)d_1)}{\\frac{n}{2} (2b_1 + (n-1)d_2)} = \\frac{2a_1 + (n-1)d_1}{2b_1 + (n-1)d_2} = \\frac{2n + 1}{4n - 2} \\]\n\nStep 4: Equate the numerators and denominators.\n\\[ 2a_1 + (n-1)d_1 = k(2n + 1) \\]\n\\[ 2b_1 + (n-1)d_2 = k(4n - 2) \\]\nfor some constant \\( k \\).\n\nStep 5: Solve for the constants \\( a_1, d_1, b_1, \\) and \\( d_2 \\).\nBy comparing coefficients, we get:\n\\[ 2a_1 + (n-1)d_1 = 2kn + k \\]\n\\[ 2b_1 + (n-1)d_2 = 4kn - 2k \\]\nFrom the first equation:\n\\[ 2a_1 - d_1 = k \\]\n\\[ d_1 = 2a_1 - k \\]\nFrom the second equation:\n\\[ 2b_1 - d_2 = -2k \\]\n\\[ d_2 = 2b_1 + 2k \\]\n\nStep 6: Find the terms \\( a_{10}, a_{11}, b_3, b_{18}, b_6, \\) and \\( b_{15} \\).\n\\[ a_{10} = a_1 + 9d_1 \\]\n\\[ a_{11} = a_1 + 10d_1 \\]\n\\[ b_3 = b_1 + 2d_2 \\]\n\\[ b_{18} = b_1 + 17d_2 \\]\n\\[ b_6 = b_1 + 5d_2 \\]\n\\[ b_{15} = b_1 + 14d_2 \\]\n\nStep 7: Substitute the values and simplify.\n\\[ \\frac{a_{10}}{b_3 + b_{18}} = \\frac{a_1 + 9(2a_1 - k)}{b_1 + 2(2b_1 + 2k) + b_1 + 17(2b_1 + 2k)} = \\frac{20a_1 - 9k}{42b_1 + 42k} = \\frac{10a_1 - 9k/2}{21b_1 + 21k} \\]\n\\[ \\frac{a_{11}}{b_6 + b_{15}} = \\frac{a_1 + 10(2a_1 - k)}{b_1 + 5(2b_1 + 2k) + b_1 + 14(2b_1 + 2k)} = \\frac{21a_1 - 10k}{40b_1 + 40k} = \\frac{21a_1/2 - 5k}{20b_1 + 20k} \\]\n\nStep 8: Combine the fractions.\n\\[ \\frac{a_{10}}{b_3 + b_{18}} + \\frac{a_{11}}{b_6 + b_{15}} = \\frac{10a_1 - 9k/2}{21b_1 + 21k} + \\frac{21a_1/2 - 5k}{20b_1 + 20k} \\]\n\nStep 9: Simplify the expression.\n\\[ \\frac{a_{10}}{b_3 + b_{18}} + \\frac{a_{11}}{b_6 + b_{15}} = \\frac{20a_1 - 9k}{42b_1 + 42k} + \\frac{21a_1 - 10k}{40b_1 + 40k} = \\frac{1}{3} \\]\n\nThe final answer is \\(\\boxed{\\frac{1}{3}}\\).",
+    "Step 1: Given the sums of the first \\( n \\) terms of the arithmetic sequences \\( \\{a_n\\} \\) and \\( \\{b_n\\} \\) are \\( S_n \\) and \\( T_n \\) respectively, we know:\n\\[\n\\frac{S_n}{T_n} = \\frac{2n + 1}{4n - 2} \\quad (n = 1, 2, \\ldots)\n\\]\n\nStep 2: The sums of the first \\( n \\) terms of an arithmetic sequence can be expressed as:\n\\[\nS_n = \\frac{n}{2} (2a + (n-1)d)\n\\]\n\\[\nT_n = \\frac{n}{2} (2A + (n-1)D)\n\\]\nwhere \\( a \\) and \\( A \\) are the first terms, and \\( d \\) and \\( D \\) are the common differences of the sequences \\( \\{a_n\\} \\) and \\( \\{b_n\\} \\) respectively.\n\nStep 3: Substituting these into the given ratio, we get:\n\\[\n\\frac{\\frac{n}{2} (2a + (n-1)d)}{\\frac{n}{2} (2A + (n-1)D)} = \\frac{2n + 1}{4n - 2}\n\\]\nSimplifying, we have:\n\\[\n\\frac{2a + (n-1)d}{2A + (n-1)D} = \\frac{2n + 1}{4n - 2}\n\\]\n\nStep 4: To find the relationship between \\( a \\), \\( d \\), \\( A \\), and \\( D \\), we equate the coefficients of \\( n \\) on both sides. Let:\n\\[\n2a + (n-1)d = k(2n + 1)\n\\]\n\\[\n2A + (n-1)D = k(4n - 2)\n\\]\nfor some constant \\( k \\).\n\nStep 5: Expanding and comparing coefficients, we get:\n\\[\n2a + nd - d = 2kn + k\n\\]\n\\[\n2A + nD - D = 4kn - 2k\n\\]\n\nStep 6: Equating the coefficients of \\( n \\) and the constant terms, we get:\n\\[\nd = 2k\n\\]\n\\[\n2a - d = k\n\\]\n\\[\nD = 4k\n\\]\n\\[\n2A - D = -2k\n\\]\n\nStep 7: Solving these equations, we find:\n\\[\n2a - 2k = k \\implies 2a = 3k \\implies a = \\frac{3k}{2}\n\\]\n\\[\n2A - 4k = -2k \\implies 2A = 2k \\implies A = k\n\\]\n\nStep 8: Now, we need to find \\( \\frac{a_{10}}{b_3 + b_{18}} + \\frac{a_{11}}{b_6 + b_{15}} \\).\n\nStep 9: The general term of an arithmetic sequence is given by:\n\\[\na_n = a + (n-1)d\n\\]\n\\[\nb_n = A + (n-1)D\n\\]\n\nStep 10: Substituting \\( n = 10 \\) and \\( n = 11 \\) into these formulas, we get:\n\\[\na_{10} = a + 9d = \\frac{3k}{2} + 9(2k) = \\frac{3k}{2} + 18k = \\frac{39k}{2}\n\\]\n\\[\na_{11} = a + 10d = \\frac{3k}{2} + 10(2k) = \\frac{3k}{2} + 20k = \\frac{43k}{2}\n\\]\n\nStep 11: For \\( b_3 \\) and \\( b_{18} \\):\n\\[\nb_3 = A + 2D = k + 2(4k) = k + 8k = 9k\n\\]\n\\[\nb_{18} = A + 17D = k + 17(4k) = k + 68k = 69k\n\\]\nThus:\n\\[\nb_3 + b_{18} = 9k + 69k = 78k\n\\]\n\nStep 12: For \\( b_6 \\) and \\( b_{15} \\):\n\\[\nb_6 = A + 5D = k + 5(4k) = k + 20k = 21k\n\\]\n\\[\nb_{15} = A + 14D = k + 14(4k) = k + 56k = 57k\n\\]\nThus:\n\\[\nb_6 + b_{15} = 21k + 57k = 78k\n\\]\n\nStep 13: Finally, we compute:\n\\[\n\\frac{a_{10}}{b_3 + b_{18}} + \\frac{a_{11}}{b_6 + b_{15}} = \\frac{\\frac{39k}{2}}{78k} + \\frac{\\frac{43k}{2}}{78k} = \\frac{39k}{2 \\cdot 78k} + \\frac{43k}{2 \\cdot 78k} = \\frac{39}{156} + \\frac{43}{156} = \\frac{39 + 43}{156} = \\frac{82}{156} = \\frac{41}{78}\n\\]\n\nStep 14: Therefore, the value is:\n\\[\n\\boxed{\\frac{41}{78}}\n\\]",
+    "Step 1: Given the sums of the first \\( n \\) terms of the arithmetic sequences \\( \\{a_n\\} \\) and \\( \\{b_n\\} \\) are \\( S_n \\) and \\( T_n \\) respectively, and we know:\n\\[\n\\frac{S_n}{T_n} = \\frac{2n + 1}{4n - 2} \\quad (n = 1, 2, \\ldots)\n\\]\n\nStep 2: For an arithmetic sequence, the sum of the first \\( n \\) terms can be expressed as:\n\\[\nS_n = \\frac{n}{2} \\left( a_1 + a_n \\right)\n\\]\n\\[\nT_n = \\frac{n}{2} \\left( b_1 + b_n \\right)\n\\]\nThus, we have:\n\\[\n\\frac{S_n}{T_n} = \\frac{\\frac{n}{2} \\left( a_1 + a_n \\right)}{\\frac{n}{2} \\left( b_1 + b_n \\right)} = \\frac{a_1 + a_n}{b_1 + b_n}\n\\]\nGiven:\n\\[\n\\frac{a_1 + a_n}{b_1 + b_n} = \\frac{2n + 1}{4n - 2}\n\\]\n\nStep 3: To find the general terms \\( a_n \\) and \\( b_n \\), we need to express \\( a_n \\) and \\( b_n \\) in terms of \\( n \\). Assume:\n\\[\na_n = A n + B\n\\]\n\\[\nb_n = C n + D\n\\]\n\nStep 4: Substitute \\( a_n \\) and \\( b_n \\) into the sum ratio equation:\n\\[\n\\frac{a_1 + a_n}{b_1 + b_n} = \\frac{A + B + An + Bn}{C + D + Cn + Dn} = \\frac{A + B + An + Bn}{C + D + Cn + Dn}\n\\]\n\\[\n\\frac{A + B + An + Bn}{C + D + Cn + Dn} = \\frac{2n + 1}{4n - 2}\n\\]\n\nStep 5: Equate the coefficients of \\( n \\) and the constant terms:\n\\[\nA + B = 1\n\\]\n\\[\nB = \\frac{1}{2}\n\\]\n\\[\nC + D = -\\frac{1}{2}\n\\]\n\\[\nD = -\\frac{1}{2}\n\\]\n\nStep 6: Solve for \\( A \\) and \\( C \\):\n\\[\nA = 1 - \\frac{1}{2} = \\frac{1}{2}\n\\]\n\\[\nC = -\\frac{1}{2} + \\frac{1}{2} = 0\n\\]\n\nStep 7: Therefore, the general terms are:\n\\[\na_n = \\frac{1}{2} n + \\frac{1}{2}\n\\]\n\\[\nb_n = \\frac{1}{2} n - \\frac{1}{2}\n\\]\n\nStep 8: Find \\( a_{10} \\) and \\( a_{11} \\):\n\\[\na_{10} = \\frac{1}{2} \\cdot 10 + \\frac{1}{2} = 5 + 0.5 = 5.5\n\\]\n\\[\na_{11} = \\frac{1}{2} \\cdot 11 + \\frac{1}{2} = 5.5 + 0.5 = 6\n\\]\n\nStep 9: Find \\( b_3 \\), \\( b_{18} \\), \\( b_6 \\), and \\( b_{15} \\):\n\\[\nb_3 = \\frac{1}{2} \\cdot 3 - \\frac{1}{2} = 1.5 - 0.5 = 1\n\\]\n\\[\nb_{18} = \\frac{1}{2} \\cdot 18 - \\frac{1}{2} = 9 - 0.5 = 8.5\n\\]\n\\[\nb_6 = \\frac{1}{2} \\cdot 6 - \\frac{1}{2} = 3 - 0.5 = 2.5\n\\]\n\\[\nb_{15} = \\frac{1}{2} \\cdot 15 - \\frac{1}{2} = 7.5 - 0.5 = 7\n\\]\n\nStep 10: Calculate \\( \\frac{a_{10}}{b_3 + b_{18}} \\) and \\( \\frac{a_{11}}{b_6 + b_{15}} \\):\n\\[\n\\frac{a_{10}}{b_3 + b_{18}} = \\frac{5.5}{1 + 8.5} = \\frac{5.5}{9.5} = \\frac{11}{19}\n\\]\n\\[\n\\frac{a_{11}}{b_6 + b_{15}} = \\frac{6}{2.5 + 7} = \\frac{6}{9.5} = \\frac{12}{19}\n\\]\n\nStep 11: Add the two fractions:\n\\[\n\\frac{a_{10}}{b_3 + b_{18}} + \\frac{a_{11}}{b_6 + b_{15}} = \\frac{11}{19} + \\frac{12}{19} = \\frac{23}{19}\n\\]\n\nConclusion:\n\\[\n\\boxed{\\frac{23}{19}}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 0.4]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 0.6, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2, 0.2, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.6, 0.4, 0.0, 0.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 1.0, 1.0, 0.0, 0.2]
+    ],
+    "(0,3)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2, 0.0, 0.2, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.2, 0.0, 0.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.2, 0.8, 0.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2, 0.2, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.2, 0.4, 0.4, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.2, 0.2]
+    ],
+    "(1,3)": [
+      [0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 1.0, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.6, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.6, 0.4, 0.4, 0.4, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.0, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.2]
+    ],
+    "(2,3)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.2, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 0.6, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.4, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.6, 0.0, 0.2, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.6, 1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.0, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.2, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.2, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ]
+  }
+}

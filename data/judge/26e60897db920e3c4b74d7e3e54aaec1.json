@@ -1,0 +1,61 @@
+{
+  "problem_id": "26e60897db920e3c4b74d7e3e54aaec1",
+  "generated_rollouts": [
+    "Step 1: We are given the acute triangle \\(\\triangle ABC\\) with \\(AB > AC\\). Construct the altitudes \\(AD \\perp BC\\), \\(BE \\perp AC\\), and \\(CF \\perp AB\\) at points \\(D\\), \\(E\\), and \\(F\\) respectively. The line \\(EF\\) intersects \\(BC\\) at point \\(P\\). A line parallel to \\(EF\\) through point \\(D\\) intersects lines \\(AC\\) and \\(AB\\) at points \\(Q\\) and \\(R\\) respectively. Let \\(N\\) be a point on side \\(BC\\) such that \\(\\angle NQP + \\angle NRP < 180^\\circ\\). We need to prove that \\(BN > CN\\).\n\nStep 2: Since \\(D\\) is the foot of the altitude from \\(A\\) to \\(BC\\), \\(D\\) is the orthocenter of \\(\\triangle ABC\\) with respect to \\(BC\\). The line \\(EF\\) is the orthic axis of \\(\\triangle ABC\\), which is the radical axis of the circumcircle of \\(\\triangle ABC\\) and the nine-point circle of \\(\\triangle ABC\\). The line \\(QR\\) is parallel to \\(EF\\) and thus has the same properties with respect to the orthic axis.\n\nStep 3: Consider the reflection of point \\(D\\) over the line \\(EF\\). Let this reflection be \\(D'\\). Since \\(D\\) is the foot of the altitude from \\(A\\) to \\(BC\\), \\(D'\\) will lie on the circumcircle of \\(\\triangle ABC\\). This is because the reflection of a point on the altitude over the orthic axis lies on the circumcircle.\n\nStep 4: Since \\(D'\\) lies on the circumcircle of \\(\\triangle ABC\\), the arc \\(BC\\) not containing \\(A\\) is greater than the arc \\(BC\\) containing \\(A\\). Therefore, the angle \\(\\angle BDC\\) is greater than the angle \\(\\angle BAC\\).\n\nStep 5: Since \\(D'\\) is the reflection of \\(D\\) over \\(EF\\), the line \\(D'Q\\) is parallel to \\(DR\\) and the line \\(D'R\\) is parallel to \\(DQ\\). Therefore, \\(\\angle NQP = \\angle QD'N\\) and \\(\\angle NRP = \\angle RD'N\\).\n\nStep 6: Since \\(D'\\) lies on the circumcircle of \\(\\triangle ABC\\), the angle \\(\\angle BDC\\) is greater than the angle \\(\\angle BAC\\). Therefore, the angle \\(\\angle QD'N\\) is greater than the angle \\(\\angle RD'N\\).\n\nStep 7: Since \\(\\angle NQP + \\angle NRP < 180^\\circ\\), the point \\(N\\) must lie on the arc \\(BC\\) not containing \\(A\\). Therefore, \\(BN > CN\\).\n\nThus, we have proved that \\(BN > CN\\).\n\n\\(\\boxed{BN > CN}\\)```",
+    "Step 1: Analyze the triangle and the perpendiculars.\nGiven \\(\\triangle ABC\\) with \\(AB > AC\\), we construct altitudes \\(AD \\perp BC\\), \\(BE \\perp AC\\), and \\(CF \\perp AB\\). The line \\(EF\\) intersects \\(BC\\) at point \\(P\\). A line parallel to \\(EF\\) through point \\(D\\) intersects lines \\(AC\\) and \\(AB\\) at points \\(Q\\) and \\(R\\) respectively.\n\nStep 2: Use properties of the orthic triangle and parallel lines.\nThe points \\(E\\) and \\(F\\) are feet of the altitudes from \\(B\\) and \\(C\\) respectively. The line \\(EF\\) is the orthic axis of \\(\\triangle ABC\\). Since \\(P\\) is the intersection of \\(EF\\) and \\(BC\\), point \\(P\\) is the foot of the perpendicular from \\(A\\) to \\(BC\\).\n\nStep 3: Consider the parallel line and the intersection points.\nThe line through \\(D\\) parallel to \\(EF\\) intersects \\(AC\\) at \\(Q\\) and \\(AB\\) at \\(R\\). Since \\(D\\) is the foot of the perpendicular from \\(A\\) to \\(BC\\), and the line through \\(D\\) is parallel to \\(EF\\), it follows that \\(\\angle QDP = \\angle EFP\\) and \\(\\angle RDP = \\angle EFP\\).\n\nStep 4: Use the properties of similar triangles.\nSince \\(D\\) is the foot of the perpendicular from \\(A\\) to \\(BC\\), and the line through \\(D\\) is parallel to \\(EF\\), we have that \\(\\triangle QDP \\sim \\triangle EFP\\) and \\(\\triangle RDP \\sim \\triangle EFP\\). This implies that \\(\\angle QDP = \\angle EFP\\) and \\(\\angle RDP = \\angle EFP\\).\n\nStep 5: Prove that \\(BN > CN\\).\nSince \\(D\\) is the foot of the perpendicular from \\(A\\) to \\(BC\\), and the line through \\(D\\) is parallel to \\(EF\\), it follows that \\(D\\) divides \\(BC\\) in the ratio of the sides of the triangle. Specifically, \\(BD:DC = AB:AC\\). Since \\(AB > AC\\), it follows that \\(BD > DC\\). Therefore, \\(BN > CN\\).\n\nThus, the final answer is \\(\\boxed{BN > CN}\\).",
+    "Step 1: Analyze the geometric configuration.\nGiven an acute triangle \\( \\triangle ABC \\) with \\( AB > AC \\), we construct altitudes \\( AD \\perp BC \\), \\( BE \\perp AC \\), and \\( CF \\perp AB \\). The line \\( EF \\) intersects \\( BC \\) at point \\( P \\). A line parallel to \\( EF \\) through point \\( D \\) intersects lines \\( AC \\) and \\( AB \\) at points \\( Q \\) and \\( R \\) respectively. Let \\( N \\) be a point on side \\( BC \\) such that \\( \\angle NQP + \\angle NRP < 180^\\circ \\).\n\nStep 2: Use properties of cyclic quadrilaterals.\nSince \\( DE \\parallel DF \\), quadrilateral \\( DEFC \\) is cyclic. This means that \\( \\angle EDF = \\angle ECF \\). Also, since \\( \\angle ECF = \\angle DCF \\), we have \\( \\angle EDF = \\angle DCF \\).\n\nStep 3: Use properties of similar triangles.\nSince \\( DE \\parallel DF \\), triangles \\( \\triangle DEP \\) and \\( \\triangle DFP \\) are similar to \\( \\triangle DCF \\). This implies that \\( \\angle DEP = \\angle DCF \\) and \\( \\angle DFP = \\angle DCF \\). Therefore, \\( \\angle DEP = \\angle DFP \\).\n\nStep 4: Use the fact that \\( \\angle NQP + \\angle NRP < 180^\\circ \\).\nSince \\( N \\) is a point on \\( BC \\) such that \\( \\angle NQP + \\angle NRP < 180^\\circ \\), it follows that \\( N \\) is outside the circle passing through \\( Q, P, R \\). This means that \\( N \\) is outside the circle that is circumscribed around quadrilateral \\( DEFC \\).\n\nStep 5: Use the fact that \\( D \\) is the orthocenter of \\( \\triangle ABC \\).\nSince \\( D \\) is the orthocenter of \\( \\triangle ABC \\), it lies inside the triangle. Therefore, \\( N \\) must be outside the triangle \\( ABC \\). This implies that \\( N \\) is outside the circle passing through \\( Q, P, R \\).\n\nStep 6: Use the fact that \\( BN > CN \\).\nSince \\( N \\) is outside the circle passing through \\( Q, P, R \\), it follows that \\( N \\) is closer to \\( B \\) than to \\( C \\). Therefore, \\( BN > CN \\).\n\nThus, we have proved that \\( BN > CN \\).\n\nThe final answer is:\n\\boxed{BN > CN}",
+    "Step 1: **\nWe are given an acute triangle \\( \\triangle ABC \\) with \\( AB > AC \\). Construct the altitudes \\( AD \\perp BC \\), \\( BE \\perp AC \\), and \\( CF \\perp AB \\). The line \\( EF \\) intersects \\( BC \\) at point \\( P \\).\n\n**Step 2:**\nA line parallel to \\( EF \\) through point \\( D \\) intersects \\( AC \\) and \\( AB \\) at points \\( Q \\) and \\( R \\) respectively.\n\n**Step 3:**\nLet \\( N \\) be a point on side \\( BC \\) such that \\( \\angle NQP + \\angle NRP < 180^\\circ \\).\n\n**Step 4:**\nTo prove \\( BN > CN \\), we will use properties of cyclic quadrilaterals and the fact that \\( \\angle NQP + \\angle NRP < 180^\\circ \\).\n\n**Step 5:**\nConsider the quadrilateral \\( NQPR \\). Since \\( PQ \\parallel EF \\) and \\( PR \\parallel EF \\), \\( PQ \\parallel PR \\). Therefore, \\( NQPR \\) is a cyclic quadrilateral because the opposite angles are supplementary.\n\n**Step 6:**\nIn a cyclic quadrilateral, the sum of the opposite angles is \\( 180^\\circ \\). Therefore, \\( \\angle NQP + \\angle NRP = 180^\\circ \\).\n\n**Step 7:**\nSince \\( \\angle NQP + \\angle NRP < 180^\\circ \\), it implies that \\( N \\) lies inside the arc \\( QR \\) of the circumcircle of \\( \\triangle NQPR \\).\n\n**Step 8:**\nThe circumcircle of \\( \\triangle NQPR \\) passes through \\( Q \\) and \\( R \\). Since \\( N \\) is on the arc \\( QR \\), the angle subtended by arc \\( QR \\) at \\( N \\) is greater than the angle subtended by the same arc at \\( C \\).\n\n**Step 9:**\nThe angle subtended by arc \\( QR \\) at \\( C \\) is \\( \\angle QCR \\). Since \\( N \\) is on the arc \\( QR \\), \\( \\angle QCR \\) is greater than \\( \\angle NQR \\).\n\n**Step 10:**\nSince \\( \\angle NQR \\) is greater than \\( \\angle NQR \\), it implies that \\( BN > CN \\).\n\nTherefore, we have proved that \\( BN > CN \\).\n\n\\(\\boxed{BN > CN}\\)"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.4, 0.4, 0.8, 1.0],
+      [0.4, 0.0, 0.6, 0.8, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 0.8, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.4, 0.4, 0.0]
+    ],
+    "(0,3)": [
+      [0.2, 0.2, 0.2, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.2, 0.4, 0.6, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 0.2, 0.2, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.4, 0.8, 0.8, 0.2, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.2]
+    ]
+  }
+}

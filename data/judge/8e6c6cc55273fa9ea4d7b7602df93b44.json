@@ -1,0 +1,48 @@
+{
+  "problem_id": "8e6c6cc55273fa9ea4d7b7602df93b44",
+  "generated_rollouts": [
+    "Step 1: Determine the original area of the photo.\nThe original dimensions of the photo are 20 cm by 25 cm. Therefore, the original area \\(A_{\\text{original}}\\) is:\n\\[\nA_{\\text{original}} = 20 \\times 25 = 500 \\text{ cm}^2\n\\]\n\nStep 2: Determine the new dimensions of the enlarged photo.\nThe new dimensions of the enlarged photo are 25 cm by 30 cm. Therefore, the new area \\(A_{\\text{new}}\\) is:\n\\[\nA_{\\text{new}} = 25 \\times 30 = 750 \\text{ cm}^2\n\\]\n\nStep 3: Calculate the increase in area.\nThe increase in area \\(\\Delta A\\) is the difference between the new area and the original area:\n\\[\n\\Delta A = A_{\\text{new}} - A_{\\text{original}} = 750 - 500 = 250 \\text{ cm}^2\n\\]\n\nStep 4: Calculate the percentage increase in area.\nThe percentage increase in area is given by the formula:\n\\[\n\\text{Percentage Increase} = \\left( \\frac{\\Delta A}{A_{\\text{original}}} \\right) \\times 100 = \\left( \\frac{250}{500} \\right) \\times 100 = 50\\%\n\\]\n\nTherefore, the percentage increase in area is \\(\\boxed{50\\%}\\). The correct choice is \\(\\boxed{B}\\).",
+    "Step 1: Calculate the original area of the photo.\nThe original dimensions of the photo are 20 cm by 25 cm.\n\\[\n\\text{Original Area} = 20 \\, \\text{cm} \\times 25 \\, \\text{cm} = 500 \\, \\text{cm}^2\n\\]\n\nStep 2: Calculate the new area of the enlarged photo.\nThe new dimensions of the photo are 25 cm by 30 cm.\n\\[\n\\text{New Area} = 25 \\, \\text{cm} \\times 30 \\, \\text{cm} = 750 \\, \\text{cm}^2\n\\]\n\nStep 3: Determine the increase in area.\n\\[\n\\text{Increase in Area} = \\text{New Area} - \\text{Original Area} = 750 \\, \\text{cm}^2 - 500 \\, \\text{cm}^2 = 250 \\, \\text{cm}^2\n\\]\n\nStep 4: Calculate the percentage increase in area.\n\\[\n\\text{Percentage Increase} = \\left( \\frac{\\text{Increase in Area}}{\\text{Original Area}} \\right) \\times 100\\% = \\left( \\frac{250 \\, \\text{cm}^2}{500 \\, \\text{cm}^2} \\right) \\times 100\\% = 50\\%\n\\]\n\nConclusion:\n\\[\n\\boxed{B}\n\\]",
+    "Step 1: Calculate the original area of the photo.\nThe original dimensions of the photo are 20 cm by 25 cm. The area \\(A_{\\text{original}}\\) is given by:\n\\[\nA_{\\text{original}} = 20 \\times 25 = 500 \\text{ cm}^2\n\\]\n\nStep 2: Calculate the new area of the enlarged photo.\nThe new dimensions of the photo are 25 cm by 30 cm. The area \\(A_{\\text{new}}\\) is given by:\n\\[\nA_{\\text{new}} = 25 \\times 30 = 750 \\text{ cm}^2\n\\]\n\nStep 3: Determine the increase in area.\nThe increase in area is the difference between the new area and the original area:\n\\[\n\\text{Increase in area} = A_{\\text{new}} - A_{\\text{original}} = 750 - 500 = 250 \\text{ cm}^2\n\\]\n\nStep 4: Calculate the percentage increase in area.\nThe percentage increase is given by the ratio of the increase in area to the original area, multiplied by 100:\n\\[\n\\text{Percentage increase} = \\left( \\frac{250}{500} \\right) \\times 100 = 50\\%\n\\]\n\nThe correct answer is \\(\\boxed{B}\\).",
+    "Step 1: Calculate the area of the original photo.\nThe original photo has dimensions 20 cm by 25 cm.\n\\[\n\\text{Area}_{\\text{original}} = 20 \\times 25 = 500 \\text{ cm}^2\n\\]\n\nStep 2: Calculate the area of the enlarged photo.\nThe enlarged photo has dimensions 25 cm by 30 cm.\n\\[\n\\text{Area}_{\\text{enlarged}} = 25 \\times 30 = 750 \\text{ cm}^2\n\\]\n\nStep 3: Determine the increase in area.\n\\[\n\\text{Increase in area} = \\text{Area}_{\\text{enlarged}} - \\text{Area}_{\\text{original}} = 750 - 500 = 250 \\text{ cm}^2\n\\]\n\nStep 4: Calculate the percentage increase in area.\n\\[\n\\text{Percentage increase} = \\left( \\frac{\\text{Increase in area}}{\\text{Area}_{\\text{original}}} \\right) \\times 100 = \\left( \\frac{250}{500} \\right) \\times 100 = 50\\%\n\\]\n\nConclusion:\n\\[\n\\boxed{B}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0]
+    ]
+  }
+}

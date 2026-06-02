@@ -1,0 +1,62 @@
+{
+  "problem_id": "84ba34fb5ce235dac97650d50c783237",
+  "generated_rollouts": [
+    "Step 1: We start with the given equation \\(A^2 + B^2 = 2AB\\). This can be rearranged to:\n\\[A^2 - 2AB + B^2 = 0 \\implies (A - B)^2 = 0.\\]\nThis implies that \\(A - B\\) is a nilpotent matrix, i.e., \\((A - B)^2 = 0\\).\n\nStep 2: A nilpotent matrix \\(N\\) satisfies \\(N^k = 0\\) for some positive integer \\(k\\). For a \\(2 \\times 2\\) matrix, the only nilpotent matrix is the zero matrix. For larger matrices, a nilpotent matrix can have a Jordan block structure, but for our purposes, we only need to know that its eigenvalues are zero.\n\nStep 3: The eigenvalues of a nilpotent matrix are all zero. Therefore, the characteristic polynomial of \\(A - B\\) is \\(x^n\\), where \\(n\\) is the size of the matrix. This implies that the minimal polynomial of \\(A - B\\) is also \\(x\\), and hence \\(A - B\\) is similar to a strictly upper triangular matrix (or strictly lower triangular matrix).\n\nStep 4: Since \\(A - B\\) is similar to a strictly upper triangular matrix, we can write \\(A - B = PDP^{-1}\\), where \\(D\\) is a strictly upper triangular matrix. The matrix \\(D\\) has zeros on its diagonal, so the eigenvalues of \\(A\\) and \\(B\\) are the same, shifted by the eigenvalues of \\(D\\).\n\nStep 5: The characteristic polynomial of a matrix is the product of its eigenvalues, counted with multiplicity. Since \\(A\\) and \\(B\\) have the same eigenvalues (just shifted by the eigenvalues of the strictly upper triangular matrix, which are all zero), the characteristic polynomials of \\(A\\) and \\(B\\) are the same. Therefore, \\(\\det(A - xI_n) = \\det(B - xI_n)\\).\n\nThe final answer is:\n\\[\n\\boxed{\\det(A - xI_n) = \\det(B - xI_n)}\n\\]",
+    "Step 1: We start with the given condition for matrices \\(A\\) and \\(B\\):\n\\[ A^2 + B^2 = 2AB. \\]\n\nStep 2: Rearrange the equation to isolate terms involving \\(A\\) and \\(B\\):\n\\[ A^2 - 2AB + B^2 = 0. \\]\n\nStep 3: Recognize that the left-hand side can be factored as a square:\n\\[ (A - B)^2 = 0. \\]\n\nStep 4: Since \\((A - B)^2 = 0\\), it follows that \\(A - B\\) is a nilpotent matrix (a matrix \\(N\\) is nilpotent if there exists a positive integer \\(k\\) such that \\(N^k = 0\\)). In this case, \\((A - B)^2 = 0\\), so \\(A - B\\) is nilpotent with index 2.\n\nStep 5: For a nilpotent matrix \\(N\\) with index 2, it holds that \\(N^2 = 0\\). Therefore, \\((A - B)^2 = 0\\) implies that \\(A - B\\) is similar to a matrix of the form:\n\\[ \\begin{pmatrix} 0 & I_k \\\\ 0 & 0 \\end{pmatrix}, \\]\nwhere \\(I_k\\) is the \\(k \\times k\\) identity matrix and \\(k\\) is the size of the largest Jordan block corresponding to the eigenvalue 0.\n\nStep 6: Since \\(A - B\\) is similar to a matrix with a 2x2 block of zeros, it follows that \\(A\\) and \\(B\\) have the same characteristic polynomial. The characteristic polynomial of a matrix \\(M\\) is given by \\(\\det(M - xI_n)\\).\n\nStep 7: Therefore, the characteristic polynomials of \\(A\\) and \\(B\\) are the same, which means:\n\\[ \\det(A - xI_n) = \\det(B - xI_n). \\]\n\nThus, we have proved that for any complex number \\(x\\),\n\\[ \\boxed{\\det(A - xI_n) = \\det(B - xI_n)}. \\]",
+    "Step 1: We are given the matrix equation \\( A^2 + B^2 = 2AB \\).\n\nStep 2: Rearrange the given equation to isolate terms involving \\(A\\) and \\(B\\):\n\\[ A^2 - 2AB + B^2 = 0 \\]\n\nStep 3: Recognize that the left-hand side can be factored as a perfect square:\n\\[ (A - B)^2 = 0 \\]\n\nStep 4: Since \\((A - B)^2 = 0\\), it implies that \\(A - B\\) is a nilpotent matrix of index 2. This means \\((A - B)^2 = 0\\), but \\((A - B) \\neq 0\\) in general.\n\nStep 5: We need to prove that for any complex number \\(x\\), \\(\\det(A - xI_n) = \\det(B - xI_n)\\).\n\nStep 6: Consider the characteristic polynomial of \\(A\\) and \\(B\\). The characteristic polynomial of a matrix \\(M\\) is given by \\(\\det(M - xI_n)\\).\n\nStep 7: Since \\(A\\) and \\(B\\) satisfy the same quadratic equation \\(A^2 - 2AB + B^2 = 0\\), we can use the properties of the characteristic polynomial and the fact that \\(A\\) and \\(B\\) are similar in a certain sense.\n\nStep 8: We know that the characteristic polynomial of a matrix is invariant under similarity transformations. Since \\(A\\) and \\(B\\) satisfy the same equation, they can be transformed into each other by a similarity transformation.\n\nStep 9: Therefore, the characteristic polynomials of \\(A\\) and \\(B\\) are the same, which implies that \\(\\det(A - xI_n) = \\det(B - xI_n)\\) for any complex number \\(x\\).\n\nConclusion:\n\\[\n\\boxed{\\det(A - xI_n) = \\det(B - xI_n)}\n\\]",
+    "Step 1: We start with the given equation \\(A^2 + B^2 = 2AB\\). We can rearrange this equation to get:\n\n\\[A^2 - 2AB + B^2 = 0.\\]\n\nThis can be factored as:\n\n\\[(A - B)^2 = 0.\\]\n\nThis implies that \\(A - B\\) is a nilpotent matrix of index 2, i.e., \\((A - B)^2 = 0\\).\n\nStep 2: We need to prove that \\(\\det(A - xI_n) = \\det(B - xI_n)\\) for any complex number \\(x\\). To do this, we will use the fact that \\(A\\) and \\(B\\) commute. Since \\(A\\) and \\(B\\) are square matrices of the same size and \\((A - B)^2 = 0\\), \\(A\\) and \\(B\\) can be simultaneously triangularized or diagonalized (if they are diagonalizable).\n\nStep 3: Let's consider the eigenvalues of \\(A\\) and \\(B\\). Since \\((A - B)^2 = 0\\), the only eigenvalues of \\(A - B\\) are 0. This means that the eigenvalues of \\(A\\) and \\(B\\) are the same, up to a permutation. Therefore, the characteristic polynomials of \\(A\\) and \\(B\\) are the same, which implies that the determinants of \\(A - xI_n\\) and \\(B - xI_n\\) are the same.\n\nStep 4: To be more rigorous, let's consider the characteristic polynomial of \\(A - xI_n\\), which is \\(\\det(A - xI_n)\\). Since \\((A - B)^2 = 0\\), we can write:\n\n\\[A - B = N,\\]\nwhere \\(N\\) is a nilpotent matrix with \\(N^2 = 0\\). Then,\n\n\\[A = B + N.\\]\n\nThe characteristic polynomial of \\(A - xI_n\\) is:\n\n\\[\\det(A - xI_n) = \\det(B + N - xI_n).\\]\n\nSince \\(N\\) is nilpotent, the eigenvalues of \\(N\\) are all 0, and the eigenvalues of \\(B + N\\) are the same as the eigenvalues of \\(B\\). Therefore, the characteristic polynomial of \\(A - xI_n\\) is the same as the characteristic polynomial of \\(B - xI_n\\), which means:\n\n\\[\\det(A - xI_n) = \\det(B - xI_n).\\]\n\nThus, we have proved that for any complex number \\(x\\),\n\n\\[\\det(A - xI_n) = \\det(B - xI_n).\\]\n\nThe final answer is:\n\n\\[\\boxed{\\det(A - xI_n) = \\det(B - xI_n)}.\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.8, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.2, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.6, 0.4, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 0.2, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.4, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 0.8, 0.4, 0.8],
+      [0.8, 0.8, 0.2, 0.8],
+      [0.8, 0.8, 0.0, 0.4],
+      [0.8, 0.8, 0.2, 0.4],
+      [0.8, 0.8, 0.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 0.6, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.0, 0.4, 0.4, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 1.0, 1.0],
+      [0.0, 0.8, 1.0, 1.0],
+      [0.0, 0.8, 1.0, 1.0],
+      [0.0, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.4, 0.2, 0.2],
+      [1.0, 0.8, 0.0, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [0.0, 1.0, 1.0, 1.0],
+      [0.0, 1.0, 1.0, 1.0],
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.8, 0.8],
+      [1.0, 0.8, 0.8, 0.8],
+      [1.0, 0.8, 0.4, 0.6],
+      [1.0, 0.8, 0.6, 0.6],
+      [1.0, 0.8, 0.0, 0.0]
+    ]
+  }
+}

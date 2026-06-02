@@ -1,0 +1,77 @@
+{
+  "problem_id": "b899b97bf64e40ac6c2174738c60488d",
+  "generated_rollouts": [
+    "Step 1: We are given the points \\((2,1)\\) and \\((5,-1)\\), and the line \\(3y - 2x - m = 0\\).\n\nStep 2: To determine if the points are on opposite sides of the line, we need to check the signs of the expressions \\(3y - 2x - m\\) for each point. If the signs are different, the points are on opposite sides.\n\nStep 3: Substitute the coordinates of the first point \\((2,1)\\) into the expression \\(3y - 2x - m\\):\n\n\\[\n3(1) - 2(2) - m = 3 - 4 - m = -1 - m\n\\]\n\nStep 4: Substitute the coordinates of the second point \\((5,-1)\\) into the expression \\(3y - 2x - m\\):\n\n\\[\n3(-1) - 2(5) - m = -3 - 10 - m = -13 - m\n\\]\n\nStep 5: For the points to be on opposite sides of the line, the product of the two expressions must be negative:\n\n\\[\n(-1 - m)(-13 - m) < 0\n\\]\n\nStep 6: Solve the inequality \\((-1 - m)(-13 - m) < 0\\). First, find the roots of the quadratic equation \\((-1 - m)(-13 - m) = 0\\):\n\n\\[\n-1 - m = 0 \\quad \\text{or} \\quad -13 - m = 0\n\\]\n\\[\nm = -1 \\quad \\text{or} \\quad m = -13\n\\]\n\nStep 7: The roots divide the number line into three intervals: \\((-\\infty, -13)\\), \\((-13, -1)\\), and \\((-1, \\infty)\\). Test a point in each interval to determine where the inequality holds.\n\nFor \\(m \\in (-\\infty, -13)\\), choose \\(m = -14\\):\n\n\\[\n(-1 - (-14))(-13 - (-14)) = (13)(1) > 0\n\\]\n\nFor \\(m \\in (-13, -1)\\), choose \\(m = -2\\):\n\n\\[\n(-1 - (-2))(-13 - (-2)) = (1)(-11) < 0\n\\]\n\nFor \\(m \\in (-1, \\infty)\\), choose \\(m = 0\\):\n\n\\[\n(-1 - 0)(-13 - 0) = (-1)(-13) > 0\n\\]\n\nStep 8: The inequality \\((-1 - m)(-13 - m) < 0\\) holds for \\(m \\in (-13, -1)\\).\n\nTherefore, the range of values for \\(m\\) is:\n\n\\[\n\\boxed{B}\n\\]",
+    "Step 1: We need to determine the range of values for \\(m\\) such that the points \\((2,1)\\) and \\((5,-1)\\) are on opposite sides of the line \\(3y - 2x - m = 0\\).\n\nStep 2: To check if two points are on opposite sides of a line, we substitute each point into the line equation \\(3y - 2x - m\\) and check the signs of the results.\n\nStep 3: Substitute the point \\((2,1)\\) into the equation:\n\\[3(1) - 2(2) - m = 3 - 4 - m = -1 - m\\]\n\nStep 4: Substitute the point \\((5,-1)\\) into the equation:\n\\[3(-1) - 2(5) - m = -3 - 10 - m = -13 - m\\]\n\nStep 5: For the points to be on opposite sides of the line, the product of the results must be negative:\n\\[(-1 - m)(-13 - m) < 0\\]\n\nStep 6: Solve the inequality \\((-1 - m)(-13 - m) < 0\\):\n\\[(-1 - m)(-13 - m) = (m + 1)(m + 13)\\]\n\nStep 7: Find the roots of the quadratic equation \\((m + 1)(m + 13) = 0\\):\n\\[m = -1 \\quad \\text{and} \\quad m = -13\\]\n\nStep 8: Determine the intervals where the product is negative:\n\\((m + 1)(m + 13) < 0\\) when \\(-13 < m < -1\\)\n\nStep 9: Therefore, the range of values for \\(m\\) is:\n\\[-13 < m < -1\\]\n\nThe correct answer is \\(\\boxed{B}\\).",
+    "Step 1: We are given the quadratic equation \\(x^2 - 5x + 6 = 0\\).\n\n\\[\n\\text{Step 2: Factoring the quadratic expression, we get } (x-2)(x-3) = 0.\n\\]\n\nStep 3: Solve for \\(x\\) by setting each factor to zero, which gives \\(x = 2\\) or \\(x = 3\\).\n\nStep 4: To find the range of values for \\(m\\), we need to determine the conditions under which the points \\((2,1)\\) and \\((5,-1)\\) are on opposite sides of the line \\(3y - 2x - m = 0\\).\n\nStep 5: Substitute the coordinates of the points into the line equation:\n\nFor the point \\((2,1)\\):\n\n\\[\n3(1) - 2(2) - m = 3 - 4 - m = -1 - m\n\\]\n\nFor the point \\((5,-1)\\):\n\n\\[\n3(-1) - 2(5) - m = -3 - 10 - m = -13 - m\n\\]\n\nStep 6: For the points to be on opposite sides of the line, the product of the values obtained in Step 5 must be negative:\n\n\\[\n(-1 - m)(-13 - m) < 0\n\\]\n\nStep 7: Solve the inequality:\n\n\\[\n(-1 - m)(-13 - m) < 0\n\\]\n\nThis can be rewritten as:\n\n\\[\n(m + 1)(m + 13) > 0\n\\]\n\nStep 8: Determine the critical points by setting each factor to zero:\n\n\\[\nm + 1 = 0 \\quad \\text{or} \\quad m + 13 = 0\n\\]\n\n\\[\nm = -1 \\quad \\text{or} \\quad m = -13\n\\]\n\nStep 9: Test the intervals determined by the critical points: \\((-\\infty, -13)\\), \\((-13, -1)\\), and \\((-1, \\infty)\\).\n\nFor \\(m \\in (-\\infty, -13)\\):\n\nChoose \\(m = -14\\):\n\n\\[\n(-14 + 1)(-14 + 13) = (-13)(-1) = 13 > 0\n\\]\n\nFor \\(m \\in (-13, -1)\\):\n\nChoose \\(m = -2\\):\n\n\\[\n(-2 + 1)(-2 + 13) = (-1)(11) = -11 < 0\n\\]\n\nFor \\(m \\in (-1, \\infty)\\):\n\nChoose \\(m = 0\\):\n\n\\[\n(0 + 1)(0 + 13) = (1)(13) = 13 > 0\n\\]\n\nStep 10: The inequality \\((m + 1)(m + 13) > 0\\) is satisfied in the intervals \\((-\\infty, -13)\\) and \\((-1, \\infty)\\).\n\nStep 11: Since the points must be on opposite sides of the line, the correct interval is \\(-13 < m < -1\\).\n\nConclusion:\n\n\\[\n\\boxed{B}\n\\]",
+    "Step 1: We are given two points \\((2,1)\\) and \\((5,-1)\\) and the line equation \\(3y - 2x - m = 0\\). To determine the range of values for \\(m\\) such that these points are on opposite sides of the line, we need to evaluate the line equation at these points and ensure that the results have opposite signs.\n\nStep 2: Substitute the coordinates of the first point \\((2,1)\\) into the line equation:\n\\[ 3(1) - 2(2) - m = 3 - 4 - m = -1 - m \\]\n\nStep 3: Substitute the coordinates of the second point \\((5,-1)\\) into the line equation:\n\\[ 3(-1) - 2(5) - m = -3 - 10 - m = -13 - m \\]\n\nStep 4: For the points to be on opposite sides of the line, the product of the two results must be negative:\n\\[ (-1 - m)(-13 - m) < 0 \\]\n\nStep 5: Solve the inequality:\n\\[ (m + 1)(m + 13) < 0 \\]\n\nStep 6: Determine the critical points by setting each factor to zero:\n\\[ m + 1 = 0 \\quad \\Rightarrow \\quad m = -1 \\]\n\\[ m + 13 = 0 \\quad \\Rightarrow \\quad m = -13 \\]\n\nStep 7: The critical points divide the number line into three intervals: \\((-\\infty, -13)\\), \\((-13, -1)\\), and \\((-1, \\infty)\\). Test a point in each interval to determine where the inequality holds.\n\nStep 8: Test \\(m = -14\\) in the interval \\((-\\infty, -13)\\):\n\\[ (-14 + 1)(-14 + 13) = (-13)(-1) = 13 > 0 \\]\nThis interval does not satisfy the inequality.\n\nStep 9: Test \\(m = -2\\) in the interval \\((-13, -1)\\):\n\\[ (-2 + 1)(-2 + 13) = (-1)(11) = -11 < 0 \\]\nThis interval satisfies the inequality.\n\nStep 10: Test \\(m = 0\\) in the interval \\((-1, \\infty)\\):\n\\[ (0 + 1)(0 + 13) = (1)(13) = 13 > 0 \\]\nThis interval does not satisfy the inequality.\n\nStep 11: Therefore, the range of values for \\(m\\) is:\n\\[ -13 < m < -1 \\]\n\nThe correct answer is \\(\\boxed{B}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.2, 0.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(0,2)": [
+      [1.0, 1.0, 1.0, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.0, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(0,3)": [
+      [0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.2, 0.8, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 0.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.2, 0.2, 0.2, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [1.0, 1.0, 1.0, 0.0, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.4, 0.6, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.6, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.2, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.2, 0.0, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.4, 0.2, 0.0, 0.2, 0.0],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(2,3)": [
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.0]
+    ]
+  }
+}

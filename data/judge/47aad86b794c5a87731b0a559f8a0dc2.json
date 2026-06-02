@@ -1,0 +1,62 @@
+{
+  "problem_id": "47aad86b794c5a87731b0a559f8a0dc2",
+  "generated_rollouts": [
+    "Step 1: Identify and label the given elements and the goal.\n- Given: Acute triangle \\(ABC\\) with \\(\\angle B > \\angle C\\).\n- \\(M\\) is the midpoint of \\(BC\\).\n- \\(D\\) is the foot of the altitude from \\(C\\) to \\(AB\\).\n- \\(E\\) is the foot of the altitude from \\(B\\) to \\(AC\\).\n- \\(K\\) is the midpoint of \\(ME\\).\n- \\(L\\) is the midpoint of \\(MD\\).\n- \\(KL\\) intersects the line through \\(A\\) parallel to \\(BC\\) at \\(T\\).\n- We need to prove that \\(TA = TM\\).\n\nStep 2: Analyze the geometric properties.\n- Since \\(D\\) and \\(E\\) are the feet of the altitudes, \\(CD \\perp AB\\) and \\(BE \\perp AC\\).\n- \\(M\\) is the midpoint of \\(BC\\), so \\(BM = MC\\).\n- \\(K\\) and \\(L\\) are midpoints of \\(ME\\) and \\(MD\\) respectively, so \\(K\\) and \\(L\\) divide \\(ME\\) and \\(MD\\) into two equal parts.\n\nStep 3: Use the properties of midpoints and parallel lines.\n- Since \\(K\\) and \\(L\\) are midpoints, \\(KL\\) is parallel to \\(DE\\) and half its length.\n- \\(DE\\) is a segment in the orthic triangle of \\(\\triangle ABC\\), and because \\(M\\) is the midpoint of \\(BC\\), \\(DE\\) is perpendicular to \\(BC\\).\n- The line through \\(A\\) parallel to \\(BC\\) intersects \\(KL\\) at \\(T\\).\n\nStep 4: Use symmetry and properties of midpoints.\n- Since \\(KL\\) is parallel to \\(DE\\) and \\(DE\\) is perpendicular to \\(BC\\), \\(KL\\) is also perpendicular to \\(BC\\).\n- Because \\(T\\) is the intersection of \\(KL\\) with the line through \\(A\\) parallel to \\(BC\\), and since \\(KL\\) is perpendicular to \\(BC\\), \\(T\\) must be the midpoint of the segment from \\(A\\) to the line parallel to \\(BC\\) through \\(M\\).\n\nStep 5: Conclude that \\(TA = TM\\).\n- Since \\(T\\) is the midpoint of the segment from \\(A\\) to the line parallel to \\(BC\\) through \\(M\\), and \\(M\\) is the midpoint of \\(BC\\), it follows that \\(TA = TM\\).\n\nThus, the final answer is \\(\\boxed{TA = TM}\\).",
+    "Step 1: We are given an acute triangle \\(ABC\\) with angle \\(B\\) greater than angle \\(C\\). Let \\(M\\) be the midpoint of \\(BC\\). \\(D\\) and \\(E\\) are the feet of the altitudes from \\(C\\) and \\(B\\) respectively. \\(K\\) and \\(L\\) are the midpoints of \\(ME\\) and \\(MD\\) respectively. The line \\(KL\\) intersects the line through \\(A\\) parallel to \\(BC\\) at \\(T\\). We need to prove that \\(TA = TM\\).\n\nStep 2: Since \\(M\\) is the midpoint of \\(BC\\), \\(M\\) divides \\(BC\\) into two equal segments, so \\(BM = MC\\).\n\nStep 3: Because \\(D\\) and \\(E\\) are the feet of the altitudes from \\(C\\) and \\(B\\) respectively, \\(CD\\) and \\(BE\\) are perpendicular to \\(AB\\) and \\(AC\\) respectively.\n\nStep 4: Since \\(K\\) and \\(L\\) are midpoints of \\(ME\\) and \\(MD\\) respectively, \\(KL\\) is parallel to \\(ED\\) and half its length. This is because \\(K\\) and \\(L\\) are midpoints, and by the Midsegment Theorem in triangles, \\(KL\\) is parallel to \\(ED\\) and half its length.\n\nStep 5: The line \\(KL\\) intersects the line through \\(A\\) parallel to \\(BC\\) at \\(T\\). Since \\(KL\\) is parallel to \\(ED\\) and \\(ED\\) is parallel to \\(BC\\) (because \\(D\\) and \\(E\\) are feet of perpendiculars from \\(C\\) and \\(B\\) respectively, and \\(BC\\) is a side of the triangle), \\(KL\\) is also parallel to \\(BC\\).\n\nStep 6: Since \\(KL\\) is parallel to \\(BC\\) and \\(A\\) is on the line through \\(A\\) parallel to \\(BC\\), \\(T\\) is the point where the line \\(KL\\) intersects the line through \\(A\\) parallel to \\(BC\\). Because \\(KL\\) is parallel to \\(BC\\) and \\(T\\) lies on the line through \\(A\\) parallel to \\(BC\\), \\(T\\) is the midpoint of the segment joining \\(A\\) and the point where the perpendicular from \\(A\\) to \\(BC\\) intersects \\(BC\\).\n\nStep 7: Since \\(M\\) is the midpoint of \\(BC\\) and \\(T\\) is the point where the line \\(KL\\) intersects the line through \\(A\\) parallel to \\(BC\\), and because \\(KL\\) is parallel to \\(BC\\) and \\(T\\) is the midpoint of the segment joining \\(A\\) and the foot of the perpendicular from \\(A\\) to \\(BC\\), \\(T\\) is also the midpoint of the segment \\(AM\\).\n\nTherefore, \\(TA = TM\\).\n\nThe final answer is \\(\\boxed{TA = TM}\\).",
+    "Step 1: Given an acute triangle \\(ABC\\) with angle \\(B\\) greater than angle \\(C\\). Let \\(M\\) be the midpoint of \\(BC\\). Points \\(D\\) and \\(E\\) are the feet of the altitudes from \\(C\\) and \\(B\\) respectively. Points \\(K\\) and \\(L\\) are the midpoints of \\(ME\\) and \\(MD\\) respectively. Line \\(KL\\) intersects the line through \\(A\\) parallel to \\(BC\\) at point \\(T\\). We need to prove that \\(TA = TM\\).\n\nStep 2: Since \\(M\\) is the midpoint of \\(BC\\), we have \\(BM = MC\\).\n\nStep 3: Points \\(D\\) and \\(E\\) are the feet of the altitudes from \\(C\\) and \\(B\\), respectively. Since \\(AD \\perp BC\\) and \\(BE \\perp BC\\), \\(AD\\) and \\(BE\\) are perpendicular to \\(BC\\).\n\nStep 4: Points \\(K\\) and \\(L\\) are midpoints of \\(ME\\) and \\(MD\\) respectively. Therefore, \\(K\\) and \\(L\\) divide \\(ME\\) and \\(MD\\) into two equal parts.\n\nStep 5: Since \\(K\\) and \\(L\\) are midpoints, \\(KL\\) is parallel to \\(ED\\) and half its length. This is because \\(KL\\) is a midsegment of triangle \\(MDE\\).\n\nStep 6: The line through \\(A\\) parallel to \\(BC\\) intersects \\(KL\\) at point \\(T\\). Since \\(KL\\) is parallel to \\(ED\\) and \\(ED\\) is perpendicular to \\(BC\\), \\(KL\\) is also perpendicular to \\(BC\\).\n\nStep 7: Since \\(KL\\) is perpendicular to \\(BC\\) and intersects the line through \\(A\\) parallel to \\(BC\\) at \\(T\\), \\(T\\) is the point where the perpendicular from \\(A\\) to \\(BC\\) intersects \\(KL\\).\n\nStep 8: Since \\(T\\) is the foot of the perpendicular from \\(A\\) to \\(BC\\), and \\(M\\) is the midpoint of \\(BC\\), \\(T\\) lies on the perpendicular bisector of \\(BC\\).\n\nStep 9: Therefore, \\(TA = TM\\) because \\(T\\) is equidistant from \\(A\\) and \\(M\\).\n\nConclusion: We have proven that \\(TA = TM\\).\n\nThe final answer is \\(\\boxed{TA = TM}\\).```",
+    "Step 1: We start by noting that in the acute triangle \\(ABC\\), angle \\(B\\) is greater than angle \\(C\\). Let \\(M\\) be the midpoint of \\(BC\\). \\(D\\) and \\(E\\) are the feet of the altitudes from \\(C\\) and \\(B\\) respectively. \\(K\\) and \\(L\\) are the midpoints of \\(ME\\) and \\(MD\\) respectively. We need to prove that \\(TA = TM\\) where \\(T\\) is the intersection of line \\(KL\\) with the line through \\(A\\) parallel to \\(BC\\).\n\nStep 2: Since \\(D\\) and \\(E\\) are the feet of the altitudes, \\(AD \\perp BC\\) and \\(BE \\perp AC\\). Since \\(M\\) is the midpoint of \\(BC\\), \\(M\\) lies on the perpendicular bisector of \\(BC\\). Therefore, \\(BM = CM\\).\n\nStep 3: Since \\(K\\) and \\(L\\) are midpoints of \\(ME\\) and \\(MD\\) respectively, \\(K\\) and \\(L\\) are also on the perpendicular bisector of \\(BC\\) because \\(M\\) is on the perpendicular bisector. Therefore, \\(K\\) and \\(L\\) are collinear with \\(M\\) and lie on the perpendicular bisector of \\(BC\\).\n\nStep 4: Since \\(KL\\) is a line segment connecting the midpoints of \\(ME\\) and \\(MD\\), \\(KL\\) is parallel to \\(BC\\) and half its length. Therefore, \\(KL\\) is parallel to \\(BC\\).\n\nStep 5: Since \\(KL\\) is parallel to \\(BC\\) and \\(T\\) is the intersection of \\(KL\\) with the line through \\(A\\) parallel to \\(BC\\), \\(T\\) must be the point on the line through \\(A\\) parallel to \\(BC\\) such that \\(TA = TM\\). This is because \\(KL\\) is parallel to \\(BC\\) and \\(M\\) is the midpoint of \\(BC\\), so \\(TA = TM\\).\n\nTherefore, the final answer is \\(\\boxed{TA = TM}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 0.2, 0.4, 0.6, 0.8, 0.8],
+      [0.2, 0.0, 0.0, 0.4, 0.6, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.2, 0.4, 0.6],
+      [0.8, 0.8, 0.8, 0.6, 0.4, 0.0, 0.2],
+      [1.0, 1.0, 1.0, 0.8, 0.6, 0.2, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2],
+      [0.2, 0.0, 0.4, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.2, 0.4, 0.6, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.2, 0.4, 0.6],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.8, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 0.4, 1.0],
+      [1.0, 1.0, 0.8, 0.6, 0.4],
+      [1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.2, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.4, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 1.0, 0.8, 1.0],
+      [0.8, 0.2, 0.8, 0.8, 0.8],
+      [0.8, 0.4, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.2, 0.8],
+      [0.8, 0.8, 0.8, 0.4, 0.4],
+      [1.0, 1.0, 1.0, 1.0, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 0.8]
+    ],
+    "(2,3)": [
+      [0.0, 0.2, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8]
+    ]
+  }
+}

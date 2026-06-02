@@ -1,0 +1,81 @@
+{
+  "problem_id": "038fb25aba521edb5a675d15df028afe",
+  "generated_rollouts": [
+    "Step 1: We are given the inequality to prove:\n\\[\n\\sum_{i=1}^n x_i(1-x_i)^2 \\le \\left(1 - \\frac{1}{n}\\right)^2\n\\]\nfor all nonnegative real numbers \\( x_1, x_2, \\ldots, x_n \\) such that \\( x_1 + x_2 + \\cdots + x_n = 1 \\).\n\nStep 2: Let \\( S = \\sum_{i=1}^n x_i(1-x_i)^2 \\). We need to show that \\( S \\le \\left(1 - \\frac{1}{n}\\right)^2 \\).\n\nStep 3: Consider the function \\( f(x) = x(1-x)^2 \\). We will analyze this function to understand its behavior. The derivative of \\( f(x) \\) is:\n\\[\nf'(x) = (1-x)^2 - 2x(1-x) = (1-x)(1-3x)\n\\]\nSetting \\( f'(x) = 0 \\) gives \\( x = \\frac{1}{3} \\) as a critical point. Evaluating \\( f(x) \\) at this point:\n\\[\nf\\left(\\frac{1}{3}\\right) = \\frac{1}{3} \\left(1 - \\frac{1}{3}\\right)^2 = \\frac{1}{3} \\left(\\frac{2}{3}\\right)^2 = \\frac{4}{27}\n\\]\nThis is the maximum value of \\( f(x) \\) on the interval \\( [0, 1] \\).\n\nStep 4: To find the maximum value of \\( S \\), we use the method of Lagrange multipliers. We maximize \\( S \\) subject to the constraint \\( g(x_1, x_2, \\ldots, x_n) = x_1 + x_2 + \\cdots + x_n - 1 = 0 \\).\n\nStep 5: Let \\( L(x_1, x_2, \\ldots, x_n, \\lambda) = \\sum_{i=1}^n x_i(1-x_i)^2 - \\lambda \\left( \\sum_{i=1}^n x_i - 1 \\right) \\). Taking the partial derivatives and setting them to zero, we get:\n\\[\n\\frac{\\partial L}{\\partial x_i} = (1-x_i)^2 - 2x_i(1-x_i) - \\lambda = 0 \\quad \\text{for all } i\n\\]\n\\[\n\\frac{\\partial L}{\\partial \\lambda} = - \\left( \\sum_{i=1}^n x_i - 1 \\right) = 0\n\\]\n\nStep 6: From the partial derivatives, we have:\n\\[\n(1-x_i)^2 - 2x_i(1-x_i) = \\lambda \\quad \\text{for all } i\n\\]\nThis implies that \\( 1-x_i \\) must be the same for all \\( i \\) because otherwise, the values of \\( x_i \\) would not satisfy the constraint \\( \\sum_{i=1}^n x_i = 1 \\). Therefore, \\( x_1 = x_2 = \\cdots = x_n = \\frac{1}{n} \\).\n\nStep 7: Substituting \\( x_i = \\frac{1}{n} \\) into \\( S \\), we get:\n\\[\nS = \\sum_{i=1}^n \\frac{1}{n} \\left( 1 - \\frac{1}{n} \\right)^2 = n \\cdot \\frac{1}{n} \\left( \\frac{n-1}{n} \\right)^2 = \\left( \\frac{n-1}{n} \\right)^2 = \\left( 1 - \\frac{1}{n} \\right)^2\n\\]\n\nStep 8: Therefore, the maximum value of \\( S \\) is indeed \\( \\left( 1 - \\frac{1}{n} \\right)^2 \\), and we have:\n\\[\n\\sum_{i=1}^n x_i(1-x_i)^2 \\le \\left( 1 - \\frac{1}{n} \\right)^2\n\\]\n\nThe final answer is \\( \\boxed{ \\sum_{i=1}^n x_i(1-x_i)^2 \\le \\left( 1 - \\frac{1}{n} \\right)^2 } \\).",
+    "Step 1: We start by analyzing the given inequality:\n\\[\n\\sum_{i=1}^n x_i (1 - x_i)^2 \\le \\left(1 - \\frac{1}{n}\\right)^2\n\\]\nfor all nonnegative real numbers \\(x_1, x_2, \\ldots, x_n\\) such that \\(x_1 + x_2 + \\cdots + x_n = 1\\).\n\nStep 2: Consider the function \\(f(x) = x(1 - x)^2\\). We need to find the maximum value of this function for \\(x \\in [0, 1]\\).\n\nStep 3: To find the critical points, take the derivative of \\(f(x)\\):\n\\[\nf'(x) = \\frac{d}{dx} \\left[ x(1 - x)^2 \\right] = (1 - x)^2 - 2x(1 - x) = (1 - x)(1 - 3x)\n\\]\n\nStep 4: Set the derivative equal to zero to find the critical points:\n\\[\n(1 - x)(1 - 3x) = 0 \\implies x = 1 \\text{ or } x = \\frac{1}{3}\n\\]\n\nStep 5: Evaluate \\(f(x)\\) at the critical points and the endpoints \\(x = 0\\) and \\(x = 1\\):\n\\[\nf(0) = 0, \\quad f(1) = 0, \\quad f\\left(\\frac{1}{3}\\right) = \\frac{1}{3} \\left(1 - \\frac{1}{3}\\right)^2 = \\frac{1}{3} \\cdot \\frac{4}{9} = \\frac{4}{27}\n\\]\n\nStep 6: The maximum value of \\(f(x)\\) on \\([0, 1]\\) is \\(\\frac{4}{27}\\).\n\nStep 7: By the method of Lagrange multipliers, we can show that the maximum value of \\(\\sum_{i=1}^n x_i (1 - x_i)^2\\) under the constraint \\(x_1 + x_2 + \\cdots + x_n = 1\\) is achieved when all \\(x_i\\) are equal, i.e., \\(x_i = \\frac{1}{n}\\) for all \\(i\\).\n\nStep 8: Substitute \\(x_i = \\frac{1}{n}\\) into the sum:\n\\[\n\\sum_{i=1}^n x_i (1 - x_i)^2 = \\sum_{i=1}^n \\frac{1}{n} \\left(1 - \\frac{1}{n}\\right)^2 = n \\cdot \\frac{1}{n} \\left(1 - \\frac{1}{n}\\right)^2 = \\left(1 - \\frac{1}{n}\\right)^2\n\\]\n\nStep 9: Therefore, the maximum value of the sum is indeed \\(\\left(1 - \\frac{1}{n}\\right)^2\\), and we have:\n\\[\n\\sum_{i=1}^n x_i (1 - x_i)^2 \\le \\left(1 - \\frac{1}{n}\\right)^2\n\\]\n\nConclusion:\n\\[\n\\boxed{\\left(1 - \\frac{1}{n}\\right)^2}\n\\]",
+    "Step 1: Define a function \\( f(x) = x(1-x)^2 \\) for \\( 0 \\leq x \\leq 1 \\).\n\nStep 2: We need to show that the maximum value of \\( f(x) \\) on the interval \\([0, 1]\\) is \\(\\left(1 - \\frac{1}{n}\\right)^2\\).\n\nStep 3: To find the critical points of \\( f(x) \\), we first compute its derivative:\n\\[ f'(x) = (1-x)^2 - 2x(1-x) = (1-x)(1-3x). \\]\nSetting the derivative equal to zero, we get:\n\\[ (1-x)(1-3x) = 0. \\]\nThus, the critical points are \\( x = 1 \\) and \\( x = \\frac{1}{3} \\).\n\nStep 4: Evaluate \\( f(x) \\) at the critical points and the endpoints of the interval:\n\\[ f(0) = 0, \\]\n\\[ f(1) = 0, \\]\n\\[ f\\left(\\frac{1}{3}\\right) = \\frac{1}{3} \\left(1 - \\frac{1}{3}\\right)^2 = \\frac{1}{3} \\left(\\frac{2}{3}\\right)^2 = \\frac{1}{3} \\cdot \\frac{4}{9} = \\frac{4}{27}. \\]\n\nStep 5: The maximum value of \\( f(x) \\) on the interval \\([0, 1]\\) is \\(\\frac{4}{27}\\).\n\nStep 6: Apply the method of Lagrange multipliers to find the maximum value of the sum \\( \\sum_{i=1}^n f(x_i) \\) subject to the constraint \\( \\sum_{i=1}^n x_i = 1 \\).\n\nStep 7: Let \\( L(x_1, x_2, \\ldots, x_n, \\lambda) = \\sum_{i=1}^n f(x_i) + \\lambda \\left( \\sum_{i=1}^n x_i - 1 \\right) \\).\n\nStep 8: Compute the partial derivatives of \\( L \\) and set them to zero:\n\\[ \\frac{\\partial L}{\\partial x_i} = f'(x_i) + \\lambda = 0 \\quad \\text{for} \\quad i = 1, 2, \\ldots, n, \\]\n\\[ \\frac{\\partial L}{\\partial \\lambda} = \\sum_{i=1}^n x_i - 1 = 0. \\]\n\nStep 9: From \\( f'(x_i) + \\lambda = 0 \\), we get:\n\\[ f'(x_i) = -\\lambda. \\]\n\nStep 10: Since \\( f(x) \\) has a maximum value of \\(\\frac{4}{27}\\) at \\( x = \\frac{1}{3} \\), we have:\n\\[ -\\lambda = \\frac{4}{27} \\quad \\text{for} \\quad x_i = \\frac{1}{3}. \\]\n\nStep 11: Substitute \\(\\lambda = -\\frac{4}{27}\\) into the constraint:\n\\[ \\sum_{i=1}^n x_i = 1. \\]\n\nStep 12: Since \\( x_i = \\frac{1}{3} \\) for all \\( i \\), we have:\n\\[ n \\cdot \\frac{1}{3} = 1 \\quad \\Rightarrow \\quad n = 3. \\]\n\nStep 13: Therefore, the sum is:\n\\[ \\sum_{i=1}^n f(x_i) = n \\cdot f\\left(\\frac{1}{3}\\right) = 3 \\cdot \\frac{4}{27} = \\frac{4}{9}. \\]\n\nStep 14: Simplify the expression:\n\\[ \\left(1 - \\frac{1}{n}\\right)^2 = \\left(1 - \\frac{1}{3}\\right)^2 = \\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}. \\]\n\nStep 15: Thus, we have shown that:\n\\[ \\sum_{i=1}^n x_i(1-x_i)^2 \\leq \\left(1 - \\frac{1}{n}\\right)^2. \\]\n\n\\(\\boxed{\\left(1 - \\frac{1}{n}\\right)^2}\\)",
+    "Step 1: We start by considering the function \\( f(x_i) = x_i(1-x_i)^2 \\) for \\( 0 \\leq x_i \\leq 1 \\).\n\nStep 2: To find the maximum value of \\( f(x_i) \\), we take the derivative of \\( f(x_i) \\) with respect to \\( x_i \\):\n\\[\nf'(x_i) = (1-x_i)^2 - 2x_i(1-x_i) = (1-x_i)(1-3x_i).\n\\]\nSetting \\( f'(x_i) = 0 \\), we get \\( x_i = \\frac{1}{3} \\) or \\( x_i = 1 \\). Evaluating \\( f(x_i) \\) at these points, we get:\n\\[\nf\\left(\\frac{1}{3}\\right) = \\frac{1}{3} \\left(1 - \\frac{1}{3}\\right)^2 = \\frac{1}{3} \\left(\\frac{2}{3}\\right)^2 = \\frac{4}{27},\n\\]\nand\n\\[\nf(1) = 1(1-1)^2 = 0.\n\\]\nThus, the maximum value of \\( f(x_i) \\) is \\( \\frac{4}{27} \\) when \\( x_i = \\frac{1}{3} \\).\n\nStep 3: We now consider the sum \\( \\sum_{i=1}^n x_i(1-x_i)^2 \\). Using the fact that \\( x_1 + x_2 + \\cdots + x_n = 1 \\), we can apply the method of Lagrange multipliers or the Cauchy-Schwarz inequality to bound the sum. However, a simpler approach is to use the convexity of the function \\( f(x_i) \\) and Jensen's inequality. The function \\( f(x_i) = x_i(1-x_i)^2 \\) is convex for \\( 0 \\leq x_i \\leq 1 \\), so by Jensen's inequality:\n\\[\n\\sum_{i=1}^n f(x_i) \\leq n f\\left(\\frac{1}{n}\\right).\n\\]\nEvaluating \\( f\\left(\\frac{1}{n}\\right) \\), we get:\n\\[\nf\\left(\\frac{1}{n}\\right) = \\frac{1}{n} \\left(1 - \\frac{1}{n}\\right)^2 = \\frac{1}{n} \\left(\\frac{n-1}{n}\\right)^2 = \\frac{(n-1)^2}{n^3}.\n\\]\nThus,\n\\[\n\\sum_{i=1}^n x_i(1-x_i)^2 \\leq n \\cdot \\frac{(n-1)^2}{n^3} = \\frac{(n-1)^2}{n^2} = \\left(1 - \\frac{1}{n}\\right)^2.\n\\]\nTherefore, we have proved that\n\\[\n\\sum_{i=1}^n x_i(1-x_i)^2 \\leq \\left(1 - \\frac{1}{n}\\right)^2.\n\\]\nThe proof is complete.\n\\boxed{\\left(1 - \\frac{1}{n}\\right)^2}"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.2, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.2, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.2, 0.0]
+    ],
+    "(0,2)": [
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.2, 0.0, 0.0, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(0,3)": [
+      [0.8, 0.8, 1.0],
+      [0.8, 0.8, 1.0],
+      [0.2, 0.0, 0.8],
+      [0.8, 0.8, 0.4],
+      [0.8, 0.8, 0.6],
+      [0.8, 0.8, 0.6],
+      [0.8, 0.8, 0.2],
+      [0.8, 0.8, 0.2]
+    ],
+    "(1,2)": [
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.8],
+      [0.8, 0.0, 0.8],
+      [0.8, 0.0, 0.8],
+      [0.8, 0.0, 0.8],
+      [0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.4],
+      [0.8, 0.8, 0.0],
+      [0.8, 0.8, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 0.8, 1.0],
+      [0.8, 0.8, 1.0],
+      [0.2, 0.0, 1.0],
+      [0.2, 0.0, 1.0],
+      [0.2, 0.0, 1.0],
+      [1.0, 0.8, 0.4],
+      [1.0, 0.8, 0.6],
+      [1.0, 0.8, 0.6],
+      [1.0, 0.8, 0.6],
+      [1.0, 0.8, 0.6],
+      [1.0, 0.8, 0.6],
+      [1.0, 0.8, 0.6],
+      [1.0, 0.8, 0.6],
+      [1.0, 0.8, 0.6],
+      [1.0, 0.8, 0.6]
+    ]
+  }
+}

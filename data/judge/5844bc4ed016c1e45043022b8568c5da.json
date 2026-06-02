@@ -1,0 +1,58 @@
+{
+  "problem_id": "5844bc4ed016c1e45043022b8568c5da",
+  "generated_rollouts": [
+    "Step 1: Consider triangle \\(ABC\\) with vertices \\(A\\), \\(B\\), and \\(C\\). We draw isosceles triangles \\(BMC\\), \\(CNA\\), and \\(APB\\) on the sides of \\(ABC\\) such that each triangle has a vertex angle of \\(120^\\circ\\). Let \\(M\\), \\(N\\), and \\(P\\) be the apexes of triangles \\(BMC\\), \\(CNA\\), and \\(APB\\) respectively.\n\nStep 2: We need to show that triangle \\(MNP\\) is equilateral. To do this, we will use rotation and symmetry properties of the triangles.\n\nStep 3: Consider the rotation of triangle \\(ABC\\) around point \\(B\\) by \\(60^\\circ\\) counterclockwise. This rotation maps point \\(C\\) to point \\(M\\) because \\(BMC\\) is an isosceles triangle with a vertex angle of \\(120^\\circ\\). Similarly, rotating triangle \\(ABC\\) around point \\(C\\) by \\(60^\\circ\\) counterclockwise maps point \\(A\\) to point \\(N\\), and rotating triangle \\(ABC\\) around point \\(A\\) by \\(60^\\circ\\) counterclockwise maps point \\(B\\) to point \\(P\\).\n\nStep 4: Since a \\(60^\\circ\\) rotation is a symmetry operation that preserves distances, the distances \\(BM = BC\\) and \\(CN = CA\\) and \\(AP = AB\\) are preserved. Therefore, after three such rotations, the points \\(M\\), \\(N\\), and \\(P\\) form a triangle that is congruent to triangle \\(ABC\\), but rotated and translated.\n\nStep 5: Because the original triangle \\(ABC\\) is rotated by \\(60^\\circ\\) around each of its vertices, the distances between \\(M\\), \\(N\\), and \\(P\\) are equal to the distances between the corresponding vertices of the original triangle, and the angles between these segments are \\(60^\\circ\\). This means that triangle \\(MNP\\) is an equilateral triangle.\n\nTherefore, the triangle \\(MNP\\) is equilateral. \\(\\boxed{MNP \\text{ is equilateral}}\\).",
+    "Step 1: Consider the triangle \\(ABC\\) and the isosceles triangles \\(BMC\\), \\(CNA\\), and \\(APB\\) drawn externally to \\(ABC\\) with vertex angles of \\(120^\\circ\\). We need to show that the triangle \\(MNP\\) is equilateral.\n\nStep 2: Let's denote the points where these isosceles triangles meet as follows: \\(M\\) is the point where \\(BM = MC\\) and \\(\\angle BMC = 120^\\circ\\), \\(N\\) is the point where \\(CN = NA\\) and \\(\\angle CNA = 120^\\circ\\), and \\(P\\) is the point where \\(PA = PB\\) and \\(\\angle APB = 120^\\circ\\).\n\nStep 3: To show that \\(MNP\\) is equilateral, we will use the property of rotation. Consider a rotation of \\(120^\\circ\\) around point \\(A\\). This rotation will map point \\(B\\) to point \\(P\\) because \\(\\angle BAP = 120^\\circ\\). Similarly, a rotation of \\(120^\\circ\\) around point \\(B\\) will map point \\(C\\) to point \\(M\\), and a rotation of \\(120^\\circ\\) around point \\(C\\) will map point \\(A\\) to point \\(N\\).\n\nStep 4: Since a rotation of \\(120^\\circ\\) maps each vertex of the original triangle \\(ABC\\) to the corresponding vertex of the isosceles triangles, the distances between the points \\(M\\), \\(N\\), and \\(P\\) are equal. That is, \\(MN = NP =PM\\).\n\nStep 5: Therefore, the triangle \\(MNP\\) is equilateral because all its sides are equal.\n\nThe final answer is \\(\\boxed{MNP \\text{ is equilateral}}\\).",
+    "Step 1: Consider the given triangle \\(ABC\\) and the isosceles triangles \\(BMC\\), \\(CNA\\), and \\(APB\\) constructed externally to \\(ABC\\) with vertex angles of \\(120^\\circ\\). We need to show that triangle \\(MNP\\) is equilateral.\n\nStep 2: Let's denote the angles of triangle \\(ABC\\) as follows: \\(\\angle BAC = \\alpha\\), \\(\\angle ABC = \\beta\\), and \\(\\angle ACB = \\gamma\\).\n\nStep 3: Since \\(BMC\\) is an isosceles triangle with vertex angle \\(120^\\circ\\), the base angles \\(\\angle BMC\\) and \\(\\angle BCM\\) are each \\(\\frac{180^\\circ - 120^\\circ}{2} = 30^\\circ\\). Therefore, \\(\\angle BMC = \\angle BCM = 30^\\circ\\).\n\nStep 4: Similarly, for triangle \\(CNA\\), the base angles are \\(\\angle CNA\\) and \\(\\angle率 = 30^\\circ\\).\n\nStep 5: And for triangle \\(APB\\), the base angles are \\(\\angle APB\\) and \\(\\angle PAB = 30^\\circ\\).\n\nStep 6: Now, we need to find the angles of triangle \\(MNP\\). Consider the points \\(M\\), \\(N\\), and \\(P\\) as the vertices of triangle \\(MNP\\).\n\nStep 7: The angle \\(\\angle NMP\\) can be found by considering the angles around point \\(M\\). Since \\(\\angle BMC = 30^\\circ\\) and \\(\\angle CNA = 30^\\circ\\), the angle \\(\\angle NMP = \\angle BMC + \\angle CNA = 30^\\circ + 30^\\circ = 60^\\circ\\).\n\nStep 8: Similarly, \\(\\angle MNP\\) and \\(\\angle PMN\\) can be found by considering the angles around points \\(N\\) and \\(P\\), and they will also be \\(60^\\circ\\).\n\nStep 9: Since all angles of triangle \\(MNP\\) are \\(60^\\circ\\), triangle \\(MNP\\) is equilateral.\n\nTherefore, the triangle \\(MNP\\) is equilateral.\n\\boxed{MNP \\text{ is equilateral}}.",
+    "Step 1: Consider the given isosceles triangles \\( BMC, CNA, \\) and \\( APB \\) with vertex angles of \\( 120^\\circ \\) drawn externally to triangle \\( ABC \\). We need to show that triangle \\( MNP \\) is equilateral.\n\nStep 2: Let's place the triangles in the complex plane for easier analysis. Assume the vertices of triangle \\( ABC \\) are represented by complex numbers \\( A = a \\), \\( B = b \\), and \\( C = c \\). Since the vertex angle of each isosceles triangle is \\( 120^\\circ \\), we can use the rotation property of complex numbers to find the vertices of the new triangles.\n\nStep 3: The rotation of a complex number \\( z \\) by \\( 120^\\circ \\) counterclockwise is given by multiplying by \\( e^{i \\frac{2\\pi}{3}} \\) (which is \\( -\\frac{1}{2} + i \\frac{\\sqrt{3}}{2} \\)). Therefore, the vertex \\( M \\) of triangle \\( BMC \\) can be found by rotating \\( B \\) around \\( C \\) by \\( 120^\\circ \\):\n\\[ M = c + (b - c) e^{i \\frac{2\\pi}{3}}. \\]\nSimilarly, the vertex \\( N \\) of triangle \\( CNA \\) is:\n\\[ N = a + (c - a) e^{i \\frac{2\\pi}{3}}, \\]\nand the vertex \\( P \\) of triangle \\( APB \\) is:\n\\[ P = b + (a - b) e^{i \\frac{2\\pi}{3}}. \\]\n\nStep 4: To show that triangle \\( MNP \\) is equilateral, we need to show that the distances \\( MN \\), \\( NP \\), and \\( PM \\) are equal. Using the distance formula for complex numbers, the distance between two points \\( z_1 \\) and \\( z_2 \\) is \\( |z_1 - z_2| \\). Therefore, we need to compute:\n\\[ MN = |M - N|, \\]\n\\[ NP = |N - P|, \\]\n\\[ PM = |P - M|. \\]\n\nStep 5: Substitute the expressions for \\( M \\), \\( N \\), and \\( P \\) into these distance formulas. After simplifying, we find that:\n\\[ MN = |c + (b - c) e^{i \\frac{2\\pi}{3}} - a - (c - a) e^{i \\frac{2\\pi}{3}}|, \\]\n\\[ NP = |a + (c - a) e^{i \\frac{2\\pi}{3}} - b - (a - b) e^{i \\frac{2\\pi}{3}}|, \\]\n\\[ PM = |b + (a - b) e^{i \\frac{2\\pi}{3}} - c - (b - c) e^{i \\frac{2\\pi}{3}}|. \\]\n\nStep 6: Simplify these expressions using the properties of complex numbers and the fact that \\( e^{i \\frac{2\\pi}{3}} \\) has the property that \\( e^{i \\frac{2\\pi}{3}} + e^{i \\frac{4\\pi}{3}} + 1 = 0 \\). After simplification, we find that:\n\\[ MN = NP = PM. \\]\n\nTherefore, triangle \\( MNP \\) is equilateral.\n\nFinal answer:\n\\[\n\\boxed{MNP \\text{ is an equilateral triangle}}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.6, 1.0, 1.0, 1.0],
+      [0.4, 0.8, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 0.0, 0.6],
+      [1.0, 1.0, 1.0, 0.6, 0.0]
+    ],
+    "(0,2)": [
+      [0.4, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.4, 1.0, 1.0, 1.0, 1.0, 0.6, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.2, 0.4, 0.8, 0.6, 1.0, 1.0],
+      [1.0, 1.0, 0.4, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.4, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 1.0, 0.2]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 0.6, 1.0, 1.0, 0.4],
+      [1.0, 1.0, 0.6, 0.6, 0.6, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 0.4, 0.4],
+      [0.4, 1.0, 1.0, 1.0, 1.0, 0.6, 1.0, 1.0, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 1.0, 1.0, 0.8, 1.0, 1.0],
+      [1.0, 0.8, 0.4, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 0.2, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.6, 0.8, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 0.8, 1.0, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 1.0, 1.0, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 1.0],
+      [0.8, 1.0, 1.0, 0.8, 1.0, 0.0]
+    ]
+  }
+}

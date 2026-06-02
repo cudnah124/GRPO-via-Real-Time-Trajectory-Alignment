@@ -1,0 +1,67 @@
+{
+  "problem_id": "54340895be7d64dd8847aff2bcb50044",
+  "generated_rollouts": [
+    "Step 1: We are given the inequality \\( f(2a^2 + a + 1) < f(3a^2 - 4a + 1) \\) where \\( f \\) is a monotonically decreasing function on the interval \\((0, +\\infty)\\).\n\nStep 2: Since \\( f \\) is monotonically decreasing, the inequality \\( f(2a^2 + a + 1) < f(3a^2 - 4a + 1) \\) implies that \\( 2a^2 + a + 1 > 3a^2 - 4a + 1 \\).\n\nStep 3: Simplify the inequality:\n\\[ 2a^2 + a + 1 > 3a^2 - 4a + 1 \\]\n\\[ 2a^2 + a + 1 - 3a^2 + 4a - 1 > 0 \\]\n\\[ -a^2 + 5a > 0 \\]\n\\[ a(5 - a) > 0 \\]\n\nStep 4: Solve the inequality \\( a(5 - a) > 0 \\). The roots of the equation \\( a(5 - a) = 0 \\) are \\( a = 0 \\) and \\( a = 5 \\).\n\nStep 5: The quadratic expression \\( a(5 - a) \\) is a parabola opening downwards (since the coefficient of \\( a^2 \\) is negative). Therefore, the expression is positive between the roots \\( a = 0 \\) and \\( a = 5 \\).\n\nStep 6: Since \\( f \\) is defined on the interval \\((0, +\\infty)\\), we must also ensure that both \\( 2a^2 + a + 1 > 0 \\) and \\( 3a^2 - 4a + 1 > 0 \\) for all \\( a \\) in the solution interval.\n\nStep 7: Check the quadratic \\( 2a^2 + a + 1 \\):\n\\[ 2a^2 + a + 1 = 0 \\]\nThe discriminant is \\( 1^2 - 4 \\cdot 2 \\cdot 1 = 1 - 8 = -7 \\), which is negative. Therefore, \\( 2a^2 + a + 1 > 0 \\) for all \\( a \\).\n\nStep 8: Check the quadratic \\( 3a^2 - 4a + 1 \\):\n\\[ 3a^2 - 4a + 1 = 0 \\]\nThe discriminant is \\( (-4)^2 - 4 \\cdot 3 \\cdot 1 = 16 - 12 = 4 \\), which is positive. The roots are \\( a = \\frac{4 \\pm 2}{6} = 1 \\) and \\( a = \\frac{1}{3} \\). Therefore, \\( 3a^2 - 4a + 1 > 0 \\) for \\( a < \\frac{1}{3} \\) or \\( a > 1 \\).\n\nStep 9: Combine the intervals from steps 5 and 8. The solution to \\( a(5 - a) > 0 \\) is \\( 0 < a < 5 \\). The combined interval where both \\( 2a^2 + a + 1 > 0 \\) and \\( 3a^2 - 4a + 1 > 0 \\) is \\( (0, \\frac{1}{3}) \\cup (1, 5) \\).\n\nTherefore, the interval of \\( a \\) is \\(\\boxed{(0, \\frac{1}{3}) \\cup (1, 5)}\\).",
+    "Step 1: We are given the inequality \\( f(2a^2 + a + 1) < f(3a^2 - 4a + 1) \\) where \\( f: (0, +\\infty) \\rightarrow \\mathbb{R} \\) is a monotonically decreasing function.\n\nStep 2: Since \\( f \\) is monotonically decreasing, the inequality \\( f(2a^2 + a + 1) < f(3a^2 - 4a + 1) \\) implies that the argument of \\( f \\) on the left must be greater than the argument on the right. Therefore, we have:\n\\[ 2a^2 + a + 1 > 3a^2 - 4a + 1 \\]\n\nStep 3: Simplify the inequality:\n\\[ 2a^2 + a + 1 - 3a^2 + 4a - 1 > 0 \\]\n\\[ -a^2 + 5a > 0 \\]\n\\[ a(5 - a) > 0 \\]\n\nStep 4: Solve the inequality \\( a(5 - a) > 0 \\). The roots of the equation \\( a(5 - a) = 0 \\) are \\( a = 0 \\) and \\( a = 5 \\). The quadratic expression \\( a(5 - a) \\) is a downward-opening parabola, so it is positive between the roots. Therefore, the solution to the inequality is:\n\\[ 0 < a < 5 \\]\n\nStep 5: We also need to ensure that the arguments of the function \\( f \\) are in the domain \\( (0, +\\infty) \\). This means:\n\\[ 2a^2 + a + 1 > 0 \\]\n\\[ 3a^2 - 4a + 1 > 0 \\]\n\nThe quadratic \\( 2a^2 + a + 1 \\) has a positive leading coefficient and its discriminant is \\( 1^2 - 4 \\cdot 2 \\cdot 1 = 1 - 8 = -7 \\), which is negative. Therefore, \\( 2a^2 + a + 1 > 0 \\) for all \\( a \\).\n\nThe quadratic \\( 3a^2 - 4a + 1 \\) has a positive leading coefficient and its discriminant is \\( (-4)^2 - 4 \\cdot 3 \\cdot 1 = 16 - 12 = 4 \\), which is positive. The roots of the equation \\( 3a^2 - 4a + 1 = 0 \\) are \\( a = \\frac{4 \\pm 2}{6} = 1 \\) and \\( a = \\frac{1}{3} \\). Therefore, \\( 3a^2 - 4a + 1 > 0 \\) for \\( a < \\frac{1}{3} \\) or \\( a > 1 \\).\n\nCombining the conditions \\( 0 < a < 5 \\), \\( a < \\frac{1}{3} \\), or \\( a > 1 \\), we get the interval:\n\\[ 0 < a < \\frac{1}{3} \\quad \\text{or} \\quad 1 < a < 5 \\]\n\nTherefore, the interval of \\( a \\) is:\n\\[ \\boxed{(0, \\frac{1}{3}) \\cup (1, 5)} \\]",
+    "Step 1: We are given the inequality \\( f(2a^2 + a + 1) < f(3a^2 - 4a + 1) \\) where \\( f: (0, +\\infty) \\rightarrow \\mathbb{R} \\) is a monotonically decreasing function.\n\nSince \\( f \\) is monotonically decreasing, the inequality \\( f(x) < f(y) \\) implies \\( x > y \\). Therefore, we can rewrite the given inequality as:\n\\[ 2a^2 + a + 1 > 3a^2 - 4a + 1 \\]\n\nStep 2: Simplify the inequality by moving all terms to one side:\n\\[ 2a^2 + a + 1 - 3a^2 + 4a - 1 > 0 \\]\n\\[ -a^2 + 5a > 0 \\]\n\nStep 3: Factor the quadratic expression:\n\\[ a(-a + 5) > 0 \\]\n\nStep 4: Determine the critical points by setting each factor to zero:\n\\[ a = 0 \\]\n\\[ -a + 5 = 0 \\implies a = 5 \\]\n\nStep 5: Analyze the sign of the expression \\( a(-a + 5) \\) in the intervals determined by the critical points \\( a = 0 \\) and \\( a = 5 \\):\n- For \\( a < 0 \\), both \\( a \\) and \\(-a + 5 \\) are negative, so their product is positive.\n- For \\( 0 < a < 5 \\), \\( a \\) is positive and \\(-a + 5 \\) is positive, so their product is negative.\n- For \\( a > 5 \\), \\( a \\) is positive and \\(-a + 5 \\) is negative, so their product is negative.\n\nSince the inequality \\( a(-a + 5) > 0 \\) must be satisfied, the solution is:\n\\[ 0 < a < 5 \\]\n\nStep 6: Verify that the domain of the original functions is within the interval \\((0, +\\infty)\\). Both \\( 2a^2 + a + 1 \\) and \\( 3a^2 - 4a + 1 \\) are quadratic expressions with positive leading coefficients and constant terms, and their minimum values are positive for all real \\( a \\).\n\nTherefore, the interval of \\( a \\) that satisfies the inequality is:\n\\[ \\boxed{(0, 5)} \\]",
+    "Step 1: We are given the inequality \\( f(2a^2 + a + 1) < f(3a^2 - 4a + 1) \\) where \\( f: (0, +\\infty) \\rightarrow \\mathbb{R} \\) is a monotonically decreasing function. Since \\( f \\) is monotonically decreasing, the inequality \\( f(2a^2 + a + 1) < f(3a^2 - 4a + 1) \\) implies that the argument of \\( f \\) on the left is greater than the argument of \\( f \\) on the right. Therefore, we have:\n\\[ 2a^2 + a + 1 > 3a^2 - 4a + 1. \\]\n\nStep 2: Simplify the inequality:\n\\[ 2a^2 + a + 1 > 3a^2 - 4a + 1. \\]\nSubtract \\( 3a^2 - 4a + 1 \\) from both sides:\n\\[ 2a^2 + a + 1 - 3a^2 + 4a - 1 > 0. \\]\nCombine like terms:\n\\[ -a^2 + 5a > 0. \\]\nFactor out \\( -a \\):\n\\[ -a(a - 5) > 0. \\]\nThis inequality is satisfied when \\( a(a - 5) < 0 \\). The roots of the equation \\( a(a - 5) = 0 \\) are \\( a = 0 \\) and \\( a = 5 \\). The quadratic expression \\( a(a - 5) \\) is a parabola opening upwards, so it is negative between the roots. Therefore, the solution to the inequality is:\n\\[ 0 < a < 5. \\]\n\nStep 3: We also need to ensure that the arguments of \\( f \\) are positive, i.e., \\( 2a^2 + a + 1 > 0 \\) and \\( 3a^2 - 4a + 1 > 0 \\). The quadratic \\( 2a^2 + a + 1 \\) has a discriminant \\( 1^2 - 4 \\cdot 2 \\cdot 1 = 1 - 8 = -7 \\), which is negative, so it is always positive for all real \\( a \\). Similarly, the quadratic \\( 3a^2 - 4a + 1 \\) has a discriminant \\( (-4)^2 - 4 \\cdot 3 \\cdot 1 = 16 - 12 = 4 \\), which is positive, so it has two real roots \\( a = \\frac{4 \\pm 2}{6} = 1 \\) and \\( \\frac{1}{3} \\). The quadratic is positive for \\( a < \\frac{1}{3} \\) or \\( a > 1 \\). However, since we already have \\( 0 < a < 5 \\), the valid interval for \\( a \\) is the intersection of \\( 0 < a < 5 \\) and \\( a < \\frac{1}{3} \\) or \\( a > 1 \\), which is:\n\\[ 0 < a < \\frac{1}{3} \\text{ or } 1 < a < 5. \\]\n\nThe final answer is \\( \\boxed{ (0, \\frac{1}{3}) \\cup (1, 5) } \\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.2]
+    ],
+    "(0,2)": [
+      [0.2, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.2, 0.0, 0.2, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.4],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.4],
+      [1.0, 1.0, 1.0, 1.0, 0.4, 0.8]
+    ],
+    "(0,3)": [
+      [0.2, 1.0, 1.0],
+      [0.0, 0.8, 1.0],
+      [0.8, 0.0, 1.0],
+      [0.8, 0.2, 1.0],
+      [0.8, 0.2, 1.0],
+      [1.0, 1.0, 0.0],
+      [1.0, 1.0, 0.2],
+      [1.0, 1.0, 0.2],
+      [1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.2, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.0, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.2, 0.4, 0.6, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.2, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.2, 0.8, 1.0],
+      [0.0, 0.8, 1.0],
+      [0.8, 0.0, 0.8],
+      [0.8, 0.0, 0.8],
+      [1.0, 0.8, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.2, 1.0],
+      [1.0, 0.2, 1.0],
+      [1.0, 0.2, 1.0],
+      [1.0, 0.2, 1.0],
+      [1.0, 1.0, 0.0]
+    ]
+  }
+}

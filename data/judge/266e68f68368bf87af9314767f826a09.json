@@ -1,0 +1,63 @@
+{
+  "problem_id": "266e68f68368bf87af9314767f826a09",
+  "generated_rollouts": [
+    "Step 1: Let the original width and height of the rectangle be \\( w \\) and \\( h \\), respectively. The original perimeter \\( P \\) is given by:\n\\[ P = 2(w + h) \\]\n\nStep 2: If the width is increased by 30%, the new width is \\( 1.3w \\). If the height is decreased by 20%, the new height is \\( 0.8h \\). The new perimeter \\( P_1 \\) is:\n\\[ P_1 = 2(1.3w + 0.8h) \\]\n\nStep 3: According to the problem, the new perimeter is equal to the original perimeter:\n\\[ 2(1.3w + 0.8h) = 2(w + h) \\]\nDividing both sides by 2, we get:\n\\[ 1.3w + 0.8h = w + h \\]\nRearranging terms, we find:\n\\[ 0.3w = 0.2h \\]\nDividing both sides by 0.1, we get:\n\\[ 3w = 2h \\]\nSolving for \\( h \\), we get:\n\\[ h = \\frac{3w}{2} \\]\n\nStep 4: Now, let's consider the case where the width is decreased by 20% and the height is increased by 30%. The new width is \\( 0.8w \\) and the new height is \\( 1.3h \\). The new perimeter \\( P_2 \\) is:\n\\[ P_2 = 2(0.8w + 1.3h) \\]\nSubstituting \\( h = \\frac{3w}{2} \\) into the expression for \\( P_2 \\), we get:\n\\[ P_2 = 2 \\left( 0.8w + 1.3 \\left( \\frac{3w}{2} \\right) \\right) \\]\n\\[ P_2 = 2 \\left( 0.8w + 1.95w \\right) \\]\n\\[ P_2 = 2 \\left( 2.75w \\right) \\]\n\\[ P_2 = 5.5w \\]\n\nStep 5: The original perimeter \\( P \\) is:\n\\[ P = 2 \\left( w + \\frac{3w}{2} \\right) \\]\n\\[ P = 2 \\left( \\frac{2w + 3w}{2} \\right) \\]\n\\[ P = 2 \\left( \\frac{5w}{2} \\right) \\]\n\\[ P = 5w \\]\n\nStep 6: The new perimeter \\( P_2 \\) is 5.5w, and the original perimeter \\( P \\) is 5w. The percentage change in the perimeter is:\n\\[ \\text{Percentage change} = \\left( \\frac{P_2 - P}{P} \\right) \\times 100 \\]\n\\[ \\text{Percentage change} = \\left( \\frac{5.5w - 5w}{5w} \\right) \\times 100 \\]\n\\[ \\text{Percentage change} = \\left( \\frac{0.5w}{5w} \\right) \\times 100 \\]\n\\[ \\text{Percentage change} = \\left( \\frac{0.5}{5} \\right) \\times 100 \\]\n\\[ \\text{Percentage change} = 0.1 \\times 100 \\]\n\\[ \\text{Percentage change} = 10\\% \\]\n\nThe perimeter will increase by 10%.\n\nFinal answer: \\(\\boxed{10\\%}\\)",
+    "Step 1: Let the original width and height of the rectangle be \\(w\\) and \\(h\\) respectively. The original perimeter of the rectangle is given by:\n\\[ P = 2(w + h) \\]\n\nStep 2: If the width is increased by 30% and the height is decreased by 20%, the new width and height are \\(1.3w\\) and \\(0.8h\\) respectively. The new perimeter is:\n\\[ P' = 2(1.3w + 0.8h) = 2.6w + 1.6h \\]\n\nStep 3: According to the problem, the new perimeter is the same as the original perimeter, so we have:\n\\[ 2.6w + 1.6h = 2(w + h) \\]\n\\[ 2.6w + 1.6h = 2w + 2h \\]\n\\[ 0.6w = 0.4h \\]\n\\[ 3w = 2h \\]\n\\[ h = 1.5w \\]\n\nStep 4: Now, if the original width is decreased by 20% and the height is increased by 30%, the new width and height are \\(0.8w\\) and \\(1.3h\\) respectively. The new perimeter is:\n\\[ P'' = 2(0.8w + 1.3h) = 1.6w + 2.6h \\]\n\nStep 5: Substitute \\(h = 1.5w\\) into the expression for the new perimeter:\n\\[ P'' = 1.6w + 2.6(1.5w) = 1.6w + 3.9w = 5.5w \\]\n\nStep 6: The original perimeter is:\n\\[ P = 2(w + h) = 2(w + 1.5w) = 2(2.5w) = 5w \\]\n\nStep 7: The new perimeter \\(P''\\) is greater than the original perimeter \\(P\\). The percentage increase in the perimeter is:\n\\[ \\frac{P'' - P}{P} \\times 100 = \\frac{5.5w - 5w}{5w} \\times 100 = \\frac{0.5w}{5w} \\times 100 = 10\\% \\]\n\nThus, the perimeter will increase by \\(\\boxed{10\\%}\\).",
+    "Step 1: Let the original width of the rectangle be \\( w \\) and the original height be \\( h \\). The original perimeter \\( P \\) of the rectangle is given by:\n\\[ P = 2(w + h) \\]\n\nStep 2: If the width is increased by 30%, the new width is \\( 1.3w \\). If the height is decreased by 20%, the new height is \\( 0.8h \\). The new perimeter \\( P_1 \\) is:\n\\[ P_1 = 2(1.3w + 0.8h) = 2.6w + 1.6h \\]\n\nStep 3: Since the perimeter does not change, we have:\n\\[ 2.6w + 1.6h = 2(w + h) \\]\n\\[ 2.6w + 1.6h = 2w + 2h \\]\n\\[ 0.6w = 0.4h \\]\n\\[ 3w = 2h \\]\n\\[ h = \\frac{3w}{2} \\]\n\nStep 4: Now, if the original width is decreased by 20%, the new width is \\( 0.8w \\). If the height is increased by 30%, the new height is \\( 1.3h \\). The new perimeter \\( P_2 \\) is:\n\\[ P_2 = 2(0.8w + 1.3h) = 1.6w + 2.6h \\]\n\nStep 5: Substitute \\( h = \\frac{3w}{2} \\) into the expression for \\( P_2 \\):\n\\[ P_2 = 1.6w + 2.6 \\left( \\frac{3w}{2} \\right) = 1.6w + 3.9w = 5.5w \\]\n\nStep 6: The original perimeter is:\n\\[ P = 2(w + h) = 2 \\left( w + \\frac{3w}{2} \\right) = 2 \\left( \\frac{2w + 3w}{2} \\right) = 2 \\left( \\frac{5w}{2} \\right) = 5w \\]\n\nStep 7: The percentage change in the perimeter is:\n\\[ \\text{Percentage change} = \\frac{P_2 - P}{P} \\times 100 = \\frac{5.5w - 5w}{5w} \\times 100 = \\frac{0.5w}{5w} \\times 100 = \\frac{0.5}{5} \\times 100 = 10\\% \\]\n\nSince \\( P_2 > P \\), the perimeter increases by 10%.\n\nFinal Answer:\n\\[\n\\boxed{10\\%}\n\\]",
+    "Step 1: Let the original width of the rectangle be \\( w \\) and the original height be \\( h \\). The original perimeter of the rectangle is given by:\n\\[ P = 2(w + h) \\]\n\nStep 2: When the width is increased by 30% and the height is decreased by 20%, the new width is \\( 1.3w \\) and the new height is \\( 0.8h \\). The new perimeter is:\n\\[ P' = 2(1.3w + 0.8h) = 2.6w + 1.6h \\]\nSince the perimeter does not change, we have:\n\\[ 2.6w + 1.6h = 2(w + h) \\]\n\\[ 2.6w + 1.6h = 2w + 2h \\]\n\\[ 0.6w = 0.4h \\]\n\\[ 3w = 2h \\]\n\\[ h = \\frac{3w}{2} \\]\n\nStep 3: Now, consider the case where the original width is decreased by 20% and the original height is increased by 30%. The new width is \\( 0.8w \\) and the new height is \\( 1.3h \\). The new perimeter is:\n\\[ P'' = 2(0.8w + 1.3h) = 1.6w + 2.6h \\]\nSubstituting \\( h = \\frac{3w}{2} \\) into the equation, we get:\n\\[ P'' = 1.6w + 2.6 \\left( \\frac{3w}{2} \\right) = 1.6w + 3.9w = 5.5w \\]\nThe original perimeter is:\n\\[ P = 2(w + h) = 2 \\left( w + \\frac{3w}{2} \\right) = 2 \\left( \\frac{2w + 3w}{2} \\right) = 2 \\left( \\frac{5w}{2} \\right) = 5w \\]\nThe percentage change in the perimeter is:\n\\[ \\frac{P'' - P}{P} \\times 100 = \\frac{5.5w - 5w}{5w} \\times 100 = \\frac{0.5w}{5w} \\times 100 = \\frac{0.5}{5} \\times 100 = 10\\% \\]\nSince \\( P'' > P \\), the perimeter increases by 10%.\n\nThe final answer is:\n\\[ \\boxed{10\\%} \\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.2, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.6, 0.2, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.6, 0.2, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.4, 1.0],
+      [1.0, 0.2, 1.0],
+      [1.0, 1.0, 0.4],
+      [0.8, 1.0, 0.4],
+      [1.0, 1.0, 0.4]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 1.0],
+      [0.8, 0.2, 1.0],
+      [0.8, 0.2, 1.0],
+      [0.8, 1.0, 0.2],
+      [1.0, 1.0, 0.2],
+      [0.8, 1.0, 0.2],
+      [1.0, 1.0, 0.2]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.6, 1.0],
+      [1.0, 0.6, 1.0],
+      [1.0, 1.0, 0.6],
+      [1.0, 1.0, 0.6],
+      [1.0, 1.0, 0.6],
+      [1.0, 1.0, 0.6]
+    ]
+  }
+}

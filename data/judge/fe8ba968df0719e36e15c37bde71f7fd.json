@@ -1,0 +1,50 @@
+{
+  "problem_id": "fe8ba968df0719e36e15c37bde71f7fd",
+  "generated_rollouts": [
+    "Step 1: Identify the equations of the parabolas and their properties.\nThe given parabolas are \\(y = x^2\\) and \\(y = -x^2\\). The focus of the parabola \\(y = x^2\\) is at \\((0, \\frac{1}{4})\\) and the focus of the parabola \\(y = -x^2\\) is at \\((0, -\\frac{1}{4})\\).\n\nStep 2: Understand the rolling motion.\nWhen the upper parabola \\(y = x^2\\) rolls without slipping around the fixed lower parabola \\(y = -x^2\\), the focus of the moving parabola will trace out a path. Since the parabolas are symmetric about the y-axis and their foci are vertically aligned, the locus of the focus of the moving parabola will be symmetric about the y-axis as well.\n\nStep 3: Determine the distance traveled by the focus.\nAs the upper parabola rolls around the lower parabola, the distance traveled by the focus of the moving parabola is equal to the circumference of the circle with radius equal to the distance between the foci of the two parabolas. The distance between the foci of the two parabolas is \\(2 \\times \\frac{1}{4} = \\frac{1}{2}\\). Therefore, the circumference of the circle is \\(2\\pi \\times \\frac{1}{4} = \\frac{\\pi}{2}\\).\n\nStep 4: Determine the locus of the focus.\nSince the focus of the moving parabola travels in a circular path with radius \\(\\frac{1}{4}\\) around the center of the lower parabola, the locus of the focus is a circle with radius \\(\\frac{1}{4}\\) centered at the origin. Therefore, the locus of the focus of the moving parabola is the circle \\(x^2 + y^2 = \\frac{1}{16}\\).\n\nThe final answer is:\n\\[\n\\boxed{x^2 + y^2 = \\frac{1}{16}}\n\\]",
+    "Step 1: Identify the initial position of the parabolas and their foci. The upper parabola \\(y = x^2\\) has its focus at \\((0, \\frac{1}{4})\\). The lower parabola \\(y = -x^2\\) has its focus at \\((0, -\\frac{1}{4})\\).\n\nStep 2: Determine the distance between the foci of the two parabolas. The distance between the foci is \\( \\frac{1}{4} - (-\\frac{1}{4}) = \\frac{1}{2} \\).\n\nStep 3: As the upper parabola rolls without slipping around the lower parabola, the focus of the upper parabola will trace out a path that is a circle with a radius equal to the distance between the foci of the two parabolas. This radius is \\(\\frac{1}{2}\\).\n\nStep 4: The center of this circle will be at the focus of the lower parabola, which is \\((0, -\\frac{1}{4})\\). The focus of the upper parabola will trace out a circle centered at \\((0, -\\frac{1}{4})\\) with a radius of \\(\\frac{1}{2}\\).\n\nStep 5: The locus of the focus of the moving parabola is a circle with center \\((0, -\\frac{1}{4})\\) and radius \\(\\frac{1}{2}\\). The equation of this circle is:\n\\[\nx^2 + \\left( y + \\frac{1}{4} \\right)^2 = \\left( \\frac{1}{2} \\right)^2\n\\]\nSimplifying, we get:\n\\[\nx^2 + \\left( y + \\frac{1}{4} \\right)^2 = \\frac{1}{4}\n\\]\n\nThe final answer is:\n\\[\n\\boxed{x^2 + \\left( y + \\frac{1}{4} \\right)^2 = \\frac{1}{4}}\n\\]",
+    "Step 1: Identify the equations of the parabolas.\nThe fixed parabola is given by \\( y = x^2 \\) and the moving parabola is given by \\( y = -x^2 \\). The focus of the fixed parabola \\( y = x^2 \\) is at \\( \\left(0, \\frac{1}{4}\\right) \\).\n\nStep 2: Determine the relationship between the parabolas when they are tangent.\nWhen the moving parabola \\( y = -x^2 \\) rolls without slipping around the fixed parabola \\( y = x^2 \\), the distance between the vertices of the parabolas is the sum of their distances from the origin, which is \\( 0 + 0 = 0 \\) at the initial position. As the moving parabola rolls, its vertex will trace a path along the fixed parabola.\n\nStep 3: Find the locus of the vertex of the moving parabola.\nWhen the moving parabola is at any position such that its vertex is at \\( (x, -x^2) \\), the distance from the origin to this point is \\( \\sqrt{x^2 + (-x^2)^2} = \\sqrt{x^2 + x^4} = x \\sqrt{1 + x^2} \\). However, the vertex of the moving parabola is always at a distance equal to the distance from the vertex of the fixed parabola, which is \\( \\frac{1}{4} \\).\n\nStep 4: Determine the locus of the focus of the moving parabola.\nAs the moving parabola rolls, its vertex traces the path of the fixed parabola. The focus of the moving parabola will be at a distance of \\( \\frac{1}{4} \\) from the vertex of the moving parabola, always perpendicular to the direction of rolling. Therefore, the locus of the focus of the moving parabola is a circle with radius \\( \\frac{1}{2} \\) centered at the origin.\n\nThe final answer is:\n\\[\n\\boxed{x^2 + y^2 = \\frac{1}{4}}\n\\]",
+    "Step 1: Identify the initial position of the parabolas.\nThe two parabolas are given by \\(y = x^2\\) and \\(y = -x^2\\). The focus of the parabola \\(y = x^2\\) is at \\((0, \\frac{1}{4})\\) and the focus of the parabola \\(y = -x^2\\) is at \\((0, -\\frac{1}{4})\\).\n\nStep 2: Determine the movement of the parabola \\(y = x^2\\) when it rolls around the parabola \\(y = -x^2\\).\nWhen the parabola \\(y = x^2\\) rolls without slipping around the parabola \\(y = -x^2\\), the focus of the moving parabola will trace out a path. The key is to understand the geometric relationship between the two parabolas and the movement of their foci.\n\nStep 3: Analyze the geometric relationship.\nThe two parabolas are symmetric with respect to the x-axis and are tangent at the origin. When the parabola \\(y = x^2\\) rolls around the parabola \\(y = -x^2\\), the focus of the moving parabola will trace out a path that is symmetric with respect to the x-axis and will be a circle with a radius equal to the distance between the foci of the two parabolas.\n\nStep 4: Calculate the distance between the foci.\nThe distance between the foci of the two parabolas is \\( \\frac{1}{4} - (-\\frac{1}{4}) = \\frac{1}{2} \\).\n\nStep 5: Determine the locus of the focus.\nThe locus of the focus of the moving parabola is a circle with a radius of \\(\\frac{1}{2}\\) centered at the origin. The equation of this circle is \\(x^2 + y^2 = \\left(\\frac{1}{2}\\right)^2 = \\frac{1}{4}\\).\n\nTherefore, the locus of the focus of the moving parabola is \\(\\boxed{x^2 + y^2 = \\frac{1}{4}}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.4, 0.8, 0.8],
+      [0.8, 0.0, 0.2, 0.8, 0.8],
+      [0.8, 0.8, 0.4, 0.2, 0.0]
+    ],
+    "(0,2)": [
+      [0.2, 0.8, 0.8, 0.8],
+      [0.8, 0.6, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.4],
+      [0.8, 0.8, 0.8, 0.2]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 0.6, 0.0, 0.8],
+      [1.0, 1.0, 0.8, 0.8, 0.0]
+    ],
+    "(1,2)": [
+      [0.2, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8],
+      [1.0, 1.0, 1.0, 0.4],
+      [1.0, 1.0, 1.0, 0.6],
+      [1.0, 1.0, 1.0, 0.4]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 0.8, 0.8, 1.0],
+      [0.8, 0.8, 0.6, 0.0, 0.8],
+      [0.8, 0.6, 0.2, 0.6, 0.6],
+      [1.0, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 0.4]
+    ],
+    "(2,3)": [
+      [0.2, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 0.6, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 1.0, 1.0],
+      [1.0, 0.8, 0.2, 0.2, 0.0]
+    ]
+  }
+}

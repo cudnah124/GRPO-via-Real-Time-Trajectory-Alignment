@@ -1,0 +1,48 @@
+{
+  "problem_id": "2fbef81f156e6e86e9e89e7aa728ece7",
+  "generated_rollouts": [
+    "Step 1: Let's denote Mrs. Fibonacci's age as a two-digit number \\(10a + b\\), where \\(a\\) and \\(b\\) are the digits of her age. Therefore, Mr. Fibonacci's age, when the digits are reversed, would be \\(10b + a\\).\n\nStep 2: The difference in their ages can be expressed as:\n\\[\n| (10a + b) - (10b + a) | = | 10a + b - 10b - a | = | 9a - 9b | = 9 | a - b |\n\\]\n\nStep 3: To find the smallest possible positive difference between their ages, we need to minimize \\(|a - b|\\). Since \\(a\\) and \\(b\\) are digits (i.e., integers from 0 to 9), the smallest non-zero value for \\(|a - b|\\) is 1.\n\nStep 4: If \\(|a - b| = 1\\), then the smallest possible difference between their ages is:\n\\[\n9 \\times 1 = 9\n\\]\n\nStep 5: To verify, let's find an example where \\(a\\) and \\(b\\) differ by 1. If \\(a = 2\\) and \\(b = 1\\), then Mrs. Fibonacci's age is 21 and Mr. Fibonacci's age is 12. The difference is:\n\\[\n| 21 - 12 | = 9\n\\]\n\nThus, the smallest possible positive difference between their ages is \\(\\boxed{9}\\).",
+    "Step 1: Let's denote Mrs. Fibonacci's age by a two-digit number \\(10a + b\\), where \\(a\\) and \\(b\\) are the digits of her age. Then Mr. Fibonacci's age, which is obtained by reversing the digits, would be \\(10b + a\\).\n\nStep 2: We need to find the smallest possible positive difference between their ages. The difference between their ages can be expressed as:\n\\[\n| (10a + b) - (10b + a) | = | 10a + b - 10b - a | = | 9a - 9b | = 9 | a - b |\n\\]\nThe smallest positive difference between their ages will occur when \\(|a - b|\\) is the smallest possible positive integer, which is 1. Therefore, the smallest possible positive difference between their ages is:\n\\[\n9 \\times 1 = 9\n\\]\n\nStep 3: To verify, let's find two-digit numbers whose digits differ by 1. For example, if \\(a = 2\\) and \\(b = 1\\), then Mrs. Fibonacci's age is 21 and Mr. Fibonacci's age is 12. The difference is:\n\\[\n21 - 12 = 9\n\\]\nThis confirms that the smallest possible positive difference between their ages is indeed 9.\n\nThus, the smallest possible positive difference between their ages is:\n\\[\n\\boxed{9}\n\\]",
+    "Step 1: Let's denote Mrs. Fibonacci's age as a two-digit number \\(10a + b\\) where \\(a\\) and \\(b\\) are the digits of her age. Therefore, Mr. Fibonacci's age would be \\(10b + a\\) since the digits are reversed.\n\nStep 2: We need to find the smallest possible positive difference between their ages. The difference between Mr. Fibonacci's age and Mrs. Fibonacci's age is given by:\n\\[\n| (10b + a) - (10a + b) | = | 10b + a - 10a - b | = | 9b - 9a | = 9 | b - a |\n\\]\nThe smallest positive difference occurs when \\(|b - a|\\) is the smallest non-zero value, which is 1. Therefore, the smallest possible positive difference between their ages is:\n\\[\n9 \\times 1 = 9\n\\]\n\nStep 3: To verify, let's find an example where the difference is 9. If \\(a = 2\\) and \\(b = 3\\), then Mrs. Fibonacci's age is 23 and Mr. Fibonacci's age is 32. The difference is:\n\\[\n32 - 23 = 9\n\\]\nThis confirms that the smallest possible positive difference between their ages is indeed 9.\n\nThe final answer is:\n\\[\n\\boxed{9}\n\\]",
+    "Step 1: Let's denote Mrs. Fibonacci's age as a two-digit number \\(10a + b\\) where \\(a\\) and \\(b\\) are the digits of her age, and \\(a\\) is the tens digit and \\(b\\) is the units digit. Then Mr. Fibonacci's age, when the digits are reversed, would be \\(10b + a\\).\n\nStep 2: The difference between their ages is given by:\n\\[\n| (10a + b) - (10b + a) | = | 10a + b - 10b - a | = | 9a - 9b | = 9 | a - b |\n\\]\n\nStep 3: To find the smallest possible positive difference, we need to minimize \\(|a - b|\\). Since \\(a\\) and \\(b\\) are digits (0 through 9), the smallest non-zero absolute difference between them is 1. Therefore, we set \\(|a - b| = 1\\).\n\nStep 4: The smallest possible positive difference in their ages is:\n\\[\n9 \\times 1 = 9\n\\]\n\nThus, the smallest possible positive difference between their ages is \\(\\boxed{9}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.6, 1.0],
+      [1.0, 0.6, 1.0],
+      [1.0, 0.6, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.6, 1.0],
+      [1.0, 0.6, 1.0],
+      [1.0, 0.6, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0],
+      [1.0, 1.0, 1.0, 1.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 0.4, 0.4],
+      [1.0, 1.0, 1.0, 1.0]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.6, 0.6, 0.4],
+      [1.0, 1.0, 1.0, 0.8]
+    ]
+  }
+}

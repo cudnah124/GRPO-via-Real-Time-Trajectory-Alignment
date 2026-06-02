@@ -1,0 +1,85 @@
+{
+  "problem_id": "f1d7469eb35b69623942e4d3ba726e1d",
+  "generated_rollouts": [
+    "Step 1: We are given the quadratic equation \\(x^2 - 5x + 6 = 0\\).\n\nStep 2: Factoring the quadratic expression, we get \\((x-2)(x-3) = 0\\).\n\nStep 3: Solve for \\(x\\) by setting each factor to zero, which gives \\(x = 2\\) or \\(x = 3\\).\n\nStep 4: The points are \\(A_1 = (2, 4)\\), \\(A_2 = (3, 9)\\), \\(A_3 = (a_3, a_3^2)\\), and \\(A_4 = (a_4, a_4^2)\\).\n\nStep 5: The slope of line \\(A_1A_2\\) is \\(\\frac{9-4}{3-2} = 5\\).\n\nStep 6: The slope of line \\(A_3A_4\\) is \\(\\frac{a_4^2 - a_3^2}{a_4 - a_3} = a_4 + a_3\\).\n\nStep 7: The tangent of the angle \\(\\theta\\) between the two lines is given by \\(\\tan \\theta = \\left| \\frac{5 - (a_4 + a_3)}{1 + 5(a_4 + a_3)} \\right|\\).\n\nStep 8: To maximize \\(\\tan \\theta\\), we need to minimize the denominator \\(1 + 5(a_4 + a_3)\\) while maximizing the numerator \\(|5 - (a_4 + a_3)|\\).\n\nStep 9: Let \\(a_3 = -a_4\\). Then \\(a_4 + a_3 = 0\\).\n\nStep 10: The expression for \\(\\tan \\theta\\) becomes \\(\\left| \\frac{5 - 0}{1 + 0} \\right| = 5\\).\n\nStep 11: Therefore, the maximum possible value for \\(\\tan \\theta\\) is 5.\n\nStep 12: The value of \\(\\tan \\theta\\) is \\(\\frac{5}{1}\\), where \\(m = 5\\) and \\(n = 1\\).\n\nStep 13: The value of \\(100m + n\\) is \\(100 \\cdot 5 + 1 = 501\\).\n\nThe answer is \\(\\boxed{501}\\).",
+    "Step 1: We are given four points \\( A_1 = (a_1, a_1^2) \\), \\( A_2 = (a_2, a_2^2) \\), \\( A_3 = (a_3, a_3^2) \\), and \\( A_4 = (a_4, a_4^2) \\) in the coordinate plane, and we need to find the maximum possible value of \\( \\tan \\theta \\) where \\( \\theta \\) is the acute angle of intersection of lines \\( A_1A_2 \\) and \\( A_3A_4 \\).\n\nStep 2: The slope of line \\( A_1A_2 \\) is given by:\n\\[\nm_1 = \\frac{a_2^2 - a_1^2}{a_2 - a_1} = a_2 + a_1\n\\]\nSimilarly, the slope of line \\( A_3A_4 \\) is:\n\\[\nm_2 = \\frac{a_4^2 - a_3^2}{a_4 - a_3} = a_4 + a_3\n\\]\n\nStep 3: The tangent of the angle \\( \\theta \\) between two lines with slopes \\( m_1 \\) and \\( m_2 \\) is given by:\n\\[\n\\tan \\theta = \\left| \\frac{m_1 - m_2}{1 + m_1 m_2} \\right|\n\\]\nSubstituting the slopes \\( m_1 = a_2 + a_1 \\) and \\( m_2 = a_4 + a_3 \\), we get:\n\\[\n\\tan \\theta = \\left| \\frac{(a_2 + a_1) - (a_4 + a_3)}{1 + (a_2 + a_1)(a_4 + a_3)} \\right| = \\left| \\frac{a_2 + a_1 - a_4 - a_3}{1 + (a_2 + a_1)(a_4 + a_3)} \\right|\n\\]\n\nStep 4: To maximize \\( \\tan \\theta \\), we need to choose the integers \\( a_1, a_2, a_3, a_4 \\) with distinct absolute values such that the numerator \\( |a_2 + a_1 - a_4 - a_3| \\) is maximized and the denominator \\( 1 + (a_2 + a_1)(a_4 + a_3) \\) is minimized. Let's consider the values \\( a_1 = 2, a_2 = 1, a_3 = -3, a_4 = -1 \\).\n\nStep 5: Substituting these values, we get:\n\\[\n\\tan \\theta = \\left| \\frac{2 + 1 - (-3) - (-1)}{1 + (2 + 1)(-3 + (-1))} \\right| = \\left| \\frac{2 + 1 + 3 + 1}{1 + 3 \\cdot (-4)} \\right| = \\left| \\frac{7}{1 - 12} \\right| = \\left| \\frac{7}{-11} \\right| = \\frac{7}{11}\n\\]\n\nStep 6: The maximum possible value of \\( \\tan \\theta \\) is \\( \\frac{7}{11} \\). Therefore, \\( m = 7 \\) and \\( n = 11 \\), and we need to find \\( 100m + n \\):\n\\[\n100m + n = 100 \\cdot 7 + 11 = 700 + 11 = 711\n\\]\n\nThe final answer is:\n\\[\n\\boxed{711}\n\\]",
+    "Step 1: We are given four points \\( A_1 = (a_1, a_1^2) \\), \\( A_2 = (a_2, a_2^2) \\), \\( A_3 = (a_3, a_3^2) \\), and \\( A_4 = (a_4, a_4^2) \\) in the coordinate plane. The lines \\( A_1A_2 \\) and \\( A_3A_4 \\) intersect on the \\( y \\)-axis at an acute angle \\( \\theta \\). We need to find the maximum possible value of \\( \\tan \\theta \\).\n\nStep 2: The slope of line \\( A_1A_2 \\) is given by:\n\\[\nm_1 = \\frac{a_2^2 - a_1^2}{a_2 - a_1} = a_1 + a_2\n\\]\nSimilarly, the slope of line \\( A_3A_4 \\) is:\n\\[\nm_2 = \\frac{a_4^2 - a_3^2}{a_4 - a_3} = a_3 + a_4\n\\]\n\nStep 3: The tangent of the angle \\( \\theta \\) between two lines with slopes \\( m_1 \\) and \\( m_2 \\) is given by:\n\\[\n\\tan \\theta = \\left| \\frac{m_1 - m_2}{1 + m_1 m_2} \\right|\n\\]\nSubstituting \\( m_1 = a_1 + a_2 \\) and \\( m_2 = a_3 + a_4 \\), we get:\n\\[\n\\tan \\theta = \\left| \\frac{(a_1 + a_2) - (a_3 + a_4)}{1 + (a_1 + a_2)(a_3 + a_4)} \\right|\n\\]\n\\[\n\\tan \\theta = \\left| \\frac{a_1 + a_2 - a_3 - a_4}{1 + a_1 a_3 + a_1 a_4 + a_2 a_3 + a_2 a_4} \\right|\n\\]\n\nStep 4: To maximize \\( \\tan \\theta \\), we need to choose \\( a_1, a_2, a_3, \\) and \\( a_4 \\) such that the numerator \\( |a_1 + a_2 - a_3 - a_4| \\) is maximized and the denominator \\( 1 + a_1 a_3 + a_1 a_4 + a_2 a_3 + a_2 a_4 \\) is minimized. Since \\( a_1, a_2, a_3, \\) and \\( a_4 \\) are integers with distinct absolute values, the smallest possible distinct values are \\( 1, -1, 2, -2 \\).\n\nStep 5: Let's choose \\( a_1 = 1 \\), \\( a_2 = -1 \\), \\( a_3 = 2 \\), and \\( a_4 = -2 \\). Then:\n\\[\na_1 + a_2 = 1 - 1 = 0\n\\]\n\\[\na_3 + a_4 = 2 - 2 = 0\n\\]\n\\[\n\\tan \\theta = \\left| \\frac{0 - 0}{1 + 0 \\cdot 0} \\right| = 0\n\\]\n\nStep 6: To find a valid combination that maximizes \\( \\tan \\theta \\), we try another set of values. Let's choose \\( a_1 = 1 \\), \\( a_2 = -1 \\), \\( a_3 = 3 \\), and \\( a_4 = -3 \\). Then:\n\\[\na_1 + a_2 = 1 - 1 = 0\n\\]\n\\[\na_3 + a_4 = 3 - 3 = 0\n\\]\n\\[\n\\tan \\theta = \\left| \\frac{0 - 0}{1 + 0 \\cdot 0} \\right| = 0\n\\]\n\nStep 7: We need to find a different set of values. Let's choose \\( a_1 = 1 \\), \\( a_2 = -1 \\), \\( a_3 = 3 \\), and \\( a_4 = -2 \\). Then:\n\\[\na_1 + a_2 = 1 - 1 = 0\n\\]\n\\[\na_3 + a_4 = 3 - 2 = 1\n\\]\n\\[\n\\tan \\theta = \\left| \\frac{0 - 1}{1 + 0 \\cdot 1} \\right| = 1\n\\]\n\nStep 8: We need to find a different set of values. Let's choose \\( a_1 = 1 \\), \\( a_2 = -1 \\), \\( a_3 = 2 \\), and \\( a_4 = -3 \\). Then:\n\\[\na_1 + a_2 = 1 - 1 = 0\n\\]\n\\[\na_3 + a_4 = 2 - 3 = -1\n\\]\n\\[\n\\tan \\theta = \\left| \\frac{0 - (-1)}{1 + 0 \\cdot (-1)} \\right| = 1\n\\]\n\nStep 9: We need to find a different set of values. Let's choose \\( a_1 = 1 \\), \\( a_2 = -1 \\), \\( a_3 = 2 \\), and \\( a_4 = 3 \\). Then:\n\\[\na_1 + a_2 = 1 - 1 = 0\n\\]\n\\[\na_3 + a_4 = 2 + 3 = 5\n\\]\n\\[\n\\tan \\theta = \\left| \\frac{0 - 5}{1 + 0 \\cdot 5} \\right| = 5\n\\]\n\nStep 10: The maximum possible value of \\( \\tan \\theta \\) is \\( 5 \\).\n\nThe final answer is \\( \\boxed{5} \\).",
+    "Step 1: Identify the coordinates of the points \\(A_1, A_2, A_3, A_4\\). They are \\(A_1 = (a_1, a_1^2)\\), \\(A_2 = (a_2, a_2^2)\\), \\(A_3 = (a_3, a_3^2)\\), and \\(A_4 = (a_4, a_4^2)\\).\n\nStep 2: Determine the slopes of the lines \\(A_1A_2\\) and \\(A_3A_4\\). The slope of \\(A_1A_2\\) is given by:\n\\[\nm_1 = \\frac{a_2^2 - a_1^2}{a_2 - a_1} = a_2 + a_1\n\\]\nSimilarly, the slope of \\(A_3A_4\\) is:\n\\[\nm_2 = \\frac{a_4^2 - a_3^2}{a_4 - a_3} = a_4 + a_3\n\\]\n\nStep 3: The lines intersect at the y-axis, so the x-coordinate of the intersection point is 0. The y-intercept of the line \\(A_1A_2\\) is given by:\n\\[\ny = a_1^2 - (a_1 + a_2)x\n\\]\nThe y-intercept of the line \\(A_3A_4\\) is:\n\\[\ny = a_3^2 - (a_3 + a_4)x\n\\]\nSetting \\(x = 0\\), we get the y-intercepts as \\(a_1^2\\) and \\(a_3^2\\), respectively.\n\nStep 4: The angle \\(\\theta\\) between the two lines is given by:\n\\[\n\\tan \\theta = \\left| \\frac{m_1 - m_2}{1 + m_1 m_2} \\right| = \\left| \\frac{(a_1 + a_2) - (a_3 + a_4)}{1 + (a_1 + a_2)(a_3 + a_4)} \\right|\n\\]\nWe need to maximize \\(\\tan \\theta\\). To do this, we choose distinct integers with distinct absolute values. Let's try \\(a_1 = 1\\), \\(a_2 = 2\\), \\(a_3 = -3\\), and \\(a_4 = -4\\). Then:\n\\[\nm_1 = 1 + 2 = 3, \\quad m_2 = -3 - 4 = -7\n\\]\nSo,\n\\[\n\\tan \\theta = \\left| \\frac{3 - (-7)}{1 + 3(-7)} \\right| = \\left| \\frac{10}{1 - 21} \\right| = \\left| \\frac{10}{-20} \\right| = \\frac{1}{2}\n\\]\nThus, the maximum possible value for \\(\\tan \\theta\\) is \\(\\frac{1}{2}\\). Here, \\(m = 1\\) and \\(n = 2\\), so \\(100m + n = 100 \\cdot 1 + 2 = 102\\).\n\nThe answer is:\n\\[\n\\boxed{102}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(0,2)": [
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    ],
+    "(0,3)": [
+      [0.8, 0.8, 1.0, 0.8],
+      [0.8, 0.8, 1.0, 0.8],
+      [0.8, 0.8, 1.0, 0.8],
+      [0.2, 0.2, 1.0, 0.8],
+      [0.8, 0.0, 1.0, 0.8],
+      [0.8, 0.0, 1.0, 0.8],
+      [0.8, 0.4, 1.0, 0.4],
+      [1.0, 0.8, 1.0, 0.8],
+      [1.0, 0.8, 1.0, 0.8],
+      [1.0, 0.8, 1.0, 0.8],
+      [1.0, 0.8, 1.0, 0.8],
+      [1.0, 0.8, 1.0, 0.8],
+      [1.0, 0.8, 1.0, 0.8]
+    ],
+    "(1,2)": [
+      [0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.4, 0.4, 0.4, 0.4, 0.4, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.2, 0.2, 0.2, 0.2, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 1.0, 0.8],
+      [0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0],
+      [0.8, 0.8, 0.8, 0.2],
+      [0.8, 0.8, 0.8, 0.2],
+      [0.8, 0.8, 0.8, 0.2]
+    ],
+    "(2,3)": [
+      [0.0, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.2, 0.8],
+      [0.8, 0.8, 0.8, 0.4],
+      [0.8, 0.8, 0.8, 0.2],
+      [0.8, 0.8, 0.8, 0.2],
+      [0.8, 0.8, 0.8, 0.2],
+      [0.8, 0.8, 0.8, 0.2],
+      [0.8, 0.8, 0.8, 0.2],
+      [0.8, 0.8, 0.8, 0.2]
+    ]
+  }
+}

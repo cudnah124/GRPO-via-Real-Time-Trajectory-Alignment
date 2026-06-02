@@ -1,0 +1,75 @@
+{
+  "problem_id": "714ec8b9efdc9ea6b77a2cd864c3be86",
+  "generated_rollouts": [
+    "Step 1: Consider a quadrilateral \\(ABCD\\) with opposite angles equal. Let \\(\\angle A = \\angle C\\) and \\(\\angle B = \\angle D\\).\n\nStep 2: Draw the diagonals \\(AC\\) and \\(BD\\) of the quadrilateral \\(ABCD\\). Let the diagonals intersect at point \\(O\\).\n\nStep 3: In \\(\\triangle AOB\\) and \\(\\triangle COD\\), we have:\n- \\(\\angle AOB = \\angle COD\\) (vertical angles),\n- \\(\\angle OAB = \\angle OCD\\) (alternate interior angles since \\(AB \\parallel CD\\)),\n- \\(\\angle OBA = \\angle ODC\\) (alternate interior angles since \\(AD \\parallel BC\\)).\n\nStep 4: By the Angle-Angle-Angle (AAA) similarity criterion, \\(\\triangle AOB \\sim \\triangle COD\\).\n\nStep 5: Since \\(\\triangle AOB \\sim \\triangle COD\\), the corresponding sides are proportional. Therefore, \\(\\frac{AB}{CD} = \\frac{AO}{CO} = \\frac{BO}{DO}\\).\n\nStep 6: Similarly, in \\(\\triangle AOD\\) and \\(\\triangle COB\\), we have:\n- \\(\\angle AOD = \\angle COB\\) (vertical angles),\n- \\(\\angle OAD = \\angle OBC\\) (alternate interior angles since \\(AB \\parallel CD\\)),\n- \\(\\angle ODA = \\angle OCB\\) (alternate interior angles since \\(AD \\parallel BC\\)).\n\nStep 7: By the Angle-Angle-Angle (AAA) similarity criterion, \\(\\triangle AOD \\sim \\triangle COB\\).\n\nStep 8: Since \\(\\triangle AOD \\sim \\triangle COB\\), the corresponding sides are proportional. Therefore, \\(\\frac{AD}{BC} = \\frac{AO}{CO} = \\frac{DO}{BO}\\).\n\nStep 9: From steps 5 and 8, we have \\(\\frac{AB}{CD} = \\frac{AD}{BC}\\). Since the ratios of the corresponding sides of similar triangles are equal, we can conclude that \\(AB = CD\\) and \\(AD = BC\\).\n\nTherefore, the opposite sides of the quadrilateral are equal. Hence, the quadrilateral \\(ABCD\\) is a parallelogram. \\(\\blacksquare\\)\n\nThe final answer is \\(\\boxed{\\text{The opposite sides of the quadrilateral are equal.}}\\)",
+    "Step 1: Let's consider a quadrilateral \\(ABCD\\) with opposite angles equal. This means \\(\\angle A = \\angle C\\) and \\(\\angle B = \\angle D\\).\n\nStep 2: Draw the diagonals \\(AC\\) and \\(BD\\) of the quadrilateral \\(ABCD\\). These diagonals intersect at point \\(O\\).\n\nStep 3: Consider triangles \\(ABD\\) and \\(CDB\\). We know that \\(\\angle A = \\angle C\\) and \\(\\angle B = \\angle D\\) (given). Also, the diagonal \\(BD\\) is common to both triangles.\n\nStep 4: By the Angle-Side-Angle (ASA) congruence criterion, triangles \\(ABD\\) and \\(CDB\\) are congruent because they share side \\(BD\\) and have two pairs of equal angles (\\(\\angle A = \\angle C\\) and \\(\\angle B = \\angle D\\)).\n\nStep 5: Since triangles \\(ABD\\) and \\(CDB\\) are congruent, their corresponding sides are equal. Therefore, \\(AB = CD\\) and \\(AD = BC\\).\n\nStep 6: We have shown that the opposite sides of the quadrilateral \\(ABCD\\) are equal, i.e., \\(AB = CD\\) and \\(AD = BC\\).\n\nTherefore, the quadrilateral \\(ABCD\\) is a parallelogram because its opposite sides are equal.\n\n\\(\\boxed{\\text{The opposite sides of the quadrilateral are equal.}}\\)",
+    "Step 1: Consider a quadrilateral \\(ABCD\\) with opposite angles equal, i.e., \\(\\angle A = \\angle C\\) and \\(\\angle B = \\angle D\\).\n\nStep 2: Draw the diagonals \\(AC\\) and \\(BD\\) of the quadrilateral \\(ABCD\\). These diagonals intersect at point \\(O\\).\n\nStep 3: In triangles \\(ABD\\) and \\(CBD\\), we have:\n- \\(\\angle A = \\angle C\\) (given)\n- \\(\\angle ADB = \\angle CBD\\) (vertical angles)\n- \\(\\angle ABD = \\angle CDB\\) (vertical angles)\n\nStep 4: By the Angle-Angle-Angle (AAA) similarity criterion, triangles \\(ABD\\) and \\(CBD\\) are similar.\n\nStep 5: Since triangles \\(ABD\\) and \\(CBD\\) are similar, their corresponding sides are proportional. Therefore, we have:\n\\[\n\\frac{AB}{CB} = \\frac{AD}{CD}\n\\]\n\nStep 6: Similarly, in triangles \\(ABC\\) and \\(ADC\\), we have:\n- \\(\\angle B = \\angle D\\) (given)\n- \\(\\angle ABC = \\angle ADC\\) (vertical angles)\n- \\(\\angle BAC = \\angle DAC\\) (vertical angles)\n\nStep 7: By the Angle-Angle-Angle (AAA) similarity criterion, triangles \\(ABC\\) and \\(ADC\\) are similar.\n\nStep 8: Since triangles \\(ABC\\) and \\(ADC\\) are similar, their corresponding sides are proportional. Therefore, we have:\n\\[\n\\frac{AB}{AD} = \\frac{BC}{CD}\n\\]\n\nStep 9: From the proportions in steps 5 and 8, we can deduce that:\n\\[\n\\frac{AB}{CB} = \\frac{AD}{CD} = \\frac{AB}{AD}\n\\]\n\nStep 10: By cross-multiplying, we get:\n\\[\nAB \\cdot CD = AD \\cdot CB \\quad \\text{and} \\quad AB \\cdot AD = BC \\cdot CD\n\\]\n\nStep 11: From the equations in step 10, we can see that the sides are proportional, and since the angles are equal, the sides must be equal. Therefore, we have:\n\\[\nAB = CD \\quad \\text{and} \\quad AD = BC\n\\]\n\nStep 12: Hence, the opposite sides of the quadrilateral \\(ABCD\\) are equal.\n\n\\(\\blacksquare\\)\n\nThe final answer is \\( \\boxed{ AB = CD } \\) and \\( AD = BC \\).",
+    "Step 1: Consider a quadrilateral \\(ABCD\\) with opposite angles equal, i.e., \\(\\angle A = \\angle C\\) and \\(\\angle B = \\angle D\\).\n\nStep 2: Draw the diagonals \\(AC\\) and \\(BD\\) of the quadrilateral \\(ABCD\\). These diagonals intersect at point \\(P\\).\n\nStep 3: In triangles \\(APB\\) and \\(CPD\\), we have:\n- \\(\\angle APB = \\angle CPD\\) (vertically opposite angles)\n- \\(\\angle BAP = \\angle DCP\\) (alternate interior angles, since \\(AB \\parallel CD\\) and \\(AC\\) is a transversal)\n- \\(\\angle ABP = \\angle CDP\\) (alternate interior angles, since \\(AD \\parallel BC\\) and \\(BD\\) is a transversal)\n\nStep 4: By the Angle-Angle-Side (AAS) congruence criterion, \\(\\triangle APB \\cong \\triangle CPD\\). Therefore, \\(AB = CD\\).\n\nStep 5: Similarly, in triangles \\(BPC\\) and \\(DPA\\), we have:\n- \\(\\angle BPC = \\angle DPA\\) (vertically opposite angles)\n- \\(\\angle PBC = \\angle PDA\\) (alternate interior angles, since \\(AB \\parallel CD\\) and \\(BD\\) is a transversal)\n- \\(\\angle BCP = \\angle DAP\\) (alternate interior angles, since \\(AD \\parallel BC\\) and \\(AC\\) is a transversal)\n\nStep 6: By the Angle-Angle-Side (AAS) congruence criterion, \\(\\triangle BPC \\cong \\triangle DPA\\). Therefore, \\(BC = DA\\).\n\nStep 7: Since \\(AB = CD\\) and \\(BC = DA\\), the opposite sides of the quadrilateral \\(ABCD\\) are equal.\n\nThus, we have proved that if the opposite angles of a quadrilateral are equal, then its opposite sides are also equal. \\(\\blacksquare\\)\n\n\\boxed{AB = CD \\text{ and } BC = DA}"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.2]
+    ],
+    "(0,2)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.4, 0.4, 0.4]
+    ],
+    "(0,3)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.4, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.4, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ]
+  }
+}

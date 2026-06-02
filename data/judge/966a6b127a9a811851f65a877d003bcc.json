@@ -1,0 +1,59 @@
+{
+  "problem_id": "966a6b127a9a811851f65a877d003bcc",
+  "generated_rollouts": [
+    "Step 1: Define an orthocentric tetrahedron. A tetrahedron is orthocentric if the altitudes from each vertex to the opposite face are concurrent. Let the vertices of the tetrahedron be \\(A\\), \\(B\\), \\(C\\), and \\(D\\). The orthocenter \\(H\\) is the point where the altitudes from each vertex intersect.\n\nStep 2: Recall that the nine-point circle of a triangle passes through the midpoints of the sides, the feet of the altitudes, and the midpoints of the segments joining the vertices to the orthocenter. For an orthocentric tetrahedron, the nine-point circles of the four faces are circles that pass through the midpoints of the sides of each face and the feet of the perpendiculars from the vertices to the opposite faces.\n\nStep 3: Consider the nine-point circles of the faces \\(ABC\\), \\(ABD\\), \\(ACD\\), and \\(BCD\\). Each nine-point circle lies in a plane that is parallel to the plane of the face and passes through the midpoint of the altitude from the opposite vertex to the face.\n\nStep 4: The key step is to show that these four planes are not only parallel but also intersect in a common circle. This can be shown by proving that the orthocenter \\(H\\) of the tetrahedron is equidistant from the planes of the four faces. Since the distance from a point to a plane is the same as the distance from the point to the line of intersection of the plane with the sphere of radius \\(R/2\\) centered at the orthocenter, and since the altitudes are concurrent, the distances are equal.\n\nStep 5: Therefore, the nine-point circles of the four faces of the orthocentric tetrahedron lie on a sphere with center at the midpoint of the segment joining the orthocenter \\(H\\) to the circumcenter \\(O\\) of the tetrahedron, and radius \\(R/2\\), where \\(R\\) is the circumradius of the tetrahedron. This sphere is known as the 24-point sphere.\n\nConclusion:\nThe nine-point circles of each face of an orthocentric tetrahedron lie on one sphere, the 24-point sphere. The center of this sphere is the midpoint of the segment joining the orthocenter and the circumcenter of the tetrahedron, and the radius is half the circumradius of the tetrahedron. This completes the proof.\n\n\\boxed{\\text{The nine-point circles of each face of an orthocentric tetrahedron lie on one sphere.}}",
+    "Step 1: We start by defining an orthocentric tetrahedron. An orthocentric tetrahedron is a tetrahedron where the altitudes from each vertex intersect at a single point, known as the orthocenter.\n\nStep 2: Consider an orthocentric tetrahedron \\(ABCD\\) with orthocenter \\(H\\). The altitudes from \\(A\\), \\(B\\), \\(C\\), and \\(D\\) intersect at \\(H\\). Let the feet of the altitudes from \\(A\\), \\(B\\), \\(C\\), and \\(D\\) to the opposite faces be \\(A'\\), \\(B'\\), \\(C'\\), and \\(D'\\) respectively.\n\nStep 3: The nine-point circle of a face of the tetrahedron is the circle that passes through the midpoints of the sides of the triangle and the feet of the altitudes from the vertices of the triangle. For face \\(ABC\\), the nine-point circle passes through \\(A'\\), \\(B'\\), \\(C'\\), and the midpoints of \\(AB\\), \\(BC\\), and \\(CA\\).\n\nStep 4: Since the tetrahedron is orthocentric, the orthocenter \\(H\\) is the same for all four faces. The nine-point circles of the faces \\(ABC\\), \\(ABD\\), \\(ACD\\), and \\(BCD\\) all pass through the orthocenter \\(H\\) of each face.\n\nStep 5: The center of the nine-point circle of a face is the midpoint of the segment joining the orthocenter of the face and the circumcenter of the face. The circumcenter of a face is the center of the circle that passes through the vertices of the face.\n\nStep 6: The eight points that define the nine-point circles of the four faces (midpoints of the sides, feet of the altitudes) and the orthocenter \\(H\\) of the tetrahedron all lie on a sphere. This sphere is known as the 24-point sphere, which is the sphere that passes through these eight points and the orthocenter \\(H\\).\n\nStep 7: To prove that these eight points and the orthocenter \\(H\\) lie on a sphere, we can use the fact that the orthocenter of an orthocentric tetrahedron is the same for all four faces and that the nine-point circles of the faces all pass through this orthocenter. Therefore, the eight points and the orthocenter \\(H\\) all lie on a sphere centered at the midpoint of the segment joining the orthocenter of the tetrahedron and the circumcenter of the tetrahedron.\n\nStep 8: Thus, we have shown that the nine-point circles of each face of an orthocentric tetrahedron lie on one sphere, the 24-point sphere.\n\nThe final answer is:\n\\boxed{\\text{The nine-point circles of each face of an orthocentric tetrahedron lie on one sphere, the 24-point sphere.}}",
+    "Step 1: Define an orthocentric tetrahedron.\nAn orthocentric tetrahedron is a tetrahedron where the altitudes from each vertex to the opposite face intersect at a common point, known as the orthocenter.\n\nStep 2: Identify the nine-point circles of each face.\nFor each face of the tetrahedron, the nine-point circle is a circle that passes through nine significant points: the midpoints of the sides, the feet of the altitudes, and the midpoints of the segments from each vertex to the orthocenter.\n\nStep 3: Understand the property of the nine-point spheres.\nIn an orthocentric tetrahedron, the nine-point circles of each face lie on a sphere, known as the 24-point sphere. This sphere is centered at the nine-point center of the tetrahedron, which is the midpoint of the segment joining the orthocenter and the centroid of the tetrahedron.\n\nStep 4: Prove the property.\nConsider an orthocentric tetrahedron with vertices \\(A, B, C, D\\). Let \\(H\\) be the orthocenter, and \\(G\\) be the centroid of the tetrahedron. The centroid \\(G\\) is the average of the vertices:\n\\[ G = \\frac{A + B + C + D}{4} \\]\nThe nine-point center \\(N\\) is the midpoint of the segment joining \\(H\\) and \\(G\\):\n\\[ N = \\frac{H + G}{2} = \\frac{H + \\frac{A + B + C + D}{4}}{2} = \\frac{4H + A + B + C + D}{8} \\]\nThe nine-point sphere of each face of the tetrahedron passes through the midpoints of the sides, the feet of the altitudes, and the midpoints of the segments from each vertex to the orthocenter. These points are equidistant from the nine-point center \\(N\\), thus forming a sphere centered at \\(N\\).\n\nConclusion:\nThe nine-point circles of each face of an orthocentric tetrahedron lie on one sphere, the 24-point sphere, centered at the nine-point center of the tetrahedron. Therefore, the final answer is:\n\\[\n\\boxed{\\text{The nine-point circles of each face of an orthocentric tetrahedron lie on one sphere (the 24-point sphere).}}\n\\]",
+    "Step 1: Define the problem and the properties of an orthocentric tetrahedron. An orthocentric tetrahedron is a tetrahedron where the altitudes from each vertex to the opposite face intersect at a single point, known as the orthocenter.\n\nStep 2: Recall that the nine-point circle of a triangle is a circle that passes through the midpoints of the sides, the feet of the altitudes, and the midpoints of the line segments joining each vertex to the orthocenter. For an orthocentric tetrahedron, each face is a triangle, and the nine-point circle of each face is a circle that passes through these points.\n\nStep 3: Consider the orthocentric tetrahedron \\(ABCD\\) with orthocenter \\(H\\). The altitudes from \\(A, B, C,\\) and \\(D\\) intersect at \\(H\\). Let \\(M, N, P, Q\\) be the midpoints of \\(BC, CA, AB,\\) and \\(DA\\) respectively, and let \\(M', N', P', Q'\\) be the feet of the altitudes from \\(A, B, C,\\) and \\(D\\) respectively.\n\nStep 4: The nine-point circle of face \\(ABC\\) passes through \\(M, N, P, M', N', P'\\). Similarly, the nine-point circle of face \\(ABD\\) passes through \\(M, Q, N, M', Q', Q\\). By symmetry, the nine-point circles of faces \\(ACD\\) and \\(BCD\\) also pass through their respective midpoints and feet of the altitudes.\n\nStep 5: The nine-point circles of the faces of an orthocentric tetrahedron are congruent and intersect at a common sphere, known as the 24-point sphere. This is because the orthocenter \\(H\\) is equidistant from the midpoints of the edges of the tetrahedron, and the feet of the altitudes are also equidistant from \\(H\\).\n\nStep 6: To prove that these nine-point circles lie on one sphere, consider the center of the 24-point sphere. This center is the midpoint of the segment joining \\(H\\) to the circumcenter of the tetrahedron. The radius of the 24-point sphere is the distance from this center to any of the nine points (midpoints or feet of the altitudes) on the nine-point circles.\n\nStep 7: Since the nine points (midpoints and feet of the altitudes) are equidistant from the center of the 24-point sphere, all nine-point circles lie on this sphere.\n\nTherefore, the nine-point circles of each face of an orthocentric tetrahedron lie on one sphere (the 24-point sphere).\n\nFinal Answer:\n\\[\n\\boxed{\\text{The nine-point circles of each face of an orthocentric tetrahedron lie on one sphere (the 24-point sphere).}}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.0, 0.4, 0.6, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.6, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.6, 0.4, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.2, 0.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.8, 0.8],
+      [1.0, 0.8, 0.6, 0.8],
+      [1.0, 0.8, 0.4, 0.2],
+      [1.0, 0.8, 0.2, 0.4]
+    ],
+    "(0,3)": [
+      [0.0, 0.2, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [0.2, 0.0, 0.4, 0.4, 0.6, 0.8, 1.0],
+      [0.8, 0.6, 0.8, 0.8, 0.4, 0.6, 0.8],
+      [1.0, 0.8, 1.0, 1.0, 0.2, 0.4, 0.6],
+      [1.0, 1.0, 1.0, 1.0, 0.2, 0.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 1.0, 0.8],
+      [1.0, 0.2, 1.0, 1.0],
+      [1.0, 0.8, 0.6, 0.8],
+      [1.0, 1.0, 0.4, 0.8],
+      [1.0, 0.8, 0.2, 0.4],
+      [1.0, 0.8, 0.2, 0.2],
+      [1.0, 1.0, 0.0, 0.8]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.4, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.2, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.4, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.6, 0.0, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.4, 0.2, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0, 0.2, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.6, 0.4, 0.0]
+    ]
+  }
+}

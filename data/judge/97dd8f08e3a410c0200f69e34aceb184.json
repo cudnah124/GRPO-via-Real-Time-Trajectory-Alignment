@@ -1,0 +1,46 @@
+{
+  "problem_id": "97dd8f08e3a410c0200f69e34aceb184",
+  "generated_rollouts": [
+    "Step 1: We are given that the force needed to loosen a bolt varies inversely with the length of the handle of the wrench. This relationship can be expressed mathematically as:\n\\[ F \\cdot L = k \\]\nwhere \\( F \\) is the force, \\( L \\) is the length of the handle, and \\( k \\) is a constant.\n\nStep 2: We know that a wrench with a handle length of 9 inches requires 375 pounds of force. Using this information, we can find the value of the constant \\( k \\):\n\\[ 375 \\cdot 9 = k \\]\n\\[ k = 3375 \\]\n\nStep 3: Now, we need to find the force required when the handle length is 15 inches. Using the inverse relationship \\( F \\cdot L = k \\), we substitute \\( L = 15 \\) and \\( k = 3375 \\):\n\\[ F \\cdot 15 = 3375 \\]\n\nStep 4: Solving for \\( F \\):\n\\[ F = \\frac{3375}{15} \\]\n\\[ F = 225 \\]\n\nTherefore, a wrench with a handle length of 15 inches will require \\boxed{225} pounds of force to loosen the same bolt.",
+    "Step 1: We start with the given information that the force needed to loosen a bolt varies inversely with the length of the handle of the wrench. This relationship can be expressed mathematically as:\n\\[ F \\cdot L = k \\]\nwhere \\( F \\) is the force, \\( L \\) is the length of the handle, and \\( k \\) is a constant.\n\nStep 2: We are given that a wrench with a handle length of 9 inches requires 375 pounds of force. We can use this information to find the constant \\( k \\):\n\\[ 375 \\cdot 9 = k \\]\n\\[ k = 3375 \\]\n\nStep 3: Now we need to find the force required for a wrench with a handle length of 15 inches. Using the inverse variation relationship \\( F \\cdot L = k \\), we substitute \\( L = 15 \\) and \\( k = 3375 \\):\n\\[ F \\cdot 15 = 3375 \\]\n\\[ F = \\frac{3375}{15} \\]\n\\[ F = 225 \\]\n\nTherefore, a wrench of 15 inches will require \\boxed{225} pounds of force to loosen the same bolt.",
+    "Step 1: We start by understanding the relationship given in the problem. The force needed to loosen a bolt varies inversely with the length of the handle of the wrench used. This means that the product of the force and the length of the handle is a constant. We can express this relationship mathematically as:\n\\[ F \\cdot L = k \\]\nwhere \\( F \\) is the force in pounds, \\( L \\) is the length of the handle in inches, and \\( k \\) is the constant of proportionality.\n\nStep 2: We are given that a wrench with a handle length of 9 inches requires 375 pounds of force to loosen the bolt. We can use this information to find the value of \\( k \\):\n\\[ 375 \\cdot 9 = k \\]\n\\[ k = 3375 \\]\n\nStep 3: Now, we need to find the force required to loosen the bolt with a handle length of 15 inches. We use the same relationship \\( F \\cdot L = k \\) and substitute \\( L = 15 \\) and \\( k = 3375 \\):\n\\[ F \\cdot 15 = 3375 \\]\n\nStep 4: To find \\( F \\), we solve for \\( F \\) by dividing both sides of the equation by 15:\n\\[ F = \\frac{3375}{15} \\]\n\\[ F = 225 \\]\n\nTherefore, a wrench with a handle length of 15 inches will require \\boxed{225} pounds of force to loosen the same bolt.",
+    "Step 1: We are given that the force needed to loosen a bolt varies inversely with the length of the handle of the wrench. This relationship can be expressed mathematically as:\n\\[ F \\cdot L = k \\]\nwhere \\( F \\) is the force, \\( L \\) is the length of the handle, and \\( k \\) is a constant.\n\nStep 2: We know that a wrench with a handle length of 9 inches requires 375 pounds of force. We can use this information to find the constant \\( k \\):\n\\[ F = 375 \\text{ pounds}, \\quad L = 9 \\text{ inches} \\]\n\\[ 375 \\cdot 9 = k \\]\n\\[ k = 3375 \\]\n\nStep 3: Now, we need to find the force required when the handle length is 15 inches. Using the same relationship \\( F \\cdot L = k \\), we substitute \\( L = 15 \\) and \\( k = 3375 \\):\n\\[ F \\cdot 15 = 3375 \\]\n\\[ F = \\frac{3375}{15} \\]\n\\[ F = 225 \\]\n\nTherefore, a wrench with a handle length of 15 inches will require \\boxed{225} pounds of force to loosen the same bolt."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 0.6],
+      [1.0, 0.8, 0.2],
+      [1.0, 1.0, 0.2]
+    ],
+    "(0,2)": [
+      [0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 0.0, 0.8],
+      [0.0, 0.0, 0.6],
+      [0.8, 0.6, 0.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 0.2, 0.2]
+    ],
+    "(1,3)": [
+      [0.0, 0.0, 0.0],
+      [0.2, 0.2, 0.2],
+      [0.0, 0.0, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 0.6],
+      [1.0, 1.0, 0.2],
+      [1.0, 1.0, 0.2]
+    ]
+  }
+}

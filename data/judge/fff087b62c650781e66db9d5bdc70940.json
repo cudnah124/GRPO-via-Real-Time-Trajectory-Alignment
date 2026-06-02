@@ -1,0 +1,65 @@
+{
+  "problem_id": "fff087b62c650781e66db9d5bdc70940",
+  "generated_rollouts": [
+    "Step 1: Let's denote the initial number Marek wrote down as \\( x \\).\n\nStep 2: The sequence of operations are: plus 4, divided by 4, minus 4, times 4. Let's apply these operations step by step to \\( x \\):\n\\[ x + 4 = x + 4 \\]\n\\[ \\frac{x + 4}{4} = \\frac{x + 4}{4} \\]\n\\[ \\frac{x + 4}{4} - 4 = \\frac{x + 4}{4} - 4 \\]\n\\[ \\left( \\frac{x + 4}{4} - 4 \\right) \\times 4 = \\left( \\frac{x + 4}{4} - 4 \\right) \\times 4 \\]\n\\[ \\left( \\frac{x + 4}{4} - 4 \\right) \\times 4 = \\left( \\frac{x + 4 - 16}{4} \\right) \\times 4 = (x - 12) \\]\n\nSo, after the first sequence of operations, the result is \\( x - 12 \\).\n\nStep 3: Let's apply the same sequence of operations to \\( x - 12 \\):\n\\[ (x - 12) + 4 = x - 8 \\]\n\\[ \\frac{x - 8}{4} = \\frac{x - 8}{4} \\]\n\\[ \\frac{x - 8}{4} - 4 = \\frac{x - 8}{4} - 4 \\]\n\\[ \\left( \\frac{x - 8}{4} - 4 \\right) \\times 4 = \\left( \\frac{x - 8}{4} - 4 \\right) \\times 4 \\]\n\\[ \\left( \\frac{x - 8}{4} - 4 \\right) \\times 4 = \\left( \\frac{x - 8 - 16}{4} \\right) \\times 4 = (x - 24) \\]\n\nSo, after the second sequence of operations, the result is \\( x - 24 \\).\n\nStep 4: Let's apply the same sequence of operations to \\( x - 24 \\):\n\\[ (x - 24) + 4 = x - 20 \\]\n\\[ \\frac{x - 20}{4} = \\frac{x - 20}{4} \\]\n\\[ \\frac{x - 20}{4} - 4 = \\frac{x - 20}{4} - 4 \\]\n\\[ \\left( \\frac{x - 20}{4} - 4 \\right) \\times 4 = \\left( \\frac{x - 20}{4} - 4 \\right) \\times 4 \\]\n\\[ \\left( \\frac{x - 20}{4} - 4 \\right) \\times 4 = \\left( \\frac{x - 20 - 16}{4} \\right) \\times 4 = (x - 36) \\]\n\nSo, after the third sequence of operations, the result is \\( x - 36 \\).\n\nStep 5: The four numbers written on paper are \\( x \\), \\( x - 12 \\), \\( x - 24 \\), and \\( x - 36 \\). According to the problem, their sum is 80:\n\\[ x + (x - 12) + (x - 24) + (x - 36) = 80 \\]\n\\[ 4x - 72 = 80 \\]\n\\[ 4x = 152 \\]\n\\[ x = 38 \\]\n\nSo, the numbers written on paper are \\( 38 \\), \\( 26 \\), \\( 14 \\), and \\( 2 \\).\n\nThe final answer is \\(\\boxed{38, 26, 14, 2}\\).",
+    "Step 1: Let's denote the initial number Marek wrote on paper as \\( x \\).\n\nStep 2: Let's analyze the sequence of operations performed on the number:\n1. \\( +4 \\)\n2. \\( \\div4 \\)\n3. \\( -4 \\)\n4. \\( \\times4 \\)\n\nWe will apply these operations step-by-step to \\( x \\) and simplify the expression.\n\n\\[\n\\begin{align*}\n\\text{After } +4: & \\quad x + 4 \\\\\n\\text{After } \\div4: & \\quad \\frac{x + 4}{4} \\\\\n\\text{After } -4: & \\quad \\frac{x + 4}{4} - 4 = \\frac{x + 4 - 16}{4} = \\frac{x - 12}{4} \\\\\n\\text{After } \\times4: & \\quad 4 \\times \\frac{x - 12}{4} = x - 12\n\\end{align*}\n\\]\n\nThus, the result of the first sequence of operations is \\( x - 12 \\).\n\nStep 3: Let's denote the second number as \\( y \\). Applying the same sequence of operations to \\( y \\):\n\\[\n\\begin{align*}\n\\text{After } +4: & \\quad y + 4 \\\\\n\\text{After } \\div4: & \\quad \\frac{y + 4}{4} \\\\\n\\text{After } -4: & \\quad \\frac{y + 4}{4} - 4 = \\frac{y + 4 - 16}{4} = \\frac{y - 12}{4} \\\\\n\\text{After } \\times4: & \\quad 4 \\times \\frac{y - 12}{4} = y - 12\n\\end{align*}\n\\]\n\nThus, the result of the second sequence of operations is \\( y - 12 \\).\n\nStep 4: Let's denote the third number as \\( z \\). Applying the same sequence of operations to \\( z \\):\n\\[\n\\begin{align*}\n\\text{After } +4: & \\quad z + 4 \\\\\n\\text{After } \\div4: & \\quad \\frac{z + 4}{4} \\\\\n\\text{After } -4: & \\quad \\frac{z + 4}{4} - 4 = \\frac{z + 4 - 16}{4} = \\frac{z - 12}{4} \\\\\n\\text{After } \\times4: & \\quad 4 \\times \\frac{z - 12}{4} = z - 12\n\\end{align*}\n\\]\n\nThus, the result of the third sequence of operations is \\( z - 12 \\).\n\nStep 5: According to the problem, the sum of the four numbers written on paper is 80. Therefore, we have:\n\\[\nx + (x - 12) + (x - 24) + (x - 36) = 80\n\\]\n\nStep 6: Simplify the equation:\n\\[\nx + x - 12 + x - 24 + x - 36 = 80\n\\]\n\\[\n4x - 72 = 80\n\\]\n\nStep 7: Solve for \\( x \\):\n\\[\n4x = 80 + 72\n\\]\n\\[\n4x = 152\n\\]\n\\[\nx = \\frac{152}{4}\n\\]\n\\[\nx = 38\n\\]\n\nStep 8: Substitute \\( x = 38 \\) into the expressions for \\( y \\) and \\( z \\):\n\\[\ny - 12 = 38 - 12 = 26\n\\]\n\\[\nz - 12 = 26 - 12 = 14\n\\]\n\nStep 9: Therefore, the four numbers written on paper are \\( 38, 26, 14, \\) and \\( 38 \\).\n\nFinal Answer:\n\\[\n\\boxed{38, 26, 14, 38}\n\\]",
+    "Step 1: Define the initial number as \\( x \\).\n\nStep 2: Perform the sequence of operations on \\( x \\):\n1. \\( x + 4 \\)\n2. \\(\\frac{x + 4}{4} \\)\n3. \\(\\frac{x + 4}{4} - 4 \\)\n4. \\(\\left(\\frac{x + 4}{4} - 4\\right) \\times 4 \\)\n\nLet's simplify each step:\n\n1. \\( x + 4 \\)\n2. \\(\\frac{x + 4}{4} = \\frac{x}{4} + 1 \\)\n3. \\(\\left(\\frac{x}{4} + 1\\right) - 4 = \\frac{x}{4} - 3 \\)\n4. \\( \\left(\\frac{x}{4} - 3\\right) \\times 4 = x - 12 \\)\n\nSo, after the first sequence of operations, the result is \\( x - 12 \\).\n\nStep 3: Repeat the sequence of operations on \\( x - 12 \\):\n1. \\( (x - 12) + 4 = x - 8 \\)\n2. \\(\\frac{x - 8}{4} \\)\n3. \\(\\frac{x - 8}{4} - 4 = \\frac{x - 8}{4} - \\frac{16}{4} = \\frac{x - 24}{4} \\)\n4. \\( \\left(\\frac{x - 24}{4}\\right) \\times 4 = x - 24 \\)\n\nSo, after the second sequence of operations, the result is \\( x - 24 \\).\n\nStep 4: Repeat the sequence of operations on \\( x - 24 \\):\n1. \\( (x - 24) + 4 = x - 20 \\)\n2. \\(\\frac{x - 20}{4} \\)\n3. \\(\\frac{x - 20}{4} - 4 = \\frac{x - 20}{4} - \\frac{16}{4} = \\frac{x - 36}{4} \\)\n4. \\( \\left(\\frac{x - 36}{4}\\right) \\times 4 = x - 36 \\)\n\nSo, after the third sequence of operations, the result is \\( x - 36 \\).\n\nStep 5: The four numbers Marek wrote on paper are \\( x \\), \\( x - 12 \\), \\( x - 24 \\), and \\( x - 36 \\). Their sum is given as 80:\n\\[\nx + (x - 12) + (x - 24) + (x - 36) = 80\n\\]\n\nStep 6: Simplify the equation:\n\\[\nx + x - 12 + x - 24 + x - 36 = 80\n\\]\n\\[\n4x - 72 = 80\n\\]\n\nStep 7: Solve for \\( x \\):\n\\[\n4x = 152\n\\]\n\\[\nx = 38\n\\]\n\nStep 8: Substitute \\( x = 38 \\) back into the sequence of operations to find the four numbers:\n1. \\( x = 38 \\)\n2. \\( x - 12 = 38 - 12 = 26 \\)\n3. \\( x - 24 = 38 - 24 = 14 \\)\n4. \\( x - 36 = 38 - 36 = 2 \\)\n\nTherefore, the numbers Marek wrote on paper are \\(\\boxed{38, 26, 14, 2}\\).",
+    "Step 1: Let's denote the initial number Marek wrote down as \\(x\\).\n\nStep 2: Let's analyze the sequence of operations on the calculator:\n1. \\(x + 4\\)\n2. \\(\\frac{x + 4}{4}\\)\n3. \\(\\frac{x + 4}{4} - 4\\)\n4. \\(\\left(\\frac{x + 4}{4} - 4\\right) \\times 4\\)\n\nLet's simplify each step:\n1. \\(x + 4\\)\n2. \\(\\frac{x + 4}{4}\\)\n3. \\(\\frac{x + 4}{4} - 4 = \\frac{x + 4 - 16}{4} = \\frac{x - 12}{4}\\)\n4. \\(\\left(\\frac{x - 12}{4}\\right) \\times 4 = x - 12\\)\n\nSo, after the first sequence of operations, the result is \\(x - 12\\).\n\nStep 3: Let's apply the same sequence of operations again to the result \\(x - 12\\):\n1. \\((x - 12) + 4 = x - 8\\)\n2. \\(\\frac{x - 8}{4}\\)\n3. \\(\\frac{x - 8}{4} - 4 = \\frac{x - 8 - 16}{4} = \\frac{x - 24}{4}\\)\n4. \\(\\left(\\frac{x - 24}{4}\\right) \\times 4 = x - 24\\)\n\nSo, after the second sequence of operations, the result is \\(x - 24\\).\n\nStep 4: Let's apply the same sequence of operations one more time to the result \\(x - 24\\):\n1. \\((x - 24) + 4 = x - 20\\)\n2. \\(\\frac{x - 20}{4}\\)\n3. \\(\\frac{x - 20}{4} - 4 = \\frac{x - 20 - 16}{4} = \\frac{x - 36}{4}\\)\n4. \\(\\left(\\frac{x - 36}{4}\\right) \\times 4 = x - 36\\)\n\nSo, after the third sequence of operations, the result is \\(x - 36\\).\n\nStep 5: The four numbers Marek wrote down are \\(x\\), \\(x - 12\\), \\(x - 24\\), and \\(x - 36\\). According to the problem, the sum of these four numbers is 80:\n\\[x + (x - 12) + (x - 24) + (x - 36) = 80\\]\n\\[4x - 72 = 80\\]\n\\[4x = 152\\]\n\\[x = 38\\]\n\nSo, the numbers Marek wrote down are:\n\\[38, 26, 14, -2\\]\n\nThe final answer is:\n\\[\\boxed{38, 26, 14, -2}\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.0, 0.8, 0.8]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2, 0.0, 0.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0, 0.2, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.2]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 0.8, 1.0, 0.8],
+      [1.0, 0.8, 0.0, 0.8, 0.8],
+      [1.0, 1.0, 0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0],
+      [0.8, 0.8, 0.8, 0.8, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 0.8]
+    ],
+    "(2,3)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 0.8, 1.0, 1.0],
+      [1.0, 0.8, 0.0, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.2]
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "problem_id": "3bc39c49dc6cbb4a6df37bbccfbce7dc",
+  "generated_rollouts": [
+    "Step 1: Determine the number of girls in the class.**\n- The total number of students is 30.\n- One-third of the students are girls.\n\\[ \\text{Number of girls} = \\frac{1}{3} \\times 30 = 10 \\]\n\n**Step 2: Determine the number of boys in the class.**\n- Total students: 30\n- Number of girls: 10\n\\[ \\text{Number of boys} = 30 - 10 = 20 \\]\n\n**Step 3: Determine the number of boys who play basketball.**\n- Three-quarters of the boys play basketball.\n\\[ \\text{Number of boys who play basketball} = \\frac{3}{4} \\times 20 = 15 \\]\n\n**Conclusion:**\nThe number of boys in the class who play basketball is \\(\\boxed{15}\\). The correct choice is \\(\\boxed{E}\\).",
+    "Step 1: Determine the number of girls in the class.\nWe are given that one-third of the students are girls. Therefore, the number of girls is:\n\\[\n\\frac{1}{3} \\times 30 = 10\n\\]\n\nStep 2: Determine the number of boys in the class.\nSince there are 30 students in total and 10 of them are girls, the number of boys is:\n\\[\n30 - 10 = 20\n\\]\n\nStep 3: Determine the number of boys who play basketball.\nWe are given that three-quarters of the boys play basketball. Therefore, the number of boys who play basketball is:\n\\[\n\\frac{3}{4} \\times 20 = 15\n\\]\n\nThe number of boys in the class who play basketball is \\(\\boxed{15}\\). The answer is \\(\\boxed{E}\\).",
+    "Step 1: Determine the number of girls in the class.\nThe total number of students is 30, and one-third of them are girls.\n\\[\n\\text{Number of girls} = \\frac{1}{3} \\times 30 = 10\n\\]\n\nStep 2: Determine the number of boys in the class.\nSince the total number of students is 30 and there are 10 girls, the number of boys is:\n\\[\n\\text{Number of boys} = 30 - 10 = 20\n\\]\n\nStep 3: Determine the number of boys who play basketball.\nThree-quarters of the boys play basketball.\n\\[\n\\text{Number of boys who play basketball} = \\frac{3}{4} \\times 20 = 15\n\\]\n\nThus, the number of boys in the class who play basketball is \\(\\boxed{15}\\). The answer is \\(\\boxed{E}\\).",
+    "Step 1: Determine the number of girls in the class.\nThe total number of students in the class is 30. One-third of the students are girls.\n\\[\n\\text{Number of girls} = \\frac{1}{3} \\times 30 = 10\n\\]\n\nStep 2: Determine the number of boys in the class.\nThe total number of students is 30, and we have already calculated the number of girls to be 10.\n\\[\n\\text{Number of boys} = 30 - 10 = 20\n\\]\n\nStep 3: Determine the number of boys who play basketball.\nThree-quarters of the boys play basketball.\n\\[\n\\text{Number of boys who play basketball} = \\frac{3}{4} \\times 20 = 15\n\\]\n\nConclusion:\nThe number of boys in the class who play basketball is \\(\\boxed{15}\\). The correct answer is \\(\\boxed{E}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0]
+    ]
+  }
+}

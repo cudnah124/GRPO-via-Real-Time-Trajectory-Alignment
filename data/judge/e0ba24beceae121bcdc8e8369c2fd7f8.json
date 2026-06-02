@@ -1,0 +1,80 @@
+{
+  "problem_id": "e0ba24beceae121bcdc8e8369c2fd7f8",
+  "generated_rollouts": [
+    "Step 1: Identify the range of two-digit numbers between 10 and 100. These numbers can be represented as \\( \\overline{ab} \\), where \\( a \\) and \\( b \\) are digits, and \\( a \\neq 0 \\).\n\nStep 2: Define the condition for a squared number. A number \\( \\overline{ab} \\) is a squared number if the sum of the number and its reverse, \\( \\overline{ba} \\), is a perfect square. Mathematically, this can be written as:\n\\[ 10a + b + 10b + a = 11(a + b) \\]\n\nStep 3: Determine the perfect squares that \\( 11(a + b) \\) can equal. Since \\( a \\) and \\( b \\) are digits (0-9), \\( a + b \\) ranges from 1 to 18. We need to find the perfect squares in this range that are multiples of 11:\n\\[ 11 \\times 1 = 11 \\]\n\\[ 11 \\times 4 = 44 \\]\n\\[ 11 \\times 9 = 99 \\]\n\nStep 4: Verify which of these perfect squares are within the range of two-digit numbers:\n- \\( 11(a + b) = 11 \\) implies \\( a + b = 1 \\). Possible pairs are (1,0).\n- \\( 11(a + b) = 44 \\) implies \\( a + b = 4 \\). Possible pairs are (1,3), (2,2), (3,1), (4,0).\n- \\( 11(a + b) = 99 \\) implies \\( a + b = 9 \\). Possible pairs are (1,8), (2,7), (3,6), (4,5), (5,4), (6,3), (7,2), (8,1), (9,0).\n\nStep 5: List all pairs (a, b) that satisfy the condition:\n- For 11: (1,0)\n- For 44: (1,3), (2,2), (3,1), (4,0)\n- For 99: (1,8), (2,7), (3,6), (4,5), (5,4), (6,3), (7,2), (8,1), (9,0)\n\nStep 6: Count the total number of valid pairs:\n- From 11: 1 pair\n- From 44: 4 pairs\n- From 99: 9 pairs\n\nTotal number of squared numbers: \\( 1 + 4 + 9 = 14 \\)\n\nHowever, we need to check if all these numbers are within the range 10 to 100. Some of the pairs might result in numbers outside this range, such as (1,8) and (8,1), which give 18 and 81, respectively. These are within the range.\n\nStep 7: Re-evaluate the range and count the valid pairs:\n- From 11: (1,0) - not valid\n- From 44: (1,3), (2,2), (3,1), (4,0) - all valid\n- From 99: (1,8), (2,7), (3,6), (4,5), (5,4), (6,3), (7,2), (8,1), (9,0) - all valid\n\nCorrect pairs:\n- From 44: 4 pairs\n- From 99: 9 pairs\n\nTotal number of valid squared numbers: \\( 4 + 9 = 13 \\)\n\nStep 8: Re-evaluate the pairs again to ensure no invalid numbers:\n- From 44: (1,3), (2,2), (3,1), (4,0)\n- From 99: (1,8), (2,7), (3,6), (4,5), (5,4), (6,3), (7,2), (8,1), (9,0)\n\nStep 9: Final count of valid pairs:\n- From 44: 4 pairs\n- From 99: 9 pairs\n\nTotal number of valid squared numbers: \\( 4 + 9 = 13 \\)\n\nStep 10: Verify the final count:\n- From 44: (1,3), (2,2), (3,1), (4,0)\n- From 99: (1,8), (2,7), (3,6), (4,5), (5,4), (6,3), (7,2), (8,1), (9,0)\n\nFinal count of valid pairs:\n- From 44: 4 pairs\n- From 99: 9 pairs\n\nTotal number of valid squared numbers: \\( 4 + 9 = 13 \\)\n\nStep 11: Correct the final count:\n- From 44: (1,3), (2,2), (3,1), (4,0)\n- From 99: (1,8), (2,7), (3,6), (4,5), (5,4), (6,3), (7,2), (8,1), (9,0)\n\nFinal count of valid pairs:\n- From 44: 4 pairs\n- From 99: 9 pairs\n\nTotal number of valid squared numbers: \\( 4 + 9 = 13 \\)\n\nStep 12: Final answer:\n\\(\\boxed{E}\\)",
+    "Step 1: Identify the range of numbers between 10 and 100.\n\nStep 2: Let's denote a two-digit number as \\(10a + b\\), where \\(a\\) and \\(b\\) are its digits. The number obtained by reversing the digits is \\(10b + a\\).\n\nStep 3: According to the problem, the sum of the number and its reverse must be a perfect square. Therefore, we have:\n\\[\n(10a + b) + (10b + a) = 11a + 11b = 11(a + b)\n\\]\nThis sum must be a perfect square.\n\nStep 4: Since \\(11(a + b)\\) is a perfect square and 11 is a prime number, \\(a + b\\) itself must be a multiple of 11. The possible values for \\(a + b\\) within the range of two-digit numbers are 11 (since the maximum sum of two digits is 18).\n\nStep 5: Now, we need to find all pairs \\((a, b)\\) such that \\(a + b = 11\\) and both \\(a\\) and \\(b\\) are digits (i.e., between 1 and 9 for \\(a\\) and 0 and 9 for \\(b\\)).\n\nStep 6: List all possible pairs:\n- \\(a = 2, b = 9\\) (number: 29, reverse: 92, sum: 121 = \\(11^2\\))\n- \\(a = 3, b = 8\\) (number: 38, reverse: 83, sum: 121 = \\(11^2\\))\n- \\(a = 4, b = 7\\) (number: 47, reverse: 74, sum: 121 = \\(11^2\\))\n- \\(a = 5, b = 6\\) (number: 56, reverse: 65, sum: 121 = \\(11^2\\))\n- \\(a = 6, b = 5\\) (number: 65, reverse: 56, sum: 121 = \\(11^2\\))\n- \\(a = 7, b = 4\\) (number: 74, reverse: 47, sum: 121 = \\(11^2\\))\n- \\(a = 8, b = 3\\) (number: 83, reverse: 38, sum: 121 = \\(11^2\\))\n- \\(a = 9, b = 2\\) (number: 92, reverse: 29, sum: 121 = \\(11^2\\))\n\nStep 7: Count the number of valid pairs. There are 8 pairs that satisfy the condition.\n\nConclusion:\n\\[\n\\boxed{C}\n\\]",
+    "Step 1: Identify the range of numbers between 10 and 100. These numbers are two-digit numbers, from 10 to 99.\n\nStep 2: Let the number be represented as \\(10a + b\\), where \\(a\\) and \\(b\\) are its digits, and \\(a\\) is the tens digit and \\(b\\) is the units digit. The reversed number is \\(10b + a\\).\n\nStep 3: According to the problem, the sum of the number and its reversed form must be a perfect square. Therefore, we need:\n\\[\n(10a + b) + (10b + a) = 11a + 11b = 11(a + b)\n\\]\nto be a perfect square.\n\nStep 4: Since 11 is a prime number, for \\(11(a + b)\\) to be a perfect square, \\(a + b\\) must be a multiple of 11. The possible values for \\(a + b\\) that are multiples of 11 and within the range of two-digit numbers (i.e., \\(11 \\leq a + b \\leq 18\\)) are 11 and 22. However, 22 is not possible since the maximum sum of two digits is 18. Therefore, \\(a + b = 11\\).\n\nStep 5: Find all pairs \\((a, b)\\) such that \\(a + b = 11\\) and both \\(a\\) and \\(b\\) are digits (i.e., \\(1 \\leq a \\leq 9\\) and \\(0 \\leq b \\leq 9\\)):\n- \\(a = 2, b = 9\\) gives the number 29.\n- \\(a = 3, b = 8\\) gives the number 38.\n- \\(a = 4, b = 7\\) gives the number 47.\n- \\(a = 5, b = 6\\) gives the number 56.\n- \\(a = 6, b = 5\\) gives the number 65.\n- \\(a = 7, b = 4\\) gives the number 74.\n- \\(a = 8, b = 3\\) gives the number 83.\n- \\(a = 9, b = 2\\) gives the number 92.\n\nStep 6: Verify that each of these numbers is a squared number by checking if their sum with their reversed forms is a perfect square:\n- \\(29 + 92 = 121 = 11^2\\)\n- \\(38 + 83 = 121 = 11^2\\)\n- \\(47 + 74 = 121 = 11^2\\)\n- \\(56 + 65 = 121 = 11^2\\)\n- \\(65 + 56 = 121 = 11^2\\)\n- \\(74 + 47 = 121 = 11^2\\)\n- \\(83 + 38 = 121 = 11^2\\)\n- \\(92 + 29 = 121 = 11^2\\)\n\nAll these pairs satisfy the condition, so there are 8 squared numbers between 10 and 100.\n\nThe final answer is \\(\\boxed{C}\\).",
+    "Step 1: Identify the range of numbers we need to consider. We are looking for squared numbers between 10 and 100.\n\nStep 2: List all the numbers between 10 and 100 that are perfect squares. These numbers are:\n\\[ 16, 25, 36, 49, 64, 81 \\]\n\nStep 3: Reverse the digits of each of these squared numbers and add them to the original number.\n\nStep 4: Check if the sum is a perfect square.\n\n1. For 16:\n   - Reversed number: 61\n   - Sum: \\( 16 + 61 = 77 \\)\n   - Check if 77 is a perfect square: No (since \\( 77 = 8.775 \\times 8.775 \\))\n\n2. For 25:\n   - Reversed number: 52\n   - Sum: \\( 25 + 52 = 77 \\)\n   - Check if 77 is a perfect square: No (as calculated above)\n\n3. For 36:\n   - Reversed number: 63\n   - Sum: \\( 36 + 63 = 99 \\)\n   - Check if 99 is a perfect square: No (since \\( 99 = 9.949 \\times 9.949 \\))\n\n4. For 49:\n   - Reversed number: 94\n   - Sum: \\( 49 + 94 = 143 \\)\n   - Check if 143 is a perfect square: No (since \\( 143 = 11.958 \\times 11.958 \\))\n\n5. For 64:\n   - Reversed number: 46\n   - Sum: \\( 64 + 46 = 110 \\)\n   - Check if 110 is a perfect square: No (since \\( 110 = 10.488 \\times 10.488 \\))\n\n6. For 81:\n   - Reversed number: 18\n   - Sum: \\( 81 + 18 = 99 \\)\n   - Check if 99 is a perfect square: No (as calculated above)\n\nStep 5: Since none of the sums of the reversed numbers and the original squared numbers results in a perfect square, there are no squared numbers between 10 and 100 that satisfy the given condition.\n\nConclusion: The number of squared numbers between 10 and 100 is 0.\n\n\\[ \\boxed{E} \\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 0.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 0.4, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.6, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.6, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    ],
+    "(0,2)": [
+      [0.0, 0.2, 0.2, 0.8, 1.0, 1.0],
+      [0.2, 0.0, 0.0, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.4, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.0],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.0, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 0.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.2, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 0.2, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(2,3)": [
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8]
+    ]
+  }
+}

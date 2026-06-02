@@ -4,3 +4,4 @@
 *.aux
 *.ipynb
 gemini-2.json
+*.jsonl

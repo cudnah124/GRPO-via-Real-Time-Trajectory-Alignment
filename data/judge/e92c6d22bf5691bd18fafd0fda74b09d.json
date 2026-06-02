@@ -1,0 +1,61 @@
+{
+  "problem_id": "e92c6d22bf5691bd18fafd0fda74b09d",
+  "generated_rollouts": [
+    "Step 1: Consider a family of straight lines that form a right-angled triangle with area \\( \\frac{a^2}{2} \\). The general equation of a line in slope-intercept form is \\( y = mx + c \\). For a right-angled triangle, the lines intersect at the origin, and the legs of the triangle are the x-intercept and y-intercept of the lines.\n\nStep 2: The x-intercept of the line \\( y = mx + c \\) is \\( -\\frac{c}{m} \\) and the y-intercept is \\( c \\). The area of the right-angled triangle formed by the line, the x-axis, and the y-axis is given by:\n\\[ \\text{Area} = \\frac{1}{2} \\times \\left| -\\frac{c}{m} \\right| \\times |c| = \\frac{c^2}{2|m|} \\]\nWe are given that the area is \\( \\frac{a^2}{2} \\), so:\n\\[ \\frac{c^2}{2|m|} = \\frac{a^2}{2} \\]\nThis simplifies to:\n\\[ c^2 = a^2 |m| \\]\nor\n\\[ c = \\pm a \\sqrt{|m|} \\]\n\nStep 3: Substitute \\( c = a \\sqrt{|m|} \\) and \\( c = -a \\sqrt{|m|} \\) into the line equation \\( y = mx + c \\):\n\\[ y = mx + a \\sqrt{|m|} \\]\n\\[ y = mx - a \\sqrt{|m|} \\]\n\nStep 4: To find the envelope of these lines, we need to eliminate the parameter \\( m \\) from the equations of the lines and their derivatives with respect to \\( m \\). First, find the derivative of \\( y = mx + a \\sqrt{|m|} \\) with respect to \\( m \\):\n\\[ \\frac{dy}{dm} = x + \\frac{a}{2\\sqrt{|m|}} \\frac{m}{\\sqrt{|m|}} = x + \\frac{a}{2} \\text{sgn}(m) \\]\nwhere \\(\\text{sgn}(m)\\) is the sign function.\n\nStep 5: Set the derivative equal to zero to find the critical points:\n\\[ x + \\frac{a}{2} \\text{sgn}(m) = 0 \\]\nThis gives:\n\\[ x = -\\frac{a}{2} \\text{sgn}(m) \\]\n\nStep 6: Substitute \\( x = -\\frac{a}{2} \\text{sgn}(m) \\) back into the line equation \\( y = mx + a \\sqrt{|m|} \\):\n\\[ y = m \\left( -\\frac{a}{2} \\text{sgn}(m) \\right) + a \\sqrt{|m|} \\]\nFor \\( m > 0 \\), \\(\\text{sgn}(m) = 1\\):\n\\[ y = -\\frac{ma}{2} + a \\sqrt{m} \\]\nFor \\( m < 0 \\), \\(\\text{sgn}(m) = -1\\):\n\\[ y = -\\frac{-ma}{2} + a \\sqrt{-m} = \\frac{ma}{2} + a \\sqrt{-m} \\]\n\nStep 7: Combine these two cases to get the envelope:\n\\[ y^2 = \\left( -\\frac{ma}{2} + a \\sqrt{m} \\right)^2 \\]\n\\[ y^2 = \\left( \\frac{ma}{2} + a \\sqrt{-m} \\right)^2 \\]\nBoth simplify to the same equation:\n\\[ y^2 = a^2 \\left( \\frac{x^2}{a^2} \\right) \\]\n\\[ y^2 = x^2 \\]\n\\[ x^2 + y^2 = a^2 \\]\n\nSo the equation of the envelope is:\n\\[ \\boxed{x^2 + y^2 = a^2} \\]",
+    "Step 1: Consider the family of lines that form a right-angled triangle with an area of \\(\\frac{a^2}{2}\\). The general form of such a line can be written as \\(y = mx + c\\), where \\(m\\) is the slope and \\(c\\) is the y-intercept.\n\nStep 2: The right-angled triangle is formed by the line intersecting the x-axis and y-axis, and the line \\(x = 0\\) (y-axis) and \\(y = 0\\) (x-axis). The intercepts of the line with the axes are \\(\\left(-\\frac{c}{m}, 0\\right)\\) and \\((0, c)\\).\n\nStep 3: The area of the right-angled triangle formed by these intercepts is given by:\n\\[\n\\text{Area} = \\frac{1}{2} \\left| -\\frac{c}{m} \\right| \\cdot |c| = \\frac{1}{2} \\cdot \\frac{c^2}{|m|} = \\frac{a^2}{2}\n\\]\nThis simplifies to:\n\\[\n\\frac{c^2}{|m|} = a^2 \\implies c^2 = a^2 |m|\n\\]\n\nStep 4: The equation of the line in terms of \\(m\\) and \\(c\\) is:\n\\[\ny = mx + c\n\\]\nSubstituting \\(c = a \\sqrt{|m|}\\) or \\(c = -a \\sqrt{|m|}\\) into the line equation, we get:\n\\[\ny = mx + a \\sqrt{|m|} \\quad \\text{or} \\quad y = mx - a \\sqrt{|m|}\n\\]\n\nStep 5: The envelope of these family of lines can be found by eliminating the parameter \\(m\\) from the system of equations formed by the line and its derivative with respect to \\(m\\). The envelope is the curve that touches each member of the family at exactly one point.\n\nStep 6: To find the envelope, we differentiate the line equation with respect to \\(m\\):\n\\[\n\\frac{dy}{dm} = x - \\frac{a}{2 \\sqrt{|m|}}\n\\]\nSetting \\(\\frac{dy}{dm} = 0\\) to find the critical points:\n\\[\nx = \\frac{a}{2 \\sqrt{|m|}}\n\\]\nSubstituting \\(x = \\frac{a}{2 \\sqrt{|m|}}\\) back into the line equation \\(y = mx + a \\sqrt{|m|}\\):\n\\[\ny = m \\left( \\frac{a}{2 \\sqrt{|m|}} \\right) + a \\sqrt{|m|} = \\frac{a \\sqrt{|m|}}{2} + a \\sqrt{|m|} = \\frac{3a \\sqrt{|m|}}{2}\n\\]\nSince \\(|m| = \\left( \\frac{a}{2x} \\right)^2\\), we substitute this into the equation for \\(y\\):\n\\[\ny = \\frac{3a \\sqrt{\\left( \\frac{a}{2x} \\right)^2}}{2} = \\frac{3a \\cdot \\frac{a}{2x}}{2} = \\frac{3a^2}{4x}\n\\]\nThus, the equation of the envelope is:\n\\[\n\\boxed{x^2 + y^2 = \\frac{a^2}{2}}\n\\]",
+    "Step 1: **Equation of the Line**\nConsider a line that forms a right-angled triangle with the coordinate axes. The equation of such a line can be written in the intercept form:\n\\[\n\\frac{x}{a} + \\frac{y}{b} = 1\n\\]\nwhere \\(a\\) and \\(b\\) are the intercepts on the x-axis and y-axis, respectively. The area of the triangle formed by this line and the coordinate axes is given by:\n\\[\n\\text{Area} = \\frac{1}{2} \\times a \\times b = \\frac{a^2}{2}\n\\]\nFrom this, we can deduce that:\n\\[\nab = a^2 \\implies b = a\n\\]\nThus, the equation of the line simplifies to:\n\\[\n\\frac{x}{a} + \\frac{y}{a} = 1 \\implies x + y = a\n\\]\n\nStep 2: ** family of lines**\nThe family of lines that satisfy the above condition can be written as:\n\\[\nx + y = a\n\\]\nwhere \\(a\\) is a parameter.\n\nStep 3: **Finding the Envelope**\nThe envelope of a family of curves is a curve that is tangent to each member of the family at some point. To find the envelope of the family \\(x + y = a\\), we need to eliminate the parameter \\(a\\). The envelope is found by differentiating the equation with respect to \\(a\\) and then solving the resulting system of equations.\n\nDifferentiate \\(x + y = a\\) with respect to \\(a\\):\n\\[\n\\frac{d}{da}(x + y) = \\frac{d}{da}(a) \\implies 0 = 1\n\\]\nThis is a contradiction, indicating that the envelope is a point. However, we need to consider the geometric interpretation. The envelopes of lines \\(x + y = a\\) that form a right-angled triangle with the coordinate axes are the points where the lines are tangent to a circle centered at the origin with radius \\(a\\).\n\nThe equation of the circle is:\n\\[\nx^2 + y^2 = a^2\n\\]\n\nStep 4: **Conclusion**\nThe envelope of the family of lines \\(x + y = a\\) that form a right-angled triangle with the coordinate axes is the circle centered at the origin with radius \\(a\\). Therefore, the equation of the envelope is:\n\\[\nx^2 + y^2 = a^2\n\\]\n\nThus, the final answer is:\n\\[\n\\boxed{x^2 + y^2 = a^2}\n\\]",
+    "Step 1: **Equation of the family of lines forming a right triangle:**\n\nGiven that the family of lines form a right triangle with an area of \\( \\frac{a^2}{2} \\), the general form of the equation of a line can be written as:\n\\[ y = mx + c \\]\n\nFor the lines to form a right triangle, they must intersect at the origin (0,0) and be perpendicular to each other. Thus, the equations of the lines can be written as:\n\\[ y = mx \\]\n\\[ y = -\\frac{1}{m}x \\]\n\nStep 2: **Area of the triangle formed by the lines:**\n\nThe area of the triangle formed by these lines and the x-axis (or y-axis) is given by \\( \\frac{a^2}{2} \\). The area of a triangle formed by the lines \\( y = mx \\), \\( y = -\\frac{1}{m}x \\), and the x-axis (or y-axis) is given by:\n\\[ \\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} \\]\n\nFor the lines \\( y = mx \\) and \\( y = -\\frac{1}{m}x \\), the base and height of the triangle are:\n\\[ \\text{base} = \\frac{a}{m} \\]\n\\[ \\text{height} = \\frac{a}{\\sqrt{m^2 + 1}} \\]\n\nThus, the area is:\n\\[ \\frac{1}{2} \\times \\frac{a}{m} \\times \\frac{a}{\\sqrt{m^2 + 1}} = \\frac{a^2}{2} \\]\n\nStep 3: **Solving for \\(a\\):**\n\nSimplifying the area equation:\n\\[ \\frac{a^2}{2m\\sqrt{m^2 + 1}} = \\frac{a^2}{2} \\]\n\\[ \\frac{1}{m\\sqrt{m^2 + 1}} = 1 \\]\n\\[ m\\sqrt{m^2 + 1} = 1 \\]\n\\[ m^2(m^2 + 1) = 1 \\]\n\\[ m^4 + m^2 - 1 = 0 \\]\n\nLet \\( u = m^2 \\), then:\n\\[ u^2 + u - 1 = 0 \\]\n\nSolving this quadratic equation using the quadratic formula \\( u = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\):\n\\[ u = \\frac{-1 \\pm \\sqrt{1 + 4}}{2} \\]\n\\[ u = \\frac{-1 \\pm \\sqrt{5}}{2} \\]\n\nSince \\( u = m^2 \\) must be positive:\n\\[ u = \\frac{-1 + \\sqrt{5}}{2} \\]\n\\[ m^2 = \\frac{-1 + \\sqrt{5}}{2} \\]\n\\[ m = \\pm \\sqrt{\\frac{-1 + \\sqrt{5}}{2}} \\]\n\nStep 4: **Equations of the family of lines:**\n\nThe equations of the lines are:\n\\[ y = mx \\]\n\\[ y = -\\frac{1}{m}x \\]\n\nSubstituting \\( m = \\sqrt{\\frac{-1 + \\sqrt{5}}{2}} \\) and \\( m = -\\sqrt{\\frac{-1 + \\sqrt{5}}{2}} \\):\n\\[ y = \\sqrt{\\frac{-1 + \\sqrt{5}}{2}} x \\]\n\\[ y = -\\sqrt{\\frac{-1 + \\sqrt{5}}{2}} x \\]\n\nStep 5: ** Envelope of the family of lines:**\n\nThe envelope of a family of lines \\( y = mx \\) and \\( y = -\\frac{1}{m}x \\) is found by eliminating \\( m \\). The envelope is the line where the slopes of the tangents to the family of lines are equal.\n\nThe envelope is the line \\( x = y \\).\n\nThus, the envelope of the family of lines forming a right triangle with an area of \\( \\frac{a^2}{2} \\) is:\n\\[ \\boxed{x + y = 0} \\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 0.2, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.4],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.6],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(0,2)": [
+      [0.8, 0.4, 0.8, 0.8],
+      [0.4, 0.2, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.2, 0.8],
+      [0.8, 0.8, 0.4, 0.8],
+      [0.8, 0.8, 0.6, 0.8],
+      [0.8, 0.8, 0.4, 0.2]
+    ],
+    "(0,3)": [
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(1,2)": [
+      [0.4, 0.8, 1.0, 1.0],
+      [0.4, 0.8, 1.0, 1.0],
+      [0.4, 0.8, 1.0, 1.0],
+      [0.4, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.2, 0.8],
+      [0.8, 0.8, 0.4, 0.8]
+    ],
+    "(1,3)": [
+      [0.8, 0.8, 1.0, 0.8, 1.0],
+      [0.8, 0.8, 1.0, 0.8, 1.0],
+      [0.8, 0.8, 1.0, 0.8, 1.0],
+      [0.8, 0.8, 1.0, 0.8, 1.0],
+      [0.8, 0.8, 1.0, 0.8, 0.8],
+      [0.8, 0.8, 1.0, 0.8, 0.8]
+    ],
+    "(2,3)": [
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8]
+    ]
+  }
+}

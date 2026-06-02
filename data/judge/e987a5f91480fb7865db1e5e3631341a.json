@@ -1,0 +1,54 @@
+{
+  "problem_id": "e987a5f91480fb7865db1e5e3631341a",
+  "generated_rollouts": [
+    "Step 1: Identify the point and the line of symmetry. The point \\( M \\) is \\( (-1, 2, 0) \\) and the line is given by the parametric equations:\n\\[\n\\frac{x+0.5}{1} = \\frac{y+0.7}{-0.2} = \\frac{z-2}{2} = t\n\\]\nFrom this, we can express the parametric equations of the line as:\n\\[\nx = t - 0.5, \\quad y = -0.2t - 0.7, \\quad z = 2t + 2\n\\]\nStep 2: Find the coordinates of the projection of point \\( M \\) onto the line. Let the projection be \\( P(x_1, y_1, z_1) \\). Since \\( P \\) lies on the line, we can write:\n\\[\nx_1 = t_1 - 0.5, \\quad y_1 = -0.2t_1 - 0.7, \\quad z_1 = 2t_1 + 2\n\\]\nfor some parameter \\( t_1 \\). The vector \\( \\overrightarrow{MP} \\) is perpendicular to the direction vector of the line \\( \\vec{d} = (1, -0.2, 2) \\). The vector \\( \\overrightarrow{MP} \\) is:\n\\[\n\\overrightarrow{MP} = (t_1 - 0.5 + 1, -0.2t_1 - 0.7 - 2, 2t_1 + 2 - 0) = (t_1 + 0.5, -0.2t_1 - 2.7, 2t_1 + 2)\n\\]\nThe dot product of \\( \\overrightarrow{MP} \\) and \\( \\vec{d} \\) must be zero:\n\\[\n(t_1 + 0.5) \\cdot 1 + (-0.2t_1 - 2.7) \\cdot (-0.2) + (2t_1 + 2) \\cdot 2 = 0\n\\]\nSimplifying, we get:\n\\[\nt_1 + 0.5 + 0.04t_1 + 0.54 + 4t_1 + 4 = 0\n\\]\n\\[\n5.04t_1 + 5.04 = 0\n\\]\n\\[\nt_1 = -1\n\\]\nSo, the coordinates of \\( P \\) are:\n\\[\nx_1 = -1 - 0.5 = -1.5, \\quad y_1 = -0.2(-1) - 0.7 = -0.5, \\quad z_1 = 2(-1) + 2 = 0\n\\]\nThus, \\( P = (-1.5, -0.5, 0) \\).\n\nStep 3: Find the coordinates of the symmetric point \\( M' \\). Since \\( P \\) is the midpoint of \\( M \\) and \\( M' \\), we have:\n\\[\nP = \\left( \\frac{-1 + x'}{2}, \\frac{2 + y'}{2}, \\frac{0 + z'}{2} \\right) = (-1.5, -0.5, 0)\n\\]\nThis gives us the system of equations:\n\\[\n\\frac{-1 + x'}{2} = -1.5 \\implies -1 + x' = -3 \\implies x' = -2\n\\]\n\\[\n\\frac{2 + y'}{2} = -0.5 \\implies 2 + y' = -1 \\implies y' = -3\n\\]\n\\[\n\\frac{0 + z'}{2} = 0 \\implies z' = 0\n\\]\nThus, the coordinates of the symmetric point \\( M' \\) are:\n\\[\n\\boxed{(-2, -3, 0)}\n\\]",
+    "Step 1: Identify the given point and the line.\nThe given point is \\( M(-1, 2, 0) \\).\nThe line is given by the symmetric equations:\n\\[\n\\frac{x+0.5}{1} = \\frac{y+0.7}{-0.2} = \\frac{z-2}{2}\n\\]\nWe can convert these symmetric equations to parametric form by setting the common ratio to a parameter \\( t \\):\n\\[\nx + 0.5 = t \\implies x = t - 0.5\n\\]\n\\[\ny + 0.7 = -0.2t \\implies y = -0.2t - 0.7\n\\]\n\\[\nz - 2 = 2t \\implies z = 2t + 2\n\\]\nSo, the parametric equations of the line are:\n\\[\nx = t - 0.5, \\quad y = -0.2t - 0.7, \\quad z = 2t + 2\n\\]\n\nStep 2: Find the direction vector of the line.\nThe direction vector \\(\\vec{d}\\) of the line is \\(\\langle 1, -0.2, 2 \\rangle\\).\n\nStep 3: Find the direction vector from point \\( M \\) to a general point on the line.\nLet \\( M' = (x', y', z') \\) be the symmetric point to \\( M \\). The vector \\(\\overrightarrow{MM'} = \\langle x' + 1, y' - 2, z' \\rangle\\).\n\nStep 4: Use the property that the line segment \\( \\overrightarrow{MM'} \\) is perpendicular to the direction vector of the line.\nThe dot product of \\(\\overrightarrow{MM'}\\) and \\(\\vec{d}\\) must be zero:\n\\[\n\\langle x' + 1, y' - 2, z' \\rangle \\cdot \\langle 1, -0.2, 2 \\rangle = 0\n\\]\n\\[\n(x' + 1) \\cdot 1 + (y' - 2) \\cdot (-0.2) + z' \\cdot 2 = 0\n\\]\n\\[\nx' + 1 - 0.2y' + 0.4 + 2z' = 0\n\\]\n\\[\nx' - 0.2y' + 2z' + 1.4 = 0 \\quad \\text{(Equation 1)}\n\\]\n\nStep 5: Use the midpoint formula to find the coordinates of \\( M' \\).\nThe midpoint \\( N \\) of \\( M \\) and \\( M' \\) lies on the line. The coordinates of \\( N \\) are:\n\\[\nN = \\left( \\frac{-1 + x'}{2}, \\frac{2 + y'}{2}, \\frac{0 + z'}{2} \\right)\n\\]\nSince \\( N \\) lies on the line, its coordinates must satisfy the parametric equations of the line. Let \\( N \\) correspond to the parameter \\( t' \\):\n\\[\n\\frac{-1 + x'}{2} = t' - 0.5\n\\]\n\\[\n\\frac{2 + y'}{2} = -0.2t' - 0.7\n\\]\n\\[\n\\frac{z'}{2} = 2t' + 2\n\\]\nSolving these equations for \\( t' \\):\n\\[\n-1 + x' = 2t' - 1 \\implies x' = 2t'\n\\]\n\\[\n2 + y' = -0.4t' - 1.4 \\implies y' = -0.4t' - 3.4\n\\]\n\\[\nz' = 4t' + 4\n\\]\n\nStep 6: Substitute \\( t' \\) back into Equation 1.\n\\[\n2t' - 0.2(-0.4t' - 3.4) + 2(4t' + 4) + 1.4 = 0\n\\]\n\\[\n2t' + 0.08t' + 0.68 + 8t' + 8 + 1.4 = 0\n\\]\n\\[\n10.08t' + 10.08 = 0\n\\]\n\\[\nt' = -1\n\\]\n\nStep 7: Find the coordinates of \\( M' \\).\n\\[\nx' = 2(-1) = -2\n\\]\n\\[\ny' = -0.4(-1) - 3.4 = 0.4 - 3.4 = -3\n\\]\n\\[\nz' = 4(-1) + 4 = -4 + 4 = 0\n\\]\n\nStep 8: Write the final answer.\nThe symmetric point \\( M' \\) is:\n\\[\n\\boxed{(-2, -3, 0)}\n\\]",
+    "Step 1: Identify the point and the line of symmetry.\nThe point \\( M \\) is \\((-1, 2, 0)\\) and the line of symmetry is given by the symmetric equations:\n\\[\n\\frac{x+0.5}{1}=\\frac{y+0.7}{-0.2}=\\frac{z-2}{2}\n\\]\n\nStep 2: Find the parametric form of the line.\nThe parametric equations for the line can be written as:\n\\[\nx = t - 0.5, \\quad y = -0.2t - 0.7, \\quad z = 2t + 2\n\\]\nwhere \\( t \\) is a parameter.\n\nStep 3: Find the distance from the point \\( M \\) to the line.\nTo find the symmetric point \\( M' \\), we need to find the point on the line that is the foot of the perpendicular from \\( M \\). Let's denote this point by \\( P \\). The coordinates of \\( P \\) are \\((t-0.5, -0.2t-0.7, 2t+2)\\).\n\nThe vector \\( \\overrightarrow{MP} \\) is:\n\\[\n\\overrightarrow{MP} = (t-0.5 + 1, -0.2t-0.7 - 2, 2t+2 - 0) = (t+0.5, -0.2t-2.7, 2t+2)\n\\]\n\nThe direction vector of the line is \\( \\vec{d} = (1, -0.2, 2) \\).\n\nThe dot product of \\( \\overrightarrow{MP} \\) and \\( \\vec{d} \\) must be zero for \\( MP \\) to be perpendicular to the line:\n\\[\n(t+0.5) \\cdot 1 + (-0.2t-2.7) \\cdot (-0.2) + (2t+2) \\cdot 2 = 0\n\\]\n\\[\nt + 0.5 + 0.04t + 0.54 + 4t + 4 = 0\n\\]\n\\[\n5.04t + 5.04 = 0\n\\]\n\\[\nt = -1\n\\]\n\nStep 4: Substitute \\( t = -1 \\) back into the parametric equations to find the coordinates of \\( P \\).\n\\[\nx = -1 - 0.5 = -1.5, \\quad y = -0.2(-1) - 0.7 = -0.5, \\quad z = 2(-1) + 2 = 0\n\\]\nSo, the coordinates of \\( P \\) are \\((-1.5, -0.5, 0)\\).\n\nStep 5: Find the symmetric point \\( M' \\).\nThe point \\( M' \\) is such that \\( P \\) is the midpoint of \\( M \\) and \\( M' \\). Let \\( M' = (x', y', z') \\). Then:\n\\[\n\\left( \\frac{-1 + x'}{2}, \\frac{2 + y'}{2}, \\frac{0 + z'}{2} \\right) = (-1.5, -0.5, 0)\n\\]\nThis gives us the system of equations:\n\\[\n\\frac{-1 + x'}{2} = -1.5, \\quad \\frac{2 + y'}{2} = -0.5, \\quad \\frac{0 + z'}{2} = 0\n\\]\nSolving these equations, we get:\n\\[\n-1 + x' = -3 \\implies x' = -2\n\\]\n\\[\n2 + y' = -1 \\implies y' = -3\n\\]\n\\[\nz' = 0\n\\]\nSo, the coordinates of \\( M' \\) are \\((-2, -3, 0)\\).\n\nThe symmetric point \\( M' \\) is:\n\\[\n\\boxed{(-2, -3, 0)}\n\\]",
+    "Step 1: Identify the given point and the line.\nThe given point is \\( M(-1, 2, 0) \\).\nThe line is given in parametric form:\n\\[\n\\frac{x+0.5}{1} = \\frac{y+0.7}{-0.2} = \\frac{z-2}{2} = t\n\\]\nThis can be rewritten in parametric form as:\n\\[\nx = t - 0.5, \\quad y = -0.2t - 0.7, \\quad z = 2t + 2\n\\]\nThe direction vector of the line is \\(\\vec{d} = (1, -0.2, 2)\\).\n\nStep 2: Find the coordinates of the projection of point \\(M\\) onto the line.\nLet the projection of \\(M\\) onto the line be \\(P(x_1, y_1, z_1)\\). Since \\(P\\) lies on the line, we can write:\n\\[\nx_1 = t - 0.5, \\quad y_1 = -0.2t - 0.7, \\quad z_1 = 2t + 2\n\\]\nfor some parameter \\(t\\). The vector \\(\\overrightarrow{MP}\\) is perpendicular to the direction vector \\(\\vec{d}\\). The vector \\(\\overrightarrow{MP}\\) is:\n\\[\n\\overrightarrow{MP} = (t - 0.5 + 1, -0.2t - 0.7 - 2, 2t + 2 - 0) = (t + 0.5, -0.2t - 2.7, 2t + 2)\n\\]\nThe dot product \\(\\overrightarrow{MP} \\cdot \\vec{d} = 0\\) gives:\n\\[\n(t + 0.5) \\cdot 1 + (-0.2t - 2.7) \\cdot (-0.2) + (2t + 2) \\cdot 2 = 0\n\\]\n\\[\nt + 0.5 + 0.04t + 0.54 + 4t + 4 = 0\n\\]\n\\[\n5.04t + 5.04 = 0\n\\]\n\\[\nt = -1\n\\]\nSubstituting \\(t = -1\\) into the parametric equations of the line, we get:\n\\[\nx_1 = -1 - 0.5 = -1.5, \\quad y_1 = -0.2(-1) - 0.7 = -0.5, \\quad z_1 = 2(-1) + 2 = 0\n\\]\nSo, the projection point \\(P\\) is \\((-1.5, -0.5, 0)\\).\n\nStep 3: Find the symmetric point \\(M'\\).\nThe symmetric point \\(M'\\) is such that \\(P\\) is the midpoint of \\(M\\) and \\(M'\\). Let \\(M' = (x', y', z')\\). Then:\n\\[\n\\left( \\frac{-1 + x'}{2}, \\frac{2 + y'}{2}, \\frac{0 + z'}{2} \\right) = (-1.5, -0.5, 0)\n\\]\nThis gives us the system of equations:\n\\[\n\\frac{-1 + x'}{2} = -1.5 \\implies -1 + x' = -3 \\implies x' = -2\n\\]\n\\[\n\\frac{2 + y'}{2} = -0.5 \\implies 2 + y' = -1 \\implies y' = -3\n\\]\n\\[\n\\frac{0 + z'}{2} = 0 \\implies z' = 0\n\\]\nSo, the symmetric point \\(M'\\) is \\((-2, -3, 0)\\).\n\nThe answer is:\n\\[\n\\boxed{(-2, -3, 0)}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.4, 0.4, 0.2, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.8, 0.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.2, 0.0, 0.8, 1.0, 1.0],
+      [1.0, 0.8, 0.0, 0.0, 0.8],
+      [1.0, 1.0, 0.8, 0.8, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.2, 0.2, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 0.8, 0.0],
+      [1.0, 1.0, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.2]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 1.0],
+      [0.2, 0.8, 1.0],
+      [0.8, 0.4, 1.0],
+      [0.8, 0.2, 1.0],
+      [0.8, 0.6, 0.2],
+      [0.8, 0.2, 0.8],
+      [0.8, 0.8, 0.2],
+      [1.0, 1.0, 0.0]
+    ],
+    "(2,3)": [
+      [0.6, 1.0, 1.0],
+      [0.2, 0.8, 1.0],
+      [0.8, 0.0, 1.0],
+      [1.0, 0.2, 1.0],
+      [1.0, 1.0, 0.0]
+    ]
+  }
+}

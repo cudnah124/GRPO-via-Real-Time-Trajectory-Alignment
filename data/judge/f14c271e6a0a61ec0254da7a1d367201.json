@@ -1,0 +1,42 @@
+{
+  "problem_id": "f14c271e6a0a61ec0254da7a1d367201",
+  "generated_rollouts": [
+    "Step 1: Calculate the tax on the $1000 item at the original 7% sales tax rate.\n\\[\n\\text{Original tax} = 1000 \\times 0.07 = 70\n\\]\n\nStep 2: Calculate the tax on the $1000 item at the new 7.5% sales tax rate.\n\\[\n\\text{New tax} = 1000 \\times 0.075 = 75\n\\]\n\nStep 3: Determine the increase in tax by subtracting the original tax from the new tax.\n\\[\n\\text{Increase in tax} = 75 - 70 = 5\n\\]\n\nThus, the tax on a $1000 item would go up by \\(\\boxed{5}\\).\n\nThe correct choice is \\(\\boxed{B}\\).",
+    "Step 1: Calculate the tax before the increase. The original tax rate is 7%, so the tax on a $1000 item is:\n\\[ 1000 \\times 0.07 = 70 \\text{ dollars} \\]\n\nStep 2: Calculate the tax after the increase. The new tax rate is 7.5%, so the tax on a $1000 item is:\n\\[ 1000 \\times 0.075 = 75 \\text{ dollars} \\]\n\nStep 3: Determine the increase in tax by subtracting the original tax from the new tax:\n\\[ 75 - 70 = 5 \\text{ dollars} \\]\n\nTherefore, the tax on a $1000 item would go up by \\(\\boxed{5}\\) dollars. The correct choice is \\(\\boxed{B}\\).",
+    "Step 1: Calculate the tax on the $1000 item at the original 7% sales tax rate.\n\\[\n\\text{Original tax} = 1000 \\times 0.07 = 70\n\\]\n\nStep 2: Calculate the tax on the $1000 item at the new 7.5% sales tax rate.\n\\[\n\\text{New tax} = 1000 \\times 0.075 = 75\n\\]\n\nStep 3: Determine the increase in tax by subtracting the original tax from the new tax.\n\\[\n\\text{Increase in tax} = 75 - 70 = 5\n\\]\n\nConclusion: The tax on the $1000 item would go up by $5.00.\n\nThe correct answer is \\boxed{B}.",
+    "Step 1: Calculate the initial sales tax at 7%.\n\nThe initial tax rate is 7%, which is equivalent to 0.07 in decimal form. To find the initial tax on a $1000 item, we multiply $1000 by 0.07:\n\n\\[\n1000 \\times 0.07 = 70\n\\]\n\nSo, the initial sales tax is $70.\n\nStep 2: Calculate the new sales tax at 7.5%.\n\nThe new tax rate is 7.5%, which is equivalent to 0.075 in decimal form. To find the new tax on a $1000 item, we multiply $1000 by 0.075:\n\n\\[\n1000 \\times 0.075 = 75\n\\]\n\nSo, the new sales tax is $75.\n\nStep 3: Determine the increase in sales tax.\n\nTo find the increase in sales tax, we subtract the initial tax from the new tax:\n\n\\[\n75 - 70 = 5\n\\]\n\nSo, the increase in sales tax is $5.\n\nTherefore, the correct answer is \\(\\boxed{B}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.8, 1.0],
+      [0.8, 0.0, 0.8],
+      [1.0, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.0]
+    ]
+  }
+}

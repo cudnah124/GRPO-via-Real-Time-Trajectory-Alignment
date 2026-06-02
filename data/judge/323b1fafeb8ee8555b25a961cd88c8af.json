@@ -1,0 +1,53 @@
+{
+  "problem_id": "323b1fafeb8ee8555b25a961cd88c8af",
+  "generated_rollouts": [
+    "Step 1: Determine the parity (even or odd) of the coordinates of the points. \n\nEach point can be classified into one of four categories based on the parity of its coordinates:\n1. \\( (x, y) \\) where both \\( x \\) and \\( y \\) are even.\n2. \\( (x, y) \\) where \\( x \\) is even and \\( y \\) is odd.\n3. \\( (x, y) \\) where \\( x \\) is odd and \\( y \\) is even.\n4. \\( (x, y) \\) where both \\( x \\) and \\( y \\) are odd.\n\nStep 2: Calculate the number of points needed to guarantee that two points have the same midpoint.\n\nEach of the four categories listed above has a distinct parity pattern that affects the midpoint's coordinates. For the midpoint coordinates \\( (x_m, y_m) \\) to be integers, both \\( x_m \\) and \\( y_m \\) must be half-integers or integers. Let's analyze the possible cases:\n\n1. If we have 5 points, they must follow at least one of the four categories. By the pigeonhole principle, if we distribute 5 points among 4 categories, at least one category must contain at least 2 points.\n\nStep 3: Apply the pigeonhole principle.\n\nBy the pigeonhole principle, if we have 5 points distributed among 4 categories, at least one category will contain at least 2 points. Let's denote these points as \\( (x_1, y_1) \\) and \\( (x_2, y_2) \\).\n\nStep 4: Calculate the midpoint of these two points.\n\nThe midpoint \\( (x_m, y_m) \\) for points \\( (x_1, y_1) \\) and \\( (x_2, y_2) \\) is given by:\n\\[ x_m = \\frac{x_1 + x_2}{2} \\]\n\\[ y_m = \\frac{y_1 + y_2}{2} \\]\n\nSince \\( x_1 \\) and \\( x_2 \\) are either both even or both odd, their sum \\( x_1 + x_2 \\) is even. Similarly, \\( y_1 \\) and \\( y_2 \\) are either both even or both odd, making their sum \\( y_1 + y_2 \\) even. Thus, both \\( x_m \\) and \\( y_m \\) are integers.\n\nConclusion:\nTherefore, having 5 points guarantees that there exist two points whose midpoint also has integer coordinates.\n\nThe smallest integer \\( n \\) that satisfies the condition is:\n\\[\n\\boxed{5}\n\\]",
+    "Step 1: We need to determine the smallest integer \\( n \\) such that for any set of \\( n \\) points with integer coordinates, there exist two of these points whose midpoint also has integer coordinates.\n\nStep 2: Let's consider the parity (odd or even nature) of the coordinates of the points. Each coordinate can be either odd or even, so there are four possible combinations for the parity of a point \\((x, y)\\):\n- (odd, odd)\n- (odd, even)\n- (even, odd)\n- (even, even)\n\nStep 3: If we have 5 points, by the pigeonhole principle, at least two of these points must have the same parity combination. Let's denote these two points as \\((x_1, y_1)\\) and \\((x_2, y_2)\\).\n\nStep 4: Since \\((x_1, y_1)\\) and \\((x_2, y_2)\\) have the same parity, both \\(x_1 + x_2\\) and \\(y_1 + y_2\\) are even. Therefore, the midpoint \\(\\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)\\) will have integer coordinates.\n\nStep 5: To verify that \\( n = 5 \\) is the smallest such number, consider the case with 4 points. It is possible to choose 4 points such that no two points have the same parity combination. For example, we can choose the points \\((1, 1)\\), \\((1, 2)\\), \\((2, 1)\\), and \\((2, 2)\\). These points do not have any two points with the same parity combination.\n\nConclusion: The smallest integer \\( n \\) such that any set of \\( n \\) points with integer coordinates contains at least two points whose midpoint also has integer coordinates is \\( \\boxed{5} \\).",
+    "Step 1: We need to determine the smallest integer \\( n \\) such that for any configuration of \\( n \\) points with integer coordinates, there exist two of these points whose midpoint also has integer coordinates.\n\nStep 2: Consider two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\). The coordinates of their midpoint are given by:\n\\[\n\\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)\n\\]\nFor the midpoint to have integer coordinates, both \\(\\frac{x_1 + x_2}{2}\\) and \\(\\frac{y_1 + y_2}{2}\\) must be integers. This requires that \\(x_1 + x_2\\) and \\(y_1 + y_2\\) be even numbers.\n\nStep 3: Analyze the parity (odd or even nature) of the coordinates:\n- The sum of two integers is even if both integers have the same parity (both are even or both are odd).\n- The sum of two integers is odd if they have different parities (one is even and the other is odd).\n\nStep 4: Use the Pigeonhole Principle to determine the smallest \\( n \\):\n- We have two possible parities for each coordinate: even or odd.\n- Therefore, for each coordinate (x and y), there are \\(2^2 = 4\\) possible combinations of parities: (even, even), (even, odd), (odd, even), and (odd, odd).\n\nStep 5: By the Pigeonhole Principle, if we have 5 points, there must be at least two points with the same parity combination for both coordinates. This is because there are only 4 possible parity combinations.\n\nStep 6: Verify with 4 points:\n- With 4 points, it is possible to have each point with a unique parity combination. For example, points \\((0,0)\\), \\((1,1)\\), \\((2,2)\\), and \\((3,3)\\) all have different parity combinations.\n- However, with 5 points, there must be at least two points with the same parity combination.\n\nStep 7: Conclude that the smallest \\( n \\) ensuring at least one pair of points whose midpoint has integer coordinates is:\n\\[\n\\boxed{5}\n\\]",
+    "Step 1: We need to find the smallest integer \\( n \\) such that any configuration of \\( n \\) points with integer coordinates has at least two points whose midpoint also has integer coordinates. \n\nStep 2: Let's analyze the coordinates of the points. Each coordinate is an integer, so the coordinates can be either even or odd.\n\nStep 3: We can group the points based on the parity of their coordinates. Each point \\((x_i, y_i)\\) can be classified into one of four categories:\n- Both \\( x_i \\) and \\( y_i \\) are even.\n- Both \\( x_i \\) and \\( y_i \\) are odd.\n- \\( x_i \\) is even and \\( y_i \\) is odd.\n- \\( x_i \\) is odd and \\( y_i \\) is even.\n\nStep 4: If we have 5 points, by the pigeonhole principle, at least two of these points must fall into the same category because there are only 4 categories. \n\nStep 5: Consider two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) that fall into the same category. If they are in the same category, their coordinates have the same parity. Therefore, their midpoint coordinates are:\n\\[ x_m = \\frac{x_1 + x_2}{2} \\]\n\\[ y_m = \\frac{y_1 + y_2}{2} \\]\nSince \\( x_1 \\) and \\( x_2 \\) have the same parity, \\( x_1 + x_2 \\) is even, and thus \\( x_m \\) is an integer. Similarly, \\( y_m \\) is an integer.\n\nStep 6: Therefore, if we have 5 points, at least two of them will have integer coordinates for their midpoint.\n\nStep 7: To show that 4 points are not sufficient, consider the points \\((0,0)\\), \\((1,0)\\), \\((0,1)\\), and \\((1,1)\\). These points are in different categories, and no two points have the same parity in both coordinates.\n\nConclusion: The smallest integer \\( n \\) such that any configuration of \\( n \\) points with integer coordinates has at least two points whose midpoint also has integer coordinates is \\(\\boxed{5}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [1.0, 0.0, 1.0, 1.0, 1.0],
+      [0.2, 0.8, 0.2, 0.8, 1.0],
+      [1.0, 0.8, 0.0, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 0.0, 0.8]
+    ],
+    "(0,2)": [
+      [1.0, 0.8, 0.6, 0.0, 0.8, 1.0, 1.0],
+      [0.8, 0.6, 0.4, 0.2, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.6, 0.2, 0.0, 0.2, 0.8],
+      [0.8, 0.0, 0.2, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(0,3)": [
+      [1.0, 0.4, 0.0, 1.0, 1.0, 1.0, 1.0],
+      [0.4, 0.6, 0.2, 0.2, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 0.8, 0.6, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0, 0.2, 1.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.4, 0.2, 0.0, 0.8, 0.8, 1.0],
+      [1.0, 0.8, 0.8, 0.2, 0.0, 0.8, 1.0],
+      [1.0, 0.0, 0.2, 0.8, 0.8, 0.8, 1.0],
+      [1.0, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8]
+    ],
+    "(1,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.2, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 0.8, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.0, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 0.6, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 0.2, 0.2, 1.0, 0.2, 1.0, 1.0],
+      [1.0, 0.2, 0.0, 0.2, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 0.0, 0.8, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.2]
+    ]
+  }
+}

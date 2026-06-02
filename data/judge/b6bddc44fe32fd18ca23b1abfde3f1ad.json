@@ -1,0 +1,49 @@
+{
+  "problem_id": "b6bddc44fe32fd18ca23b1abfde3f1ad",
+  "generated_rollouts": [
+    "Step 1: Define the spheres and their equations.\nLet the radii and centers of the two spheres be \\(r_1\\), \\(r_2\\), \\(C_1\\), and \\(C_2\\) respectively. The equations of the spheres are:\n\\[\n(x - x_1)^2 + (y - y_1)^2 + (z - z_1)^2 = r_1^2\n\\]\n\\[\n(x - x_2)^2 + (y - y_2)^2 + (z - z_2)^2 = r_2^2\n\\]\nwhere \\((x_1, y_1, z_1)\\) and \\((x_2, y_2, z_2)\\) are the coordinates of the centers \\(C_1\\) and \\(C_2\\) respectively.\n\nStep 2: Define the power of a point with respect to a sphere.\nThe power of a point \\(P = (x, y, z)\\) with respect to a sphere with center \\(C = (x_0, y_0, z_0)\\) and radius \\(r\\) is given by:\n\\[\n\\text{Power}(P) = (x - x_0)^2 + (y - y_0)^2 + (z - z_0)^2 - r^2\n\\]\nSo, the power of point \\(P\\) with respect to the first sphere is:\n\\[\n\\text{Power}_1(P) = (x - x_1)^2 + (y - y_1)^2 + (z - z_1)^2 - r_1^2\n\\]\nand with respect to the second sphere is:\n\\[\n\\text{Power}_2(P) = (x - x_2)^2 + (y - y_2)^2 + (z - z_2)^2 - r_2^2\n\\]\n\nStep 3: Set the powers equal to each other.\nWe need to find the locus of points \\(P\\) such that:\n\\[\n\\text{Power}_1(P) = \\text{Power}_2(P)\n\\]\nThis gives:\n\\[\n(x - x_1)^2 + (y - y_1)^2 + (z - z_1)^2 - r_1^2 = (x - x_2)^2 + (y - y_2)^2 + (z - z_2)^2 - r_2^2\n\\]\nRearranging terms, we get:\n\\[\n(x - x_1)^2 - (x - x_2)^2 + (y - y_1)^2 - (y - y_2)^2 + (z - z_1)^2 - (z - z_2)^2 = r_1^2 - r_2^2\n\\]\nExpanding the squares, we have:\n\\[\n(x^2 - 2x x_1 + x_1^2) - (x^2 - 2x x_2 + x_2^2) + (y^2 - 2y y_1 + y_1^2) - (y^2 - 2y y_2 + y_2^2) + (z^2 - 2z z_1 + z_1^2) - (z^2 - 2z z_2 + z_2^2) = r_1^2 - r_2^2\n\\]\nSimplifying, we get:\n\\[\n-2x x_1 + 2x x_2 - 2y y_1 + 2y y_2 - 2z z_1 + 2z z_2 + x_1^2 - x_2^2 + y_1^2 - y_2^2 + z_1^2 - z_2^2 = r_1^2 - r_2^2\n\\]\nFactoring out the 2, we get:\n\\[\n2(x(x_2 - x_1) + y(y_2 - y_1) + z(z_2 - z_1)) + x_1^2 - x_2^2 + y_1^2 - y_2^2 + z_1^2 - z_2^2 = r_1^2 - r_2^2\n\\]\nThis is the equation of a plane in the form \\(Ax + By + Cz = D\\), where \\(A = 2(x_2 - x_1)\\), \\(B = 2(y_2 - y_1)\\), \\(C = 2(z_2 - z_1)\\), and \\(D = r_1^2 - r_2^2 - x_1^2 + x_2^2 - y_1^2 + y_2^2 - z_1^2 + z_2^2\\).\n\nTherefore, the locus of points whose power with respect to the two spheres is equal forms a plane, which is the radical plane of the two spheres.\n\\[\n\\boxed{\\text{The locus of points whose power with respect to these spheres is equal forms a plane (the radical plane of two spheres).}}\n\\]",
+    "Step 1: Define the spheres and their equations.\nLet the equations of the two spheres be:\n\\[ S_1: (x - a_1)^2 + (y - b_1)^2 + (z - c_1)^2 = r_1^2 \\]\n\\[ S_2: (x - a_2)^2 + (y - b_2)^2 + (z - c_2)^2 = r_2^2 \\]\n\nStep 2: Write the power of a point with respect to each sphere.\nThe power of a point \\( P(x, y, z) \\) with respect to a sphere is given by:\n\\[ \\text{Power of } P \\text{ with respect to } S_1 = (x - a_1)^2 + (y - b_1)^2 + (z - c_1)^2 - r_1^2 \\]\n\\[ \\text{Power of } P \\text{ with respect to } S_2 = (x - a_2)^2 + (y - b_2)^2 + (z - c_2)^2 - r_2^2 \\]\n\nStep 3: Set the powers equal to each other.\nWe need to find the locus of points \\( P \\) such that the power with respect to \\( S_1 \\) equals the power with respect to \\( S_2 \\):\n\\[ (x - a_1)^2 + (y - b_1)^2 + (z - c_1)^2 - r_1^2 = (x - a_2)^2 + (y - b_2)^2 + (z - c_2)^2 - r_2^2 \\]\n\nStep 4: Simplify the equation.\nExpand both sides:\n\\[ (x^2 - 2a_1x + a_1^2) + (y^2 - 2b_1y + b_1^2) + (z^2 - 2c_1z + c_1^2) - r_1^2 = (x^2 - 2a_2x + a_2^2) + (y^2 - 2b_2y + b_2^2) + (z^2 - 2c_2z + c_2^2) - r_2^2 \\]\nCancel out the \\( x^2 \\), \\( y^2 \\), and \\( z^2 \\) terms:\n\\[ -2a_1x + a_1^2 - 2b_1y + b_1^2 - 2c_1z + c_1^2 - r_1^2 = -2a_2x + a_2^2 - 2b_2y + b_2^2 - 2c_2z + c_2^2 - r_2^2 \\]\nRearrange terms to isolate the linear terms:\n\\[ -2a_1x + 2a_2x - 2b_1y + 2b_2y - 2c_1z + 2c_2z = a_2^2 - a_1^2 + b_2^2 - b_1^2 + c_2^2 - c_1^2 + r_1^2 - r_2^2 \\]\nFactor out the common factors:\n\\[ 2(a_2 - a_1)x + 2(b_2 - b_1)y + 2(c_2 - c_1)z = a_2^2 - a_1^2 + b_2^2 - b_1^2 + c_2^2 - c_1^2 + r_1^2 - r_2^2 \\]\nDivide through by 2:\n\\[ (a_2 - a_1)x + (b_2 - b_1)y + (c_2 - c_1)z = \\frac{a_2^2 - a_1^2 + b_2^2 - b_1^2 + c_2^2 - c_1^2 + r_1^2 - r_2^2}{2} \\]\n\nStep 5: Identify the equation of the plane.\nThe equation\n\\[ (a_2 - a_1)x + (b_2 - b_1)y + (c_2 - c_1)z = \\frac{a_2^2 - a_1^2 + b_2^2 - b_1^2 + c_2^2 - c_1^2 + r_1^2 - r_2^2}{2} \\]\nis the equation of a plane in the standard form \\( Ax + By + Cz = D \\), where \\( A = a_2 - a_1 \\), \\( B = b_2 - b_1 \\), \\( C = c_2 - c_1 \\), and \\( D = \\frac{a_2^2 - a_1^2 + b_2^2 - b_1^2 + c_2^2 - c_1^2 + r_1^2 - r_2^2}{2} \\).\n\nConclusion:\nThe locus of points whose power with respect to the two spheres is equal forms a plane, which is the radical plane of the two spheres.\n\nThe final answer is:\n\\[\n\\boxed{(a_2 - a_1)x + (b_2 - b_1)y + (c_2 - c_1)z = \\frac{a_2^2 - a_1^2 + b_2^2 - b_1^2 + c_2^2 - c_1^2 + r_1^2 - r_2^2}{2}}\n\\]",
+    "Step 1: Define the spheres and their equations.\nLet the equations of the two spheres be:\n\\[ S_1: x^2 + y^2 + z^2 + 2g_1x + 2f_1y + 2h_1z + c_1 = 0 \\]\n\\[ S_2: x^2 + y^2 + z^2 + 2g_2x + 2f_2y + 2h_2z + c_2 = 0 \\]\n\nStep 2: Define the power of a point with respect to a sphere.\nThe power of a point \\(P(x_1, y_1, z_1)\\) with respect to a sphere \\(S\\) with center \\((g, f, h)\\) and radius \\(r\\) is given by:\n\\[ \\text{Power of } P \\text{ with respect to } S = x_1^2 + y_1^2 + z_1^2 + 2g x_1 + 2f y_1 + 2h z_1 + c - r^2 \\]\n\nStep 3: Express the power of a point with respect to both spheres.\nLet \\(P(x, y, z)\\) be a point in space. The power of \\(P\\) with respect to \\(S_1\\) is:\n\\[ \\text{Power of } P \\text{ with respect to } S_1 = x^2 + y^2 + z^2 + 2g_1x + 2f_1y + 2h_1z + c_1 - r_1^2 \\]\nThe power of \\(P\\) with respect to \\(S_2\\) is:\n\\[ \\text{Power of } P \\text{ with respect to } S_2 = x^2 + y^2 + z^2 + 2g_2x + 2f_2y + 2h_2z + c_2 - r_2^2 \\]\n\nStep 4: Set the powers equal to each other.\nSince the locus of points whose power with respect to both spheres is equal, we set the powers equal:\n\\[ x^2 + y^2 + z^2 + 2g_1x + 2f_1y + 2h_1z + c_1 - r_1^2 = x^2 + y^2 + z^2 + 2g_2x + 2f_2y + 2h_2z + c_2 - r_2^2 \\]\n\nStep 5: Simplify the equation.\nSubtract \\(x^2 + y^2 + z^2\\) from both sides:\n\\[ 2g_1x + 2f_1y + 2h_1z + c_1 - r_1^2 = 2g_2x + 2f_2y + 2h_2z + c_2 - r_2^2 \\]\nRearrange the terms:\n\\[ 2(g_1 - g_2)x + 2(f_1 - f_2)y + 2(h_1 - h_2)z = r_1^2 - r_2^2 + c_2 - c_1 \\]\n\nStep 6: Identify the equation of the plane.\nThe equation\n\\[ 2(g_1 - g_2)x + 2(f_1 - f_2)y + 2(h_1 - h_2)z = r_1^2 - r_2^2 + c_2 - c_1 \\]\nis the equation of a plane in 3-dimensional space. Therefore, the locus of points whose power with respect to the two spheres is equal forms a plane.\n\nConclusion:\nThe locus of points whose power with respect to the two spheres is equal is a plane. \n\n\\[\n\\boxed{\\text{The locus of points whose power with respect to the two spheres is equal forms a plane.}}\n\\]\n```",
+    "Step 1: Define the spheres and their equations.\nLet the equations of the two spheres be:\n\\[ S_1: x^2 + y^2 + z^2 + 2g_1x + 2f_1y + 2h_1z + c_1 = 0 \\]\n\\[ S_2: x^2 + y^2 + z^2 + 2g_2x + 2f_2y + 2h_2z + c_2 = 0 \\]\n\nStep 2: Define the power of a point with respect to a sphere.\nThe power of a point \\(P(x_1, y_1, z_1)\\) with respect to a sphere is given by:\n\\[ \\text{Power of } P \\text{ with respect to } S_1 = x_1^2 + y_1^2 + z_1^2 + 2g_1x_1 + 2f_1y_1 + 2h_1z_1 + c_1 \\]\n\\[ \\text{Power of } P \\text{ with respect to } S_2 = x_1^2 + y_1^2 + z_1^2 + 2g_2x_1 + 2f_2y_1 + 2h_2z_1 + c_2 \\]\n\nStep 3: Set the powers equal for the locus of points.\nWe are given that the power of a point \\(P(x_1, y_1, z_1)\\) with respect to the two spheres is equal. Therefore, we set the powers equal to each other:\n\\[ x_1^2 + y_1^2 + z_1^2 + 2g_1x_1 + 2f_1y_1 + 2h_1z_1 + c_1 = x_1^2 + y_1^2 + z_1^2 + 2g_2x_1 + 2f_2y_1 + 2h_2z_1 + c_2 \\]\n\nStep 4: Simplify the equation.\nSubtract \\(x_1^2 + y_1^2 + z_1^2\\) from both sides:\n\\[ 2g_1x_1 + 2f_1y_1 + 2h_1z_1 + c_1 = 2g_2x_1 + 2f_2y_1 + 2h_2z_1 + c_2 \\]\n\nStep 5: Rearrange the equation.\nRearrange the terms to isolate the variables on one side:\n\\[ 2(g_1 - g_2)x_1 + 2(f_1 - f_2)y_1 + 2(h_1 - h_2)z_1 + (c_1 - c_2) = 0 \\]\n\nStep 6: Identify the plane equation.\nThe equation \\(2(g_1 - g_2)x_1 + 2(f_1 - f_2)y_1 + 2(h_1 - h_2)z_1 + (c_1 - c_2) = 0\\) is a linear equation in \\(x_1, y_1, z_1\\), which represents a plane in space.\n\nTherefore, the locus of points whose power with respect to the two spheres is equal is a plane, which is the radical plane of the two spheres.\n\n\\[\\boxed{\\text{The locus of points whose power with respect to the two spheres is equal is a plane.}}\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.2, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 0.2, 0.4]
+    ],
+    "(0,2)": [
+      [0.4, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.4, 0.2, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.0, 0.2, 0.2, 0.2]
+    ],
+    "(1,2)": [
+      [0.2, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.2, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,3)": [
+      [0.4, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.2, 0.0, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.2, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.2, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ]
+  }
+}

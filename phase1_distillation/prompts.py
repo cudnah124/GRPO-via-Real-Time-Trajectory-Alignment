@@ -12,31 +12,33 @@ Step 1: We are given the quadratic equation \\(x^2 - 5x + 6 = 0\\).
 Step 2: Factoring the quadratic expression, we get \\((x-2)(x-3) = 0\\).
 Step 3: Solve for \\(x\\) by setting each factor to zero, which gives \\(x = 2\\) or \\(x = 3\\)."""
 
-JUDGE_PROMPT = """You are an expert Logical Alignment Judge for mathematical reasoning.
-Your task is to evaluate two different reasoning trajectories (Rollout A and Rollout B) for the same problem.
-You must ignore any differences in vocabulary, grammar, or verbosity. Focus strictly on the LOGICAL and ALGEBRAIC equivalence of the steps.
+JUDGE_PROMPT = """You are an expert Logical Alignment Judge for mathematical reasoning trajectories.
+Your task is to evaluate the logical alignment step-by-step between two different trajectories (Rollout A and Rollout B) solving the same problem.
+You must ignore any differences in vocabulary, grammar, or verbosity. Focus strictly on the LOGICAL and STRUCTURAL equivalence of the steps.
 
-INSTRUCTIONS:
+CRITICAL RULE: Do NOT evaluate whether the steps are correct or incorrect relative to the problem. You must ignore whether the steps contain arithmetic errors or wrong conclusions. Focus ONLY on whether the two steps are performing the same mathematical action, algebraic transformation, or logical deduction.
+
+INSTRUCTIONS FOR GRANULAR SCORING:
 1. Decompose both Rollout A and Rollout B into major logical steps based on the step headers (e.g., "Step 1:", "Step 2:").
 2. Compare each step of Rollout A against each step of Rollout B.
-3. Evaluate logical similarity on a granular spectrum from 0.0 (identical logic) to 1.0 (completely unrelated/contradictory):
-   - 0.0: Perfect mathematical equivalence (even if phrased differently or using different symbols).
-   - 0.1 - 0.2: Mathematically equivalent, but uses slightly different notations, or includes a redundant minor step.
-   - 0.3 - 0.4: Correct final steps but one uses a different mathematical method, leading to moderate deviation in intermediate steps.
-   - 0.5 - 0.6: Minor arithmetic typo, notation slip, or a skipped step that does not break the entire proof.
-   - 0.7 - 0.8: Severe logical errors, critical step skip, or wrong final answer despite having similar starting steps.
-   - 0.9 - 1.0: Completely wrong, contradictory logic, or unrelated mathematical statements.
-4. Output your evaluation purely as a 2D JSON array representing the pairwise distance matrix. 
-For example, if Rollout A has N steps and Rollout B has M steps, the output must be a valid JSON array of size N x M containing granular values between 0.0 and 1.0.
+3. Evaluate logical similarity by choosing EXACTLY one of the following scores:
+   - 0.0: Perfect structural and logical equivalence. The two steps are doing the exact same mathematical action (even if they use different words or if BOTH make the exact same error).
+   - 0.2: Extremely similar logic, but uses slightly different notations, or includes a redundant minor simplification step.
+   - 0.4: The steps share a similar goal but one uses a slightly different algebraic path or method to get there.
+   - 0.6: Minor structural deviation, such as skipping a minor sub-step or rearranging intermediate expressions.
+   - 0.8: Severe structural differences, focusing on completely different mathematical concepts or parts of the problem.
+   - 1.0: Completely unrelated steps, or step content that has absolutely no logical overlap.
+
+Output your evaluation purely as a 2D JSON array representing the pairwise distance matrix. 
+For example, if Rollout A has N steps and Rollout B has M steps, the output must be a valid JSON array of size N x M containing granular values selected from the scores above.
 
 NO EXTRA TEXT. ONLY THE JSON ARRAY.
 Example Output:
 [
   [0.0, 0.8, 1.0],
-  [0.7, 0.2, 0.9],
-  [1.0, 0.9, 0.1]
+  [0.8, 0.2, 0.8],
+  [1.0, 0.8, 0.2]
 ]"""
 
 RETRY_PROMPT = """Your previous response was not a valid JSON 2D array matching the size of the steps. 
 Please correct the format. Do NOT add any markdown formatting, explanations, or extra text. ONLY the raw JSON array."""
-

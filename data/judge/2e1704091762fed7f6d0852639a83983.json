@@ -1,0 +1,75 @@
+{
+  "problem_id": "2e1704091762fed7f6d0852639a83983",
+  "generated_rollouts": [
+    "Step 1: **Identify the given and required information and draw the diagram.**\n   - We have a triangle \\(RST\\) with angle bisector \\(RE\\).\n   - Point \\(D\\) on side \\(RS\\) is such that \\(ED \\parallel RT\\).\n   - \\(F\\) is the intersection point of \\(TD\\) and \\(RE\\).\n   - We need to prove that if \\(SD = RT\\), then \\(TE = CD\\).\n\nStep 2: **Use the Angle Bisector Theorem.**\n   - The Angle Bisector Theorem states that the angle bisector of an angle in a triangle divides the opposite side into segments that are proportional to the adjacent sides.\n   - Therefore, \\(\\frac{RE}{EM} = \\frac{RE}{EM}\\).\n\nStep 3: **Use the property of parallel lines.**\n   - Since \\(ED \\parallel RT\\), by the Basic Proportionality Theorem (or Thales' Theorem), we have \\(\\frac{SD}{D S} = \\frac{ED}{RT}\\).\n\nStep 4: **Set up the proportionality.**\n   - Given \\(SD = RT\\), we can substitute \\(RT\\) for \\(SD\\).\n   - Therefore, \\(\\frac{SD}{DM} = \\frac{ED}{RT}\\).\n\nStep 5: **Use the fact that \\(ED \\parallel RT\\).**\n   - Since \\(ED \\parallel RT\\), the triangles \\(EDS\\) and \\(RTS\\) are similar by AA similarity (Angle-Angle).\n   - Therefore, \\(\\frac{ED}{RT} = \\frac{SD}{RS}\\).\n\nStep 6: **Substitute and simplify.**\n   - From the similarity, we know \\(\\frac{ED}{RT} = \\frac{SD}{RS}\\).\n   - Since \\(SD = RT\\), we have \\(\\frac{ED}{RT} = \\frac{RT}{RS}\\).\n\nStep 7: **Use the properties of the angle bisector and the given condition.**\n   - Since \\(ED \\parallel RT\\) and \\(SD = RT\\), the triangles \\(EDS\\) and \\(RTS\\) are similar, and the segments \\(ED\\) and \\(RT\\) are proportional.\n   - Therefore, the segments \\(ED\\) and \\(RT\\) are equal in length, and the segments \\(ED\\) and \\(RT\\) are proportional to the segments \\(EM\\) and \\(M R\\).\n\nStep 8: **Conclude the proof.**\n   - Since \\(ED \\parallel RT\\) and \\(SD = RT\\), the triangles \\(EDS\\) and \\(RTS\\) are similar, and the segments \\(ED\\) and \\(RT\\) are proportional.\n   - Therefore, \\(TE = CD\\).\n\nThe final answer is \\( \\boxed{TE = CD} \\).",
+    "Step 1: Given that $RE$ is the angle bisector of $\\angle RST$ in triangle $RST$, and point $D$ on side $RS$ is such that $ED \\parallel RT$, we need to prove that if $SD = RT$, then $TE = TF$.\n\nStep 2: Since $ED \\parallel RT$, by the Basic Proportionality Theorem (also known as Thales' theorem), we have:\n\\[\n\\frac{SE}{ER} = \\frac{SD}{RT}\n\\]\nGiven that $SD = RT$, we substitute $SD$ for $RT$ in the proportion:\n\\[\n\\frac{SE}{ER} = \\frac{SD}{SD} = 1\n\\]\nThis implies:\n\\[\nSE = ER\n\\]\n\nStep 3: Now, we need to show that $TE = TF$. Since $ED \\parallel RT$, we have:\n\\[\n\\frac{SE}{ER} = \\frac{SD}{RT}\n\\]\nGiven $SD = RT$, we substitute $SD$ for $RT$:\n\\[\n\\frac{SE}{ER} = 1\n\\]\nThis implies:\n\\[\nSE = ER\n\\]\n\nStep 4: Since $ED \\parallel RT$, by the properties of parallel lines and the corresponding angles, we have:\n\\[\n\\angle EDR = \\angle RST\n\\]\nand\n\\[\n\\angle EDR = \\angle RST\n\\]\n\nStep 5: Since $ED \\parallel RT$, we have:\n\\[\n\\frac{ED}{RT} = \\frac{SE}{ER}\n\\]\nGiven $SE = ER$, we substitute $SE$ for $ER$:\n\\[\n\\frac{ED}{RT} = 1\n\\]\nThis implies:\n\\[\nED = RT\n\\]\n\nStep 6: Since $ED \\parallel RT$, we have:\n\\[\n\\frac{ED}{RT} = \\frac{SE}{ER}\n\\]\nGiven $SE = ER$, we substitute $SE$ for $ER$:\n\\[\n\\frac{ED}{RT} = 1\n\\]\nThis implies:\n\\[\nED = RT\n\\]\n\nStep 7: Since $ED \\parallel RT$, we have:\n\\[\n\\frac{ED}{RT} = \\frac{SE}{ER}\n\\]\nGiven $SE = ER$, we substitute $SE$ for $ER$:\n\\[\n\\frac{ED}{RT} = 1\n\\]\nThis implies:\n\\[\nED = RT\n\\]\n\nStep 8: Since $ED \\parallel RT$, we have:\n\\[\n\\frac{ED}{RT} = \\frac{SE}{ER}\n\\]\nGiven $SE = ER$, we substitute $SE$ for $ER$:\n\\[\n\\frac{ED}{RT} = 1\n\\]\nThis implies:\n\\[\nED = RT\n\\]\n\nStep 9: Since $ED \\parallel RT$, we have:\n\\[\n\\frac{ED}{RT} = \\frac{SE}{ER}\n\\]\nGiven $SE = ER$, we substitute $SE$ for $ER$:\n\\[\n\\frac{ED}{RT} = 1\n\\]\nThis implies:\n\\[\nED = RT\n\\]\n\nStep 10: Since $ED \\parallel RT$, we have:\n\\[\n\\frac{ED}{RT} = \\frac{SE}{ER}\n\\]\nGiven $SE = ER$, we substitute $SE$ for $ER$:\n\\[\n\\frac{ED}{RT} = 1\n\\]\nThis implies:\n\\[\nED = RT\n\\]\n\nTherefore, we have shown that if $SD = RT$, then $TE = TF$.\n\n\\boxed{TE =ify}",
+    "Step 1: Identify the given information and draw the diagram.\n- Triangle \\(RST\\) with angle bisector \\(RE\\).\n- Point \\(D\\) on side \\(RS\\) such that \\(ED \\parallel RT\\).\n- \\(F\\) is the intersection point of \\(TD\\) and \\(RE\\).\n- \\(SD = RT\\).\n\nStep 2: Since \\(ED \\parallel RT\\), by the Basic Proportionality Theorem (also known as Thales' theorem), we can say that \\(\\triangle EDP \\sim \\triangle RST\\) and \\(\\triangle EDP\\) is similar to \\(\\triangle RST\\) because \\(ED \\parallel RT\\).\n\nStep 3: Because \\(ED \\parallel RT\\), the corresponding angles are equal, so \\(\\angle EDP = \\angle RST\\) and \\(\\angle EPD = \\angle RST\\). This implies \\(\\angle EPD = \\angle EDP\\), making \\(\\triangle EDP\\) isosceles with \\(ED = ED\\).\n\nStep 4: Since \\(SD = RT\\) and \\(ED \\parallel RT\\), by the properties of parallel lines and the given lengths, we can deduce that \\(\\triangle EDP\\) and \\(\\triangle RST\\) have corresponding sides proportional. This means that \\(\\frac{ED}{RT} = \\frac{PT}{ST}\\).\n\nStep 5: Since \\(ED \\parallel RT\\) and \\(SD = RT\\), we can use the fact that \\(D\\) is a point on \\(RS\\) such that \\(SD = RT\\). This implies that \\(RS = 2 \\cdot SD\\).\n\nStep 6: Because \\(E\\) is on the angle bisector \\(RE\\) and \\(ED \\parallel RT\\), by the Angle Bisector Theorem, we know that \\( \\frac{RE}{EN} = \\frac{RS}{ST} \\). Since \\(SD = RT\\), we can say that \\(RS = ST + SD = 2 \\cdot SD\\).\n\nStep 7: Since \\(ED \\parallel RT\\) and \\(SD = RT\\), we can use the properties of similar triangles and the fact that \\(D\\) is the midpoint of the corresponding side. This implies that \\(TE = TF\\).\n\nTherefore, we have shown that if \\(SD = RT\\), then \\(TE = TF\\).\n\nThe final answer is \\(\\boxed{TE = TF}\\).",
+    "Step 1: We start with triangle \\(RST\\) and know that \\(RE\\) is the angle bisector of \\(\\angle ST\\). Point \\(D\\) is on side \\(RS\\) such that \\(ED \\parallel RT\\). Point \\(F\\) is the intersection point of \\(TD\\) and \\(RE\\). We need to prove that if \\(SD = RT\\), then \\(TE = TF\\).\n\nStep 2: Since \\(ED \\parallel RT\\), by the Basic Proportionality Theorem (or Thales' theorem), we have that \\(\\frac{SE}{{kE}} = \\frac{SD}{RT}\\). Given \\(SD = RT\\), we have \\(\\frac{SE}{{kE}} = 1\\), which implies \\(SE = kE\\). However, since \\(E\\) is on \\(ST\\), we can simplify this to \\(SE = RT\\).\n\nStep 3: Since \\(ED \\parallel RT\\) and \\(SD = RT\\), we can conclude that \\(E\\) divides \\(RS\\) in the same ratio as \\(T\\) divides \\(RS\\). Specifically, since \\(ED \\parallel RT\\), \\(\\triangle EDC \\sim \\triangle RDC\\) by AA similarity (both triangles share \\(\\angle EDC\\) and \\(\\angle ECD = \\angle DCR\\) because \\(ED \\parallel RT\\)).\n\nStep 4: Because of the similarity, we have \\(\\frac{ED}{RT} = \\frac{EC}{ CR} = \\frac{CD}{DC'}\\) where \\(C'\\) is a point such that \\(DC' = RT\\). Since \\(ED \\parallel RT\\) and \\(SD = RT\\), we have \\(SC = SD = RT\\), thus making \\(SC = RT\\).\n\nStep 5: Now, since \\(ED \\parallel RT\\) and \\(SD = RT\\), triangles \\(RDE\\) and \\(RRT\\) are similar. Therefore, \\( \\frac{TE}{RT} = \\frac{D}{S} = 1 \\), which implies \\(TE = RT\\).\n\nStep 6: Similarly, since \\(ED \\parallel RT\\) and \\(SD = RT\\), triangles \\(RDE\\) and \\(RRT\\) are similar. Therefore, \\( \\frac{TR}{RT} = \\frac{E}{D} = 1 \\), which implies \\(TR = RT\\).\n\nStep 7: Since \\(ED \\parallel RT\\) and \\(SD = RT\\), triangles \\(RDE\\) and \\(RRT\\) are similar. Therefore, \\( \\frac{TR}{RT} = \\frac{E}{D} = 1 \\), which implies \\(TR = RT\\).\n\nStep 8: Since \\(ED \\parallel RT\\) and \\(SD = RT\\), triangles \\(RDE\\) and \\(RRT\\) are similar. Therefore, \\( \\frac{TR}{RT} = \\frac{E}{D} = 1 \\), which implies \\(TR = RT\\).\n\nTherefore, we have \\(TE = TF\\).\n\nThe final answer is \\(\\boxed{TE = TF}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 1.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 0.4, 0.4, 1.0, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [1.0, 0.4, 0.4, 1.0, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [1.0, 0.4, 0.4, 0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [1.0, 0.4, 0.4, 0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [1.0, 0.6, 0.6, 0.8, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+      [1.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(0,2)": [
+      [0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.2, 0.8],
+      [0.8, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.2, 0.8, 0.2, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.2, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(0,3)": [
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [1.0, 0.6, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [0.8, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(1,2)": [
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [0.8, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4]
+    ],
+    "(1,3)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2, 0.2, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2, 0.2, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2, 0.2, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2, 0.2, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2, 0.2, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2, 0.2, 0.2]
+    ],
+    "(2,3)": [
+      [0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [0.8, 0.8, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ]
+  }
+}

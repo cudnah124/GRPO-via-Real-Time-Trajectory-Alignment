@@ -1,0 +1,66 @@
+{
+  "problem_id": "f45327632a5b3727c7e841ae0196ad54",
+  "generated_rollouts": [
+    "Step 1: Define the variables.\nLet \\( L \\) be the number of large boxes and \\( S \\) be the number of small boxes.\n\nStep 2: Set up the equations based on the given information.\n1. The total number of boxes is 62:\n\\[ L + S = 62 \\]\n\n2. If the large boxes are loaded first, after loading all the large boxes, exactly 15 small boxes can still be loaded. This means that the weight of the large boxes plus the weight of the first 15 small boxes equals the total capacity of the truck. Let \\( C \\) be the total capacity of the truck in tons. Since each large box is 5 tons and each small box is 3 tons, we have:\n\\[ 5L + 3 \\times 15 = C \\]\n\\[ 5L + 45 = C \\]\n\n3. If the small boxes are loaded first, after loading all the small boxes, exactly 15 large boxes can still be loaded. This means that the weight of the small boxes plus the weight of the first 15 large boxes equals the total capacity of the truck. We have:\n\\[ 3S + 5 \\times 15 = C \\]\n\\[ 3S + 75 = C \\]\n\nStep 3: Equate the two expressions for \\( C \\):\n\\[ 5L + 45 = 3S + 75 \\]\n\nStep 4: Simplify the equation:\n\\[ 5L - 3S = 30 \\]\n\nStep 5: Solve the system of linear equations:\n\\[ L + S = 62 \\]\n\\[ 5L - 3S = 30 \\]\n\nFirst, solve the first equation for \\( S \\):\n\\[ S = 62 - L \\]\n\nSubstitute \\( S = 62 - L \\) into the second equation:\n\\[ 5L - 3(62 - L) = 30 \\]\n\\[ 5L - 186 + 3L = 30 \\]\n\\[ 8L - 186 = 30 \\]\n\\[ 8L = 216 \\]\n\\[ L = 27 \\]\n\nStep 6: Find \\( S \\):\n\\[ S = 62 - L \\]\n\\[ S = 62 - 27 \\]\n\\[ S = 35 \\]\n\nStep 7: Verify the solution by checking the total weight:\nIf \\( L = 27 \\) and \\( S = 35 \\):\n\\[ \\text{Weight with large boxes first} = 5 \\times 27 + 3 \\times 15 = 135 + 45 = 180 \\]\n\\[ \\text{Weight with small boxes first} = 3 \\times 35 + 5 \\times 15 = 105 + 75 = 180 \\]\n\nBoth conditions are satisfied, so the number of large boxes is \\(\\boxed{27}\\).",
+    "Step 1: Let \\( L \\) be the number of large boxes and \\( S \\) be the number of small boxes. We know the total number of boxes is 62, so we have the equation:\n\\[ L + S = 62 \\]\n\nStep 2: If the large boxes are loaded first and 15 small boxes can still be loaded, then the total capacity used by the large boxes and the remaining 15 small boxes is equal to the total capacity of the truck. Let the total capacity of the truck be \\( C \\). The capacity used by \\( L \\) large boxes is \\( 5L \\) and the capacity used by 15 small boxes is \\( 3 \\times 15 = 45 \\). Therefore, we have:\n\\[ 5L + 45 = C \\]\n\nStep 3: If the small boxes are loaded first and 15 large boxes can still be loaded, then the total capacity used by the small boxes and the remaining 15 large boxes is equal to the total capacity of the truck. The capacity used by \\( S \\) small boxes is \\( 3S \\) and the capacity used by 15 large boxes is \\( 5 \\times 15 = 75 \\). Therefore, we have:\n\\[ 3S + 75 = C \\]\n\nStep 4: Since both expressions are equal to \\( C \\), we can set them equal to each other:\n\\[ 5L + 45 = 3S + 75 \\]\nSubtract 45 from both sides:\n\\[ 5L = 3S + 30 \\]\nSubtract 30 from both sides:\n\\[ 5L - 30 = 3S \\]\nDivide both sides by 3:\n\\[ \\frac{5L - 30}{3} = S \\]\n\\[ S = \\frac{5L - 30}{3} \\]\n\nStep 5: Substitute \\( S = \\frac{5L - 30}{3} \\) into the first equation \\( L + S = 62 \\):\n\\[ L + \\frac{5L - 30}{3} = 62 \\]\nMultiply every term by 3 to clear the fraction:\n\\[ 3L + 5L - 30 = 186 \\]\nCombine like terms:\n\\[ 8L - 30 = 186 \\]\nAdd 30 to both sides:\n\\[ 8L = 216 \\]\nDivide both sides by 8:\n\\[ L = 27 \\]\n\nStep 6: Substitute \\( L = 27 \\) back into the equation \\( S = 62 - L \\):\n\\[ S = 62 - 27 \\]\n\\[ S = 35 \\]\n\nThe number of large boxes is \\( \\boxed{27} \\).",
+    "Step 1: Define the variables. Let \\( L \\) be the number of large boxes and \\( S \\) be the number of small boxes. We know the total number of boxes is 62, so we have the equation:\n\\[ L + S = 62. \\]\n\nStep 2: Determine the total weight of the boxes. Let the weight of a large box be \\( 3 \\) units per ton and the weight of a small box be \\( 5 \\) units per ton. The total weight of the boxes is:\n\\[ 3L + 5S. \\]\n\nStep 3: Analyze the first condition: If the large boxes are loaded first, after loading all the large boxes, exactly 15 small boxes can still be loaded. This means that the weight of the large boxes plus the weight of 15 small boxes equals the total weight of the boxes. Therefore, we have:\n\\[ 3L + 5 \\times 15 = 3L + 75 = 3L + 5S. \\]\n\nStep 4: Simplify the equation from the first condition:\n\\[ 75 = 2L + 5S. \\]\n\nStep 5: Analyze the second condition: If the small boxes are loaded first, after loading all the small boxes, exactly 15 large boxes can still be loaded. This means that the weight of the small boxes plus the weight of 15 large boxes equals the total weight of the boxes. Therefore, we have:\n\\[ 5S + 3 \\times 15 = 5S + 45 = 3L + 5S. \\]\n\nStep 6: Simplify the equation from the second condition:\n\\[ 45 = 3L + 2S. \\]\n\nStep 7: Solve the system of linear equations:\n\\[ L + S = 62, \\]\n\\[ 3L + 5S = 75, \\]\n\\[ 3L + 2S = 45. \\]\n\nStep 8: Subtract the second equation from the third equation to eliminate \\( L \\):\n\\[ (3L + 2S) - (3L + 5S) = 45 - 75, \\]\n\\[ 3L + 2S - 3L - 5S = -30, \\]\n\\[ -3S = -30, \\]\n\\[ S = 10. \\]\n\nStep 9: Substitute \\( S = 10 \\) back into the first equation:\n\\[ L + 10 = 62, \\]\n\\[ L = 52. \\]\n\nTherefore, the number of large boxes is \\(\\boxed{52}\\).",
+    "Step 1: Define variables for the number of large and small boxes.\nLet \\( L \\) be the number of large boxes and \\( S \\) be the number of small boxes.\nWe know the total number of boxes is 62, so:\n\\[ L + S = 62 \\]\n\nStep 2: Determine the total weight of the boxes when large boxes are loaded first.\nWhen large boxes are loaded first, after loading all the large boxes, exactly 15 small boxes can still be loaded. This means the weight of the large boxes plus the weight of the small boxes that can still be loaded (15 small boxes) equals the total weight of all the boxes. The weight of each large box is 3 units and the weight of each small box is 5 units. Therefore, the total weight of all the boxes is \\( 3L + 5S \\). The weight of the large boxes plus the weight of the 15 small boxes is \\( 3L + 5 \\times 15 = 3L + 75 \\). So, we have:\n\\[ 3L + 75 = 3L + 5S \\]\nSimplifying, we get:\n\\[ 75 = 5S \\]\n\\[ S = 15 \\]\n\nStep 3: Substitute \\( S = 15 \\) into the equation \\( L + S = 62 \\).\n\\[ L + 15 = 62 \\]\n\\[ L = 47 \\]\n\nStep 4: Verify the solution by checking the conditions when small boxes are loaded first.\nIf small boxes are loaded first, after loading all the small boxes, exactly 15 large boxes can still be loaded. This means the weight of the small boxes plus the weight of the large boxes that can still be loaded (15 large boxes) equals the total weight of all the boxes. The weight of each large box is 3 units and the weight of each small box is 5 units. Therefore, the total weight of all the boxes is \\( 3L + 5S \\). The weight of the small boxes plus the weight of the 15 large boxes is \\( 5S + 3 \\times 15 = 5S + 45 \\). So, we have:\n\\[ 5S + 45 = 3L + 5S \\]\nSimplifying, we get:\n\\[ 45 = 3L \\]\n\\[ L = 15 \\]\nBut we already know \\( L = 47 \\) from the previous step, so this condition is satisfied.\n\nTherefore, the number of large boxes is \\(\\boxed{47}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.2, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.2, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.4, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    ],
+    "(0,2)": [
+      [0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    ],
+    "(0,3)": [
+      [0.0, 0.2, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.4, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8]
+    ],
+    "(2,3)": [
+      [0.0, 0.8, 1.0, 1.0],
+      [0.8, 0.2, 1.0, 0.8],
+      [0.8, 0.0, 0.8, 0.8],
+      [1.0, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 0.0],
+      [1.0, 1.0, 1.0, 0.8],
+      [1.0, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 0.0, 1.0]
+    ]
+  }
+}

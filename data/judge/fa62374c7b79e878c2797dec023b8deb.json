@@ -1,0 +1,62 @@
+{
+  "problem_id": "fa62374c7b79e878c2797dec023b8deb",
+  "generated_rollouts": [
+    "Step 1: Define the variables and set up the equations based on the given information.\nLet \\( v \\) be the fuel consumption of the old car in liters per 100 km.\nThe fuel consumption of the new car is then \\( v - 2 \\) liters per 100 km.\n\nStep 2: Express the fuel efficiency of the old and new cars.\nThe fuel efficiency of the old car is \\( \\frac{100}{v} \\) km/l.\nThe fuel efficiency of the new car is \\( \\frac{100}{v-2} \\) km/l.\n\nStep 3: Set up the equation based on the given efficiency difference.\nThe new car travels \\( 4 \\frac{1}{6} \\) kilometers more per liter than the old car. Convert \\( 4 \\frac{1}{6} \\) to an improper fraction: \\( 4 \\frac{1}{6} = \\frac{25}{6} \\).\nSo, the equation is:\n\\[ \\frac{100}{v-2} = \\frac{100}{v} + \\frac{25}{6} \\]\n\nStep 4: Find a common denominator and solve the equation.\nRewrite the equation:\n\\[ \\frac{100}{v-2} = \\frac{600 + 25v}{6v} \\]\nCross-multiply to clear the fractions:\n\\[ 600v = (600 + 25v)(v-2) \\]\nExpand and simplify:\n\\[ 600v = 600v - 1200 + 25v^2 - 50v \\]\n\\[ 0 = 25v^2 - 50v - 1200 \\]\nDivide the entire equation by 25:\n\\[ v^2 - 2v - 48 = 0 \\]\nFactor the quadratic equation:\n\\[ (v-8)(v+6) = 0 \\]\nSo, the solutions are \\( v = 8 \\) or \\( v = -6 \\). Since \\( v \\) represents fuel consumption, it must be positive:\n\\[ v = 8 \\]\n\nStep 5: Determine the fuel consumption of the new car.\nThe fuel consumption of the new car is \\( v - 2 = 8 - 2 = 6 \\) liters per 100 km.\n\nThe final answer is:\n\\[ \\boxed{6} \\]",
+    "Step 1: Define variables for the fuel consumption and the distances traveled per liter.\nLet \\( x \\) be the fuel consumption in liters per 100 km for the old model car.\nLet \\( y \\) be the fuel consumption in liters per 100 km for the new model car.\n\nStep 2: Express the distances traveled per liter.\nFor the old model car, the distance traveled per liter is \\( \\frac{100}{x} \\) km.\nFor the new model car, the distance traveled per liter is \\( \\frac{100}{y} \\) km.\n\nStep 3: Set up the relationship between the distances traveled per liter.\nThe new car travels \\( 4 \\frac{1}{6} \\) kilometers more per liter than the old model. Therefore, we can write:\n\\[\n\\frac{100}{y} = \\frac{100}{x} + 4 \\frac{1}{6}\n\\]\nConvert \\( 4 \\frac{1}{6} \\) to an improper fraction:\n\\[\n4 \\frac{1}{6} = \\frac{25}{6}\n\\]\nSo, the equation becomes:\n\\[\n\\frac{100}{y} = \\frac{100}{x} + \\frac{25}{6}\n\\]\n\nStep 4: Set up the relationship between the fuel consumption per 100 km.\nThe fuel consumption per 100 km for the new car is 2 liters less than for the old model. Therefore, we can write:\n\\[\ny = x - 2\n\\]\n\nStep 5: Substitute \\( y = x - 2 \\) into the distance equation.\n\\[\n\\frac{100}{x-2} = \\frac{100}{x} + \\frac{25}{6}\n\\]\n\nStep 6: Find a common denominator and solve the equation.\nMultiply through by \\( 6x(x-2) \\) to clear the denominators:\n\\[\n600x = 600(x-2) + 25x(x-2)\n\\]\nSimplify:\n\\[\n600x = 600x - 1200 + 25x^2 - 50x\n\\]\nRearrange terms:\n\\[\n0 = 25x^2 - 50x - 1200\n\\]\nDivide through by 25:\n\\[\nx^2 - 2x - 48 = 0\n\\]\n\nStep 7: Solve the quadratic equation.\nFactor the quadratic equation:\n\\[\n(x-8)(x+6) = 0\n\\]\nSo, the solutions are:\n\\[\nx = 8 \\quad \\text{or} \\quad x = -6\n\\]\nSince fuel consumption cannot be negative, we have:\n\\[\nx = 8\n\\]\n\nStep 8: Find the fuel consumption for the new model.\n\\[\ny = x - 2 = 8 - 2 = 6\n\\]\n\nStep 9: Write the final answer.\nThe new car consumes \\(\\boxed{6}\\) liters of gasoline per 100 km.",
+    "Step 1: Define the variables.\nLet \\( x \\) be the fuel consumption of the old model car in liters per 100 km.\nLet \\( y \\) be the fuel consumption of the new model car in liters per 100 km.\n\nStep 2: Set up the equations based on the problem statement.\nThe new model car uses 2 liters less per 100 km than the old model:\n\\[ y = x - 2 \\]\nThe new model car travels \\( 4 \\frac{1}{6} \\) kilometers more per liter than the old model:\n\\[ \\frac{100}{y} = \\frac{100}{x} + 4 \\frac{1}{6} \\]\nConvert \\( 4 \\frac{1}{6} \\) to an improper fraction:\n\\[ 4 \\frac{1}{6} = \\frac{25}{6} \\]\nSo the equation becomes:\n\\[ \\frac{100}{y} = \\frac{100}{x} + \\frac{25}{6} \\]\n\nStep 3: Substitute \\( y = x - 2 \\) into the equation.\n\\[ \\frac{100}{x-2} = \\frac{100}{x} + \\frac{25}{6} \\]\n\nStep 4: Find a common denominator and solve for \\( x \\).\n\\[ \\frac{100}{x-2} = \\frac{600 + 25x(x-2)}{6x(x-2)} \\]\n\\[ 600x = 600(x-2) + 25x(x-2) \\]\n\\[ 600x = 600x - 1200 + 25x^2 - 50x \\]\n\\[ 0 = -1200 + 25x^2 - 50x \\]\n\\[ 25x^2 - 50x - 1200 = 0 \\]\nDivide the entire equation by 25:\n\\[ x^2 - 2x - 48 = 0 \\]\nFactor the quadratic equation:\n\\[ (x-8)(x+6) = 0 \\]\nSo, \\( x = 8 \\) or \\( x = -6 \\). Since \\( x \\) represents fuel consumption, it must be positive:\n\\[ x = 8 \\]\nThus, the fuel consumption of the old model is 8 liters per 100 km.\n\nStep 5: Find the fuel consumption of the new model.\n\\[ y = x - 2 = 8 - 2 = 6 \\]\n\nThe fuel consumption of the new car is \\(\\boxed{6}\\) liters per 100 km.",
+    "Step 1: **Define variables and set up the equations.**\nLet \\( x \\) be the fuel consumption of the old model in liters per 100 km.\nLet \\( y \\) be the fuel consumption of the new model in liters per 100 km.\n\nGiven:\n1. The new car travels \\( 4 \\frac{1}{6} \\) kilometers more per liter of gasoline than the old car.\n2. The fuel consumption per 100 km for the new car is 2 liters less than the old car.\n\nStep 2: Convert the mixed number to an improper fraction.\n\\[ 4 \\frac{1}{6} = \\frac{25}{6} \\]\n\nStep 3: Set up the equations based on the given information.\nThe fuel efficiency of the old car is \\( \\frac{100}{x} \\) km/liter.\nThe fuel efficiency of the new car is \\( \\frac{100}{y} \\) km/liter.\n\nAccording to the problem:\n\\[ \\frac{100}{y} = \\frac{100}{x} + \\frac{25}{6} \\]\n\\[ y = x + 2 \\]\n\nStep 4: Substitute \\( y = x + 2 \\) into the first equation.\n\\[ \\frac{100}{x + 2} = \\frac{100}{x} + \\frac{25}{6} \\]\n\nStep 5: clear the fractions by multiplying through by \\( 6x(x + 2) \\).\n\\[ 6x(x + 2) \\cdot \\frac{100}{x + 2} = 6x(x + 2) \\cdot \\frac{100}{x} + 6x(x + 2) \\cdot \\frac{25}{6} \\]\n\\[ 600x = 600(x + 2) + 25x(x + 2) \\]\n\nStep 6: Simplify and solve the resulting equation.\n\\[ 600x = 600x + 1200 + 25x^2 + 50x \\]\n\\[ 0 = 1200 + 25x^2 + 50x \\]\n\\[ 25x^2 + 50x - 1200 = 0 \\]\n\nStep 7: Divide the entire equation by 25.\n\\[ x^2 + 2x - 48 = 0 \\]\n\nStep 8: Factor the quadratic equation.\n\\[ (x + 8)(x - 6) = 0 \\]\n\nStep 9: Solve for \\( x \\).\n\\[ x + 8 = 0 \\quad \\text{or} \\quad x - 6 = 0 \\]\n\\[ x = -8 \\quad \\text{or} \\quad x = 6 \\]\n\nSince \\( x \\) represents fuel consumption and must be positive, we discard \\( x = -8 \\).\n\\[ x = 6 \\]\n\nStep 10: Find \\( y \\).\n\\[ y = x + 2 \\]\n\\[ y = 6 + 2 \\]\n\\[ y = 8 \\]\n\nTherefore, the new car consumes \\(\\boxed{8}\\) liters of gasoline per 100 km."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.2, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.2]
+    ],
+    "(0,2)": [
+      [0.2, 0.2, 0.8, 1.0, 1.0],
+      [0.8, 0.2, 0.0, 1.0, 1.0],
+      [0.8, 0.0, 0.0, 0.8, 1.0],
+      [1.0, 0.8, 0.8, 0.0, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(0,3)": [
+      [0.2, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.2, 1.0, 1.0, 1.0],
+      [0.8, 0.2, 1.0, 1.0, 1.0],
+      [0.8, 0.2, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.0, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2]
+    ],
+    "(1,3)": [
+      [0.0, 0.2, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(2,3)": [
+      [0.0, 0.2, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.4, 0.0, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ]
+  }
+}

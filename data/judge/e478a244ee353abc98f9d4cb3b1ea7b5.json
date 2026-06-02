@@ -1,0 +1,41 @@
+{
+  "problem_id": "e478a244ee353abc98f9d4cb3b1ea7b5",
+  "generated_rollouts": [
+    "Step 1: We start by noting that triangle \\(ABC\\) is a right triangle with \\(AB = 9\\), \\(BC = 12\\), and \\(AC = 15\\). This is because \\(15^2 = 9^2 + 12^2\\) (i.e., \\(225 = 81 + 144\\)).\n\nStep 2: Since \\(CD\\) is the angle bisector of \\(\\angle ACB\\), by the Angle Bisector Theorem, we know that \\(D\\) divides \\(AB\\) into segments \\(AD\\) and \\(DB\\) such that \\(\\frac{AD}{DB} = \\frac{AC}{BC} = \\frac{15}{12} = \\frac{5}{4}\\). Let \\(AD = 5x\\) and \\(DB = 4x\\). Since \\(AD + DB = AB = 9\\), we have \\(5x + 4x = 9\\), so \\(9x = 9\\) and \\(x = 1\\). Therefore, \\(AD = 5\\) and \\(DB = 4\\).\n\nStep 3: We use Stewart's Theorem to find the length of the angle bisector \\(CD\\). Stewart's Theorem states that for a triangle with sides \\(a\\), \\(b\\), and \\(c\\), and a cevian \\(d\\) dividing the side \\(a\\) into segments \\(m\\) and \\(n\\), the following relationship holds: \\(b^2m + c^2n = a(d^2 + mn)\\). Here, \\(a = 9\\), \\(b = 15\\), \\(c = 12\\), \\(m = 5\\), \\(n = 4\\), and \\(d = CD\\). Substituting these values into Stewart's Theorem, we get:\n\\[15^2 \\cdot 4 + 12^2 \\cdot 5 = 9(CD^2 + 5 \\cdot 4)\\]\n\\[900 + 720 = 9(CD^2 + 20)\\]\n\\[1620 = 9(CD^2 + 20)\\]\n\\[180 = CD^2 + 20\\]\n\\[CD^2 = 160\\]\n\\[CD = \\sqrt{160} = 4\\sqrt{10}\\]\n\nTherefore, the length of \\(CD\\) is \\(\\boxed{4\\sqrt{10}}\\).",
+    "Step 1: We are given the triangle \\(ABC\\) with side lengths \\(AB = 9\\), \\(BC = 12\\), and \\(AC = 15\\). We need to find the length of the angle bisector \\(CD\\).\n\nStep 2: By the Angle Bisector Theorem, the angle bisector divides the opposite side into segments proportional to the adjacent sides. Therefore, if \\(D\\) is the point where the angle bisector of \\(\\angle ACB\\) intersects \\(AB\\), then:\n\\[\n\\frac{AD}{DB} = \\frac{AC}{BC} = \\frac{15}{12} = \\frac{5}{4}\n\\]\nLet \\(AD = 5x\\) and \\(DB = 4x\\). Since \\(AD + DB = AB = 9\\), we have:\n\\[\n5x + 4x = 9 \\implies 9x = 9 \\implies x = 1\n\\]\nThus, \\(AD = 5\\) and \\(DB = 4\\).\n\nStep 3: To find the length of \\(CD\\), we use the Angle Bisector Length Formula, which states that the length of the angle bisector \\(CD\\) is given by:\n\\[\nCD = \\sqrt{AB \\left( \\frac{AC \\cdot BC}{AC + BC} \\right) \\left( 1 - \\frac{AB^2}{(AC + BC)^2} \\right)}\n\\]\nSubstituting the known values \\(AB = 9\\), \\(AC = 15\\), and \\(BC = 12\\), we get:\n\\[\nCD = \\sqrt{9 \\left( \\frac{15 \\cdot 12}{15 + 12} \\right) \\left( 1 - \\frac{9^2}{(15 + 12)^2} \\right)} = \\sqrt{9 \\left( \\frac{180}{27} \\right) \\left( 1 - \\frac{81}{819} \\right)} = \\sqrt{9 \\left( \\frac{20}{3} \\right) \\left( \\frac{818}{819} \\right)}\n\\]\nSimplifying inside the square root:\n\\[\nCD = \\sqrt{9 \\cdot \\frac{20}{3} \\cdot \\frac{818}{819}} = \\sqrt{60 \\cdot \\frac{818}{819}} = \\sqrt{\\frac{49080}{819}} = \\sqrt{\\frac{16360}{273}} = \\sqrt{\\frac{16360}{273}} = \\frac{\\sqrt{16360}}{\\sqrt{273}} = \\frac{2\\sqrt{4090}}{3\\sqrt{29}} = \\frac{2\\sqrt{4090}}{3\\sqrt{29}} = \\frac{2\\sqrt{4090}}{3\\sqrt{29}} = \\frac{2\\sqrt{4090}}{3\\sqrt{29}} = \\frac{2\\sqrt{4090}}{3\\sqrt{29}} = \\frac{2\\sqrt{4090}}{3\\sqrt{29}} = \\frac{2\\sqrt{4090}}{3\\sqrt{29}}\n\\]\n\nThus, the length of \\(CD\\) is \\(\\boxed{6}\\).",
+    "Step 1: We are given that $AB = 9$, $BC = 12$, and $AC = 15$. We can use the Angle Bisector Theorem to find the length of $CD$.\n\nThe Angle Bisector Theorem states that the angle bisector of an angle in a triangle divides the opposite side into segments that are proportional to the adjacent sides. Therefore, if $D$ is the point where the angle bisector of $\\angle ACB$ intersects $AB$, then:\n\n\\[\n\\frac{AD}{DB} = \\frac{AC}{BC} = \\frac{15}{12} = \\frac{5}{4}\n\\]\n\nLet $AD = 5x$ and $DB = 4x$. Since $AD + DB = AB$, we have:\n\n\\[\n5x + 4x = 9 \\implies 9x = 9 \\implies x = 1\n\\]\n\nThus, $AD = 5$ and $DB = 4$.\n\nStep 2: We can use Stewart's Theorem to find the length of $CD$. Stewart's Theorem states that for a triangle with sides $a$, $b$, and $c$, and a cevian $d$ that divides side $a$ into segments $m$ and $n$, the following relationship holds:\n\n\\[\nb^2m + c^2n = a(d^2 + mn)\n\\]\n\nIn our case, $a = 9$, $b = 15$, $c = 12$, $m = 5$, $n = 4$, and $d = CD$. Substituting these values into Stewart's Theorem, we get:\n\n\\[\n15^2 \\cdot 4 + 12^2 \\cdot 5 = 9(CD^2 + 5 \\cdot 4)\n\\]\n\nSimplifying the left-hand side:\n\n\\[\n15^2 \\cdot 4 = 225 \\cdot 4 = 900\n\\]\n\\[\n12^2 \\cdot 5 = 144 \\cdot 5 = 720\n\\]\n\\[\n900 + 720 = 1620\n\\]\n\nSo the equation becomes:\n\n\\[\n1620 = 9(CD^2 + 20)\n\\]\n\nDividing both sides by 9:\n\n\\[\n180 = CD^2 + 20\n\\]\n\nSubtracting 20 from both sides:\n\n\\[\nCD^2 = 160\n\\]\n\nTaking the square root of both sides:\n\n\\[\nCD = \\sqrt{160} = 4\\sqrt{10}\n\\]\n\nTherefore, the length of $CD$ is \\(\\boxed{4\\sqrt{10}}\\).",
+    "Step 1: We are given the triangle \\(ABC\\) with side lengths \\(AB = 9\\), \\(BC = 12\\), and \\(AC = 15\\). We need to find the length of the angle bisector \\(CD\\).\n\nStep 2: By the Angle Bisector Theorem, the angle bisector \\(CD\\) divides the opposite side \\(AB\\) into segments proportional to the other two sides. Let \\(AD = x\\) and \\(DB = y\\). According to the Angle Bisector Theorem, we have:\n\\[\n\\frac{AD}{DB} = \\frac{AC}{BC} = \\frac{15}{12} = \\frac{5}{4}\n\\]\nSince \\(AD + DB = AB = 9\\), we can write:\n\\[\nx + y = 9 \\quad \\text{and} \\quad \\frac{x}{y} = \\frac{5}{4}\n\\]\nFrom \\(\\frac{x}{y} = \\frac{5}{4}\\), we get \\(x = \\frac{5}{4}y\\). Substituting \\(x = \\frac{5}{4}y\\) into \\(x + y = 9\\), we get:\n\\[\n\\frac{5}{4}y + y = 9 \\implies \\frac{9}{4}y = 9 \\implies y = 4\n\\]\nThen, \\(x = \\frac{5}{4} \\cdot 4 = 5\\). So, \\(AD = 5\\) and \\(DB = 4\\).\n\nStep 3: To find the length of the angle bisector \\(CD\\), we use the Angle Bisector Length Formula:\n\\[\nCD^2 = AC \\cdot BC \\left(1 - \\frac{AB^2}{(AC + BC)^2}\\right)\n\\]\nSubstituting the known values \\(AC = 15\\), \\(BC = 12\\), and \\(AB = 9\\), we get:\n\\[\nCD^2 = 15 \\cdot 12 \\left(1 - \\frac{9^2}{(15 + 12)^2}\\right) = 180 \\left(1 - \\frac{81}{729}\\right) = 180 \\left(1 - \\frac{1}{9}\\right) = 180 \\left(\\frac{8}{9}\\right) = 160\n\\]\nThus, \\(CD = \\sqrt{160} = 4\\sqrt{10}\\).\n\nThe length of \\(CD\\) is \\(\\boxed{4\\sqrt{10}}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.4]
+    ],
+    "(0,2)": [
+      [1.0, 1.0],
+      [0.0, 1.0],
+      [1.0, 0.0]
+    ],
+    "(0,3)": [
+      [1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.4]
+    ],
+    "(1,2)": [
+      [0.2, 1.0],
+      [0.0, 1.0],
+      [1.0, 0.4]
+    ],
+    "(1,3)": [
+      [0.0, 0.0, 0.0],
+      [0.2, 0.2, 0.2],
+      [0.4, 0.4, 0.4]
+    ],
+    "(2,3)": [
+      [1.0, 0.0, 1.0],
+      [1.0, 1.0, 0.4]
+    ]
+  }
+}

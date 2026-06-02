@@ -1,0 +1,75 @@
+{
+  "problem_id": "470e1624a1a8434a0857a6badaa90000",
+  "generated_rollouts": [
+    "Step 1: Let's denote the numbers as \\(a_1, a_2, \\ldots, a_n\\). We know that the sum of any three of these numbers is rational, and the sum of any two of these numbers is irrational.\n\nStep 2: Consider the sum of any two numbers \\(a_i + a_j\\). Since this sum is irrational, we can conclude that \\(a_i\\) and \\(a_j\\) cannot both be rational. Therefore, at most one of the numbers can be rational. If there were two rational numbers, their sum would be rational, which contradicts the given condition.\n\nStep 3: Now, consider the sum of any three numbers \\(a_i + a_j + a_k\\). Since this sum is rational, we can use this information to further analyze the nature of the numbers. If there are more than two rational numbers, we could find a set of three rational numbers whose sum would be rational, which is not possible. Therefore, there can be at most one rational number.\n\nStep 4: If there is exactly one rational number, the rest of the numbers must be irrational. Let's denote the rational number as \\(a\\) and the irrational numbers as \\(b_1, b_2, \\ldots, b_{n-1}\\).\n\nStep 5: Consider the sum of any two irrational numbers. Since the sum of any two irrational numbers is irrational, we can conclude that all irrational numbers must be of the form \\(a_i + b\\) where \\(b\\) is a fixed irrational number and \\(a_i\\) are rational numbers.\n\nStep 6: Now, consider the sum of any three numbers. If we have three numbers, one of them must be rational (since there is only one rational number), and the other two must be irrational. The sum of the rational number and two irrational numbers will be irrational, which is consistent with the given condition.\n\nStep 7: If we have four or more numbers, we can always find a set of three numbers that includes more than one irrational number. However, the sum of these three numbers will be irrational, which contradicts the given condition that the sum of any three numbers is rational. Therefore, the maximum number of numbers that can be written on the board is 3.\n\nConclusion: The largest number of numbers that can be written on the board is \\boxed{3}.",
+    "Step 1: Let's denote the numbers on the board as \\(a_1, a_2, \\ldots, a_n\\). We are given two conditions:\n1. The sum of any three of them is rational.\n2. The sum of any two of them is irrational.\n\nStep 2: Consider the sum of any three numbers, say \\(a_1, a_2, a_3\\). This sum is rational:\n\\[ a_1 + a_2 + a_3 = r_1 \\]\nwhere \\(r_1\\) is a rational number.\n\nStep 3: Now consider the sum of any two numbers, say \\(a_1\\) and \\(a_2\\). This sum is irrational:\n\\[ a_1 + a_2 = r_2 \\]\nwhere \\(r_2\\) is an irrational number.\n\nStep 4: Let's analyze the implications of these conditions. Suppose we have at least three numbers on the board, say \\(a_1, a_2, a_3\\). From the first condition, the sum of any three of them is rational. Therefore:\n\\[ a_1 + a_2 + a_3 = r_1 \\]\n\\[ a_1 + a_4 + a_5 = r_3 \\]\n\\[ a_2 + a_4 + a_6 = r_4 \\]\nand so on.\n\nStep 5: Consider the equation \\(a_1 + a_2 + a_3 = r_1\\) and subtract \\(a_1 + a_2 = r_2\\) from it:\n\\[ a_3 = r_1 - r_2 \\]\nSince \\(r_1\\) and \\(r_2\\) are rational, \\(a_3\\) must be rational.\n\nStep 6: Similarly, consider the equation \\(a_1 + a_2 + a_4 = r_5\\) and subtract \\(a_1 + a_4 = r_3\\) from it:\n\\[ a_2 = r_5 - r_3 \\]\nSince \\(r_5\\) and \\(r_3\\) are rational, \\(a_2\\) must be rational.\n\nStep 7: We can extend this argument to show that all numbers \\(a_1, a_2, \\ldots, a_n\\) must be rational. If any number were irrational, it would contradict the condition that the sum of any two numbers is irrational.\n\nStep 8: Now, let's consider the implications of having more than two irrational numbers. Suppose we have three numbers \\(a, b, c\\) where \\(a\\) and \\(b\\) are irrational, and \\(c\\) is rational. Then:\n\\[ a + b = r_6 \\]\nwhere \\(r_6\\) is irrational. However, if \\(a + b\\) is irrational and \\(c\\) is rational, then \\(a + b + c\\) would be irrational, which contradicts the condition that the sum of any three numbers is rational.\n\nStep 9: Therefore, we cannot have more than two irrational numbers on the board. If we have three or more numbers, we can always find a combination of three numbers that includes at least one irrational number, which would violate the condition that the sum of any three numbers is rational.\n\nStep 10: The only way to satisfy both conditions is to have at most two irrational numbers. If we have exactly two irrational numbers, say \\(a\\) and \\(b\\), and the rest are rational, then the sum of any three numbers will be rational (since the sum of two irrational numbers and a rational number is rational), and the sum of any two numbers will be irrational (since the sum of two irrational numbers is irrational).\n\nConclusion: The largest number of numbers that can be written on the board is \\(\\boxed{2}\\).",
+    "Step 1: Let us denote the numbers on the board as \\(a_1, a_2, \\ldots, a_n\\).\n\nStep 2: We are given that the sum of any three of these numbers is rational. This can be written as:\n\\[\na_i + a_j + a_k \\in \\mathbb{Q} \\quad \\text{for any distinct } i, j, k.\n\\]\n\nStep 3: We are also given that the sum of any two of these numbers is irrational. This can be written as:\n\\[\na_i + a_j \\notin \\mathbb{Q} \\quad \\text{for any distinct } i, j.\n\\]\n\nStep 4: Consider the sum of all the numbers \\(a_1 + a_2 + \\cdots + a_n\\). Let this sum be \\(S\\). Since the sum of any three numbers is rational, we can write:\n\\[\na_i + a_j + a_k = S - (a_l + a_m) \\in \\mathbb{Q} \\quad \\text{for any distinct } i, j, k, l, m.\n\\]\nThis implies that \\(S - (a_i + a_j)\\) is rational for any distinct \\(i, j\\).\n\nStep 5: Since \\(a_i + a_j\\) is irrational, \\(S\\) must be irrational. If \\(S\\) were rational, then \\(S - (a_i + a_j)\\) would also be rational, which contradicts the irrationality of \\(a_i + a_j\\).\n\nStep 6: Now, consider the sum of all possible pairs of distinct numbers. There are \\(\\binom{n}{2}\\) such pairs, and each pair sum is irrational. Let the sum of all these pairs be \\(T\\). We can write:\n\\[\nT = \\sum_{1 \\leq i < j \\leq n} (a_i + a_j).\n\\]\nEach \\(a_i\\) appears in \\(n-1\\) pairs, so:\n\\[\nT = (n-1) \\sum_{i=1}^n a_i = (n-1)S.\n\\]\nSince \\(T\\) is the sum of irrational numbers, it must be irrational. Therefore, \\(n-1\\) must be irrational or zero.\n\nStep 7: If \\(n-1\\) is irrational, then \\(n\\) must be irrational, which is not possible since \\(n\\) is a positive integer. Thus, \\(n-1\\) must be zero, implying \\(n = 2\\).\n\nStep 8: However, we need to check if \\(n = 2\\) satisfies the given conditions. If \\(n = 2\\), we have two numbers \\(a\\) and \\(b\\). The sum \\(a + b\\) is irrational, which contradicts the given condition that the sum of any two numbers is irrational.\n\nStep 9: Therefore, we need to consider the possibility of \\(n = 3\\). If \\(n = 3\\), we have three numbers \\(a, b, c\\). The sum of any three numbers is rational:\n\\[\na + b + c \\in \\mathbb{Q}.\n\\]\nThe sum of any two numbers is irrational:\n\\[\na + b, a + c, b + c \\notin \\mathbb{Q}.\n\\]\nThis configuration satisfies both conditions.\n\nStep 10: To verify, consider the numbers \\(a = \\sqrt{2}\\), \\(b = -\\sqrt{2}\\), and \\(c = 1\\):\n\\[\na + b = \\sqrt{2} - \\sqrt{2} = 0 \\quad (\\text{rational}),\n\\]\n\\[\na + c = \\sqrt{2} + 1 \\quad (\\text{irrational}),\n\\]\n\\[\nb + c = -\\sqrt{2} + 1 \\quad (\\text{irrational}),\n\\]\n\\[\na + b + c = \\sqrt{2} - \\sqrt{2} + 1 = 1 \\quad (\\text{rational}).\n\\]\nThus, \\(n = 3\\) is a valid solution.\n\nConclusion:\nThe largest number of numbers that can be written on the board is \\(\\boxed{3}\\).",
+    "Step 1: Let's denote the real numbers written on the board as \\(a_1, a_2, \\ldots, a_n\\). We know that the sum of any three of these numbers is rational, and the sum of any two of these numbers is irrational.\n\nStep 2: Consider the sum of any two numbers, say \\(a_i + a_j\\). According to the problem, \\(a_i + a_j\\) is irrational for all \\(i \\neq j\\).\n\nStep 3: Now, consider the sum of any three numbers, say \\(a_i + a_j + a_k\\). According to the problem, \\(a_i + a_j + a_k\\) is rational for all \\(i \\neq j \\neq k\\).\n\nStep 4: Let's assume there are at least four numbers on the board, say \\(a_1, a_2, a_3, a_4\\). Then, we can write the following equations:\n\\[a_1 + a_2 + a_3 = r_1\\]\n\\[a_1 + a_2 + a_4 = r_2\\]\n\\[a_1 + a_3 + a_4 = r_3\\]\n\\[a_2 + a_3 + a_4 = r_4\\]\nwhere \\(r_1, r_2, r_3, r_4\\) are rational numbers.\n\nStep 5: Adding all four equations, we get:\n\\[3(a_1 + a_2 + a_3 + a_4) = r_1 + r_2 + r_3 + r_4\\]\nSince \\(r_1, r_2, r_3, r_4\\) are rational, their sum is also rational. Therefore, \\(a_1 + a_2 + a_3 + a_4\\) must be rational.\n\nStep 6: Now, consider the equation \\(a_1 + a_2 + a_4 = r_2\\). Since \\(a_1 + a_2 + a_3 + a_4\\) is rational, we can subtract \\(a_3 + a_4\\) to get:\n\\[a_1 + a_2 = r_2 - (a_3 + a_4)\\]\nSince \\(a_1 + a_2\\) is irrational (by the problem statement), this implies that \\(a_3 + a_4\\) must also be irrational.\n\nStep 7: Now, consider the equation \\(a_1 + a_3 + a_4 = r_3\\). Similarly, we can subtract \\(a_2 + a_3\\) to get:\n\\[a_1 + a_4 = r_3 - (a_2 + a_3)\\]\nSince \\(a_1 + a_4\\) is irrational, this implies that \\(a_2 + a_3\\) must also be irrational.\n\nStep 8: Now, consider the equation \\(a_2 + a_3 + a_4 = r_4\\). Similarly, we can subtract \\(a_1 + a_2\\) to get:\n\\[a_3 + a_4 = r_4 - (a_1 + a_2)\\]\nSince \\(a_3 + a_4\\) is irrational, this implies that \\(a_1 + a_2\\) must also be irrational.\n\nStep 9: From steps 6, 7, and 8, we see that the sum of any two of the four numbers is irrational, but the sum of any three of the four numbers is rational. This is a contradiction because if the sum of any three numbers is rational, then the sum of any two of those three numbers must be rational (since the sum of three numbers minus one of them is rational).\n\nTherefore, it is impossible to have four or more numbers on the board that satisfy both conditions. The largest number of numbers that can be written on the board is 3.\n\nFinal answer:\n\\[\n\\boxed{3}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 0.2, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(0,2)": [
+      [0.0, 0.2, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8]
+    ],
+    "(0,3)": [
+      [0.0, 0.2, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.2, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.2, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(1,3)": [
+      [0.0, 0.2, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(2,3)": [
+      [0.0, 0.2, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.8],
+      [0.8, 0.8, 0.8, 0.6, 0.6, 0.6, 0.6, 0.6, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.2]
+    ]
+  }
+}

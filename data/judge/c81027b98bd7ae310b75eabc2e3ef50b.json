@@ -1,0 +1,103 @@
+{
+  "problem_id": "c81027b98bd7ae310b75eabc2e3ef50b",
+  "generated_rollouts": [
+    "Step 1: We are given the system of equations:\n\\[\n\\begin{cases}\n2x^2 + 3xy + y^2 = 70 \\\\\n6x^2 + xy - y^2 = 50\n\\end{cases}\n\\]\n\nStep 2: Let's multiply the first equation by 3 and the second equation by 1 to align the coefficients of \\(x^2\\):\n\\[\n\\begin{cases}\n6x^2 + 9xy + 3y^2 = 210 \\\\\n6x^2 + xy - y^2 = 50\n\\end{cases}\n\\]\n\nStep 3: Subtract the second equation from the first equation to eliminate \\(x^2\\):\n\\[\n(6x^2 + 9xy + 3y^2) - (6x^2 + xy - y^2) = 210 - 50\n\\]\n\\[\n6x^2 + 9xy + 3y^2 - 6x^2 - xy + y^2 = 160\n\\]\n\\[\n8xy + 4y^2 = 160\n\\]\n\\[\n4y(2x + y) = 160\n\\]\n\\[\ny(2x + y) = 40\n\\]\n\nStep 4: Now, let's multiply the first equation by 1 and the second equation by -3 to align the coefficients of \\(y^2\\):\n\\[\n\\begin{cases}\n2x^2 + 3xy + y^2 = 70 \\\\\n-18x^2 - 3xy + 3y^2 = -150\n\\end{cases}\n\\]\n\nStep 5: Add the two equations to eliminate \\(y^2\\):\n\\[\n(2x^2 + 3xy + y^2) + (-18x^2 - 3xy + 3y^2) = 70 - 150\n\\]\n\\[\n2x^2 + 3xy + y^2 - 18x^2 - 3xy + 3y^2 = -80\n\\]\n\\[\n-16x^2 + 4y^2 = -80\n\\]\n\\[\n4y^2 - 16x^2 = -80\n\\]\n\\[\n-4(4x^2 - y^2) = -80\n\\]\n\\[\n4x^2 - y^2 = 20\n\\]\n\nStep 6: We now have the system:\n\\[\n\\begin{cases}\ny(2x + y) = 40 \\\\\n4x^2 - y^2 = 20\n\\end{cases}\n\\]\n\nStep 7: Solve the first equation for \\(y\\):\n\\[\ny(2x + y) = 40\n\\]\n\\[\ny = \\frac{40}{2x + y}\n\\]\n\nStep 8: Substitute \\(y = 4\\) into the second equation:\n\\[\n4x^2 - 4^2 = 20\n\\]\n\\[\n4x^2 - 16 = 20\n\\]\n\\[\n4x^2 = 36\n\\]\n\\[\nx^2 = 9\n\\]\n\\[\nx = \\pm 3\n\\]\n\nStep 9: We already know one pair of roots is \\((x_1, y_1) = (3, 4)\\). Now, substitute \\(x = -3\\) into the first equation:\n\\[\ny(2(-3) + y) = 40\n\\]\n\\[\ny(-6 + y) = 40\n\\]\n\\[\ny^2 - 6y = 40\n\\]\n\\[\ny^2 - 6y - 40 = 0\n\\]\n\nStep 10: Solve the quadratic equation for \\(y\\):\n\\[\ny = \\frac{6 \\pm \\sqrt{36 + 160}}{2}\n\\]\n\\[\ny = \\frac{6 \\pm \\sqrt{196}}{2}\n\\]\n\\[\ny = \\frac{6 \\pm 14}{2}\n\\]\n\\[\ny = 10 \\quad \\text{or} \\quad y = -4\n\\]\n\nStep 11: The other pair of roots is \\((x_2, y_2) = (-3, 10)\\).\n\nThe final answer is \\(\\boxed{(-3, 10)}\\).",
+    "Step 1: We start with the given system of equations:\n\\[\n\\begin{cases}\n2x^2 + 3xy + y^2 = 70 \\\\\n6x^2 + xy - y^2 = 50\n\\end{cases}\n\\]\n\nStep 2: We will use the method of elimination to solve for \\(x\\) and \\(y\\). First, we multiply the first equation by 3 to align the coefficients of \\(x^2\\) with the second equation:\n\\[\n3(2x^2 + 3xy + y^2) = 3 \\cdot 70\n\\]\n\\[\n6x^2 + 9xy + 3y^2 = 210\n\\]\n\nStep 3: Now we subtract the second equation from this new equation:\n\\[\n(6x^2 + 9xy + 3y^2) - (6x^2 + xy - y^2) = 210 - 50\n\\]\n\\[\n6x^2 + 9xy + 3y^2 - 6x^2 - xy + y^2 = 160\n\\]\n\\[\n8xy + 4y^2 = 160\n\\]\n\nStep 4: Simplify the resulting equation:\n\\[\n4(2xy + y^2) = 160\n\\]\n\\[\n2xy + y^2 = 40\n\\]\n\nStep 5: We now have a new equation:\n\\[\n2xy + y^2 = 40\n\\]\n\nStep 6: Recall the original first equation:\n\\[\n2x^2 + 3xy + y^2 = 70\n\\]\n\nStep 7: Substitute \\(y^2 = 40 - 2xy\\) into the first equation:\n\\[\n2x^2 + 3xy + (40 - 2xy) = 70\n\\]\n\\[\n2x^2 + 3xy - 2xy + 40 = 70\n\\]\n\\[\n2x^2 + xy + 40 = 70\n\\]\n\\[\n2x^2 + xy = 30\n\\]\n\nStep 8: We now have a system of two simpler equations:\n\\[\n\\begin{cases}\n2xy + y^2 = 40 \\\\\n2x^2 + xy = 30\n\\end{cases}\n\\]\n\nStep 9: Solve the second equation for \\(xy\\):\n\\[\nxy = 30 - 2x^2\n\\]\n\nStep 10: Substitute \\(xy = 30 - 2x^2\\) into the first equation:\n\\[\n2(30 - 2x^2) + y^2 = 40\n\\]\n\\[\n60 - 4x^2 + y^2 = 40\n\\]\n\\[\ny^2 = 40 - 60 + 4x^2\n\\]\n\\[\ny^2 = 4x^2 - 20\n\\]\n\nStep 11: Substitute \\(y^2 = 4x^2 - 20\\) back into \\(xy = 30 - 2x^2\\):\n\\[\nx(30 - 2x^2) = 30 - 2x^2\n\\]\n\\[\n30x - 2x^3 = 30 - 2x^2\n\\]\n\nStep 12: Rearrange the equation:\n\\[\n2x^3 - 2x^2 - 30x + 30 = 0\n\\]\n\nStep 13: Factor out the common factor of 2:\n\\[\nx^3 - x^2 - 15x + 15 = 0\n\\]\n\nStep 14: Test possible rational roots using the Rational Root Theorem. Testing \\(x = 3\\):\n\\[\n3^3 - 3^2 - 15 \\cdot 3 + 15 = 27 - 9 - 45 + 15 = -12 \\quad (\\text{not a root})\n\\]\n\nTesting \\(x = 5\\):\n\\[\n5^3 - 5^2 - 15 \\cdot 5 + 15 = 125 - 25 - 75 + 15 = 40 \\quad (\\text{not a root})\n\\]\n\nTesting \\(x = 1\\):\n\\[\n1^3 - 1^2 - 15 \\cdot 1 + 15 = 1 - 1 - 15 + 15 = 0 \\quad (\\text{a root})\n\\]\n\nStep 15: Since \\(x = 1\\) is a root, we can factor \\(x - 1\\) out of the polynomial:\n\\[\nx^3 - x^2 - 15x + 15 = (x - 1)(x^2 + 0x - 15)\n\\]\n\\[\nx^3 - x^2 - 15x + 15 = (x - 1)(x^2 - 15)\n\\]\n\nStep 16: Solve the quadratic equation \\(x^2 - 15 = 0\\):\n\\[\nx^2 = 15\n\\]\n\\[\nx = \\pm \\sqrt{15}\n\\]\n\nStep 17: For \\(x = 1\\), substitute back into \\(y^2 = 4x^2 - 20\\):\n\\[\ny^2 = 4(1)^2 - 20\n\\]\n\\[\ny^2 = 4 - 20\n\\]\n\\[\ny^2 = -16 \\quad (\\text{no real solution})\n\\]\n\nStep 18: For \\(x = \\sqrt{15}\\), substitute back into \\(y^2 = 4x^2 - 20\\):\n\\[\ny^2 = 4(15) - 20\n\\]\n\\[\ny^2 = 60 - 20\n\\]\n\\[\ny^2 = 40\n\\]\n\\[\ny = \\pm 2\\sqrt{10}\n\\]\n\nStep 19: For \\(x = -\\sqrt{15}\\), substitute back into \\(y^2 = 4x^2 - 20\\):\n\\[\ny^2 = 4(15) - 20\n\\]\n\\[\ny^2 = 60 - 20\n\\]\n\\[\ny^2 = 40\n\\]\n\\[\ny = \\pm 2\\sqrt{10}\n\\]\n\nStep 20: The pairs of roots are:\n\\[\n(x_1, y_1) = (3, 4)\n\\]\n\\[\n(x_2, y_2) = (\\sqrt{15}, 2\\sqrt{10})\n\\]\n\\[\n(x_3, y_3) = (\\sqrt{15}, -2\\sqrt{10})\n\\]\n\\[\n(x_4, y_4) = (-\\sqrt{15}, 2\\sqrt{10})\n\\]\n\\[\n(x_5, y_5) = (-\\sqrt{15}, -2\\sqrt{10})\n\\]\n\nThe other pair of roots is:\n\\boxed{( \\sqrt{15}, 2\\sqrt{10} )}.\n\nStep 21: The final answer is \\boxed{( \\sqrt{15}, 2\\sqrt{10})}.",
+    "Step 1: We start with the given system of equations:\n\n\\[\n\\begin{cases}\n2x^2 + 3xy + y^2 = 70 \\\\\n6x^2 + xy - y^2 = 50\n\\end{cases}\n\\]\n\nStep 2: To eliminate \\(y^2\\), we multiply the first equation by 3 and subtract the second equation from it:\n\n\\[\n3(2x^2 + 3xy + y^2) - (6x^2 + xy - y^2) = 3 \\cdot 70 - 50\n\\]\n\nSimplifying the left side:\n\n\\[\n6x^2 + 9xy + 3y^2 - 6x^2 - xy + y^2 = 210 - 50\n\\]\n\nThis reduces to:\n\n\\[\n8xy + 4y^2 = 160\n\\]\n\nDividing through by 4:\n\n\\[\n2xy + y^2 = 40\n\\]\n\nStep 3: We can now solve for \\(y\\) in terms of \\(x\\) from this equation:\n\n\\[\ny(2x + y) = 40\n\\]\n\nThis gives us two possible cases for \\(y\\):\n\n1. \\(y = 4\\) and \\(2x + y = 10\\)\n2. \\(y = -4\\) and \\(2x + y = -10\\)\n\nFor the first case, \\(y = 4\\):\n\n\\[\n2x + 4 = 10 \\implies 2x = 6 \\implies x = 3\n\\]\n\nThis gives us the solution \\((x, y) = (3, 4)\\), which we already know.\n\nFor the second case, \\(y = -4\\):\n\n\\[\n2x - 4 = -10 \\implies 2x = -6 \\implies x = -3\n\\]\n\nThis gives us the solution \\((x, y) = (-3, -4)\\).\n\nStep 4: To verify, we substitute \\((x, y) = (-3, -4)\\) back into the original equations:\n\nFor the first equation:\n\n\\[\n2(-3)^2 + 3(-3)(-4) + (-4)^2 = 2 \\cdot 9 + 3 \\cdot 12 + 16 = 18 + 36 + 16 = 70\n\\]\n\nFor the second equation:\n\n\\[\n6(-3)^2 + (-3)(-4) - (-4)^2 = 6 \\cdot 9 + 12 - 16 = 54 + 12 - 16 = 50\n\\]\n\nBoth equations are satisfied, so the solution \\((x, y) = (-3, -4)\\) is correct.\n\nTherefore, the other pair of roots is \\(\\boxed{(-3, -4)}\\).",
+    "Step 1: We are given the system of equations:\n\\[ 2x^2 + 3xy + y^2 = 70 \\]\n\\[ 6x^2 + xy - y^2 = 50 \\]\n\nStep 2: To eliminate one of the variables, we can use the method of elimination. First, multiply the first equation by 3 and the second equation by 1 to align the coefficients of \\(xy\\):\n\\[ 6x^2 + 9xy + 3y^2 = 210 \\]\n\\[ 6x^2 + xy - y^2 = 50 \\]\n\nStep 3: Subtract the second equation from the first:\n\\[ (6x^2 + 9xy + 3y^2) - (6x^2 + xy - y^2) = 210 - 50 \\]\n\\[ 6x^2 + 9xy + 3y^2 - 6x^2 - xy + y^2 = 160 \\]\n\\[ 8xy + 4y^2 = 160 \\]\n\\[ 2xy + y^2 = 40 \\]\n\nStep 4: Now, we have a new equation:\n\\[ y(2x + y) = 40 \\]\n\nStep 5: From the original equations, we can express \\(y\\) in terms of \\(x\\) using the first equation. Substitute \\(y = \\frac{40}{2x + y}\\) into the first equation:\n\\[ 2x^2 + 3x\\left(\\frac{40}{2x + y}\\right) + \\left(\\frac{40}{2x + y}\\right)^2 = 70 \\]\n\nStep 6: Simplify the equation:\n\\[ 2x^2 + \\frac{120x}{2x + y} + \\frac{1600}{(2x + y)^2} = 70 \\]\n\nStep 7: Multiply through by \\((2x + y)^2\\) to clear the denominator:\n\\[ 2x^2(2x + y)^2 + 120x(2x + y) + 1600 = 70(2x + y)^2 \\]\n\nStep 8: Expand and simplify:\n\\[ 2x^2(4x^2 + 4xy + y^2) + 120x(2x + y) + 1600 = 70(4x^2 + 4xy + y^2) \\]\n\\[ 8x^4 + 8x^3y + 2x^2y^2 + 240x^2 + 120xy + 1600 = 280x^2 + 280xy + 70y^2 \\]\n\nStep 9: Combine like terms:\n\\[ 8x^4 + 8x^3y + 2x^2y^2 + 240x^2 + 120xy + 1600 = 280x^2 + 280xy + 70y^2 \\]\n\\[ 8x^4 + 8x^3y + 2x^2y^2 - 40x^2 - 160xy - 70y^2 + 1600 = 0 \\]\n\nStep 10: Solve for \\(x\\) and \\(y\\) using the quadratic formula or factoring. We know one pair of roots is \\(x_1 = 3\\) and \\(y_1 = 4\\). To find another pair, we can use the fact that the sum and product of the roots of a quadratic equation \\(ax^2 + bx + c = 0\\) are given by:\n\\[ x_1 + x_2 = -\\frac{b}{a} \\]\n\\[ x_1 x_2 = \\frac{c}{a} \\]\n\nStep 11: For the quadratic equation \\(2x^2 + 3xy + y^2 = 70\\), the sum and product of the roots are:\n\\[ x_1 + x_2 = -\\frac{3y}{2} \\]\n\\[ x_1 x_2 = \\frac{70 - y^2}{2} \\]\n\nStep 12: Substitute \\(x_1 = 3\\) and \\(y_1 = 4\\):\n\\[ 3 + x_2 = -\\frac{3 \\cdot 4}{2} \\]\n\\[ 3 + x_2 = -6 \\]\n\\[ x_2 = -9 \\]\n\nStep 13: Substitute \\(x_1 = 3\\) and \\(y_1 = 4\\) into the product equation:\n\\[ 3x_2 = \\frac{70 - 4^2}{2} \\]\n\\[ 3x_2 = \\frac{70 - 16}{2} \\]\n\\[ 3x_2 = \\frac{54}{2} \\]\n\\[ 3x_2 = 27 \\]\n\\[ x_2 = 9 \\]\n\nStep 14: Therefore, the other pair of roots is:\n\\[ x_2 = -9 \\]\n\\[ y_2 = -4 \\]\n\nThe other pair of roots is \\boxed{(-9, -4)}."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 0.2, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [0.2, 0.0, 1.0, 1.0],
+      [0.4, 0.2, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.2, 1.0],
+      [1.0, 1.0, 0.4, 1.0],
+      [1.0, 1.0, 0.4, 1.0],
+      [1.0, 1.0, 0.6, 1.0],
+      [1.0, 1.0, 0.8, 0.8]
+    ],
+    "(0,3)": [
+      [0.0, 0.0, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.0, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.8, 1.0, 1.0],
+      [0.2, 0.0, 1.0, 1.0],
+      [0.2, 0.0, 1.0, 1.0],
+      [0.2, 0.0, 1.0, 1.0],
+      [0.2, 0.0, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8]
+    ],
+    "(1,3)": [
+      [0.0, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.4, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    ],
+    "(2,3)": [
+      [0.0, 0.2, 0.2, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 0.0, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8]
+    ]
+  }
+}

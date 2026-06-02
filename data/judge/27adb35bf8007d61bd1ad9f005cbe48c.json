@@ -1,0 +1,62 @@
+{
+  "problem_id": "27adb35bf8007d61bd1ad9f005cbe48c",
+  "generated_rollouts": [
+    "Step 1: Define the grid and the problem. The problem states that there are two points \\(A\\) and \\(B\\) on a grid, and the shortest path from \\(A\\) to \\(B\\) has a length of 100 units. We need to prove that half of the time the insect is crawling in the same direction as its previous move.\n\nStep 2: Understand the grid and possible movements. The insect can only move along the grid lines (either horizontally or vertically). The shortest path from \\(A\\) to \\(B\\) is a straight line, which means the insect will move in a series of straight segments, each either horizontal or vertical.\n\nStep 3: Consider the properties of the shortest path. The shortest path from \\(A\\) to \\(B\\) is a straight line, which means the insect will move in a series of segments that sum up to the shortest distance. If we denote the number of horizontal moves by \\(h\\) and the number of vertical moves by \\(v\\), then the total distance is given by the sum of the absolute values of the horizontal and vertical components of the movement.\n\nStep 4: Use the Pythagorean theorem to find the relationship between the horizontal and vertical components. The Pythagorean theorem states that the square of the hypotenuse (the straight-line distance) is equal to the sum of the squares of the other two sides (the horizontal and vertical distances). Let \\(d\\) be the straight-line distance from \\(A\\) to \\(B\\). Then, \\(d = \\sqrt{h^2 + v^2}\\). Since the shortest path length is 100, we have \\(d = 100\\), so \\(100 = \\sqrt{h^2 + v^2}\\).\n\nStep 5: Consider the total number of moves. The total number of moves the insect makes to travel from \\(A\\) to \\(B\\) is \\(h + v\\). The insect will be moving in the same direction as its previous move half of the time if it makes an equal number of horizontal and vertical moves. This is because each move is either horizontal or vertical, and the total number of moves is even (since it is a straight-line path).\n\nStep 6: Prove that half of the time the insect is moving in the same direction. If the insect makes an even number of moves, then the number of horizontal moves is equal to the number of vertical moves. Therefore, the insect will be moving in the same direction half of the time. This is because for every horizontal move, there is a corresponding vertical move, and vice versa.\n\nConclusion: The insect will be crawling in the same direction half of the time. Therefore, the final answer is \\(\\boxed{\\text{Half of the time the insect is crawling in the same direction}}\\).",
+    "Step 1: Identify the shortest path from point \\(A\\) to point \\(B\\). The shortest path on a grid is a straight line, and the length of this path is given as 100 units. This means that the insect travels a total distance of 100 units from \\(A\\) to \\(B\\).\n\nStep 2: Consider the nature of the shortest path. Since the path is a straight line, it can be divided into segments where the insect moves horizontally (left or right) and vertically (up or down). Each segment of the path is either horizontal or vertical, and the total distance traveled is the sum of the lengths of all these segments.\n\nStep 3: Analyze the movement in terms of horizontal and vertical components. Let \\(h\\) be the total horizontal distance traveled and \\(v\\) be the total vertical distance traveled. Since the path is the shortest and straight, the total distance traveled is given by the Pythagorean theorem:\n\\[ h^2 + v^2 = 100^2 = 10000. \\]\n\nStep 4: Determine the number of horizontal and vertical segments. Let \\(n_h\\) be the number of horizontal segments and \\(n_v\\) be the number of vertical segments. Since each segment is either horizontal or vertical, we have:\n\\[ n_h + n_v = 100. \\]\n\nStep 5: Prove that half of the time the insect is crawling in the same direction. This means that the number of horizontal segments is equal to the number of vertical segments. To see why, consider that each segment is either horizontal or vertical, and there are no diagonal segments (since the path is a straight line and not a combination of diagonal moves). Therefore, the number of horizontal segments must be equal to the number of vertical segments, implying:\n\\[ n_h = n_v. \\]\nSince \\(n_h + n_v = 100\\), we have:\n\\[ n_h = n_v = 50. \\]\n\nStep 6: Conclusion. The insect travels 50 horizontal segments and 50 vertical segments. Since the path is a straight line, the insect must be crawling in the same direction for half of the time. Therefore, the insect is crawling in the same direction for half of the time.\n\nThe final answer is:\n\\[\n\\boxed{\\text{half of the time the insect is crawling in the same direction}}\n\\]",
+    "Step 1: Let's consider the grid from point \\( A \\) to point \\( B \\). We are given that the shortest path length from \\( A \\) to \\( B \\) is 100 units. \n\nStep 2: To visualize this, assume \\( A \\) is at \\((0,0)\\) and \\( B \\) is at \\((50,50)\\) on a grid. This forms a 50x50 grid because the shortest path from \\( A \\) to \\( B \\) involves moving 50 units right and 50 units up, totaling 100 units.\n\nStep 3: The total number of steps the insect must take is 100. We can break these steps down into two types: right (R) and up (U). Each step contributes either to moving right or up.\n\nStep 4: Since there are 50 units right and 50 units up, the insect must take exactly 50 steps right and 50 steps up to reach \\( B \\) from \\( A \\).\n\nStep 5: To find the probability that the insect is crawling in the same direction at any given step, we need to consider the possible sequences of R and U steps. Each step is independently either R or U.\n\nStep 6: The number of different paths from \\( A \\) to \\( B \\) is given by the binomial coefficient:\n\\[\n\\binom{100}{50}\n\\]\nThis represents the number of ways to choose 50 positions out of 100 for the R steps (or equivalently, the U steps).\n\nStep 7: To determine the probability that the insect is moving in the same direction at any given step, we need to consider the total number of steps and the number of steps in each direction. Since there are 50 steps right and 50 steps up, the probability of moving right at any given step is:\n\\[\n\\frac{50}{100} = \\frac{1}{2}\n\\]\nSimilarly, the probability of moving up at any given step is also:\n\\[\n\\frac{50}{100} = \\frac{1}{2}\n\\]\n\nStep 8: Therefore, the probability that the insect is moving in the same direction at any given step is:\n\\[\n\\boxed{\\frac{1}{2}}\n\\]\n\nThis means that, on average, the insect will be moving in the same direction (either right or up) half of the time.",
+    "Step 1: The problem states that the shortest path from point \\(A\\) to point \\(B\\) along the grid lines is 100 units. This implies that the path is a straight line, and the distance can be calculated using the Pythagorean theorem if the path is not directly horizontal or vertical but diagonal.\n\nStep 2: Let's denote the horizontal distance as \\(x\\) and the vertical distance as \\(y\\). The shortest path is the hypotenuse of a right triangle with legs \\(x\\) and \\(y\\), so we have:\n\\[ \\sqrt{x^2 + y^2} = 100 \\]\n\nStep 3: The total distance traveled by the insect is the sum of the horizontal and vertical distances, which is \\(x + y\\). We need to prove that half of the time the insect is crawling in the same direction, i.e., either horizontally or vertically.\n\nStep 4: Consider the path of the insect. Since the path is a straight line, it can be broken down into segments where it moves horizontally and segments where it moves vertically. The total horizontal distance is \\(x\\) and the total vertical distance is \\(y\\).\n\nStep 5: The path can be visualized as a series of segments where the insect moves either horizontally or vertically. If we consider the path as a sequence of moves, then the total number of moves is \\(x + y\\).\n\nStep 6: Since the path is a straight line, the number of horizontal moves is \\(x\\) and the number of vertical moves is \\(y\\). The total number of moves is \\(x + y\\), and half of the time the insect is crawling in the same direction means that half of these moves are either horizontal or vertical.\n\nStep 7: To prove this, we need to show that the number of horizontal moves is equal to the number of vertical moves. Since the path is a straight line, the number of horizontal moves plus the number of vertical moves is equal to the total number of moves, which is \\(x + y\\). Therefore, the number of horizontal moves is \\(x\\) and the number of vertical moves is \\(y\\), and half of the total number of moves is \\(\\frac{x + y}{2}\\).\n\nStep 8: Since the path is a straight line, the number of horizontal moves is equal to the number of vertical moves, which means that half of the time the insect is crawling in the same direction.\n\nTherefore, the proof is complete, and the answer is:\n\\[\n\\boxed{\\text{Half of the time the insect is crawling in the same direction.}}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.2, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.6, 0.2, 0.4, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.6, 0.4, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 0.4, 0.2]
+    ],
+    "(0,2)": [
+      [0.0, 0.4, 0.2, 0.6, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.2, 0.0, 0.2, 0.6, 1.0, 1.0, 1.0],
+      [0.8, 0.2, 0.0, 0.0, 0.8, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.2, 0.0, 0.0, 0.4, 1.0, 0.2, 0.6],
+      [1.0, 0.2, 0.4, 0.0, 0.8, 1.0, 0.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.2, 0.8, 0.4, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [0.4, 0.8, 1.0, 0.0, 0.2, 0.4, 1.0, 1.0],
+      [0.4, 0.4, 0.0, 0.0, 0.2, 0.2, 0.8, 1.0],
+      [0.4, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.2, 0.4, 0.0, 0.0, 0.2, 0.2],
+      [1.0, 1.0, 0.8, 1.0, 1.0, 0.6, 0.2, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.4, 0.2, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.2, 0.2, 0.6, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.2, 0.0, 0.6, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 0.6, 0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 0.6, 0.8, 1.0, 0.2, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 1.0],
+      [0.8, 0.4, 0.2, 0.0, 0.2, 0.2, 0.8, 1.0],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.6, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(2,3)": [
+      [0.4, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 1.0, 0.4, 0.4, 0.4, 0.0, 0.6, 1.0],
+      [0.8, 1.0, 0.2, 0.6, 0.2, 0.2, 1.0, 1.0],
+      [0.8, 1.0, 0.4, 0.4, 0.4, 0.0, 0.6, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 0.2, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 0.6, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 0.6, 0.2],
+      [1.0, 1.0, 0.8, 1.0, 1.0, 0.8, 0.8, 0.0]
+    ]
+  }
+}

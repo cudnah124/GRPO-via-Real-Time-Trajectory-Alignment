@@ -1,0 +1,87 @@
+{
+  "problem_id": "824e3403aa52e5fc3b3f659c54a08b5d",
+  "generated_rollouts": [
+    "Step 1: Consider four points \\( A, B, C, D \\) on a straight line in that order such that the distance between \\( A \\) and \\( B \\) equals the distance between \\( C \\) and \\( D \\). Therefore, we have:\n\\[ AB = CD \\]\n\nStep 2: Let \\( E \\) be any point not on this line. We need to prove the inequality:\n\\[ EA + ED > EB + EC \\]\n\nStep 3: Extend \\( BE \\) and \\( CE \\) to intersect the line again at points \\( B' \\) and \\( C' \\) respectively. Since \\( E \\) is not on the line, these extensions will form triangles.\n\nStep 4: Using the triangle inequality in triangles \\( EAB' \\) and \\( EDC' \\):\n\\[ EA + AB' > EB' \\]\n\\[ ED + DC' > EC' \\]\n\nStep 5: Notice that since \\( AB = CD \\), we can substitute \\( AB' \\) with \\( CD \\) and \\( EC' \\) with \\( AB \\) in the above inequalities:\n\\[ EA + CD > EB' \\]\n\\[ ED + AB > EC' \\]\n\nStep 6: Since \\( B' \\) and \\( C' \\) are extensions of \\( BE \\) and \\( CE \\) respectively, the segments \\( EB' \\) and \\( EC' \\) are greater than \\( EB \\) and \\( EC \\) respectively. Therefore:\n\\[ EB' > EB \\]\n\\[ EC' > EC \\]\n\nStep 7: Combining the inequalities from Step 5 with the inequalities from Step 6, we get:\n\\[ EA + CD > EB' > EB \\]\n\\[ ED + AB > EC' > EC \\]\n\nStep 8: Adding these two inequalities:\n\\[ (EA + CD) + (ED + AB) > (EB' + EC') \\]\n\nStep 9: Simplifying the left-hand side:\n\\[ EA + ED + CD + AB > EB' + EC' \\]\n\nStep 10: Since \\( AB = CD \\), we can replace \\( AB \\) with \\( CD \\) in the inequality:\n\\[ EA + ED + CD + CD > EB' + EC' \\]\n\\[ EA + ED + 2CD > EB' + EC' \\]\n\nStep 11: Since \\( EB' + EC' \\) is greater than \\( EB + EC \\) (from Step 6):\n\\[ EA + ED + 2CD > EB + EC \\]\n\nStep 12: Since \\( 2CD \\) is a positive quantity, we can conclude:\n\\[ EA + ED > EB + EC \\]\n\nThus, the inequality \\( EA + ED > EB + EC \\) holds for any point \\( E \\) not on the line \\( A, B, C, D \\).\n\nFinal answer:\n\\[\n\\boxed{EA + ED > EB + EC}\n\\]",
+    "Step 1: Consider the points \\(A, B, C, D\\) on a straight line such that \\(AB = CD\\). We need to prove that for any point \\(E\\) not on this line, the inequality \\(EA + ED > EB + EC\\) holds.\n\nStep 2: Let's place the points on a coordinate plane for simplicity. Assume \\(A = (0, 0)\\), \\(B = (a, 0)\\), \\(C = (a+b, 0)\\), and \\(D = (b, 0)\\). Here, \\(AB = CD = b\\).\n\nStep 3: Let \\(E = (x, y)\\) be any point not on the line through \\(A, B, C, D\\). We need to show that the sum of the distances from \\(E\\) to \\(A\\) and \\(D\\) is greater than the sum of the distances from \\(E\\) to \\(B\\) and \\(C\\).\n\nStep 4: Calculate the distances:\n\\[ EA = \\sqrt{x^2 + y^2} \\]\n\\[ EB = \\sqrt{(x-a)^2 + y^2} \\]\n\\[ EC = \\sqrt{(x-(a+b))^2 + y^2} \\]\n\\[ ED = \\sqrt{(x-b)^2 + y^2} \\]\n\nStep 5: We need to prove that:\n\\[ EA + ED > EB + EC \\]\nThis translates to:\n\\[ \\sqrt{x^2 + y^2} + \\sqrt{(x-b)^2 + y^2} > \\sqrt{(x-a)^2 + y^2} + \\sqrt{(x-(a+b))^2 + y^2} \\]\n\nStep 6: To prove this, consider the reflection of point \\(D\\) across the line through \\(A, B, C, D\\). Reflect \\(D\\) across this line to get point \\(D'\\). The reflection ensures that \\(D'\\) lies on the opposite side of the line and the same distance from \\(C\\) as \\(D\\) is from \\(B\\).\n\nStep 7: By the triangle inequality in the plane, the sum of the lengths of any two sides of a triangle is greater than the length of the remaining side. Apply this to triangles \\(EAD\\) and \\(EBD'\\):\n\\[ EA + ED > AD \\]\n\\[ EB + ED' > BD' \\]\nSince \\(D' = D\\) reflected across the line, \\(AD = CD\\) and \\(BD = BC\\). Therefore, \\(AD = CD\\) and \\(BD = BC\\).\n\nStep 8: Combining these inequalities, we get:\n\\[ EA + ED > AD = CD = AB \\]\n\\[ EB + ED' > BD = BC \\]\n\nStep 9: Since \\(E\\) is not on the line, \\(ED' > EC\\). Therefore:\n\\[ EA + ED > EB + EC \\]\n\nThus, we have proven that for any point \\(E\\) not on the line through \\(A, B, C, D\\), the inequality \\(EA + ED > EB + EC\\) holds. The final answer is:\n\\[\n\\boxed{EA + ED > EB + EC}\n\\]",
+    "Step 1: Consider a straight line with four points \\(A, B, C, D\\) in that order, such that \\(AB = CD\\). Let \\(E\\) be any point not on this line. We need to prove that \\(EA + ED > EB + EC\\).\n\nStep 2: Reflect point \\(D\\) over the line \\(BC\\) to a point \\(D'\\) such that \\(D'\\) is on the same side of \\(BC\\) as \\(E\\) and \\(D'\\) is the mirror image of \\(D\\) with respect to \\(BC\\). This reflection ensures that \\(CD = CD'\\) and \\(BD = BD'\\).\n\nStep 3: Since \\(AB = CD\\) and \\(CD = CD'\\), we have \\(AB = CD' = CD\\). Therefore, the quadrilateral \\(ABD'C\\) is a parallelogram because opposite sides are equal and parallel.\n\nStep 4: In a parallelogram, the diagonals bisect each other. Let \\(O\\) be the intersection of diagonals \\(AC\\) and \\(BD'\\). Then, \\(O\\) is the midpoint of both \\(AC\\) and \\(BD'\\).\n\nStep 5: Consider the triangle \\(EOD'\\). By the triangle inequality in triangle \\(EOD'\\), we have:\n\\[EA + ED' > AE + ED'\\]\n\nStep 6: Since \\(D'\\) is the reflection of \\(D\\) over \\(BC\\), the distance \\(ED'\\) is equal to the distance \\(ED\\) because reflection preserves distance. Therefore, \\(ED' = ED\\).\n\nStep 7: Substitute \\(ED'\\) with \\(ED\\) in the inequality from Step 5:\n\\[EA + ED > AE + ED\\]\n\nStep 8: Since \\(E\\) is not on the line \\(BC\\), the path \\(EA + ED\\) is longer than the path \\(EB + EC\\) because the shortest distance between two points is a straight line, and any deviation from the straight line path increases the distance. Therefore, we can conclude:\n\\[EA + ED > EB + EC\\]\n\nThus, we have proven that for any point \\(E\\) not on the line \\(ABCD\\), the inequality \\(EA + ED > EB + EC\\) holds. \\(\\boxed{EA + ED > EB + EC}\\)",
+    "Step 1: We are given four points \\(A, B, C, D\\) on a straight line in that order, with the relation \\(AB = CD\\). We need to prove that for any point \\(E\\) not on this line, the inequality \\(EA + ED > EB + EC\\) holds.\n\nStep 2: Consider the point \\(E\\) not on the line. We can use the triangle inequality, which states that for any triangle, the sum of the lengths of any two sides is greater than the length of the remaining side. We will apply this to the triangles \\(EAB\\) and \\(ECD\\).\n\nStep 3: By the triangle inequality in \\(\\triangle EAB\\), we have:\n\\[EA + EB > AB.\\]\nSimilarly, in \\(\\triangle ECD\\), we have:\n\\[EC + ED > CD.\\]\n\nStep 4: Since \\(AB = CD\\), we can substitute \\(AB\\) for \\(CD\\) in the second inequality:\n\\[EC + ED > AB.\\]\n\nStep 5: Adding the two inequalities from Step 3 and Step 4, we get:\n\\[EA + EB + EC + ED > AB + AB.\\]\nThis simplifies to:\n\\[EA + EB + EC + ED > 2AB.\\]\n\nStep 6: We can rearrange the terms to isolate \\(EA + ED\\) and \\(EB + EC\\):\n\\[EA + ED > EB + EC.\\]\n\nThus, we have shown that for any point \\(E\\) not on the line, the inequality \\(EA + ED > EB + EC\\) holds. The final answer is:\n\\[\n\\boxed{EA + ED > EB + EC}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.8, 0.8, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [0.0, 0.8, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 0.4, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.6],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.6],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.2, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.2, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 0.2, 1.0, 1.0, 1.0, 1.0],
+      [0.0, 0.2, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 0.0, 0.8, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 0.0, 0.2, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 1.0, 1.0, 1.0, 0.4]
+    ]
+  }
+}

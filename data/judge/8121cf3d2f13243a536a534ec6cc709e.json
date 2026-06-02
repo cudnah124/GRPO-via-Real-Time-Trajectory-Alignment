@@ -1,0 +1,57 @@
+{
+  "problem_id": "8121cf3d2f13243a536a534ec6cc709e",
+  "generated_rollouts": [
+    "Step 1: Let's start by defining the points and the line. Let point \\( A \\) have coordinates \\( (x_1, y_1) \\) and point \\( B \\) have coordinates \\( (x_2, y_2) \\). Let the rotating line be represented by the equation \\( ax + by + c = 0 \\).\n\nStep 2: The point symmetric to \\( A \\) with respect to the line \\( ax + by + c = 0 \\) can be found using the formula for the reflection of a point \\((x_1, y_1)\\) over a line \\(ax + by + c = 0\\). The coordinates of the symmetric point \\( A' \\) are given by:\n\\[\nA' = \\left( \\frac{x_1(a^2 - b^2) - 2by_1a - 2ac}{a^2 + b^2}, \\frac{y_1(b^2 - a^2) - 2ax_1b - 2bc}{a^2 + b^2} \\right)\n\\]\n\nStep 3: As the line rotates around point \\( B \\), the coefficients \\( a \\), \\( b \\), and \\( c \\) of the line equation \\( ax + by + c = 0 \\) change. However, the line always passes through point \\( B \\), so we have \\( ax_2 + by_2 + c = 0 \\).\n\nStep 4: We need to find the locus of the symmetric point \\( A' \\) as the line rotates. To do this, we express the coordinates of \\( A' \\) in terms of the angle \\( \\theta \\) that the line makes with the x-axis. The line's equation in terms of \\( \\theta \\) is:\n\\[\nx \\sin \\theta + y \\cos \\theta - (x_2 \\sin \\theta + y_2 \\cos \\theta) = 0\n\\]\nHere, \\( a = \\sin \\theta \\), \\( b = \\cos \\theta \\), and \\( c = -(x_2 \\sin \\theta + y_2 \\cos \\theta) \\).\n\nStep 5: Substitute these into the reflection formula:\n\\[\nA' = \\left( \\frac{x_1(\\sin^2 \\theta - \\cos^2 \\theta) - 2y_1 \\sin \\theta \\cos \\theta + 2x_2 \\sin^2 \\theta + 2y_2 \\sin \\theta \\cos \\theta}{\\sin^2 \\theta + \\cos^2 \\theta}, \\frac{y_1(\\cos^2 \\theta - \\sin^2 \\theta) - 2x_1 \\cos \\theta \\sin \\theta + 2x_2 \\cos^2 \\theta + 2y_2 \\cos \\theta \\sin \\theta}{\\sin^2 \\theta + \\cos^2 \\theta} \\right)\n\\]\nSince \\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\), the coordinates simplify to:\n\\[\nA' = \\left( x_1 (\\sin^2 \\theta - \\cos^2 \\theta) - 2y_1 \\sin \\theta \\cos \\theta + 2x_2 \\sin^2 \\theta + 2y_2 \\sin \\theta \\cos \\theta, y_1 (\\cos^2 \\theta - \\sin^2 \\theta) - 2x_1 \\cos \\theta \\sin \\theta + 2x_2 \\cos^2 \\theta + 2y_2 \\cos \\theta \\sin \\theta \\right)\n\\]\n\\[\nA' = \\left( x_1 (\\sin^2 \\theta - \\cos^2 \\theta) + (2x_2 - 2y_2) \\sin \\theta \\cos \\theta - 2y_1 \\sin \\theta \\cos \\theta, y_1 (\\cos^2 \\theta - \\sin^2 \\theta) + (2x_2 + 2y_2) \\cos \\theta \\sin \\theta - 2x_1 \\cos \\theta \\sin \\theta \\right)\n\\]\n\\[\nA' = \\left( x_1 (\\sin^2 \\theta - \\cos^2 \\theta) + (2x_2 - 2y_2 - 2y_1) \\sin \\theta \\cos \\theta, y_1 (\\cos^2 \\theta - \\sin^2 \\theta) + (2x_2 + 2y_2 - 2x_1) \\cos \\theta \\sin \\theta \\right)\n\\]\n\nStep 6: To find the locus, we eliminate the parameter \\(\\theta\\). Notice that the coordinates of \\( A' \\) are linear combinations of \\(\\sin \\theta\\) and \\(\\cos \\theta\\). The locus of \\( A' \\) is a circle centered at the midpoint of \\( A \\) and \\( B \\) with radius equal to the distance from \\( A \\) to \\( B \\).\n\nThe midpoint \\( M \\) of \\( A \\) and \\( B \\) is:\n\\[\nM = \\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)\n\\]\nThe distance \\( AB \\) is:\n\\[\nAB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\n\\]\n\nTherefore, the locus of the point symmetric to \\( A \\) with respect to the rotating line is a circle with center \\( M \\) and radius \\( AB \\).\n\n\\boxed{\\text{The locus is a circle with center at the midpoint of } A \\text{ and } B \\text{ and radius equal to the distance } AB.}",
+    "Step 1: Let's denote the fixed point as \\( A \\) and the fixed point around which the line rotates as \\( B \\). We will consider the rotating line as a general line passing through point \\( B \\) and making an angle \\( \\theta \\) with the line segment \\( AB \\).\n\nStep 2: The point symmetric to \\( A \\) with respect to the rotating line will be denoted as \\( A' \\). Since \\( A' \\) is the reflection of \\( A \\) across the rotating line, the line segment \\( AA' \\) will be perpendicular to the rotating line at the point of intersection, and the point of intersection will be the midpoint of \\( AA' \\).\n\nStep 3: As the line rotates around \\( B \\), the point \\( A' \\) will trace out a circle. This is because the distance from \\( B \\) to \\( A' \\) will always be equal to the distance from \\( B \\) to \\( A \\), which is a constant. The center of this circle is \\( B \\), and the radius is the distance \\( AB \\).\n\nStep 4: Therefore, the geometric locus of the point symmetric to \\( A \\) with respect to the rotating line is a circle with center \\( B \\) and radius equal to the distance \\( AB \\).\n\nThe final answer is \\(\\boxed{\\text{a circle with center } B \\text{ and radius } AB}\\).",
+    "Step 1: Let's denote the fixed point \\( A \\) as \\( (x_1, y_1) \\) and the fixed point \\( B \\) as \\( (x_2, y_2) \\). Let the equation of the rotating line be \\( y - y_2 = m(x - x_2) \\), where \\( m \\) is the slope of the line.\n\nStep 2: The point symmetric to \\( A \\) with respect to the rotating line can be found by reflecting \\( A \\) over the line. The coordinates of the symmetric point \\( A' \\) are given by the formulas:\n\\[ x' = x_2 - \\frac{2m(y_1 - y_2)}{1 + m^2} \\]\n\\[ y' = y_2 + \\frac{2(y_1 - y_2)}{1 + m^2} \\]\n\nStep 3: To find the geometric locus of the point \\( A' \\), we need to eliminate the parameter \\( m \\) from the coordinates of \\( A' \\). Let's denote the coordinates of \\( A' \\) as \\( (x', y') \\). Then we have:\n\\[ x' = x_2 - \\frac{2m(y_1 - y_2)}{1 + m^2} \\]\n\\[ y' = y_2 + \\frac{2(y_1 - y_2)}{1 + m^2} \\]\n\nStep 4: From the second equation, we can solve for \\( m \\):\n\\[ y' - y_2 = \\frac{2(y_1 - y_2)}{1 + m^2} \\]\n\\[ (y' - y_2)(1 + m^2) = 2(y_1 - y_2) \\]\n\\[ y'^2 - 2y_2y' + y_2^2 + m^2(y' - y_2)^2 = 2(y_1 - y_2) \\]\n\\[ m^2 = \\frac{2(y_1 - y_2)}{y' - y_2} - 1 \\]\n\nStep 5: Substitute \\( m^2 \\) into the first equation:\n\\[ x' = x_2 - \\frac{2 \\sqrt{\\frac{2(y_1 - y_2)}{y' - y_2} - 1} (y_1 - y_2)}{1 + \\frac{2(y_1 - y_2)}{y' - y_2} - 1} \\]\n\\[ x' = x_2 - \\frac{2 \\sqrt{\\frac{2(y_1 - y_2)}{y' - y_2} - 1} (y_1 - y_2)}{\\frac{2(y_1 - y_2)}{y' - y_2}} \\]\n\\[ x' = x_2 - \\sqrt{\\frac{2(y_1 - y_2)}{y' - y_2} - 1} (y_1 - y_2) \\]\n\\[ x' = x_2 - \\sqrt{2(y_1 - y_2) - (y' - y_2)} \\]\n\\[ x' = x_2 - \\sqrt{2y_1 - 2y_2 - y' + y_2} \\]\n\\[ x' = x_2 - \\sqrt{2y_1 - y_2 - y'} \\]\n\nStep 6: Squaring both sides, we get:\n\\[ (x' - x_2)^2 = 2y_1 - y_2 - y' \\]\n\\[ (x' - x_2)^2 + y' = 2y_1 - y_2 \\]\n\nStep 7: Therefore, the geometric locus of the point symmetric to \\( A \\) with respect to the rotating line is a parabola with the equation:\n\\[ (x - x_2)^2 + y = 2y_1 - y_2 \\]\n\nThe final answer is \\(\\boxed{(x - x_2)^2 + y = 2y_1 - y_2}\\).",
+    "Step 1: Identify the fixed points and the rotating line.\nLet \\( A = (x_1, y_1) \\) and \\( B = (x_2, y_2) \\). The rotating line can be described by its angle of rotation \\(\\theta\\) with respect to the x-axis.\n\nStep 2: Equation of the rotating line.\nThe equation of a line passing through point \\( B \\) with angle \\(\\theta\\) is given by:\n\\[ y - y_2 = \\tan(\\theta)(x - x_2) \\]\nor in general form:\n\\[ \\tan(\\theta)x - y + (y_2 - \\tan(\\theta)x_2) = 0. \\]\n\nStep 3: Symmetric point of \\( A \\) with respect to the rotating line.\nThe point symmetric to \\( A \\) with respect to the line can be found by reflecting \\( A \\) over the line. The coordinates of the symmetric point \\( A' = (x_1', y_1') \\) can be calculated using the formula for the reflection of a point over a line. The formula for the coordinates of the symmetric point is:\n\\[ x_1' = x_2 + \\frac{(x_1 - x_2)\\cos^2(\\theta) + (y_1 - y_2)\\sin(\\theta)\\cos(\\theta)}{\\cos^2(\\theta) + \\sin^2(\\theta)} \\]\n\\[ y_1' = y_2 + \\frac{(y_1 - y_2)\\cos^2(\\theta) - (x_1 - x_2)\\sin(\\theta)\\cos(\\theta)}{\\cos^2(\\theta) + \\sin^2(\\theta)} \\]\nSimplifying the denominator, we get:\n\\[ x_1' = x_2 + (x_1 - x_2)\\cos^2(\\theta) + (y_1 - y_2)\\sin(\\theta)\\cos(\\theta) \\]\n\\[ y_1' = y_2 + (y_1 - y_2)\\cos^2(\\theta) - (x_1 - x_2)\\sin(\\theta)\\cos(\\theta) \\]\n\nStep 4: Geometric locus of the symmetric point.\nAs the line rotates, the symmetric point \\( A' \\) trace out a circle with diameter \\( AB \\). This is because the distance from \\( A' \\) to the midpoint of \\( AB \\) (which is the center of the circle) is always equal to half the length of \\( AB \\), regardless of the orientation of the line. Therefore, the locus of the symmetric point \\( A' \\) is a circle with diameter \\( AB \\).\n\nThe final answer is:\n\\[ \\boxed{\\text{A circle with diameter } AB} \\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.6, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.4, 0.2]
+    ],
+    "(0,2)": [
+      [0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(0,3)": [
+      [0.0, 0.2, 0.8, 1.0],
+      [0.8, 0.8, 0.0, 1.0],
+      [0.2, 0.0, 0.8, 1.0],
+      [0.4, 0.2, 0.6, 1.0],
+      [0.8, 0.8, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.2],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.2, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.4, 0.8],
+      [0.8, 0.8, 0.8, 0.4],
+      [0.8, 0.8, 0.8, 0.2]
+    ],
+    "(2,3)": [
+      [0.2, 0.2, 0.8, 1.0],
+      [0.8, 0.8, 0.0, 1.0],
+      [0.8, 0.8, 0.2, 1.0],
+      [1.0, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 0.8]
+    ]
+  }
+}

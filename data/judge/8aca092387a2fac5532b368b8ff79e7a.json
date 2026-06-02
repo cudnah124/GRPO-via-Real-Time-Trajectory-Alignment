@@ -1,0 +1,75 @@
+{
+  "problem_id": "8aca092387a2fac5532b368b8ff79e7a",
+  "generated_rollouts": [
+    "Step 1: We start by analyzing the given expression and the constraint \\( |xyz| = 1 \\). We need to prove that:\n\\[\n\\sum \\left( \\frac{1}{x^2 + x + 1} + \\frac{1}{x^2 - x + 1} \\right) \\leq 4.\n\\]\n\nStep 2: Consider the function \\( f(x) = \\frac{1}{x^2 + x + 1} + \\frac{1}{x^2 - x + 1} \\). We will simplify this expression. First, find a common denominator:\n\\[\nf(x) = \\frac{(x^2 - x + 1) + (x^2 + x + 1)}{(x^2 + x + 1)(x^2 - x + 1)} = \\frac{2x^2 + 2}{(x^2 + x + 1)(x^2 - x + 1)} = \\frac{2(x^2 + 1)}{(x^2 + x + 1)(x^2 - x + 1)}.\n\\]\n\nStep 3: Simplify the denominator:\n\\[\n(x^2 + x + 1)(x^2 - x + 1) = x^4 - x^3 + x^2 + x^3 - x^2 + x + x^2 - x + 1 = x^4 + x^2 + 1.\n\\]\nThus,\n\\[\nf(x) = \\frac{2(x^2 + 1)}{x^4 + x^2 + 1}.\n\\]\n\nStep 4: Now, consider the function \\( g(x) = \\frac{2(x^2 + 1)}{x^4 + x^2 + 1} \\). We need to find the maximum value of \\( g(x) \\). Note that \\( g(x) \\) is an even function, so it suffices to consider \\( x \\geq 0 \\).\n\nStep 5: To find the maximum value, we can use calculus. Let \\( t = x^2 \\), then \\( g(x) = \\frac{2(t + 1)}{t^2 + t + 1} \\). We need to maximize \\( h(t) = \\frac{2(t + 1)}{t^2 + t + 1} \\) for \\( t \\geq 0 \\).\n\nStep 6: Take the derivative of \\( h(t) \\):\n\\[\nh'(t) = \\frac{d}{dt} \\left( \\frac{2(t + 1)}{t^2 + t + 1} \\right) = \\frac{2(t^2 + t + 1) - 2(t + 1)(2t + 1)}{(t^2 + t + 1)^2} = \\frac{2(t^2 + t + 1) - 2(2t^2 + 3t + 1)}{(t^2 + t + 1)^2} = \\frac{-2t^2 - 4t}{(t^2 + t + 1)^2} = \\frac{-2t(t + 2)}{(t^2 + t + 1)^2}.\n\\]\n\nStep 7: Set \\( h'(t) = 0 \\) to find critical points:\n\\[\n-2t(t + 2) = 0 \\implies t = 0 \\text{ or } t = -2.\n\\]\nSince \\( t \\geq 0 \\), the only critical point is \\( t = 0 \\).\n\nStep 8: Evaluate \\( h(t) \\) at the critical point and at the boundary:\n\\[\nh(0) = \\frac{2(0 + 1)}{0^2 + 0 + 1} = 2.\n\\]\nAs \\( t \\to \\infty \\), \\( h(t) \\to 0 \\). Therefore, the maximum value of \\( h(t) \\) is 2.\n\nStep 9: Since \\( h(t) \\) is the function \\( f(x) \\) and it has a maximum value of 2, we have:\n\\[\nf(x) \\leq 2.\n\\]\nThus,\n\\[\n\\sum f(x) = \\sum \\left( \\frac{1}{x^2 + x + 1} + \\frac{1}{x^2 - x + 1} \\right) \\leq 4.\n\\]\n\nThe final answer is:\n\\[\n\\boxed{4}.\n\\]",
+    "Step 1: We are given the quadratic equation \\(x^2 - 5x + 6 = 0\\).\n\nStep 2: Factoring the quadratic expression, we get \\((x-2)(x-3) = 0\\).\n\nStep 3: Solve for \\(x\\) by setting each factor to zero, which gives \\(x = 2\\) or \\(x = 3\\).\n\nStep 4: Now we need to evaluate the expression \\(\\frac{1}{x^2 + x + 1} + \\frac{1}{x^2 - x + 1}\\) for \\(x = 2\\) and \\(x = 3\\).\n\nFor \\(x = 2\\):\n\\[\n\\frac{1}{2^2 + 2 + 1} + \\frac{1}{2^2 - 2 + 1} = \\frac{1}{4 + 2 + 1} + \\frac{1}{4 - 2 + 1} = \\frac{1}{7} + \\frac{1}{3} = \\frac{3 + 7}{21} = \\frac{10}{21}\n\\]\n\nFor \\(x = 3\\):\n\\[\n\\frac{1}{3^2 + 3 + 1} + \\frac{1}{3^2 - 3 + 1} = \\frac{1}{9 + 3 + 1} + \\frac{1}{9 - 3 + 1} = \\frac{1}{13} + \\frac{1}{7} = \\frac{7 + 13}{91} = \\frac{20}{91}\n\\]\n\nStep 5: We need to find the sum of these two expressions:\n\\[\n\\frac{10}{21} + \\frac{20}{91}\n\\]\n\nTo add these fractions, we need a common denominator. The least common multiple of 21 and 91 is 273. So we convert each fraction:\n\\[\n\\frac{10}{21} = \\frac{10 \\times 13}{21 \\times 13} = \\frac{130}{273}\n\\]\n\\[\n\\frac{20}{91} = \\frac{20 \\times 3}{91 \\times 3} = \\frac{60}{273}\n\\]\n\nAdding these fractions, we get:\n\\[\n\\frac{130}{273} + \\frac{60}{273} = \\frac{190}{273}\n\\]\n\nStep 6: Since the above expression is a single value, we need to generalize it for \\(x, y, z\\) satisfying \\(|xyz| = 1\\). The given inequality is symmetric and the maximum value of the expression \\(\\frac{1}{x^2 + x + 1} + \\frac{1}{x^2 - x + 1}\\) is 2 when \\(x = y = z = 1\\) or \\(x = y = z = -1\\) (since \\(|xyz| = 1\\)).\n\nThus, the sum of the expression for all permutations of \\(x, y, z\\) will be at most \\(2 + 2 = 4\\).\n\nTherefore, the inequality holds:\n\\[\n\\boxed{4}\n\\]```",
+    "Step 1: Consider the expression \\(\\frac{1}{x^2 + x + 1} + \\frac{1}{x^2 - x + 1}\\).\n\nStep 2: Find a common denominator for the two fractions:\n\\[\n\\frac{1}{x^2 + x + 1} + \\frac{1}{x^2 - x + 1} = \\frac{(x^2 - x + 1) + (x^2 + x + 1)}{(x^2 + x + 1)(x^2 - x + 1)}.\n\\]\n\nStep 3: Simplify the numerator:\n\\[\n(x^2 - x + 1) + (x^2 + x + 1) = 2x^2 + 2.\n\\]\n\nStep 4: Simplify the denominator using the identity \\((a+b)(a-b) = a^2 - b^2\\):\n\\[\n(x^2 + x + 1)(x^2 - x + 1) = (x^2 + 1)^2 - x^2 = x^4 + 2x^2 + 1 - x^2 = x^4 + x^2 + 1.\n\\]\n\nStep 5: Substitute the simplified numerator and denominator back into the expression:\n\\[\n\\frac{2x^2 + 2}{x^4 + x^2 + 1}.\n\\]\n\nStep 6: Factor out the common factor in the numerator:\n\\[\n\\frac{2(x^2 + 1)}{x^4 + x^2 + 1}.\n\\]\n\nStep 7: Notice that \\(x^4 + x^2 + 1\\) can be rewritten as \\((x^2 + 1)^2 - x^2\\):\n\\[\nx^4 + x^2 + 1 = (x^2 + 1)^2 - x^2 = (x^2 + 1 + x)(x^2 + 1 - x).\n\\]\n\nStep 8: Substitute this back into the expression:\n\\[\n\\frac{2(x^2 + 1)}{(x^2 + x + 1)(x^2 - x + 1)}.\n\\]\n\nStep 9: We can rewrite the original inequality as:\n\\[\n\\sum_{x \\in \\{y, z\\}} \\left( \\frac{1}{x^2 + x + 1} + \\frac{1}{x^2 - x + 1} \\right) \\leq 4.\n\\]\n\nStep 10: Use the AM-GM inequality to show that each term is less than or equal to 1:\n\\[\n\\frac{1}{x^2 + x + 1} + \\frac{1}{x^2 - x + 1} \\leq 1.\n\\]\n\nStep 11: Sum the inequalities for all three terms:\n\\[\n\\sum_{x \\in \\{y, z\\}} \\left( \\frac{1}{x^2 + x + 1} + \\frac{1}{x^2 - x + 1} \\right) \\leq 3.\n\\]\n\nStep 12: Since each term is less than or equal to 1, the sum of the three terms is at most 3. Therefore, the inequality holds:\n\\[\n\\sum_{x \\in \\{y, z\\}} \\left( \\frac{1}{x^2 + x + 1} + \\frac{1}{x^2 - x + 1} \\right) \\leq 4.\n\\]\n\nThus, the final answer is \\(\\boxed{4}\\).",
+    "Step 1: We are given the quadratic equation \\(x^2 - 5x + 6 = 0\\). We need to factorize it.\nThe quadratic expression can be factored as follows:\n\\[ x^2 - 5x + 6 = (x-2)(x-3) = 0. \\]\nSetting each factor to zero, we get:\n\\[ x-2 = 0 \\quad \\text{or} \\quad x-3 = 0, \\]\nwhich gives us the solutions:\n\\[ x = 2 \\quad \\text{or} \\quad x = 3. \\]\n\nSo, the solutions to the equation are:\n\\[ \\boxed{2 \\text{ and } 3}. \\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [1.0, 1.0, 1.0, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8]
+    ],
+    "(0,2)": [
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.2, 0.0, 0.2, 0.2, 0.2, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(0,3)": [
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0]
+    ],
+    "(1,2)": [
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.2],
+      [0.2],
+      [0.2],
+      [1.0],
+      [1.0],
+      [1.0]
+    ],
+    "(2,3)": [
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0],
+      [1.0]
+    ]
+  }
+}

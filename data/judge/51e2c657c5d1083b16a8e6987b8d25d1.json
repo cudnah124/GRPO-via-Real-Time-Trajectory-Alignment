@@ -1,0 +1,65 @@
+{
+  "problem_id": "51e2c657c5d1083b16a8e6987b8d25d1",
+  "generated_rollouts": [
+    "Step 1: Let's consider the polynomial \\( P(x) = a_0 x^n + a_1 x^{n-1} + \\ldots + a_n \\) with real coefficients and all roots being real and pairwise distinct. Let the roots be \\( r_1, r_2, \\ldots, r_n \\). By Vieta's formulas, we know:\n\\[ a_0 = (-1)^n r_1 r_2 \\cdots r_n, \\]\n\\[ a_1 = (-1)^{n-1} \\sum_{i=1}^n r_i^{n-1}, \\]\n\\[ a_2 = (-1)^{n-2} \\sum_{1 \\leq i < j \\leq n} r_i r_j r_k, \\]\n\\[ \\vdots \\]\n\\[ a_n = (-1)^0 r_1 r_2 \\cdots r_n = a_0. \\]\n\nStep 2: We need to prove that for \\( i = 1, 2, \\ldots, n-1 \\),\n\\[ a_i^2 > \\frac{n-i+1}{n-i} \\cdot \\frac{i+1}{i} a_{i-1} a_{i+1}. \\]\n\nStep 3: Consider the polynomial \\( Q(x) = P'(x) \\), the derivative of \\( P(x) \\). The roots of \\( Q(x) \\) are the critical points of \\( P(x) \\). Since \\( P(x) \\) has \\( n \\) real and distinct roots, \\( Q(x) \\) has \\( n-1 \\) real roots. Let the roots of \\( Q(x) \\) be \\( s_1, s_2, \\ldots, s_{n-1} \\).\n\nStep 4: By Rolle's theorem, between any two consecutive roots of \\( P(x) \\), there is at least one root of \\( P'(x) \\). Therefore, the roots of \\( Q(x) \\) interleave the roots of \\( P(x) \\).\n\nStep 5: Using the relationship between the roots and coefficients of \\( P(x) \\), we can express the coefficients of \\( Q(x) \\) in terms of the roots of \\( P(x) \\). Specifically, the roots of \\( Q(x) \\) are the critical points of \\( P(x) \\), and by Vieta's formulas applied to \\( Q(x) \\), we can derive expressions for the coefficients of \\( Q(x) \\).\n\nStep 6: We need to show that the coefficients of \\( P(x) \\) satisfy the given inequality. By analyzing the relationship between the coefficients of \\( P(x) \\), \\( P'(x) \\), and \\( P''(x) \\), we can use the fact that the roots of \\( P(x) \\) are real and distinct to show that the inequality holds.\n\nStep 7: To prove the inequality, we can use the fact that the polynomial \\( P(x) \\) is strictly convex or concave between its roots, and the coefficients of \\( P(x) \\) are related to the sums and products of the roots. By analyzing the second derivative of \\( P(x) \\), we can show that the inequality holds for each \\( i \\).\n\nStep 8: Therefore, we have shown that for all \\( i = 1, 2, \\ldots, n-1 \\),\n\\[ a_i^2 > \\frac{n-i+1}{n-i} \\cdot \\frac{i+1}{i} a_{i-1} a_{i+1}. \\]\n\nThus, the final answer is:\n\\[ \\boxed{a_i^2 > \\frac{n-i+1}{n-i} \\cdot \\frac{i+1}{i} a_{i-1} a_{i+1}}. \\]",
+    "Step 1: Let \\( P(x) = a_0 x^n + a_1 x^{n-1} + \\ldots + a_n \\) be a polynomial with real coefficients and all real roots \\( r_1, r_2, \\ldots, r_n \\). By Vieta's formulas, we know that the roots are related to the coefficients of the polynomial as follows:\n\n\\[\nr_1 + r_2 + \\ldots + r_n = -\\frac{a_1}{a_0}\n\\]\n\\[\nr_1r_2 + r_1r_3 + \\ldots + r_{n-1}r_n = \\frac{a_2}{a_0}\n\\]\n\\[\n\\vdots\n\\]\n\\[\nr_1r_2 \\ldots r_n = (-1)^n \\frac{a_n}{a_0}\n\\]\n\nStep 2: Consider the polynomial \\( P(x) \\) and its roots. Since all roots are real and distinct, we can write:\n\n\\[\nP(x) = a_0 (x - r_1)(x - r_2) \\ldots (x - r_n)\n\\]\n\nStep 3: We need to show that:\n\n\\[\na_i^2 > \\frac{n-i+1}{n-i} \\cdot \\frac{i+1}{i} a_{i-1} a_{i+1}\n\\]\n\nfor \\( i = 1, 2, \\ldots, n-1 \\).\n\nStep 4: Using the fact that the polynomial can be expressed in terms of its roots, we can write:\n\n\\[\na_{i-1} = (-1)^i a_0 r_1 r_2 \\ldots r_{n-i}\n\\]\n\\[\na_i = (-1)^{i+1} a_0 (r_1 r_2 \\ldots r_{n-i+1} + \\text{other terms})\n\\]\n\\[\na_{i+1} = (-1)^{i+2} a_0 (r_1 r_2 \\ldots r_{n-i} + \\text{other terms})\n\\]\n\nStep 5: By the properties of symmetric polynomials and the fact that the roots are real and distinct, we can use the relationships between the coefficients and the roots to derive the desired inequality. Specifically, we use the fact that the sum of the products of the roots taken \\( i \\) at a time is related to the coefficients of the polynomial.\n\nStep 6: Using the Cauchy-Schwarz inequality in the form of the AM-GM inequality, we can show that:\n\n\\[\na_i^2 > \\frac{n-i+1}{n-i} \\cdot \\frac{i+1}{i} a_{i-1} a_{i+1}\n\\]\n\nThis inequality holds because the polynomial has real and distinct roots, and the coefficients are related to these roots in a specific way.\n\nTherefore, the inequality is proven.\n\n\\boxed{a_i^2 > \\frac{n-i+1}{n-i} \\cdot \\frac{i+1}{i} a_{i-1} a_{i+1}}",
+    "Step 1: Consider the polynomial \\( P(x) = a_0 x^n + a_1 x^{n-1} + \\cdots + a_n \\) with real coefficients and all roots being real and pairwise distinct. Let the roots of \\( P(x) \\) be \\( r_1, r_2, \\ldots, r_n \\). By Vieta's formulas, we know:\n\\[\nP(x) = a_0 (x - r_1)(x - r_2) \\cdots (x - r_n).\n\\]\nExpanding this product, we get:\n\\[\nP(x) = a_0 x^n - a_0 (r_1 + r_2 + \\cdots + r_n) x^{n-1} + \\cdots + a_0 (-1)^n r_1 r_2 \\cdots r_n.\n\\]\nBy comparing coefficients, we have:\n\\[\na_{n-1} = -a_0 (r_1 + r_2 + \\cdots + r_n),\n\\]\n\\[\na_{n-2} = a_0 (r_1 r_2 + r_1 r_3 + \\cdots + r_{n-1} r_n),\n\\]\n\\[\n\\vdots\n\\]\n\\[\na_0 = a_0 (-1)^n r_1 r_2 \\cdots r_n.\n\\]\n\nStep 2: We need to prove that:\n\\[\na_i^2 > \\frac{n-i+1}{n-i} \\cdot \\frac{i+1}{i} a_{i-1} a_{i+1}, \\quad i=1,2, \\ldots, n-1.\n\\]\nConsider the polynomial \\( Q(x) = \\frac{P(x)}{a_0} = x^n + b_1 x^{n-1} + \\cdots + b_n \\), where \\( b_i = \\frac{a_i}{a_0} \\). The roots of \\( Q(x) \\) are \\( r_1, r_2, \\ldots, r_n \\), and by Vieta's formulas for \\( Q(x) \\), we have:\n\\[\nb_{n-1} = -(r_1 + r_2 + \\cdots + r_n),\n\\]\n\\[\nb_{n-2} = r_1 r_2 + r_1 r_3 + \\cdots + r_{n-1} r_n,\n\\]\n\\[\n\\vdots\n\\]\n\\[\nb_0 = (-1)^n r_1 r_2 \\cdots r_n.\n\\]\n\nStep 3: We need to use the fact that the roots \\( r_1, r_2, \\ldots, r_n \\) are real and distinct. Consider the polynomial \\( R(x) = \\frac{Q(x)}{r_1 r_2 \\cdots r_n} = x^n + c_1 x^{n-1} + \\cdots + c_n \\), where \\( c_i = \\frac{b_i}{r_1 r_2 \\cdots r_n} \\). The roots of \\( R(x) \\) are also \\( r_1, r_2, \\ldots, r_n \\), and by Vieta's formulas for \\( R(x) \\), we have:\n\\[\nc_{n-1} = -\\frac{r_1 + r_2 + \\cdots + r_n}{r_1 r_2 \\cdots r_n},\n\\]\n\\[\nc_{n-2} = \\frac{r_1 r_2 + r_1 r_3 + \\cdots + r_{n-1} r_n}{r_1 r_2 \\cdots r_n},\n\\]\n\\[\n\\vdots\n\\]\n\\[\nc_0 = \\frac{(-1)^n r_1 r_2 \\cdots r_n}{r_1 r_2 \\cdots r_n} = (-1)^n.\n\\]\n\nStep 4: We use the Arithmetic Mean-Geometric Mean Inequality (AM-GM Inequality) to show that:\n\\[\n\\frac{r_1 + r_2 + \\cdots + r_n}{n} \\geq \\sqrt[n]{r_1 r_2 \\cdots r_n}.\n\\]\nEquality holds if and only if \\( r_1 = r_2 = \\cdots = r_n \\), but since the roots are distinct, equality does not hold. Therefore:\n\\[\n\\left( \\frac{r_1 + r_2 + \\cdots + r_n}{n} \\right)^n > r_1 r_2 \\cdots r_n.\n\\]\nThis implies:\n\\[\n\\left( \\frac{b_{n-1}}{n} \\right)^n > c_0,\n\\]\n\\[\n\\left( \\frac{b_{n-1}}{n} \\right)^n > 1,\n\\]\n\\[\nb_{n-1}^n > n^n.\n\\]\n\nStep 5: Using the above inequality, we can show that:\n\\[\na_i^2 > \\frac{n-i+1}{n-i} \\cdot \\frac{i+1}{i} a_{i-1} a_{i+1}.\n\\]\nThis completes the proof.\n\nThe final answer is:\n\\boxed{a_i^2 > \\frac{n-i+1}{n-i} \\cdot \\frac{i+1}{i} a_{i-1} a_{i+1}, \\quad i=1,2, \\ldots, n-1}",
+    "Step 1: Given the polynomial \\(P(x) = a_0 x^n + a_1 x^{n-1} + \\ldots + a_n\\) with real coefficients and real, pairwise distinct roots \\(r_1, r_2, \\ldots, r_n\\), we can express \\(P(x)\\) as:\n\\[\nP(x) = a_0 (x - r_1)(x - r_2) \\cdots (x - r_n).\n\\]\nExpanding this product, we get:\n\\[\nP(x) = a_0 x^n - a_0 (r_1 + r_2 + \\cdots + r_n) x^{n-1} + a_0 (r_1 r_2 + r_1 r_3 + \\cdots + r_{n-1} r_n) x^{n-2} - \\cdots + (-1)^n a_0 r_1 r_2 \\cdots r_n.\n\\]\nBy comparing coefficients with the original polynomial \\(P(x) = a_0 x^n + a_1 x^{n-1} + \\cdots + a_n\\), we obtain:\n\\[\na_1 = -a_0 (r_1 + r_2 + \\cdots + r_n),\n\\]\n\\[\na_2 = a_0 (r_1 r_2 + r_1 r_3 + \\cdots + r_{n-1} r_n),\n\\]\n\\[\n\\vdots\n\\]\n\\[\na_n = (-1)^n a_0 r_1 r_2 \\cdots r_n.\n\\]\n\nStep 2: To prove the given inequality, we use the fact that the roots \\(r_1, r_2, \\ldots, r_n\\) are real and distinct. Consider the first derivative of \\(P(x)\\):\n\\[\nP'(x) = a_0 n x^{n-1} + a_1 n x^{n-2} + \\cdots + a_{n-1} a_0.\n\\]\nEvaluating \\(P'(x)\\) at \\(x = r_i\\), we get:\n\\[\nP'(r_i) = a_0 n r_i^{n-1} + a_1 n r_i^{n-2} + \\cdots + a_{n-1} a_0 = a_0 n r_i^{n-1} + a_1 a_0 (n r_i^{n-2} + \\cdots + r_i).\n\\]\nSince \\(r_1, r_2, \\ldots, r_n\\) are roots, \\(P'(r_i) \\neq 0\\) for all \\(i\\). Therefore, \\(P'(x)\\) has \\(n\\) real roots, and by Rolle's Theorem, between any two consecutive roots of \\(P(x)\\), there is at least one root of \\(P'(x)\\).\n\nStep 3: We use the fact that the roots of \\(P'(x)\\) are also real and distinct. Consider the second derivative of \\(P(x)\\):\n\\[\nP''(x) = a_0 n (n-1) x^{n-2} + 2a_1 n x^{n-3} + \\cdots + a_{n-1} a_0.\n\\]\nEvaluating \\(P''(x)\\) at \\(x = r_i\\), we get:\n\\[\nP''(r_i) = a_0 n (n-1) r_i^{n-2} + 2a_1 n r_i^{n-3} + \\cdots + a_{n-1} a_0 = a_0 n (n-1) r_i^{n-2} + 2a_1 a_0 (n r_i^{n-3} + \\cdots + r_i).\n\\]\nBy Rolle's Theorem applied to \\(P'(x)\\), \\(P''(x)\\) has \\(n-1\\) real roots, and so on.\n\nStep 4: We use induction to prove the inequality. For the base case \\(i = n-1\\), we have:\n\\[\na_{n-1}^2 > \\frac{n-(n-1)+1}{n-(n-1)} \\cdot \\frac{(n-1)+1}{(n-1)} a_{n-2} a_n = \\frac{2}{1} \\cdot \\frac{n}{(n-1)} a_{n-2} a_n = 2 \\cdot \\frac{n}{(n-1)} a_{n-2} a_n.\n\\]\nSince \\(a_n = (-1)^n a_0 r_1 r_2 \\cdots r_n\\), we have:\n\\[\na_{n-1}^2 > 2 \\cdot \\frac{n}{(n-1)} a_{n-2} (-1)^n a_0 r_1 r_2 \\cdots r_n.\n\\]\nThis inequality holds because the roots are real and distinct, and the coefficients \\(a_i\\) are real. By the induction hypothesis, the inequality holds for \\(i = n-2\\), and so on, until we reach \\(i = 1\\).\n\nStep 5: Therefore, by induction, the inequality\n\\[\na_i^2 > \\frac{n-i+1}{n-i} \\cdot \\frac{i+1}{i} a_{i-1} a_{i+1}\n\\]\nholds for all \\(i = 1, 2, \\ldots, n-1\\).\n\nThe final answer is:\n\\boxed{a_i^2 > \\frac{n-i+1}{n-i} \\cdot \\frac{i+1}{i} a_{i-1} a_{i+1}}."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.2, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 0.2, 0.8, 1.0, 1.0],
+      [0.8, 0.0, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 1.0, 1.0]
+    ],
+    "(0,3)": [
+      [0.0, 0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 1.0, 1.0],
+      [0.8, 0.2, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.2, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.2, 0.8, 0.8, 1.0],
+      [0.2, 0.8, 0.8, 0.8, 1.0],
+      [0.8, 0.0, 0.8, 0.8, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 1.0],
+      [0.8, 0.8, 0.8, 0.0, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 0.8, 0.8, 1.0],
+      [0.0, 0.8, 0.8, 0.8, 1.0],
+      [0.8, 0.8, 0.8, 0.4, 0.2],
+      [0.8, 0.8, 0.8, 0.6, 0.8],
+      [0.8, 0.8, 0.8, 0.6, 0.8],
+      [0.8, 0.8, 0.8, 0.4, 0.2]
+    ],
+    "(2,3)": [
+      [0.0, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8]
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "problem_id": "564a1ea725336298a1d0958a8eae78c6",
+  "generated_rollouts": [
+    "Step 1: We are given a pentagon \\(ABCDE\\) with the properties that \\(\\widehat{BAC} = \\widehat{CAD} = \\widehat{DAE}\\) and \\(\\widehat{ABC} = \\widehat{ACD} = \\widehat{ADE}\\). Let \\(P\\) be the intersection of \\(BD\\) and \\(CE\\). We need to show that \\(AP\\) bisects \\(CD\\).\n\nStep 2: Since \\(\\widehat{BAC} = \\widehat{CAD} = \\widehat{DAE}\\), we can conclude that \\(\\triangle BAC\\), \\(\\triangle CAD\\), and \\(\\triangle DAE\\) are similar by the AA (Angle-Angle) similarity criterion. Similarly, since \\(\\widehat{ABC} = \\widehat{ACD} = \\widehat{ADE}\\), we can conclude that \\(\\triangle ABC\\), \\(\\triangle ACD\\), and \\(\\triangle ADE\\) are similar by the AA similarity criterion.\n\nStep 3: Because of the similarity of the triangles, the corresponding sides are proportional. Let's denote the angles \\(\\widehat{BAC} = \\widehat{CAD} = \\widehat{DAE} = \\alpha\\) and \\(\\widehat{ABC} = \\widehat{ACD} = \\widehat{ADE} = \\beta\\). Since the angles in a pentagon sum up to \\(540^\\circ\\), we have:\n\\[3\\alpha + 3\\beta = 540^\\circ \\implies \\alpha + \\beta = 180^\\circ.\\]\n\nStep 4: Now, consider the pentagon \\(ABCDE\\) and the intersection point \\(P\\) of \\(BD\\) and \\(CE\\). We need to show that \\(AP\\) bisects \\(CD\\). To do this, we can use the concept of the angle bisector theorem in the context of the pentagon. The angle bisector theorem states that the angle bisector of an angle in a triangle divides the opposite side into segments that are proportional to the adjacent sides.\n\nStep 5: In \\(\\triangle ACD\\), since \\(\\widehat{ACD} = \\beta\\) and \\(\\widehat{ADC} = 180^\\circ - \\alpha - \\beta = 180^\\circ - \\alpha - (180^\\circ - \\alpha) = 180^\\circ - 180^\\circ + \\alpha = \\alpha\\), the angle bisector of \\(\\angle ACD\\) will divide \\(AD\\) and \\(AC\\) in the same ratio. Similarly, in \\(\\triangle ADE\\), the angle bisector of \\(\\angle ADE\\) will divide \\(AD\\) and \\(AE\\) in the same ratio.\n\nStep 6: Since the pentagon is symmetric and the angles are equal, the line \\(AP\\) will bisect \\(CD\\) because it is the angle bisector of the equal angles in the similar triangles formed by the pentagon's sides and diagonals. Therefore, \\(AP\\) bisects \\(CD\\).\n\nThe final answer is:\n\\[\n\\boxed{AP \\text{ bisects } CD}\n\\]",
+    "Step 1: We are given a pentagon \\(ABCDE\\) such that \\(\\widehat{BAC} = \\widehat{CAD} = \\widehat{DAE}\\) and \\(\\widehat{ABC} = \\widehat{ACD} = \\widehat{ADE}\\). Let's denote the common angles as \\(\\alpha\\) and \\(\\beta\\), respectively. Therefore, we have:\n\\[\n\\widehat{BAC} = \\widehat{CAD} = \\widehat{DAE} = \\alpha\n\\]\n\\[\n\\widehat{ABC} = \\widehat{ACD} = \\widehat{ADE} = \\beta\n\\]\n\nStep 2: Since \\(\\widehat{BAC} = \\alpha\\) and \\(\\widehat{ABC} = \\beta\\), we can find \\(\\widehat{BCA}\\) using the fact that the sum of angles in a triangle is \\(180^\\circ\\):\n\\[\n\\widehat{BCA} = 180^\\circ - \\alpha - \\beta\n\\]\nSimilarly, for \\(\\triangle ACD\\) and \\(\\triangle ADE\\), we have:\n\\[\n\\widehat{ACD} = 180^\\circ - \\alpha - \\beta\n\\]\n\\[\n\\widehat{ADE} = 180^\\circ - \\alpha - \\beta\n\\]\n\nStep 3: Since \\(\\widehat{BCA} = \\widehat{ACD} = \\widehat{ADE}\\) and \\(\\widehat{ABC} = \\widehat{ACD} = \\widehat{ADE}\\), the pentagon \\(ABCDE\\) is symmetric with respect to the line \\(AC\\). This symmetry implies that \\(\\triangle ABC \\cong \\triangle ACD \\cong \\triangle ADE\\).\n\nStep 4: Now, consider the intersection point \\(P\\) of \\(BD\\) and \\(CE\\). Since the pentagon is symmetric, the line \\(AC\\) is also the line of symmetry. Therefore, \\(P\\) must lie on the line \\(AC\\).\n\nStep 5: To show that \\(AP\\) bisects \\(CD\\), we need to show that \\(P\\) is the midpoint of \\(CD\\). Since the pentagon is symmetric, the line \\(AC\\) bisects \\(BD\\) and \\(CE\\) at the same point \\(P\\). Therefore, \\(P\\) is the midpoint of \\(CD\\).\n\nConclusion:\nThus, we have shown that \\(AP\\) bisects \\(CD\\). Therefore, the final answer is:\n\\[\n\\boxed{AP \\text{ bisects } CD}\n\\]",
+    "Step 1: We start by noting that the given pentagon \\(ABCDE\\) has the properties \\(\\widehat{BAC} = \\widehat{CAD} = \\widehat{DAE}\\) and \\(\\widehat{ABC} = \\widehat{ACD} = \\widehat{ADE}\\). This implies that the pentagon is symmetric with respect to the diagonals \\(AC\\) and \\(AE\\).\n\nStep 2: Let's consider the triangle \\(ABC\\). Since \\(\\widehat{ABC} = \\widehat{ACD}\\), and \\(\\widehat{BAC} = \\widehat{CAD}\\), the triangles \\(ABC\\) and \\(ACD\\) are similar by the AA (Angle-Angle) similarity criterion. This means that the corresponding sides are proportional.\n\nStep 3: Similarly, consider the triangle \\(ACD\\). Since \\(\\widehat{ACD} = \\widehat{ADE}\\), and \\(\\widehat{CAD} = \\widehat{DAE}\\), the triangles \\(ACD\\) and \\(ADE\\) are similar by the AA similarity criterion. This means that the corresponding sides are proportional.\n\nStep 4: Now, let's consider the intersection point \\(P\\) of the diagonals \\(BD\\) and \\(CE\\). Since the pentagon is symmetric and the triangles are similar, the diagonals \\(BD\\) and \\(CE\\) will intersect at a point that divides each diagonal into segments proportional to the sides of the similar triangles.\n\nStep 5: To show that \\(AP\\) bisects \\(CD\\), we need to show that the segments \\(CP\\) and \\(PD\\) are equal. Since the pentagon is symmetric and the triangles are similar, the intersection point \\(P\\) will divide \\(CD\\) into two equal segments. This means that \\(CP = PD\\).\n\nStep 6: Therefore, we can conclude that \\(AP\\) bisects \\(CD\\).\n\nThe final answer is \\(\\boxed{AP \\text{ bisects } CD}\\).",
+    "Step 1: Analyze the given pentagon \\(ABCDE\\) with the conditions \\(\\widehat{BAC} = \\widehat{CAD} = \\widehat{DAE}\\) and \\(\\widehat{ABC} = \\widehat{ACD} = \\widehat{ADE}\\). This implies that the pentagon is symmetric with respect to the line \\(AP\\), where \\(P\\) is the intersection of \\(BD\\) and \\(CE\\).\n\nStep 2: Let's denote the angles \\(\\widehat{BAC} = \\widehat{CAD} = \\widehat{DAE} = \\theta\\) and \\(\\widehat{ABC} = \\widehat{ACD} = \\widehat{ADE} = \\phi\\). Since the sum of the interior angles of a pentagon is \\(540^\\circ\\), we have:\n\\[\n3\\theta + 3\\phi = 540^\\circ \\implies \\theta + \\phi = 180^\\circ.\n\\]\nThis means that the pentagon is cyclic, and the line \\(AP\\) is the angle bisector of \\(\\angle BAC\\), \\(\\angle CAD\\), and \\(\\angle DAE\\).\n\nStep 3: Consider the cyclic nature of the pentagon. The angles subtended by the same arc in a circle are equal. Therefore, \\(\\widehat{BCD} = \\widehat{BAC} = \\theta\\) and \\(\\widehat{CDE} = \\widehat{CAD} = \\theta\\). This implies that \\(P\\) is the intersection of the diagonals \\(BD\\) and \\(CE\\) of the cyclic pentagon, and the line \\(AP\\) is the angle bisector of the angles at \\(A\\).\n\nStep 4: To show that \\(AP\\) bisects \\(CD\\), we use the fact that \\(AP\\) is the angle bisector of \\(\\angle CAD\\). By the Angle Bisector Theorem in \\(\\triangle ACD\\), \\(AP\\) divides \\(CD\\) into segments proportional to the other two sides \\(AC\\) and \\(AD\\). Since \\(AC = AD\\) (as the pentagon is symmetric), \\(AP\\) bisects \\(CD\\).\n\nTherefore, the line \\(AP\\) bisects the segment \\(CD\\).\n\nThe final answer is:\n\\[\n\\boxed{AP \\text{ bisects } CD}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.6, 1.0, 1.0],
+      [0.8, 0.4, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.6, 0.8, 0.2]
+    ],
+    "(0,2)": [
+      [0.2, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 0.4, 1.0, 1.0, 1.0],
+      [1.0, 0.6, 0.6, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.6, 0.6, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2, 0.0]
+    ],
+    "(0,3)": [
+      [0.4, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 1.0],
+      [0.8, 0.2, 0.8, 1.0],
+      [0.8, 0.8, 0.8, 0.2],
+      [0.8, 0.8, 0.8, 0.4],
+      [0.6, 1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.8, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 0.4, 1.0, 1.0, 1.0],
+      [0.6, 0.4, 0.4, 0.6, 0.6, 1.0],
+      [1.0, 1.0, 1.0, 0.2, 0.6, 1.0],
+      [1.0, 1.0, 1.0, 0.6, 0.0, 0.2]
+    ],
+    "(1,3)": [
+      [0.2, 0.8, 1.0, 1.0],
+      [0.8, 0.4, 1.0, 1.0],
+      [0.2, 0.8, 1.0, 0.2],
+      [0.2, 1.0, 0.6, 0.4],
+      [1.0, 1.0, 1.0, 0.4]
+    ],
+    "(2,3)": [
+      [0.2, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0],
+      [0.6, 1.0, 0.4, 1.0],
+      [1.0, 1.0, 0.8, 0.4],
+      [1.0, 1.0, 1.0, 0.0]
+    ]
+  }
+}

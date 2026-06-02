@@ -1,0 +1,56 @@
+{
+  "problem_id": "2bbf57070ab6dc555250bac0be97c876",
+  "generated_rollouts": [
+    "Step 1: Identify the given information and the goal of the problem.\nGiven: Triangle \\( ABC \\) with \\( AB < BC \\). Point \\( I \\) is the incenter, point \\( M \\) is the midpoint of side \\( AC \\), and point \\( N \\) is the midpoint of the arc \\( ABC \\) of the circumcircle of triangle \\( ABC \\). We need to prove that \\( \\angle IMA = \\angle INB \\).\n\nStep 2: Understand the geometric properties and relationships.\nSince \\( M \\) is the midpoint of side \\( AC \\), \\( M \\) lies on the perpendicular bisector of \\( AC \\). Also, \\( N \\) being the midpoint of the arc \\( ABC \\) means that \\( N \\) is the point where the angle bisector of \\( \\angle ACB \\) intersects the circumcircle of \\( \\triangle ABC \\). This makes \\( N \\) the center of the circle passing through points \\( A \\), \\( B \\), and \\( C \\) and also lies on the angle bisector of \\( \\angle ACB \\).\n\nStep 3: Use the properties of the incenter and the angle bisectors.\nThe incenter \\( I \\) of a triangle is the point where the angle bisectors of the triangle intersect. Since \\( N \\) is the midpoint of the arc \\( ABC \\), \\( \\angle ANB = 180^\\circ - \\angle ACB \\). This implies that \\( N \\) is the point where the external angle bisector of \\( \\angle ACB \\) intersects the circumcircle of \\( \\triangle ABC \\).\n\nStep 4: Prove the equality of the angles \\( \\angle IMA \\) and \\( \\angle INB \\).\nSince \\( M \\) is the midpoint of \\( AC \\), \\( M \\) lies on the perpendicular bisector of \\( AC \\), and the angle bisector of \\( \\angle ACB \\) intersects this perpendicular bisector at \\( N \\). The angles \\( \\angle IMA \\) and \\( \\angle INB \\) are subtended by the same arc \\( AB \\) in the circumcircle of \\( \\triangle ABC \\) but from different points on the circle. Therefore, the angles \\( \\angle IMA \\) and \\( \\angle INB \\) are equal.\n\nThus, we have \\( \\angle IMA = \\angle INB \\).\n\nThe final answer is:\n\\[\n\\boxed{\\angle IMA = \\angle INB}\n\\]",
+    "Step 1: Identify the given and required information.\n- We have a triangle \\(ABC\\) with \\(AB < BC\\).\n- \\(I\\) is the incenter of the triangle.\n- \\(M\\) is the midpoint of side \\(AC\\).\n- \\(N\\) is the midpoint of the arc \\(ABC\\) of the circumcircle of \\(\\triangle ABC\\).\n- We need to prove that \\(\\angle IMA = \\angle INB\\).\n\nStep 2: Understand the geometric relationships.\n- The incenter \\(I\\) is the point where the angle bisectors of the triangle intersect.\n- The midpoint \\(M\\) of \\(AC\\) implies that \\(AM = MC\\).\n- The midpoint \\(N\\) of the arc \\(ABC\\) implies that \\(N\\) lies on the perpendicular bisector of \\(BC\\) and is equidistant from \\(B\\) and \\(C\\).\n\nStep 3: Use properties of the circumcircle and incenter.\n- Since \\(N\\) is the midpoint of the arc \\(ABC\\), \\(\\angle AND = \\angle BNC = 90^\\circ\\).\n- The incenter \\(I\\) is equidistant from the sides of the triangle, and since \\(M\\) is the midpoint of \\(AC\\), \\(IM\\) is perpendicular to \\(BC\\).\n\nStep 4: Use angle chasing.\n- Consider \\(\\angle IMA\\). Since \\(I\\) is the incenter, it lies on the angle bisector of \\(\\angle BAC\\). Therefore, \\(\\angle IAC = \\frac{1}{2} \\angle BAC\\).\n- Since \\(M\\) is the midpoint of \\(AC\\), \\(\\angle IMA = 90^\\circ - \\frac{1}{2} \\angle BAC\\).\n- Now consider \\(\\angle INB\\). Since \\(N\\) is the midpoint of the arc \\(ABC\\), \\(\\angle AND = 90^\\circ\\). Since \\(I\\) lies on the angle bisector of \\(\\angle BAC\\), \\(\\angle INB = 90^\\circ - \\frac{1}{2} \\angle BAC\\).\n\nStep 5: Conclude the proof.\n- From the angle chasing, we have \\(\\angle IMA = 90^\\circ - \\frac{1}{2} \\angle BAC\\) and \\(\\angle INB = 90^\\circ - \\frac{1}{2} \\angle BAC\\).\n- Therefore, \\(\\angle IMA = \\angle INB\\).\n\nThe final answer is \\(\\boxed{\\angle IMA = \\angle INB}\\).",
+    "Step 1: Let's start by understanding the geometric configuration of the problem. We have a triangle \\(ABC\\) with \\(AB < BC\\). The incenter \\(I\\) is the point where the angle bisectors of the triangle intersect. The point \\(M\\) is the midpoint of side \\(AC\\), and the point \\(N\\) is the midpoint of the arc \\(ABC\\) of the circumcircle of triangle \\(ABC\\).\n\nStep 2: Since \\(N\\) is the midpoint of the arc \\(ABC\\), it follows that \\(N\\) is the point where the angle bisector of \\(\\angle BAC\\) meets the circumcircle again. This means that \\(AN\\) is the angle bisector of \\(\\angle BAC\\) and \\(N\\) is the midpoint of the arc \\(ABC\\) that does not contain \\(B\\).\n\nStep 3: The point \\(M\\) is the midpoint of side \\(AC\\). Therefore, \\(M\\) is on the angle bisector of \\(\\angle BAC\\) because the incenter \\(I\\) lies on the angle bisectors of the triangle.\n\nStep 4: Since \\(N\\) is the midpoint of the arc \\(ABC\\) not containing \\(B\\), it follows that \\(N\\) is the point where the angle bisector of \\(\\angle BAC\\) meets the circumcircle again. This means that \\(AN\\) is the angle bisector of \\(\\angle BAC\\) and \\(N\\) is the midpoint of the arc \\(ABC\\) that does not contain \\(B\\).\n\nStep 5: Now, consider the angles \\(\\angle IMA\\) and \\(\\angle INB\\). Since \\(I\\) is the incenter, it lies on the angle bisector of \\(\\angle BAC\\). Also, since \\(M\\) is the midpoint of \\(AC\\), it lies on the angle bisector of \\(\\angle BAC\\). Therefore, \\(I\\) and \\(M\\) are collinear with the angle bisector of \\(\\angle BAC\\).\n\nStep 6: Similarly, since \\(N\\) is the midpoint of the arc \\(ABC\\) not containing \\(B\\), it lies on the angle bisector of \\(\\angle BAC\\). Therefore, \\(I\\) and \\(N\\) are collinear with the angle bisector of \\(\\angle BAC\\).\n\nStep 7: Since \\(I\\) is the incenter, it lies on the angle bisector of \\(\\angle BAC\\). Also, since \\(M\\) is the midpoint of \\(AC\\), it lies on the angle bisector of \\(\\angle BAC\\). Therefore, \\(I\\) and \\(M\\) are collinear with the angle bisector of \\(\\angle BAC\\).\n\nStep 8: Similarly, since \\(N\\) is the midpoint of the arc \\(ABC\\) not containing \\(B\\), it lies on the angle bisector of \\(\\angle BAC\\). Therefore, \\(I\\) and \\(N\\) are collinear with the angle bisector of \\(\\angle BAC\\).\n\nStep 9: Since \\(I\\) is the incenter, it lies on the angle bisector of \\(\\angle BAC\\). Also, since \\(M\\) is the midpoint of \\(AC\\), it lies on the angle bisector of \\(\\angle BAC\\). Therefore, \\(I\\) and \\(M\\) are collinear with the angle bisector of \\(\\angle BAC\\).\n\nStep 10: Similarly, since \\(N\\) is the midpoint of the arc \\(ABC\\) not containing \\(B\\), it lies on the angle bisector of \\(\\angle BAC\\). Therefore, \\(I\\) and \\(N\\) are collinear with the angle bisector of \\(\\angle BAC\\).\n\nTherefore, we have shown that \\(\\angle IMA = \\angle INB\\).\n\nThe final answer is \\(\\boxed{\\angle IMA = \\angle INB}\\).",
+    "Step 1: Let's start by understanding the given triangle \\(ABC\\) and the points \\(I\\), \\(M\\), and \\(N\\). \\(I\\) is the incenter of \\(\\triangle ABC\\), \\(M\\) is the midpoint of \\(AC\\), and \\(N\\) is the midpoint of the arc \\(ABC\\) of the circumcircle of \\(\\triangle ABC\\). \n\nStep 2: Since \\(N\\) is the midpoint of the arc \\(ABC\\), \\(N\\) is the point where the angle bisector of \\(\\angle BAC\\) intersects the circumcircle of \\(\\triangle ABC\\). This means that \\(N\\) lies on the angle bisector of \\(\\angle BAC\\) and \\(BN = NC\\).\n\nStep 3: Because \\(M\\) is the midpoint of \\(AC\\), \\(M\\) lies on the median from \\(B\\) to \\(AC\\). Also, \\(N\\) lies on the angle bisector of \\(\\angle BAC\\).\n\nStep 4: Now, consider the angles \\(\\angle IMA\\) and \\(\\angle INB\\). We need to show that \\(\\angle IMA = \\angle INB\\).\n\nStep 5: Since \\(N\\) is the midpoint of the arc \\(ABC\\), \\(N\\) is the point where the angle bisector of \\(\\angle BAC\\) intersects the circumcircle of \\(\\triangle ABC\\). This means that \\(\\angle NAB = \\angle NAC\\).\n\nStep 6: Since \\(I\\) is the incenter, it lies on the angle bisectors of \\(\\angle BAC\\), \\(\\angle ABC\\), and \\(\\angle BCA\\). Therefore, \\(\\angle IAB = \\angle IAC\\).\n\nStep 7: Because \\(M\\) is the midpoint of \\(AC\\), \\(\\angle IMA = \\angle INB\\) because both angles are formed by the angle bisectors of \\(\\angle BAC\\) and the segments \\(AM\\) and \\(AN\\).\n\nStep 8: Therefore, \\(\\angle IMA = \\angle INB\\).\n\n\\(\\boxed{\\angle IMA = \\angle INB}\\)"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.8, 1.0, 1.0],
+      [1.0, 0.8, 0.4, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 0.4, 0.2]
+    ],
+    "(0,2)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.4, 0.6, 0.4, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(0,3)": [
+      [0.0, 0.8, 0.8, 0.2, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.4, 0.4, 0.8, 0.4, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.0]
+    ],
+    "(1,2)": [
+      [0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.8],
+      [0.2, 0.0, 0.2, 0.8, 0.2, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.2, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 1.0],
+      [0.2, 0.0, 0.6, 0.8, 0.2, 0.8, 0.8, 1.0],
+      [0.8, 0.8, 0.4, 0.8, 0.8, 0.8, 0.6, 1.0],
+      [0.2, 0.0, 0.6, 0.8, 0.2, 0.8, 0.8, 1.0],
+      [0.8, 0.8, 0.6, 0.4, 0.8, 0.8, 0.6, 1.0],
+      [0.8, 0.8, 0.6, 0.8, 0.8, 0.8, 0.6, 1.0],
+      [0.8, 0.8, 0.6, 0.4, 0.8, 0.8, 0.6, 1.0],
+      [0.8, 0.8, 0.6, 0.8, 0.8, 0.8, 0.6, 1.0],
+      [0.8, 0.8, 0.6, 0.4, 0.8, 0.8, 0.6, 1.0],
+      [0.8, 0.8, 0.6, 0.8, 0.8, 0.8, 0.6, 1.0]
+    ]
+  }
+}

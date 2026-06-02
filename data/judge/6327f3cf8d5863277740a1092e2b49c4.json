@@ -1,0 +1,100 @@
+{
+  "problem_id": "6327f3cf8d5863277740a1092e2b49c4",
+  "generated_rollouts": [
+    "Step 1: We are given the inequality to prove:\n\\[\n\\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}\n\\]\n\nStep 2: First, let's rewrite the inequality in a more convenient form. We need to show:\n\\[\n\\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}\n\\]\n\nStep 3: To simplify the notation, let \\( A = \\sqrt[4]{x y z \\frac{x+y+z}{3}} \\) and \\( B = \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}} \\).\n\nStep 4: We need to prove \\( A \\leq B \\). To do this, we will raise both sides to the 12th power to eliminate the radicals:\n\\[\nA^{12} = \\left( \\sqrt[4]{x y z \\frac{x+y+z}{3}} \\right)^{12} = \\left( x y z \\frac{x+y+z}{3} \\right)^3\n\\]\n\\[\nB^{12} = \\left( \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}} \\right)^{12} = \\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^4\n\\]\n\nStep 5: Now we need to show:\n\\[\n\\left( x y z \\frac{x+y+z}{3} \\right)^3 \\leq \\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^4\n\\]\n\nStep 6: To prove this, we will use the AM-GM inequality. The Arithmetic Mean-Geometric Mean Inequality states that for non-negative real numbers \\(a, b, c\\):\n\\[\n\\frac{a+b+c}{3} \\geq \\sqrt[3]{abc}\n\\]\n\nStep 7: Applying the AM-GM inequality to \\(x, y, z\\):\n\\[\n\\frac{x+y+z}{3} \\geq \\sqrt[3]{xyz}\n\\]\n\nStep 8: Cubing both sides:\n\\[\n\\left( \\frac{x+y+z}{3} \\right)^3 \\geq (xyz)\n\\]\n\nStep 9: Multiplying both sides by \\(x y z\\):\n\\[\nx y z \\left( \\frac{x+y+z}{3} \\right)^3 \\geq x y z \\cdot xyz = (xyz)^2\n\\]\n\nStep 10: Now, consider the right-hand side of the inequality we need to prove:\n\\[\n\\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^4\n\\]\n\nStep 11: By the AM-GM inequality applied to pairs:\n\\[\n\\frac{x+y}{2} \\geq \\sqrt{xy}, \\quad \\frac{y+z}{2} \\geq \\sqrt{yz}, \\quad \\frac{z+x}{2} \\geq \\sqrt{zx}\n\\]\n\nStep 12: Multiplying these inequalities:\n\\[\n\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\geq \\sqrt{xy} \\cdot \\sqrt{yz} \\cdot \\sqrt{zx} = \\sqrt{(xyz)^2} = xyz\n\\]\n\nStep 13: Raising both sides to the 4th power:\n\\[\n\\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^4 \\geq (xyz)^4\n\\]\n\nStep 14: Combining steps 9 and 13:\n\\[\nx y z \\left( \\frac{x+y+z}{3} \\right)^3 \\geq (xyz)^2 \\quad \\text{and} \\quad \\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^4 \\geq (xyz)^4\n\\]\n\nStep 15: Therefore:\n\\[\nx y z \\left( \\frac{x+y+z}{3} \\right)^3 \\leq \\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^4\n\\]\n\nStep 16:Taking the 12th root of both sides, we get:\n\\[\n\\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}\n\\]\n\nThus, the inequality is proven. The final answer is:\n\\[\n\\boxed{\\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}}\n\\]",
+    "Step 1: We start by analyzing the inequality given:\n\\[\n\\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}\n\\]\n\nStep 2: Apply the Arithmetic Mean-Geometric Mean Inequality (AM-GM Inequality) in the context of each term inside the radicals.\n\nAM-GM Inequality states that for non-negative real numbers \\(a_1, a_2, \\ldots, a_n\\):\n\\[\n\\frac{a_1 + a_2 + \\cdots + a_n}{n} \\geq \\sqrt[n]{a_1 a_2 \\cdots a_n}\n\\]\n\nStep 3: Apply AM-GM to the arithmetic means of the variables:\n\\[\n\\frac{x+y+z}{3} \\geq \\sqrt[3]{xyz}\n\\]\n\nStep 4: Apply AM-GM to the geometric means of the pairs:\n\\[\n\\frac{x+y}{2} \\geq \\sqrt{xy}, \\quad \\frac{y+z}{2} \\geq \\sqrt{yz}, \\quad \\frac{z+x}{2} \\geq \\sqrt{zx}\n\\]\n\nStep 5: Combine the inequalities obtained from AM-GM:\n\\[\n\\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}} \\geq \\sqrt[3]{\\sqrt{xy} \\cdot \\sqrt{yz} \\cdot \\sqrt{zx}}\n\\]\n\nStep 6: Simplify the right-hand side:\n\\[\n\\sqrt[3]{\\sqrt{xy} \\cdot \\sqrt{yz} \\cdot \\sqrt{zx}} = \\sqrt[3]{\\sqrt{(xy)(yz)(zx)}} = \\sqrt[3]{\\sqrt{(xyz)^2}} = \\sqrt[3]{xyz}\n\\]\n\nStep 7: Combine the results of inequalities from steps 3 and 6:\n\\[\n\\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}} \\geq \\sqrt[3]{xyz} \\geq \\sqrt[4]{x y z \\frac{x+y+z}{3}}\n\\]\n\nStep 8: Conclude the proof by stating the final inequality:\n\\[\n\\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}\n\\]\n\nThus, the inequality is proven.\n\n\\(\\boxed{\\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}}\\)",
+    "Step 1: Start by analyzing both sides of the given inequality:\n\\[ \\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}} \\]\n\nStep 2: Use the AM-GM inequality to compare each side. The Arithmetic Mean-Geometric Mean (AM-GM) Inequality states that for non-negative numbers \\(a, b, c\\):\n\\[ \\frac{a + b + c}{3} \\geq \\sqrt[3]{abc} \\]\n\nStep 3: Apply the AM-GM inequality to the numbers \\(x, y, z\\):\n\\[ \\frac{x + y + z}{3} \\geq \\sqrt[3]{xyz} \\]\n\nStep 4: Raise both sides of the inequality to the power of 4 to match the left-hand side of the original inequality:\n\\[ \\left( \\frac{x + y + z}{3} \\right)^4 \\geq (xyz)^{4/3} \\]\n\nStep 5: Now, consider the right-hand side of the original inequality:\n\\[ \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}} \\]\n\nStep 6: Apply the AM-GM inequality to the pairs \\((x+y)/2\\), \\((y+z)/2\\), and \\((z+x)/2\\):\n\\[ \\frac{x + y}{2} \\geq \\sqrt{xy} \\]\n\\[ \\frac{y + z}{2} \\geq \\sqrt{yz} \\]\n\\[ \\frac{z + x}{2} \\geq \\sqrt{zx} \\]\n\nStep 7: Multiply these inequalities together:\n\\[ \\left( \\frac{x + y}{2} \\right) \\left( \\frac{y + z}{2} \\right) \\left( \\frac{z + x}{2} \\right) \\geq \\sqrt{xy} \\cdot \\sqrt{yz} \\cdot \\sqrt{zx} \\]\n\nStep 8: Simplify the right-hand side:\n\\[ \\sqrt{xy} \\cdot \\sqrt{yz} \\cdot \\sqrt{zx} = \\sqrt{(xy)(yz)(zx)} = \\sqrt{(xyz)^2} = (xyz)^{1/2} \\]\n\nStep 9: Raise both sides to the power of 3:\n\\[ \\left( \\left( \\frac{x + y}{2} \\right) \\left( \\frac{y + z}{2} \\right) \\left( \\frac{z + x}{2} \\right) \\right)^3 \\geq \\left( (xyz)^{1/2} \\right)^3 \\]\n\\[ \\left( \\frac{x + y}{2} \\cdot \\frac{y + z}{2} \\cdot \\frac{z + x}{2} \\right)^3 \\geq (xyz)^{3/2} \\]\n\nStep 10: Take the cube root of both sides:\n\\[ \\sqrt[3]{\\left( \\frac{x + y}{2} \\cdot \\frac{y + z}{2} \\cdot \\frac{z + x}{2} \\right)^3} \\geq \\sqrt[3]{(xyz)^{3/2}} \\]\n\\[ \\frac{x + y}{2} \\cdot \\frac{y + z}{2} \\cdot \\frac{z + x}{2} \\geq (xyz)^{1/2} \\]\n\nStep 11: Compare the results from steps 4 and 10:\n\\[ \\left( \\frac{x + y + z}{3} \\right)^4 \\geq (xyz)^{4/3} \\]\n\\[ \\frac{x + y}{2} \\cdot \\frac{y + z}{2} \\cdot \\frac{z + x}{2} \\geq (xyz)^{1/2} \\]\n\nStep 12: Since \\(\\left( \\frac{x + y + z}{3} \\right)^4 \\geq (xyz)^{4/3}\\) and \\(\\frac{x + y}{2} \\cdot \\frac{y + z}{2} \\cdot \\frac{z + x}{2} \\geq (xyz)^{1/2}\\), it follows that:\n\\[ \\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}} \\]\n\nThus, the inequality is proven.\n\\(\\boxed{\\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}}\\)",
+    "Step 1: We start by raising both sides of the given inequality to the power of 12 to eliminate the radicals:\n\n\\[\n\\left( \\sqrt[4]{x y z \\frac{x+y+z}{3}} \\right)^{12} \\leq \\left( \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}} \\right)^{12}\n\\]\n\nStep 2: Simplify the left-hand side:\n\n\\[\n\\left( \\sqrt[4]{x y z \\frac{x+y+z}{3}} \\right)^{12} = \\left( x y z \\frac{x+y+z}{3} \\right)^{3}\n\\]\n\nStep 3: Simplify the right-hand side:\n\n\\[\n\\left( \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}} \\right)^{12} = \\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^{4}\n\\]\n\nStep 4: Now, we need to prove:\n\n\\[\n\\left( x y z \\frac{x+y+z}{3} \\right)^{3} \\leq \\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^{4}\n\\]\n\nStep 5: Apply the AM-GM inequality to the terms \\(x, y, z\\):\n\n\\[\n\\frac{x+y+z}{3} \\geq \\sqrt[3]{x y z}\n\\]\n\nRaising both sides to the power of 3:\n\n\\[\n\\left( \\frac{x+y+z}{3} \\right)^{3} \\geq x y z\n\\]\n\nStep 6: Apply the AM-GM inequality to the pairs \\(\\frac{x+y}{2}, \\frac{y+z}{2}, \\frac{z+x}{2}\\):\n\n\\[\n\\frac{\\frac{x+y}{2} + \\frac{y+z}{2} + \\frac{z+x}{2}}{3} \\geq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}\n\\]\n\nSimplifying the left-hand side:\n\n\\[\n\\frac{\\frac{x+y}{2} + \\frac{y+z}{2} + \\frac{z+x}{2}}{3} = \\frac{x+y+z}{3}\n\\]\n\nThus:\n\n\\[\n\\frac{x+y+z}{3} \\geq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}\n\\]\n\nRaising both sides to the power of 4:\n\n\\[\n\\left( \\frac{x+y+z}{3} \\right)^{4} \\geq \\left( \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}} \\right)^{4}\n\\]\n\nStep 7: Combine the inequalities from steps 5 and 6:\n\n\\[\n\\left( x y z \\frac{x+y+z}{3} \\right)^{3} \\leq \\left( x y z \\right)^{3} \\left( \\frac{x+y+z}{3} \\right)^{3}\n\\]\n\n\\[\n\\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^{4} \\geq \\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^{4}\n\\]\n\nStep 8: Since \\(\\left( \\frac{x+y+z}{3} \\right)^{3} \\geq x y z\\) and \\(\\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^{4}\\) are both non-negative, we have:\n\n\\[\n\\left( x y z \\frac{x+y+z}{3} \\right)^{3} \\leq \\left( \\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2} \\right)^{4}\n\\]\n\nStep 9: Therefore, the original inequality holds:\n\n\\[\n\\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}\n\\]\n\n\\[\n\\boxed{\\sqrt[4]{x y z \\frac{x+y+z}{3}} \\leq \\sqrt[3]{\\frac{x+y}{2} \\cdot \\frac{y+z}{2} \\cdot \\frac{z+x}{2}}}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.0, 0.8, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 0.0, 0.6, 0.8, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 0.6, 0.4, 0.2, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.4, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.4, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.6, 0.8, 0.8, 0.6, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.2, 0.6, 0.2, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8]
+    ],
+    "(0,3)": [
+      [0.8, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.2, 0.4, 0.4, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.6, 0.8, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.4, 0.4, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.6, 1.0, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.6, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.6, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.6],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.6, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8],
+      [1.0, 0.0, 0.8, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.0, 0.6, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.8, 0.8, 1.0, 1.0, 0.0, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.6, 0.4, 0.8, 1.0, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.4, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 0.6],
+      [0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,3)": [
+      [1.0, 1.0, 1.0, 0.6, 1.0, 1.0, 1.0, 0.6, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 0.4, 0.4, 1.0, 1.0, 0.4, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.6, 0.6, 0.4, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(2,3)": [
+      [1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0, 1.0, 0.6],
+      [1.0, 1.0, 1.0, 1.0, 0.6, 0.6, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.4, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.6, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.6, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 0.6, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0]
+    ]
+  }
+}

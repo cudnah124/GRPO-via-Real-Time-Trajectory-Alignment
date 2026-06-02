@@ -1,0 +1,55 @@
+{
+  "problem_id": "69c3b15df3695978b1d60fb4f1442c42",
+  "generated_rollouts": [
+    "Step 1: We need to find the number of ordered triples \\((a, b, c)\\) of integers such that \\(1 \\leq a < b < c \\leq 10\\) and \\(b - a = c - b\\).\n\nStep 2: The condition \\(b - a = c - b\\) implies that \\(b\\) is the average of \\(a\\) and \\(c\\). Therefore, \\(b = \\frac{a + c}{2}\\). Since \\(b\\) is an integer, \\(a + c\\) must be even. This means \\(a\\) and \\(c\\) must both be either even or both be odd.\n\nStep 3: Let's count the number of valid pairs \\((a, c)\\) for each possible value of \\(b\\).\n\n- If \\(b = 3\\), then \\(a + c = 6\\). The possible pairs \\((a, c)\\) are \\((1, 5)\\) and \\((2, 4)\\). There are 2 pairs.\n- If \\(b = 4\\), then \\(a + c = 8\\). The possible pairs \\((a, c)\\) are \\((1, 7)\\), \\((2, 6)\\), and \\((3, 5)\\). There are 3 pairs.\n- If \\(b = 5\\), then \\(a + c = 10\\). The possible pairs \\((a, c)\\) are \\((1, 9)\\), \\((2, 8)\\), \\((3, 7)\\), and \\((4, 6)\\). There are 4 pairs.\n- If \\(b = 6\\), then \\(a + c = 12\\). The possible pairs \\((a, c)\\) are \\((2, 10)\\), \\((3, 9)\\), \\((4, 8)\\), and \\((5, 7)\\). There are 4 pairs.\n- If \\(b = 7\\), then \\(a + c = 14\\). The possible pairs \\((a, c)\\) are \\((4, 10)\\), \\((5, 9)\\), and \\((6, 8)\\). There are 3 pairs.\n- If \\(b = 8\\), then \\(a + c = 16\\). The possible pairs \\((a, c)\\) are \\((6, 10)\\) and \\((7, 9)\\). There are 2 pairs.\n- If \\(b = 9\\), then \\(a + c = 18\\). The possible pair \\((a, c)\\) is \\((8, 10)\\). There is 1 pair.\n\nStep 4: Summing up all the pairs, we get \\(2 + 3 + 4 + 4 + 3 + 2 + 1 = 19\\).\n\nTherefore, the number of ordered triples \\((a, b, c)\\) of integers that satisfy the given conditions is \\(\\boxed{19}\\).",
+    "Step 1: We are given the quadratic equation \\(x^2 - 5x + 6 = 0\\).\n\nStep 2: Factoring the quadratic expression, we get \\((x-2)(x-3) = 0\\).\n\nStep 3: Solve for \\(x\\) by setting each factor to zero, which gives \\(x = 2\\) or \\(x = 3\\).\n\nStep 4: We need to find ordered triples \\((a, b, c)\\) of integers such that \\(1 \\leq a < b < c \\leq 10\\) and \\(b - a = c - b\\).\n\nStep 5: The equation \\(b - a = c - b\\) can be rewritten as \\(2b = a + c\\), or \\(b = \\frac{a + c}{2}\\). This implies that \\(a + c\\) must be even, so \\(a\\) and \\(c\\) must both be either even or odd.\n\nStep 6: We now count the number of valid triples \\((a, b, c)\\):\n\n- If \\(a\\) and \\(c\\) are both even, the possible values for \\(a\\) are 2, 4, 6, 8, and for \\(c\\) are 4, 6, 8, 10 (since \\(a < c\\)). This gives us the following pairs \\((a, c)\\): (2, 4), (2, 6), (2, 8), (2, 10), (4, 6), (4, 8), (4, 10), (6, 8), (6, 10), (8, 10). For each pair, \\(b = \\frac{a + c}{2}\\) is an integer. So, there are 10 valid triples.\n- If \\(a\\) and \\(c\\) are both odd, the possible values for \\(a\\) are 1, 3, 5, 7, 9, and for \\(c\\) are 3, 5, 7, 9 (since \\(a < c\\)). This gives us the following pairs \\((a, c)\\): (1, 3), (1, 5), (1, 7), (1, 9), (3, 5), (3, 7), (3, 9), (5, 7), (5, 9), (7, 9). For each pair, \\(b = \\frac{a + c}{2}\\) is an integer. So, there are 10 valid triples.\n\nStep 7: Adding the number of valid triples from both cases, we get \\(10 + 10 = 20\\).\n\nThe number of ordered triples \\((a, b, c)\\) that satisfy the given conditions is \\(\\boxed{20}\\).",
+    "Step 1: We are given the quadratic equation \\(x^2 - 5x + 6 = 0\\).\n\nStep 2: Factoring the quadratic expression, we get \\((x-2)(x-3) = 0\\).\n\nStep 3: Solve for \\(x\\) by setting each factor to zero, which gives \\(x = 2\\) or \\(x = 3\\).\n\nStep 4: We need to find the number of ordered triples \\((a, b, c)\\) of integers that satisfy \\(1 \\leq a < b < c \\leq 10\\) and \\(b - a = c - b\\). This implies that \\(2b = a + c\\) or \\(b = \\frac{a + c}{2}\\). Since \\(b\\) is an integer, \\(a + c\\) must be even, meaning \\(a\\) and \\(c\\) must have the same parity (both even or both odd).\n\nStep 5: We now count the number of valid triples \\((a, b, c)\\). We consider the cases where \\(a\\) and \\(c\\) are both even and both odd separately.\n\nCase 1: \\(a\\) and \\(c\\) are both even. The even numbers between 1 and 10 are 2, 4, 6, 8, 10. We need to count pairs \\((a, c)\\) such that \\(1 \\leq a < c \\leq 10\\) and \\(b = \\frac{a + c}{2}\\) is an integer in the range 2 to 9. The possible pairs are:\n- \\((2, 4)\\) gives \\(b = 3\\)\n- \\((2, 6)\\) gives \\(b = 4\\)\n- \\((2, 8)\\) gives \\(b = 5\\)\n- \\((2, 10)\\) gives \\(b = 6\\)\n- \\((4, 6)\\) gives \\(b = 5\\)\n- \\((4, 8)\\) gives \\(b = 6\\)\n- \\((4, 10)\\) gives \\(b = 7\\)\n- \\((6, 8)\\) gives \\(b = 7\\)\n- \\((6, 10)\\) gives \\(b = 8\\)\n- \\((8, 10)\\) gives \\(b = 9\\)\nThis gives us 10 valid triples.\n\nCase 2: \\(a\\) and \\(c\\) are both odd. The odd numbers between 1 and 10 are 1, 3, 5, 7, 9. We need to count pairs \\((a, c)\\) such that \\(1 \\leq a < c \\leq 10\\) and \\(b = \\frac{a + c}{2}\\) is an integer in the range 2 to 9. The possible pairs are:\n- \\((1, 3)\\) gives \\(b = 2\\)\n- \\((1, 5)\\) gives \\(b = 3\\)\n- \\((1, 7)\\) gives \\(b = 4\\)\n- \\((1, 9)\\) gives \\(b = 5\\)\n- \\((3, 5)\\) gives \\(b = 4\\)\n- \\((3, 7)\\) gives \\(b = 5\\)\n- \\((3, 9)\\) gives \\(b = 6\\)\n- \\((5, 7)\\) gives \\(b = 6\\)\n- \\((5, 9)\\) gives \\(b = 7\\)\n- \\((7, 9)\\) gives \\(b = 8\\)\nThis gives us 10 valid triples.\n\nAdding the number of valid triples from both cases, we get \\(10 + 10 = 20\\).\n\nThus, the number of ordered triples \\((a, b, c)\\) that satisfy the given conditions is \\(\\boxed{20}\\).",
+    "Step 1: We are given the quadratic equation \\(x^2 - 5x + 6 = 0\\).\n\nStep 2: Factoring the quadratic expression, we get:\n\\[\n(x-2)(x-3) = 0\n\\]\n\nStep 3: Solve for \\(x\\) by setting each factor to zero, which gives:\n\\[\nx = 2 \\quad \\text{or} \\quad x = 3\n\\]\n\nStep 4: We need to find the number of ordered triples \\((a, b, c)\\) of integers such that \\(1 \\leq a < b < c \\leq 10\\) and \\(b - a = c - b\\).\n\nStep 5: The condition \\(b - a = c - b\\) implies that \\(a, b, c\\) form an arithmetic sequence. Let the common difference be \\(d\\). Then, we can write:\n\\[\nb = a + d \\quad \\text{and} \\quad c = a + 2d\n\\]\n\nStep 6: We need to find all possible values of \\(a\\) and \\(d\\) such that \\(1 \\leq a < a + d < a + 2d \\leq 10\\).\n\nStep 7: For \\(a\\) and \\(d\\) to satisfy the inequalities:\n\\[\n1 \\leq a \\quad \\text{and} \\quad a + d \\leq 10 \\quad \\text{and} \\quad a + 2d \\leq 10\n\\]\n\nStep 8: From \\(a + 2d \\leq 10\\), we get:\n\\[\n2d \\leq 10 - a \\quad \\Rightarrow \\quad d \\leq \\frac{10 - a}{2}\n\\]\n\nStep 9: \\(d\\) must be a positive integer. Therefore, we need to find the maximum integer \\(d\\) for each \\(a\\) such that \\(d \\leq \\frac{10 - a}{2}\\).\n\nStep 10: We will check each possible value of \\(a\\) from 1 to 8 (since \\(a + 2d \\leq 10\\) and \\(a < a + 2d\\)):\n\n- For \\(a = 1\\):\n  \\[\n  d \\leq \\frac{10 - 1}{2} = 4.5 \\quad \\Rightarrow \\quad d = 1, 2, 3, 4\n  \\]\n  Valid triples: \\((1, 2, 3), (1, 3, 5), (1, 4, 7), (1, 5, 9)\\)\n\n- For \\(a = 2\\):\n  \\[\n  d \\leq \\frac{10 - 2}{2} = 4 \\quad \\Rightarrow \\quad d = 1, 2, 3, 4\n  \\]\n  Valid triples: \\((2, 3, 4), (2, 4, 6), (2, 5, 8), (2, 6, 10)\\)\n\n- For \\(a = 3\\):\n  \\[\n  d \\leq \\frac{10 - 3}{2} = 3.5 \\quad \\Rightarrow \\quad d = 1, 2, 3\n  \\]\n  Valid triples: \\((3, 4, 5), (3, 5, 7), (3, 6, 9)\\)\n\n- For \\(a = 4\\):\n  \\[\n  d \\leq \\frac{10 - 4}{2} = 3 \\quad \\Rightarrow \\quad d = 1, 2, 3\n  \\]\n  Valid triples: \\((4, 5, 6), (4, 6, 8), (4, 7, 10)\\)\n\n- For \\(a = 5\\):\n  \\[\n  d \\leq \\frac{10 - 5}{2} = 2.5 \\quad \\Rightarrow \\quad d = 1, 2\n  \\]\n  Valid triples: \\((5, 6, 7), (5, 7, 9)\\)\n\n- For \\(a = 6\\):\n  \\[\n  d \\leq \\frac{10 - 6}{2} = 2 \\quad \\Rightarrow \\quad d = 1, 2\n  \\]\n  Valid triples: \\((6, 7, 8)\\)\n\n- For \\(a = 7\\):\n  \\[\n  d \\leq \\frac{10 - 7}{2} = 1.5 \\quad \\Rightarrow \\quad d = 1\n  \\]\n  Valid triple: \\((7, 8, 9)\\)\n\n- For \\(a = 8\\):\n  \\[\n  d \\leq \\frac{10 - 8}{2} = 1\n  \\]\n  Valid triple: \\((8, 9, 10)\\)\n\nStep 11: Counting all valid triples, we have:\n\\[\n4 + 4 + 3 + 3 + 2 + 1 + 1 = 18\n\\]\n\nTherefore, the number of ordered triples \\((a, b, c)\\) that satisfy the given conditions is \\(\\boxed{18}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [1.0, 1.0, 1.0, 0.0, 0.8, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.0, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.4, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(0,2)": [
+      [1.0, 1.0, 1.0, 0.0, 0.8],
+      [1.0, 1.0, 1.0, 0.0, 0.6],
+      [1.0, 1.0, 1.0, 0.8, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.2]
+    ],
+    "(0,3)": [
+      [1.0, 1.0, 1.0, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.2, 0.4, 0.4, 0.4, 0.4, 0.4, 1.0],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.6, 0.6, 0.6, 0.6, 0.0, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.2, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.4]
+    ],
+    "(1,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.4, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 0.4, 0.4, 0.4, 0.0, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.2, 0.4, 0.6, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.4, 0.2]
+    ]
+  }
+}

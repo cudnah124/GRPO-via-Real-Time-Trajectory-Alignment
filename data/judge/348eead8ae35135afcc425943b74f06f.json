@@ -1,0 +1,46 @@
+{
+  "problem_id": "348eead8ae35135afcc425943b74f06f",
+  "generated_rollouts": [
+    "Step 1: Determine the cost price of each aeroplane.\nLet the cost price of the first aeroplane be \\(C_1\\) and the cost price of the second aeroplane be \\(C_2\\).\n\nThe man sold the first aeroplane for £600 at a loss of 20%. This means he sold it at 80% of its cost price. So, we have:\n\\[600 = 0.8C_1 \\implies C_1 = \\frac{600}{0.8} = 750\\]\n\nThe man sold the second aeroplane for £600 at a profit of 20%. This means he sold it at 120% of its cost price. So, we have:\n\\[600 = 1.2C_2 \\implies C_2 = \\frac{600}{1.2} = 500\\]\n\nStep 2: Calculate the total cost price and the total selling price.\nThe total cost price of the two aeroplanes is:\n\\[C_1 + C_2 = 750 + 500 = 1250\\]\n\nThe total selling price of the two aeroplanes is:\n\\[600 + 600 = 1200\\]\n\nStep 3: Determine the overall profit or loss.\nThe overall loss is the difference between the total cost price and the total selling price:\n\\[1250 - 1200 = 50\\]\n\nTherefore, the man made a loss of £50 on the whole transaction.\n\nFinal Answer:\n\\[\\boxed{50}\\]",
+    "Step 1: Let's determine the cost price of each aeroplane.\n\nFor the first aeroplane, he made a loss of 20%. Let the cost price of the first aeroplane be \\(C_1\\). Since he sold it for £600 at a loss of 20%, the selling price is 80% of the cost price. Therefore, we can write:\n\\[600 = 0.8 \\times C_1\\]\nSolving for \\(C_1\\), we get:\n\\[C_1 = \\frac{600}{0.8} = 750\\]\n\nFor the second aeroplane, he made a profit of 20%. Let the cost price of the second aeroplane be \\(C_2\\). Since he sold it for £600 at a profit of 20%, the selling price is 120% of the cost price. Therefore, we can write:\n\\[600 = 1.2 \\times C_2\\]\nSolving for \\(C_2\\), we get:\n\\[C_2 = \\frac{600}{1.2} = 500\\]\n\nStep 2: Calculate the total cost price and the total selling price.\nThe total cost price is:\n\\[C_1 + C_2 = 750 + 500 = 1250\\]\nThe total selling price is:\n\\[600 + 600 = 1200\\]\n\nStep 3: Determine the overall profit or loss.\nThe overall profit or loss is the difference between the total selling price and the total cost price:\n\\[1200 - 1250 = -50\\]\nSince the result is negative, the man made a loss of £50.\n\nThe final answer is:\n\\[\\boxed{50}\\]",
+    "Step 1: We are given that a man bought two aeroplanes and sold each for £600. He made a loss of 20% on one machine and a profit of 20% on the other. We need to determine if he made a profit on the whole transaction or a loss, and how much.\n\nStep 2: Let's denote the cost price of the first aeroplane as \\(C_1\\) and the cost price of the second aeroplane as \\(C_2\\). The selling price for each aeroplane is £600.\n\nStep 3: For the first aeroplane, which was sold at a loss of 20%, we can write the equation:\n\\[600 = C_1 - 0.2C_1 = 0.8C_1\\]\nSolving for \\(C_1\\):\n\\[C_1 = \\frac{600}{0.8} = 750\\]\n\nStep 4: For the second aeroplane, which was sold at a profit of 20%, we can write the equation:\n\\[600 = C_2 + 0.2C_2 = 1.2C_2\\]\nSolving for \\(C_2\\):\n\\[C_2 = \\frac{600}{1.2} = 500\\]\n\nStep 5: The total cost price of the two aeroplanes is:\n\\[C_1 + C_2 = 750 + 500 = 1250\\]\n\nStep 6: The total selling price of the two aeroplanes is:\n\\[600 + 600 = 1200\\]\n\nStep 7: The total loss is:\n\\[1250 - 1200 = 50\\]\n\nTherefore, the man made a loss of £50 on the whole transaction.\n\nFinal answer:\n\\boxed{50}",
+    "Step 1: Identify the cost prices of the two aeroplanes.\nLet \\( C_1 \\) be the cost price of the first aeroplane and \\( C_2 \\) be the cost price of the second aeroplane.\n\nStep 2: Determine the selling prices based on the given loss and profit information.\nThe selling price of the first aeroplane is £600, which is 80% of its cost price (since he made a 20% loss).\n\\[ 600 = 0.8 \\times C_1 \\]\nSolving for \\( C_1 \\):\n\\[ C_1 = \\frac{600}{0.8} = 750 \\]\n\nThe selling price of the second aeroplane is £600, which is 120% of its cost price (since he made a 20% profit).\n\\[ 600 = 1.2 \\times C_2 \\]\nSolving for \\( C_2 \\):\n\\[ C_2 = \\frac{600}{1.2} = 500 \\]\n\nStep 3: Calculate the total cost price and total selling price.\nThe total cost price is:\n\\[ C_1 + C_2 = 750 + 500 = 1250 \\]\n\nThe total selling price is:\n\\[ 600 + 600 = 1200 \\]\n\nStep 4: Determine the overall profit or loss.\nThe total selling price is £1200 and the total cost price is £1250. Therefore, the man made a loss.\n\\[ \\text{Loss} = 1250 - 1200 = 50 \\]\n\nStep 5: Conclusion.\nThe man made a loss of £50 on the whole transaction.\n\nFinal Answer:\n\\[\n\\boxed{50}\n\\]"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.8, 0.8],
+      [0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.0]
+    ],
+    "(0,2)": [
+      [1.0, 0.8, 0.0, 0.0, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 0.8, 0.8, 0.0, 0.0, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.0]
+    ],
+    "(0,3)": [
+      [0.2, 0.0, 0.8, 1.0, 1.0],
+      [1.0, 0.8, 0.0, 0.8, 1.0],
+      [1.0, 1.0, 0.8, 0.0, 0.2]
+    ],
+    "(1,2)": [
+      [1.0, 0.8, 0.0, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.8, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 0.2]
+    ],
+    "(2,3)": [
+      [1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.2, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 0.2]
+    ]
+  }
+}

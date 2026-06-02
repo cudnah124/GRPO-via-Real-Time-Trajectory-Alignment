@@ -1,0 +1,50 @@
+{
+  "problem_id": "67cca528b61c69be48b80f16b8797737",
+  "generated_rollouts": [
+    "Step 1: Determine the total weight of the lemonade.\nThe total weight of the lemonade is the sum of the weights of the lemon juice, sugar, and water.\n\\[ 100 \\text{ grams (lemon juice)} + 100 \\text{ grams (sugar)} + 400 \\text{ grams (water)} = 600 \\text{ grams} \\]\n\nStep 2: Determine the total calories from the lemon juice and sugar.\nThe total calories from the lemon juice are:\n\\[ 25 \\text{ calories (from 100 grams of lemon juice)} \\]\nThe total calories from the sugar are:\n\\[ 386 \\text{ calories (from 100 grams of sugar)} \\]\nThe total calories from water are:\n\\[ 0 \\text{ calories} \\]\nSo, the total calories in the lemonade is:\n\\[ 25 + 386 = 411 \\text{ calories} \\]\n\nStep 3: Determine the number of calories per gram of the lemonade.\nThe number of calories per gram of the lemonade is:\n\\[ \\frac{411 \\text{ calories}}{600 \\text{ grams}} = \\frac{411}{600} \\text{ calories/gram} \\]\n\nStep 4: Determine the number of calories in 200 grams of the lemonade.\nThe number of calories in 200 grams of the lemonade is:\n\\[ 200 \\text{ grams} \\times \\frac{411}{600} \\text{ calories/gram} = \\frac{200 \\times 411}{600} = \\frac{82200}{600} = 137 \\text{ calories} \\]\n\nTherefore, the number of calories in 200 grams of her lemonade is \\(\\boxed{\\text{B}}\\).",
+    "Step 1: Determine the total weight of the lemonade.\nThe total weight of the lemonade is the sum of the weights of the lemon juice, sugar, and water:\n\\[100 \\text{ grams (lemon juice)} + 100 \\text{ grams (sugar)} + 400 \\text{ grams (water)} = 600 \\text{ grams}.\\]\n\nStep 2: Calculate the total number of calories in the lemonade.\nThe total calories come from the lemon juice and the sugar. Water contains no calories.\nThe calories from the lemon juice are:\n\\[100 \\text{ grams} \\times \\frac{25 \\text{ calories}}{100 \\text{ grams}} = 25 \\text{ calories}.\\]\nThe calories from the sugar are:\n\\[100 \\text{ grams} \\times \\frac{386 \\text{ calories}}{100 \\text{ grams}} = 386 \\text{ calories}.\\]\nSo, the total calories in the lemonade are:\n\\[25 \\text{ calories} + 386 \\text{ calories} = 411 \\text{ calories}.\\]\n\nStep 3: Determine the calories per gram of lemonade.\nThe total calories (411 calories) are distributed over the total weight (600 grams) of the lemonade. Therefore, the calories per gram of lemonade are:\n\\[\\frac{411 \\text{ calories}}{600 \\text{ grams}} = \\frac{411}{600} \\text{ calories/gram} = \\frac{137}{200} \\text{ calories/gram}.\\]\n\nStep 4: Calculate the calories in 200 grams of lemonade.\nTo find the calories in 200 grams of lemonade, we multiply the calories per gram by 200:\n\\[200 \\text{ grams} \\times \\frac{137}{200} \\text{ calories/gram} = 137 \\text{ calories}.\\]\n\nTherefore, the number of calories in 200 grams of her lemonade is \\(\\boxed{\\text{B}}\\).",
+    "Step 1: Calculate the total calories from the lemon juice.\n Francesca uses 100 grams of lemon juice, and each 100 grams contains 25 calories.\n\\[ \\text{Calories from lemon juice} = 25 \\]\n\nStep 2: Calculate the total calories from the sugar.\nFrancesca uses 100 grams of sugar, and each 100 grams contains 386 calories.\n\\[ \\text{Calories from sugar} = 386 \\]\n\nStep 3: Calculate the total calories from the water.\nThe water contains no calories.\n\\[ \\text{Calories from water} = 0 \\]\n\nStep 4: Calculate the total calories in the original 600 grams of lemonade.\n\\[ \\text{Total calories in 600 grams} = 25 + 386 + 0 = 411 \\]\n\nStep 5: Determine the proportion of the total calories that come from the lemonade.\nThe total weight of the lemonade is 600 grams.\n\\[ \\text{Proportion of calories from lemonade} = \\frac{411}{600} \\]\n\nStep 6: Calculate the calories in 200 grams of lemonade.\n\\[ \\text{Calories in 200 grams} = 200 \\times \\frac{411}{600} = 200 \\times 0.685 = 137 \\]\n\nTherefore, the number of calories in 200 grams of her lemonade is \\(\\boxed{137}\\). The correct option is \\(\\boxed{B}\\).",
+    "Step 1: Determine the total weight of the lemonade.\nThe total weight of the lemonade is the sum of the weights of the lemon juice, sugar, and water:\n\\[ 100 \\text{ grams} + 100 \\text{ grams} + 400 \\text{ grams} = 600 \\text{ grams} \\]\n\nStep 2: Determine the total number of calories in the lemonade.\nThe total number of calories in the lemonade is the sum of the calories from the lemon juice and the sugar:\n\\[ 25 \\text{ calories} + 386 \\text{ calories} = 411 \\text{ calories} \\]\n\nStep 3: Determine the number of calories per gram of lemonade.\nThe number of calories per gram of lemonade is the total number of calories divided by the total weight of the lemonade:\n\\[ \\frac{411 \\text{ calories}}{600 \\text{ grams}} = \\frac{411}{600} \\text{ calories/gram} = \\frac{137}{200} \\text{ calories/gram} \\]\n\nStep 4: Determine the number of calories in 200 grams of lemonade.\nThe number of calories in 200 grams of lemonade is the number of calories per gram multiplied by 200:\n\\[ 200 \\text{ grams} \\times \\frac{137}{200} \\text{ calories/gram} = 137 \\text{ calories} \\]\n\nTherefore, the number of calories in 200 grams of her lemonade is \\(\\boxed{137}\\). $\\boxed{\\text{B}}$"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.0, 0.0, 0.0],
+      [0.2, 0.0, 0.2, 0.2],
+      [0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.0, 0.0, 0.0, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0, 1.0],
+      [1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [1.0, 1.0, 1.0, 0.8, 0.8, 1.0],
+      [0.0, 0.0, 0.0, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.0]
+    ],
+    "(2,3)": [
+      [0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.8, 0.0]
+    ]
+  }
+}

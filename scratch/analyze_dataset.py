@@ -1,38 +1,29 @@
 import json
 import os
-import matplotlib.pyplot as plt
 import numpy as np
 
-def compute_teacher_dtw(matrix):
-    N, M = len(matrix), len(matrix[0])
-    dp = [[float('inf')] * (M + 1) for _ in range(N + 1)]
-    dp[0][0] = 0
-    for i in range(1, N + 1):
-        for j in range(1, M + 1):
-            cost = float(matrix[i-1][j-1])
-            dp[i][j] = cost + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])
-    return dp[N][M] / max(N, M)
-
-def main():
-    jsonl_path = r"c:\Users\nhanha213\OneDrive - hcmut.edu.vn\Desktop\STUDY\NCKH\SELF\conference-latex-template\Code\distillation_data_augmented.jsonl"
+def analyze_file(jsonl_path):
     if not os.path.exists(jsonl_path):
-        print("File not found:", jsonl_path)
+        print(f"File not found: {jsonl_path}")
         return
-    
+        
     costs = []
+    problem_count = 0
+    rollout_count = 0
     pair_count = 0
     zero_count = 0
     one_count = 0
     other_count = 0
     
     with open(jsonl_path, 'r', encoding='utf-8') as f:
-        for line_num, line in enumerate(f):
+        for line in f:
             item = json.loads(line)
-            matrices = item.get('distance_matrices', {})
-            for key, mat in matrices.items():
-                if not (mat and isinstance(mat, list) and isinstance(mat[0], list)):
-                    continue
-                cost = compute_teacher_dtw(mat)
+            problem_count += 1
+            rollout_count += len(item.get('generated_rollouts', []))
+            
+            costs_dict = item.get('alignment_costs', {})
+            for key, cost_val in costs_dict.items():
+                cost = float(cost_val)
                 costs.append(cost)
                 pair_count += 1
                 if cost == 0.0:
@@ -42,17 +33,30 @@ def main():
                 else:
                     other_count += 1
 
-    print("\n--- DATASET STATISTICS ---")
-    print(f"Total pairs analyzed: {pair_count}")
-    print(f"Pairs with cost = 0.0: {zero_count} ({zero_count/pair_count*100:.2f}%)")
-    print(f"Pairs with cost = 1.0: {one_count} ({one_count/pair_count*100:.2f}%)")
-    print(f"Pairs with 0.0 < cost < 1.0: {other_count} ({other_count/pair_count*100:.2f}%)")
+    print("\n" + "="*60)
+    print(f"THỐNG KÊ TẬP DỮ LIỆU: {jsonl_path.upper()}")
+    print("="*60)
+    print(f"Tổng số bài toán (problems):        {problem_count}")
+    print(f"Tổng số lời giải (rollouts):        {rollout_count}")
+    print(f"Tổng số cặp đối sánh (pairs):       {pair_count}")
+    print(f"  + Cặp khớp hoàn toàn (cost = 0.0): {zero_count} ({zero_count/pair_count*100:.2f}%)")
+    print(f"  + Cặp sai lệch hoàn toàn (cost = 1.0): {one_count} ({one_count/pair_count*100:.2f}%)")
+    print(f"  + Cặp sai lệch một phần (0.0 < cost < 1.0): {other_count} ({other_count/pair_count*100:.2f}%)")
     
-    # Histogram distribution
-    hist, bin_edges = np.histogram(costs, bins=10, range=(0, 1))
-    print("\nCost distribution (10 bins):")
-    for i in range(10):
-        print(f"  [{bin_edges[i]:.1f} - {bin_edges[i+1]:.1f}]: {hist[i]} ({hist[i]/pair_count*100:.2f}%)")
+    # Histogram phân bổ
+    if costs:
+        hist, bin_edges = np.histogram(costs, bins=10, range=(0, 1))
+        print("\nChi tiết phân bổ khoảng cách (10 khoảng từ 0.0 đến 1.0):")
+        for i in range(10):
+            print(f"  [{bin_edges[i]:.1f} - {bin_edges[i+1]:.1f}]: {hist[i]} ({hist[i]/pair_count*100:.2f}%)")
+    print("="*60)
+
+def main():
+    # Phân tích cả file gốc và file tăng cường nếu tồn tại
+    if os.path.exists("distillation_data.jsonl"):
+        analyze_file("distillation_data.jsonl")
+    if os.path.exists("distillation_data_augmented.jsonl"):
+        analyze_file("distillation_data_augmented.jsonl")
 
 if __name__ == "__main__":
     main()

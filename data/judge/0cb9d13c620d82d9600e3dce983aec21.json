@@ -1,0 +1,49 @@
+{
+  "problem_id": "0cb9d13c620d82d9600e3dce983aec21",
+  "generated_rollouts": [
+    "Step 1: Identify the data points from the stem and leaf plot.\nThe data points are: 12, 13, 14, 15, 15, 22, 22, 22, 31, 31, 38, 39, 40, 41, 42, 43, 52, 58, 59.\n\nStep 2: Determine the median.\nThe median is the middle value of the data set when it is ordered. Since there are 19 data points, the median is the 10th value.\nThe ordered data points are: 12, 13, 14, 15, 15, 22, 22, 22, 31, 31, 38, 39, 40, 41, 42, 43, 52, 58, 59.\nThe 10th value is 31.\nSo, the median is 31.\n\nStep 3: Determine the mode.\nThe mode is the value that appears most frequently in the data set.\nFrom the data points, we can see that the value 22 appears three times, which is more frequent than any other value.\nSo, the mode is 22.\n\nStep 4: Calculate the positive difference between the median and the mode.\nThe positive difference between the median (31) and the mode (22) is:\n\\[ 31 - 22 = 9 \\]\n\nSo, the positive difference between the median and the mode is \\(\\boxed{9}\\).",
+    "Step 1: Identify the data points from the stem and leaf plot.\nThe data points are: 12, 13, 14, 15, 15, 22, 22, 22, 31, 31, 38, 39, 40, 41, 42, 43, 52, 58, 59.\n\nStep 2: Determine the median.\nFirst, arrange the data points in ascending order: 12, 13, 14, 15, 15, 22, 22, 22, 31, 31, 38, 39, 40, 41, 42, 43, 52, 58, 59.\nSince there are 19 data points (an odd number), the median is the middle number. The middle number is the 10th number in the ordered list, which is 31.\nSo, the median is 31.\n\nStep 3: Determine the mode.\nThe mode is the number that appears most frequently. From the ordered list, we can see that the number 22 appears three times, which is more frequent than any other number.\nSo, the mode is 22.\n\nStep 4: Calculate the positive difference between the median and the mode.\nThe positive difference between the median (31) and the mode (22) is:\n\\[ 31 - 22 = 9 \\]\n\nThe positive difference between the median and the mode is \\(\\boxed{9}\\).",
+    "Step 1: Identify the data points from the stem-and-leaf plot.\nThe data points are: 12, 13, 14, 15, 15, 22, 22, 22, 31, 31, 38, 39, 40, 41, 42, 43, 52, 58, 59.\nStep 2: Arrange the data points in ascending order.\nThe ordered data points are: 12, 13, 14, 15, 15, 22, 22, 22, 31, 31, 38, 39, 40, 41, 42, 43, 52, 58, 59.\nStep 3: Determine the median.\nThe median is the middle value in the ordered data set. Since there are 19 values, the median is the 10th value, which is 31.\nStep 4: Determine the mode.\nThe mode is the value that appears most frequently. The value 22 appears three times, which is more frequently than any other value. Therefore, the mode is 22.\nStep 5: Calculate the positive difference between the median and the mode.\nThe positive difference between the median (31) and the mode (22) is \\(31 - 22 = 9\\).\nThe final answer is \\(\\boxed{9}\\).",
+    "Step 1: Identify the data points from the stem-and-leaf plot.\nThe tens digit represents the tens place, and the units digit represents the units place. So, the data points are:\n12, 13, 14, 15, 15, 22, 22, 22, 31, 31, 38, 39, 40, 41, 42, 43, 52, 58, 59.\n\nStep 2: Arrange the data points in ascending order.\n12, 13, 14, 15, 15, 22, 22, 22, 31, 31, 38, 39, 40, 41, 42, 43, 52, 58, 59.\n\nStep 3: Determine the median.\nThe median is the middle value of the data set. Since there are 19 data points, the median is the 10th value in the ordered list. The 10th value is 31. So, the median is 31.\n\nStep 4: Determine the mode.\nThe mode is the value that appears most frequently in the data set. From the ordered list, we can see that the value 22 appears three times, which is more frequent than any other value. So, the mode is 22.\n\nStep 5: Calculate the positive difference between the median and the mode.\nThe median is 31 and the mode is 22. The positive difference between them is:\n\\[ |31 - 22| = 9 \\]\n\nTherefore, the positive difference between the median and the mode is \\(\\boxed{9}\\)."
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.6, 0.6, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.6, 0.6, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.6, 0.6, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 0.6, 0.2, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 0.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 0.0]
+    ],
+    "(2,3)": [
+      [0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0, 0.0]
+    ]
+  }
+}

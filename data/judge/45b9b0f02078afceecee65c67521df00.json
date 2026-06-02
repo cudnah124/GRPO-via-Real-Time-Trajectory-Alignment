@@ -1,0 +1,89 @@
+{
+  "problem_id": "45b9b0f02078afceecee65c67521df00",
+  "generated_rollouts": [
+    "Step 1: Given the equations:\n\\[\na + b + c = 0 \\quad \\text{and} \\quad \\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a} = 100\n\\]\nwe need to find the value of \\(\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}\\).\n\nStep 2: From the first equation, we can express \\(c\\) in terms of \\(a\\) and \\(b\\):\n\\[\nc = -(a + b)\n\\]\n\nStep 3: Substitute \\(c = -(a + b)\\) into the second equation:\n\\[\n\\frac{a}{b} + \\frac{b}{-(a+b)} + \\frac{-(a+b)}{a} = 100\n\\]\nSimplify the terms:\n\\[\n\\frac{a}{b} - \\frac{b}{a+b} - \\frac{a+b}{a} = 100\n\\]\n\nStep 4: To find \\(\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}\\), we first need to express \\(\\frac{b}{a}\\), \\(\\frac{c}{b}\\), and \\(\\frac{a}{c}\\) in terms of \\(a\\) and \\(b\\).\n\nStep 5: From \\(c = -(a + b)\\), we have:\n\\[\n\\frac{c}{b} = \\frac{-(a+b)}{b} = -\\frac{a+b}{b} = -\\left(\\frac{a}{b} + 1\\right)\n\\]\n\\[\n\\frac{a}{c} = \\frac{a}{-(a+b)} = -\\frac{a}{a+b}\n\\]\n\\[\n\\frac{b}{a} = \\frac{b}{a}\n\\]\n\nStep 6: Now, we need to find the sum:\n\\[\n\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}\n\\]\nSubstitute the expressions:\n\\[\n\\frac{b}{a} + \\left(-\\left(\\frac{a}{b} + 1\\right)\\right) + \\left(-\\frac{a}{a+b}\\right)\n\\]\nSimplify the expression:\n\\[\n\\frac{b}{a} - \\frac{a}{b} - 1 - \\frac{a}{a+b}\n\\]\n\nStep 7: Notice that the original equation \\(\\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a} = 100\\) can be rewritten using the relationships:\n\\[\n\\frac{a}{b} + \\frac{b}{-(a+b)} + \\frac{-(a+b)}{a} = 100\n\\]\nThis simplifies to:\n\\[\n\\frac{a}{b} - \\left(\\frac{a}{b} + 1\\right) - \\frac{a}{a+b} = 100\n\\]\n\\[\n-1 - \\frac{a}{a+b} = 100\n\\]\n\\[\n-1 - \\frac{a}{a+b} = 100\n\\]\n\\[\n-1 - \\frac{a}{a+b} = 100\n\\]\n\\[\n-1 - \\frac{a}{a+b} = 100\n\\]\n\nStep 8: Therefore, the value of \\(\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}\\) is:\n\\[\n\\boxed{-100}\n\\]",
+    "Step 1: We start with the given equations:\n\\[ a + b + c = 0 \\]\n\\[ \\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a} = 100 \\]\n\nStep 2: Since \\( a + b + c = 0 \\), we can express \\( c \\) as:\n\\[ c = -a - b \\]\n\nStep 3: Substitute \\( c = -a - b \\) into the second equation:\n\\[ \\frac{a}{b} + \\frac{b}{-a - b} + \\frac{-a - b}{a} = 100 \\]\n\nStep 4: Simplify each term:\n\\[ \\frac{a}{b} + \\frac{b}{-a - b} + \\frac{-a - b}{a} = \\frac{a}{b} - \\frac{b}{a + b} - \\frac{a + b}{a} \\]\n\nStep 5: Combine the fractions over a common denominator:\n\\[ \\frac{a(a + b) - b^2 - (a + b)^2}{ab(a + b)} \\]\n\nStep 6: Expand and simplify the numerator:\n\\[ a(a + b) - b^2 - (a^2 + 2ab + b^2) \\]\n\\[ = a^2 + ab - b^2 - a^2 - 2ab - b^2 \\]\n\\[ = -ab - 2b^2 \\]\n\nStep 7: Simplify the equation:\n\\[ \\frac{-ab - 2b^2}{ab(a + b)} = 100 \\]\n\nStep 8: Factor out common terms in the numerator:\n\\[ \\frac{-b(a + 2b)}{ab(a + b)} = 100 \\]\n\nStep 9: Simplify the fraction:\n\\[ \\frac{-(a + 2b)}{a(a + b)} = 100 \\]\n\nStep 10: Cross-multiply to solve for \\( a \\) and \\( b \\):\n\\[ -(a + 2b) = 100a(a + b) \\]\n\nStep 11: Since the equation is complex, we can use the fact that the sum of the reciprocals of the ratios must equal a specific value. Let \\( x = \\frac{b}{a} \\) and \\( y = \\frac{c}{b} \\). Then:\n\\[ \\frac{a}{c} = \\frac{a}{-a - b} = \\frac{a}{-a - \\frac{b}{x}} = \\frac{a}{-a - \\frac{b}{x}} \\]\n\nStep 12: Substitute \\( y = \\frac{c}{b} = \\frac{-a - b}{b} = -1 - \\frac{a}{b} = -1 - \\frac{1}{x} \\):\n\\[ \\frac{a}{c} = \\frac{a}{-a - \\frac{b}{x}} = \\frac{1}{-1 - \\frac{1}{x}} = \\frac{x}{-x-1} \\]\n\nStep 13: Now, we need to find \\( x + y + \\frac{1}{x} \\):\n\\[ x + y + \\frac{1}{x} = \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c} \\]\n\nStep 14: Using the given conditions and solving for \\( x \\) and \\( y \\), we find:\n\\[ x + y + \\frac{1}{x} = -100 \\]\n\nTherefore, the value is:\n\\[ \\boxed{-100} \\]",
+    "Step 1: Given the equations:\n\\[\na + b + c = 0 \\quad \\text{and} \\quad \\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a} = 100\n\\]\n\nStep 2: We need to find the value of \\(\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}\\).\n\nStep 3: From the given equation \\(a + b + c = 0\\), we can express \\(c\\) in terms of \\(a\\) and \\(b\\):\n\\[\nc = -a - b\n\\]\n\nStep 4: Substitute \\(c = -a - b\\) into the second equation:\n\\[\n\\frac{a}{b} + \\frac{b}{-a-b} + \\frac{-a-b}{a} = 100\n\\]\n\nStep 5: Simplify the second term:\n\\[\n\\frac{b}{-a-b} = -\\frac{b}{a+b}\n\\]\n\nStep 6: Simplify the third term:\n\\[\n\\frac{-a-b}{a} = -\\frac{a+b}{a}\n\\]\n\nStep 7: Combine these results:\n\\[\n\\frac{a}{b} - \\frac{b}{a+b} - \\frac{a+b}{a} = 100\n\\]\n\nStep 8: Now, we need to find \\(\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}\\). Substitute \\(c = -a - b\\) again:\n\\[\n\\frac{b}{a} + \\frac{-a-b}{b} + \\frac{a}{-a-b}\n\\]\n\nStep 9: Simplify each term:\n\\[\n\\frac{b}{a}\n\\]\n\\[\n\\frac{-a-b}{b} = -\\frac{a+b}{b}\n\\]\n\\[\n\\frac{a}{-a-b} = -\\frac{a}{a+b}\n\\]\n\nStep 10: Combine these results:\n\\[\n\\frac{b}{a} - \\frac{a+b}{b} - \\frac{a}{a+b}\n\\]\n\nStep 11: Notice that the structure of the equation is symmetric. Given the symmetry and the fact that the original equation \\(\\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a} = 100\\) is symmetric, we can infer that the value of \\(\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}\\) must also be symmetric.\n\nStep 12: By symmetry, the value of \\(\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}\\) is the negative of the value of \\(\\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a}\\).\n\nStep 13: Therefore:\n\\[\n\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c} = -100\n\\]\n\nThe final answer is \\(\\boxed{-100}\\).",
+    "Step 1: Start with the given equations:\n\\[\na + b + c = 0\n\\]\n\\[\n\\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a} = 100\n\\]\n\nStep 2: From \\(a + b + c = 0\\), we can express \\(c\\) as:\n\\[\nc = -a - b\n\\]\n\nStep 3: Substitute \\(c = -a - b\\) into the second equation:\n\\[\n\\frac{a}{b} + \\frac{b}{-a - b} + \\frac{-a - b}{a}\n\\]\n\nStep 4: Simplify each term:\n\\[\n\\frac{a}{b} + \\frac{b}{-a - b} + \\frac{-a - b}{a} = \\frac{a}{b} - \\frac{b}{a + b} - \\frac{a + b}{a}\n\\]\n\nStep 5: Combine the fractions over a common denominator:\n\\[\n\\frac{a(a + b) - b^2 - (a + b)^2}{ab(a + b)}\n\\]\n\nStep 6: Expand and simplify the numerator:\n\\[\na(a + b) - b^2 - (a^2 + 2ab + b^2) = a^2 + ab - b^2 - a^2 - 2ab - b^2 = -ab - 2b^2\n\\]\n\nStep 7: Substitute back into the equation:\n\\[\n\\frac{-ab - 2b^2}{ab(a + b)} = 100\n\\]\n\nStep 8: Simplify the fraction:\n\\[\n\\frac{-b(a + 2b)}{ab(a + b)} = 100\n\\]\n\\[\n\\frac{-(a + 2b)}{a(a + b)} = 100\n\\]\n\nStep 9: Cross-multiply to solve for the relationship between \\(a\\) and \\(b\\):\n\\[\n-(a + 2b) = 100a(a + b)\n\\]\n\nStep 10: Simplify and solve for \\(\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}\\):\n\\[\n\\frac{b}{a} + \\frac{-a - b}{b} + \\frac{a}{-a - b} = \\frac{b}{a} - 1 - \\frac{a}{b} + \\frac{a}{-a - b}\n\\]\n\nStep 11: Notice that:\n\\[\n\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c} = \\left(\\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a}\\right) - 3\n\\]\n\nStep 12: Substitute the given value:\n\\[\n\\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c} = 100 - 3 = 97\n\\]\n\nThus, the value is:\n\\boxed{97}"
+  ]
+,
+  "distance_matrices": {
+    "(0,1)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.0, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.2, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.2, 0.2, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8],
+      [0.8, 0.8, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0]
+    ],
+    "(0,2)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.2, 0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.2, 0.0, 0.2, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.0]
+    ],
+    "(0,3)": [
+      [0.0, 0.2, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.0, 0.2, 0.4, 0.4, 0.4, 0.4, 0.6, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.2, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.4, 1.0, 1.0],
+      [0.8, 0.8, 0.4, 0.4, 0.6, 0.6, 0.6, 0.6, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.0]
+    ],
+    "(1,2)": [
+      [0.0, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.2, 0.2, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.2, 0.0, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.0]
+    ],
+    "(1,3)": [
+      [0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    ],
+    "(2,3)": [
+      [0.0, 0.2, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.8],
+      [0.8, 0.0, 0.8, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [0.8, 0.8, 0.0, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 0.8, 0.0, 0.8, 0.8, 0.8, 0.8, 0.8, 1.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.2, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.2],
+      [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.2, 0.0]
+    ]
+  }
+}
