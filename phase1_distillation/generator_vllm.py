@@ -38,7 +38,8 @@ class MathRolloutGenerator:
             max_model_len=4096,
             trust_remote_code=True,
             enforce_eager=True,          # Bắt buộc chế độ eager để tránh treo/OOM CUDA
-            disable_log_stats=True
+            disable_log_stats=True,
+            hf_overrides={"rope_scaling": None}  # Bỏ qua lỗi rope_scaling trong transformers mới
         )
 
     def generate_batch(self, problems, problem_ids, cache_dir=None, num_rollouts=config.K_ROLLOUTS, max_tokens=2048):
