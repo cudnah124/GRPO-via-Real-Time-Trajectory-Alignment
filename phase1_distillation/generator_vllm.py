@@ -10,7 +10,15 @@ class MathRolloutGenerator:
         print(f"[*] Initializing local vLLM Generator with: {model_id}...")
         self.model_id = model_id
         
-        # Cài đặt tokenizer cho mục đích tương thích ngược
+        # Thêm đường dẫn CUDA 12.8 vào LD_LIBRARY_PATH để hệ thống tìm thấy libcudart.so.13 vừa liên kết
+        cuda_lib_dir = "/usr/local/cuda-12.8/lib64"
+        if "LD_LIBRARY_PATH" in os.environ:
+            if cuda_lib_dir not in os.environ["LD_LIBRARY_PATH"]:
+                os.environ["LD_LIBRARY_PATH"] += f":{cuda_lib_dir}"
+        else:
+            os.environ["LD_LIBRARY_PATH"] = cuda_lib_dir
+            
+        # Tải tokenizer cho mục đích tương thích ngược
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
         
         # Lazy import vLLM
@@ -18,10 +26,13 @@ class MathRolloutGenerator:
             from vllm import LLM, SamplingParams
             self.vllm_class = LLM
             self.sampling_params_class = SamplingParams
-        except ImportError:
+        except ImportError as e:
+            print(f"\n[!] LỖI HỆ THỐNG GỐC KHI IMPORT vLLM: {e}")
+            import traceback
+            traceback.print_exc()
             raise ImportError(
-                "vLLM is not installed. Please install it in Colab using:\n"
-                "!pip install vllm==0.6.3"
+                f"Không thể import vLLM do lỗi hệ thống: {e}\n"
+                "Vui lòng kiểm tra lại cấu hình CUDA hoặc liên kết driver."
             )
         
         # Vá lỗi fileno cho môi trường Colab
